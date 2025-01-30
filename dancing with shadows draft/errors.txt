@@ -2,13 +2,7 @@
 errors listed below, and try again.
 
 
-File "game/gui.rpy", line 95: expected statement.
-    xalign 0.5
-            ^
-
-File "game/gui.rpy", line 96: expected statement.
-    yalign 0.5
-            ^
+File "game/script.rpy", line 227: Tab characters are not allowed in Ren'Py scripts.
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Mon Jan 27 02:42:27 2025
+Thu Jan 30 00:20:08 2025

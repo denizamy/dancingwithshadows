@@ -491,7 +491,7 @@ label choice1_done:
 
     scene wrathhall
     with pixellate
-    if choosen == "nolight"
+    if choosen == "nolight":
         jump killbywraith
 
     f "The Archdruid warned me about these Wraithspawn. They are the creations of my quarry, this Demon of Shadow."

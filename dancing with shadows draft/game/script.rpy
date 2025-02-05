@@ -4,6 +4,7 @@
 # name of the character.
 
 define n = Character("Narrator")
+define d = Character("Archdruid",color="164622")
 define j = Character("Julian",color="#3366cc")
 define f = Character("Julian",color="#3366cc")
 define g = Character("Goblin",color="60e683")
@@ -17,6 +18,7 @@ image dog = "dog.png"
 image ghost = "ghost.png"
 image goblin = "goblin.jpg"
 image golem = "golem.jpg"
+image druid = "druid.png"
 transform deadcenter:
     xalign 0.5
     yalign 0.5
@@ -92,10 +94,234 @@ screen inventory_item_description:
 
 label start:
 
+    
+    play music "Deep Haze.mp3"
+    scene blackscreen
+
+    j "Follow a hidden path down the alleys. Three lefts and a right, then close your eyes for twelve seconds."
+
+    j "Remain calm and still, breathing shallowly, and keep your hands at your side..."
+
+    j "It sounded like nonsense, but nonsense was my only lead."
+
+    j "I pitied that beggar, and that's really why I'm here, I guess. Meager times create many beggars, with evil begetting evil and all that… "
+
+    j "I guess this isn't a great evil if I'm just wasting my time here, in the grand scheme of things."
+
+    j  "He didn't want anything from me. I've never had a good grasp on balancing naïvety and cynicism..."
+
+    j "Plus, I need the work. That was my last copper gone in the tavern. My equipment is in good shape, I'm healthy and have a full belly, for now at least. Okay, it's been at least twelve seconds."
+
+    scene druidgrove
+    with pixellate
+
+    j ".…I really just can't believe it. Do all druids work in such secrecy, or just 'Arch'druids when they're looking for a sucker to do their dirty work?" 
+
+    j "I'm here. This is what I came here for. There's no sense in wasting any more time."
+
+    scene druidhut
+    with pixellate
+    show druid at deadcenter:
+        alpha .5
+
+
+    n "A small, sincere smile colors the Archdruid's features upon spotting Julian - wicked away in an instant as he studies the young mercenary."
+
+    n "Deep creases of worry fill the void in elderly man's expression as he strains his eyes in the firelight, as if beholding something only seen by him."
+
+    n "He gestures at the open seat next to the fire and speaks with a soft woody baritone - akin to the rumble of straining mine supports deep in the earth."
+
+    j "Magicians of any kind make me nervous. He seems friendly enough, but I shouldn't let my guard down."
+
+    d "A friend told me you would come. Thank you for your interest in this assignment, young fellow. Take a seat and relax - this is a truly safe place. This world could use a few more of those."
+
+    label druidchoice:
+
+    menu:
+        "Remain aloof":
+            $ choosen = "noacceptdruid"
+            jump druidchoice1
+        "Take a seat and accept the Archdruid's hospitality":
+            jump druidchoice2
+
+    label druidchoice1:
+
+        j "Ah yes, the vagrant…. I'd rather stand. I have a few scars from dealings with the 'magically inclined' and I'd rather not add another."
+
+        n "A certain magic fades from the air, as if Julian's pronouncement conflicted with the place itself, despite the Archdruid remaining largely unfazed."
+
+        n  "Julian sighs, realizing his faux pas."
+
+        d "I shan't begrudge the intemperance of youth."
+
+        d "You are wise to distrust what you cannot understand, but how can we come to an accord without even a wink of it? I mean trust, of course."
+
+        n "The Archdruid hastily finishes his pipe and rises to his feet, joining Julian in the foyer."
+
+        n "For a man of his impressive age, he walks gracefully, almost without even a hint of sound. There is a twinge of melancholy or regret coloring his expression, but not his voice."
+
+        jump druidresolution
+
+    label druidchoice2:
+
+        j "Your… space is cozy."
+
+        d "Thank you, young man."
+
+        j "So - this job…."
+
+        d "Perhaps a drink first. My treat, as the host."
+
+    menu:
+        "Accept the offer":
+            $ choosen = "acceptdruid"
+            jump acceptdruid
+        "Decline":
+            $ choosen = "noacceptdruid"
+            n "Julian's reply is quick, with a hint of tension."
+
+            j "I'd rather keep my wits about me. You have a job for me, right?"
+
+            d "How impertinent of me."
+
+            n "The Archdruid lets out a soft chuckle."
+
+            d "A guest shouldn't be kept waiting."
+
+            jump druidresolution
+
+    label acceptdruid:
+
+        j "I suppose… well, I don't see why not."
+
+        n "The Archdruid rises from his seat and pours a dark orange liquid into two polished wooden cups. There's a bit of relief reflected in his dark eyes. He passes a cup to Julian, who hastily downs the contents."
+
+        j "It's warming. What is this?"
+
+        d "A bit of a house special. You'd call it Waldwine."
+
+        d "Its a bit of a rarity, nowadays..."
+
+        j "I've never heard of it, but it's nice. I'd kill a bottle or two."
+
+        d "Spoken like a man of your trade - but save the violence for another time. I am glad it is to your liking, young man."
+
+        j "There's something familiar about your face. Are you that fellow in the monastery murals? If that's you… what is it like being so old for such a long time?"
+
+        n "The Archdruid serenely gazes into the fire. From seemingly nowhere, a squirrel perched itself on his shoulder. It mimics his calm yet distant expression and gaze."
+
+        d "Time is secondary to our great mission. I have faith you will understand, one day, young man."
+
+        n "Julian and the Archdruid spend a great amount of time talking. The night itself is like a dim, bleary haze. "
+
+        n "At the end of it all, Julian cannot clearly remember what was discussed - only the anxiety he felt about this job and this unfamiliar place and person is gone, and he and this stranger will part as friends."
+
+        d "I believe we lost track of time, Julian. You came here for a reason…"
+        jump druidresolution
+
+    label druidresolution:
+
+    n "The Archdruid hands Julian a scroll bound with a wax seal, casting him an askance look."
+
+    d "There is a demon infesting the local crypt. I need you to put an end to it."
+
+    j "A demon?"
+
+    d "A demon of shadow - neither a trivial, nor major example of its kind. It shan't be a trifle"
+
+    d "Should you accept this trial, you will be adequately equipped and compensated."
+
+    j "What do you consider to be adequate?"
+
+    d "Oh, spare an old man the haggle. I'm offering you one hundred crowns for a job well done, and evidence of the slaying."
+
+    n "Julian whistles slowly"
+
+    j "No argruments here."
+
+    d "To do battle with this fiend, you will need a silvered blade, crafted to scourge their impure flesh."
+
+    d "To defend from its treacherous dark magic, a shield warded against such sorcery - but note, it requires a source of light, even if it is just a spark."
+
+    d " Naturally, you will be allotted three days' rations for your journey."
+
+    d "You'll find everything you need packed by the door. Complete the job, and return here for payment and debriefing."
+
+    n "The neat bundle escaped Julian's notice entirely. It surely is where the druid said it was, but he couldn't be truly sure it was there when he entered."
+
+    j "That seems straightforward enough. I kill the fiend with the blade you're providing me." 
+    
+    j "No strings?"
+
+    d "None."
+
+    d "Do as advised and take care to protect yourself against its deceit and wiles. Remain resolutely focused, and stay true to your task… and yourself."
+
+    j "No complaints from me, oldtimer. I'll be going then. If I'm not back in a week or two, you'll know to send the next guy."
+
+    n "The Archdruid grunts. It's not abundantly clear if he found some humor in Julian's statement, or if he's annoyed."
+
+    d "Reflect on my words young man. Be safe and swift."
+
+    hide druid
+
+    scene druidgrove
+    with pixellate
+
+    n "Julian departs the druid's hut, and finds himself roughly where he expected - the same place he began the strange ritual to find the magician's hideaway."
+
+    j "I'm not in any position to complain. One hundred crowns is more than I've seen in the last four jobs… "
+
+    j "What could that oldtimer have meant by a demon's 'wiles'?"
+
+    j "Maybe it's just an old way of speaking."
+
+    j "I'd best not tarry."
+
+    scene blackscreen
+    with fade
+    stop music fadeout 15.0
+
+    if choosen == "acceptdruid":
+        j "That place was like a dream. I remember the important bits, for now, but I ought to write it down in case I forget."
+
+        j "He said his name is 'Kolya', I think… I've never met someone with such a strange name."
+
+        j "I haven't been so at ease and relaxed as long as I can remember. It must have been that 'Waldwine' he had me drink… "
+
+        j " Come to think of it, he must have been jesting about the murals. Some of them are at least one hundred years old. "
+
+        j "I suppose when you're as old as he is, everyone starts to look a bit alike. Maybe he just has one of those familiar faces."
+
+        j "Maybe. I'll have time to think about this more later. For now, the job."
+
+        jump crypttime
+    elif choosen == "noacceptdruid":
+        j "I'll be six feet in the dirt if I ever deal with another magician after this job. If there is a next job."
+
+        j "One hundred is about what I'd need to bother with another of these tricksters, and I have a nasty feeling it isn't the last of them on this journey."
+
+        j "It's a pity he didn't give me an advance - I could pawn off this blade and shield and be two weeks distant from that creep."
+
+        j "One hundred crowns is worth the effort, if it doesn't kill me."
+
+
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
-    play music "main.mp3"
+
+    label crypttime:
+
+
+    play music "Floating Cities.mp3"
+
+    n "Julian undergoes a three-day travel through the city, to the outskirts. "
+    
+    n "Primarily, Julian spent the time reflecting on his mission and the Archdruid, and speculated on what was to come. "
+
+    n " These days, he didn't get much comfort in anything, and this journey was no exception. "
+
+    n "He wasted no time attending to the dubious duty he took as his yoke, all in the promise of gold."
 
     scene crypt
     with fade

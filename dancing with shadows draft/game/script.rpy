@@ -17,7 +17,7 @@ image lit = "lit.webp"
 image dog = "dog.png"
 image ghost = "ghost.png"
 image goblin = "goblin.jpg"
-image golem = "golem.jpg"
+image golem = "golem.png"
 image druid = "druid.png"
 transform deadcenter:
     xalign 0.5
@@ -471,29 +471,18 @@ label start:
         n "You see a room with a ladder leading down "
         jump goblinchoice
 
-    label choice1_right:
-
-        $ darkness += 1
-
-        scene rightroom
-        with pixellate
-
-        show golem
-        
-        n "You find yourself in some sort of store room. In the corner sits a very out of place golem"
-
-        j "What is this creature doing here?" 
+     label choice1_right:
 
         if choosen == "golemactive":
-            j "The thing is glowing, I should return to the task at hand"
+            j "I'd rather not mingle any more with sorcerous experiments left in storage for a hundred years."
+            j "Like I said, it's somebody else's problem now."
+            j "If they want me to take care of it, well, another hundred crowns would be nice."
             hide golem 
             scene room1
             jump LookLeftLookRight
-        elif choosen == "goleminactive":
-            j "I should leave it alone, I need to return to my mission"
-            hide golem 
-            scene room1
-            jump LookLeftLookRight
+        elif choosen == "boltcutters":
+            scene warehouse
+            jump golemtouch
 
         jump golemchoice
 
@@ -612,50 +601,135 @@ label nogoblin:
     
 label golemchoice:
 
-    n "more golem and room desciptions"
+    n "Before you is tunnel that is barricaded by a few simple boards"
 
-    j " something something should I touch it?"
+    j "Ugh, do I really want to be doing this?"
+
+    j "There's a quarter inch of dust covering literally everything. If I found this demon in such a cramped space, I don't think I'd even be able to swing my sword…."
 
     menu:
 
-        "touch the golem":
-            jump touchgolem
+        "Dismantle Barricade":
+            jump gogolem
 
-        "leave it alone":
+        "Turn Back":
             jump leavegolem
 
-    label touchgolem:
+    label gogolem:
 
-        n "you reach out your hand and gently touch the golem"
-        n "more text about the magic activing"
-        $ choosen = "golemactive"
+        j "Here goes nothing. These boards look simple enough to remove by hand. Dry rot and the ravages of time have reduced them practically to splinters."
 
-        j "wow, I wonder what kind of magic that was but it doesnt seem to change anything but glowing"
-        j "I should get back to task at hand"
-        hide golem
+        j "It's going to be a tight fit. I can't even stand up straight in this cramped tunnel."
         
-        scene room1
+        scene tunnel
         with pixellate
         
-        n "where will you go?"
+        if choosen == "havetorch":
+            j "I should be on guard. It's unusually stuffy in this tunnel, and black as pitch."
 
-        jump LookLeftLookRight
-    
+            j "It reminds me of an abandoned factory, or that mage's study years past…" 
+            
+            j "Well, here goes nothing."
+            jump warehouse
+
+        elif choosen == "notorch":
+            j "I should come back with a light source."
+
+            j "This place stinks of a trap. It would be foolish to fumble around in the dark and step on a nail, or worse."
+
+            n "You go back the way you came."
+
+            scene room1
+            with pixellate
+
+            n "where will you go?"
+
+            jump LookLeftLookRight
+
     label leavegolem:
 
-        n "you decide to leave it alone"
-        $ choosen = "goleminactive"
+        j "No, something is wrong about this place. It's like it has been pulled from a different place and time."
+
+        j "I might come back to it, if this creature isn't anywhere else in this crypt, provided I can think of a plan…"
         
-        j "I should be touching things I have no idea what they do"
+        n "You go back the way you came."
 
-        n "seeing nothing else of note, you leave and return to the atrium"
-
-        hide golem
         scene room1
-        
+        with pixellate
+
         n "where will you go?"
+
         jump LookLeftLookRight
 
+    label warehouse:
+        scene warehouse
+        with pixellate
+
+        show golem:
+            alpha .3
+        j "Whatever this was, it's a trash heap now."
+
+    menu:
+        "Search rubble":
+            j "I might as well try to find something useful while I'm here."
+
+            n "You sort throught the rubble and find a set of bolt cutter"
+            $ choosen = "boltcutters"
+
+            j "Huh. These might come in handy, I guess. Nobody else is using them, I might as well bring them along."
+
+            jump golemtouch
+
+        "Turn back":
+            j "Well, this is a dead end."
+
+            j "There's plenty of this crypt left to explore. The demon is here somewhere."
+
+            n "You go back the way you came."
+
+            hide golem
+
+            scene room1
+            with pixellate
+
+            n "where will you go?"
+
+            jump LookLeftLookRight
+
+    label golemtouch:
+
+        j "There is some strange text on these stones. Strange, it almost looks like an arm…"
+
+        j "Maybe this was a sculptor's studio? That doesn't seem quite right."
+        
+    menu:
+        "Touch symbol":
+            $ choosen = "golemactive"
+            n "The pile of rubble begins to shake, and the runes in the rubble pile begin to glow with a dim blue light."
+
+            j "I'm not getting paid enough for this. This isn't a demon, it's somebody else's problem. I'm getting out of here."
+
+            n "You go back the way you came."
+            hide golem
+        
+            scene room1
+            with pixellate
+        
+            n "where will you go?"
+
+            jump LookLeftLookRight
+    
+        "Turn back":
+            j "I'd better not. There's plenty left to do here. I'll think about it."
+
+            hide golem
+
+            scene room1
+            with pixellate
+
+            n "where will you go?"
+
+            jump LookLeftLookRight
 
 label choice1_done:
     scene darkhall1

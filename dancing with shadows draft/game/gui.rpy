@@ -57,10 +57,10 @@ define gui.interface_text_color = '#ffffff'
 ## Fonts and Font Sizes ########################################################
 
 ## The font used for in-game text.
-define gui.text_font = "DejaVuSans.ttf"
+define gui.text_font = "Dosis.ttf"
 
 ## The font used for character names.
-define gui.name_text_font = "DejaVuSans.ttf"
+define gui.name_text_font = "Charm.ttf"
 
 ## The font used for out-of-game text.
 define gui.interface_text_font = "DejaVuSans.ttf"
@@ -87,7 +87,7 @@ define gui.title_text_size = 75
 ## Main and Game Menus #########################################################
 
 ## The images used for the main and game menus.
-define gui.main_menu_background = "thecoin.png"
+define gui.main_menu_background = "title.png"
 define gui.game_menu_background = "thecoin.png"
 
 

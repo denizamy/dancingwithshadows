@@ -601,7 +601,7 @@ label nogoblin:
     
 label golemchoice:
 
-    n "Before you is tunnel that is barricaded by a few simple boards"
+    n "Ancient, crumbling boards practically hang from the nails they were fixed to many decades ago. Even so, they do the trick. The way is blocked."
 
     j "Ugh, do I really want to be doing this?"
 
@@ -620,9 +620,13 @@ label golemchoice:
         j "Here goes nothing. These boards look simple enough to remove by hand. Dry rot and the ravages of time have reduced them practically to splinters."
 
         j "It's going to be a tight fit. I can't even stand up straight in this cramped tunnel."
+
+        j "As he takes a single step down the confined space, a cloud of dust wafts through the air."
         
         scene tunnel
         with pixellate
+
+        n "The service tunnel is cramped. Julian needs to stoop to enter, and there's barely a body's width of breadth to the space."
         
         if choosen == "havetorch":
             j "I should be on guard. It's unusually stuffy in this tunnel, and black as pitch."
@@ -667,6 +671,10 @@ label golemchoice:
 
         show golem:
             alpha .3
+
+        n "To describe this room as a hoarding or a bandit's treasure pile would be incorrect. Broken bottles, ruined alchemical apparatuses, and alembics can be spotted among the rubble."
+        n "Straining his eyes, Julian spots some salvageable copper wire."
+
         j "Whatever this was, it's a trash heap now."
 
     menu:

@@ -21,10 +21,10 @@ image lit = "lit.webp"
 image dog = "dog.png"
 image ghost = "ghost.png"
 image goblin = "goblin.jpg"
-image golem = "golem.jpg"
 image druid = "druid.png"
 image blackscreen = "blackscreen.jpg"
 image coin = "thecoin.png"
+image golem = "golem.png"
 
 
 transform deadcenter:
@@ -419,21 +419,21 @@ label start:
             jump choice2_nopick
     
     label choice2_torch:
-            $ choosen = "havetorch"
+        $ choosen ="havetorch"
             
-            show unlit at deadcenter
-            with dissolve
+        show unlit at deadcenter
+        with dissolve
 
-            f "A sturdy branch topped with dry cloth soaked in pitch and an alchemical mixture. I can ignite it by striking it against the wall. These don’t last forever…"
-            $ inventory_items.append("Torch")
+        f "A sturdy branch topped with dry cloth soaked in pitch and an alchemical mixture. I can ignite it by striking it against the wall. These don’t last forever…"
+        $ inventory_items.append("Torch")
 
-            hide unlit
-            with dissolve
+        hide unlit
+        with dissolve
 
-            jump choice2_done
+        jump choice2_done
 
     label choice2_nopick:
-        $ choosen = "notorch"
+        $ choosen ="notorch"
 
         f "I dont need this, I should just keep moving."
 
@@ -461,42 +461,36 @@ label start:
         "go right":
             jump choice1_right
 
-        "go forward":
+        "Go Forward":
             jump choice1_forward
 
     label choice1_left:
 
         $ darkness += 1
 
-        scene leftroom
-        with pixellate
+        j "… Huh. "
 
-        n "You see a room with a ladder leading down "
+        j "This looks a lot like an access tunnel to the city's sewers. It would make sense for something like this to be here in the outskirts, I suppose."
+
+        j "It seems a bit insensitive to connect the sewers to a crypt, but I'm not the city planner."
+
+        j "They're working with what space they have, I guess."    
         jump goblinchoice
 
     label choice1_right:
 
-        $ darkness += 1
-
-        scene rightroom
-        with pixellate
-
-        show golem
-        
-        n "You find yourself in some sort of store room. In the corner sits a very out of place golem"
-
-        j "What is this creature doing here?" 
-
         if choosen == "golemactive":
-            j "The thing is glowing, I should return to the task at hand"
+            j "I'd rather not mingle any more with sorcerous experiments left in storage for a hundred years."
+            j "Like I said, it's somebody else's problem now."
+            j "If they want me to take care of it, well, another hundred crowns would be nice."
             hide golem 
             scene room1
             jump LookLeftLookRight
-        elif choosen == "goleminactive":
-            j "I should leave it alone, I need to return to my mission"
-            hide golem 
-            scene room1
-            jump LookLeftLookRight
+        elif choosen == "boltcutters":
+            scene warehouse
+            jump golemtouch
+        elif choosen == "barricade":
+            jump tunnel
 
         jump golemchoice
 
@@ -508,11 +502,30 @@ label start:
 
     label goblinchoice:
 
-    j "This isnt where my contract is, do I really want to abandon it?"
+    j "The entrance is blocked by an iron grate. The bars are serviceably thick, but they're made of low grade iron with a lot of corrosion."
+
+    j "If I found something to bend or break these, maybe I could exit to the city."
+
+    j " Do I want to do that? I'd be abandoning my contract."
+
+    j "Maybe I'm not cut out for this business involving magicians and demons."
+
+    j " I'll have to give it a think."
+
+    if choosen == "boltcutters":
+        jump cutbolt
+
+    jump cutbolt
+
+    n "Julian returns to the Atrium"
+
+    jump LookLeftLookRight
+    
+label cutbolt:
 
     menu:
         
-        "Continue on abandon contract":
+        "Cut the bolts and abandon the contract":
             jump meetgoblin
         
         "Go back and find the demon":
@@ -520,89 +533,277 @@ label start:
     
     label meetgoblin:
         
-        j "this job isnt worth my life, ill see where this leads"
+        j "I've had enough of this nonsense. I'm not about to die in a haunted crypt."
 
-        n "you choose to abandon your contract and proceed down the ladder"
+        j "This situation might be funny under other circumstances… circumstances I'm not in… "
+
+        j  "It's time to get the hell out of here, and quick."
+
+        j "I'll be damned twice if I end up dead doing the bidding of an out of touch old fart."
+
+        n "Julian makes quick work of the bolts."
+
+        n "The way to the sewers is clear, even though the hydraulic lock to the crypt holds fast. "
+
+        n "There is a way out yet, even if it is a dismal path."
 
         scene goblinroom
         with pixellate
 
+        play music "Leaving Home.mp3"
+
+        j "What's that?"
+
         show goblin at deadcenter
 
-        n "before you is a goblin girl"
+        n "The lurking creature speaks, with a scratchy, but distinctly feminine voice. "
 
-        g "uhhh who are you what are you doing here? "
+        g "Heya. I've been watching you."
 
-        n "she looks very confused to see you, she does not seem very threatening but you never know"
+        j "You what? I… What the hell are you"
 
-        n "more text about the sisuation.. she seems to be waiting for a response"
+        g "Haha. I'm a goblin."
+
+        g " You've heard of goblins, right?"
+
+        g "We're scary sewer dwelling bogeymen who steal babies, or something."
+
+        g "Who are you?"
+
+        n "Julian hesitates, eyeing the goblin's blowgun. Poisoned darts, no doubt. He quickly realized he needed to handle the situation with care."
+
+        j "That really isn't important, and it certainly isn't your business."
+
+        j "Who said you are the one asking questions?"
+
+        g "Why not? You're really defensive, aren't you?" 
+        
+        g "I thought you'd be more exciting. Are you really that afraid of me?"
 
         label talktogoblin:
 
         menu:
 
-            "friendly":
-                jump friendlygoblin
-
-            "flirt":
+            "Parley with the creature":
                 jump flirtygoblin
 
-            "attack":
+            "Seize the opportunity and catch the goblin off guard":
                 jump attackgoblin
 
-        label friendlygoblin:
-        $ choosen = "leftwithgoblin"
-        j "says something friendly but not flirty"
-        
-        g "still pretty flirty, offers to show you back to the city"
-
-        j "agrees"
-
-        hide goblin
-        scene city
-        with pixellate
-
-        jump witchstart
-
         label flirtygoblin:
-        $ choosen = "leftwithgoblin"
+            $ choosen = "leftwithgoblin"
 
-        j "lays on the charm"
+        "I can't believe I'm doing this."
 
-        g "blushes, offers to show you back to the city"
+        n "Julian exhales an annoyed sigh and sheathes his blade."
 
-        j "agrees"
+        j "No, I am not afraid of you, but I am confused. Haven't you heard there is a demon nearby, in this very crypt?"
 
-        hide goblin
-        scene city
+        g "You sure have a weird way of talking. Did something happen to you?"
+
+        j "Yeah, I guess a lot has…"
+
+        g "That's what I thought!"
+
+        g "Something happened to you to make you like this."
+
+        j "You're not afraid of the demon?"
+
+        g "The farmers talk about it and seem really afraid. I don't know what it is, reeeeaaallllyyy… and the farmers are afraid of a lot of things."
+
+        n "The goblin shrugs her shoulders and smiles. She seems friendly, and not at all worldly - or at least not educated."
+
+        j "You should be afraid of it, demons are dangerous."
+
+        g "Another one? Did a demon steal your baby or something?"
+
+        j "Don't joke about that. You'd be surprised…"
+
+        g "No human invented tall tale, rumor, fancy, or gossip would surprise me. I'm a professional eavesdropper."
+
+        g "But uh, that is why I'm here. I wanted to see if there's any substance to the rumors!"
+
+        g "Some tales have truth to them, and some don't. The bars were disappointing - but now they're not! "
+
+        g "Thanks Mr. human guy. What's your name?"
+
+        j "Julian. Julian Grymwald."
+
+        "I really need to stop being so impulsive."
+
+        j "You're not a magician, or a magician's familiar… right?"
+
+        g "Oooh, no."
+
+        g "I'm not familiar with them, but I'd like to be. I haven't even met one, but the farmers are afraid of them too, like you. "
+
+        g "Their tales about magicians are a little different like… the magicians cursed the crops, or made someone's baby be born under an 'ill omen'. But no kidnapping."
+
+        j "Why are you so interested in humans? How did you even learn our language?"
+
+        g "Weeeeellllll…"
+
+        n "The goblin frowns for the first time."
+
+        g "I really don't like talking about this. Do you really want to know?"
+
+        j "Sure."
+
+        g "Okay, but I'd rather not say."
+
+        n "Julian sighs and looks over his shoulder."
+
+        g "I'll spot anything coming, just like I spotted you. We goblins can see in the dark."
+
+        j "Uh… I see. And yes, I really want to know."
+
+        n "She continues on, frowning and obviously just a bit uncomfortable. At the same time, she seems desperate for social contact, and most likely doesn't have much experience socializing."
+
+        g "When I was young, a bit too young, I was exiled from my tribe on account of my 'difference"
+
+        n "The goblin gestures at herself, presumably indicating the ivory color of her skin, her pink eyes, and white hair."
+
+        g "It's isolating, living alone, but I've got really good at it. My blowgun makes hunting easy. Just aim and… shoot."
+
+        n "The goblin demonstrates, pointing the barrel of the blowgun at Julian. She takes a quiet, deep inhale, and mimes the action, exhaling through her nose."
+
+        "I'm starting to reconsider this course of action… She seems friendly enough at least, if a bit unhinged."
+
+        g "You'd find what I eat gross, but it's not gross for goblins. Well…"
+
+        g "I've made a bit of a life for myself up here. Down here. Wherever 'here' is at the moment. "
+
+        g "I'm really familiar with the sewers, because listening to the same rumors and legends gets pretty boring. I keep myself safe with my blowgun, aaaaannnnnd… "
+
+        g "I pretty much never get lost. As for my tribe…You don't need to worry about them. They live much farther down."
+
+        n "The silence seems to eat at her, irrespective of the fact that was quite a bit of information for Julian to process. She gives him a plaintive expression - almost comically."
+
+        j "Whoa, it's okay. It sounds like you've done well, considering your situation."
+    
+        j "You're alive, right? And you taught yourself how to speak our language."
+
+        g "For all the good that does me!"
+
+        g "And trust me, I've tried to have a conversation or two with humans like you, and it never goes well. Until now, at least."
+
+        g "You wouldn't believe how little humans look down. They always go running when I try to get their attention."
+
+        j "It's like you said, something happened to me. I must not be of my right mind."
+
+        n "Julian cracks a small smile, letting the goblin in on the joke. She returns the smile, a bit more slowly."
+
+        j "It sounds lonely, living all by yourself in the sewers. What is your name, anyway?"
+
+        g "It's not 'anyway', it's Inya."
+
+        n "Julian cocks an eyebrow and waits for the punchline that never comes."
+
+        j "Okay, in-ya what?"
+
+        g "I… never thought of it like that. Hey…"
+
+        n "The goblin seems genuinely perplexed by the realization her name can be made into a joke."
+
+        g "I like 'Inya'. It sounds so much nicer and more refined than my goblin name." 
+
+        g "And don't even ask, I'm not telling you."
+
+        j "Okay, Inya it is."
+
+        g "Yes, that's what I am."
+
+        n "Julian deliberately nods, affirming their agreement to call Inya 'Inya'."
+
+        j "Inya, do you know how I might get to the city?"
+
+        g "Yeah, it's above you. Are you dumb?"
+
+        j "I'm starting to feel that way, I confess… Can you lead me there, to the streets?"
+
+        g "Oh! Sure! We can go together."
+
+        j "Thank you."
+
+        scene endingscreen
         with pixellate
 
-        n "Julian leaves the crypt and demon alone with his new goblin companion"
-       
+        n "Julian, led by Inya, made their way to the streets. Silently indicating the direction of a culvert, Inya hurriedly catches up to Julian, and tugs on his arm to get his attention. She looks oddly emotional and introspective."
+
+        g "I can see you again, right? We're friends?"
+
+        j "Yes, Inya. You have been a friend to me. I might have died back there without your help."
+
+        j "I'm going to have to lay low for a while because of… well, I'd better not say."
+
+        g "Uh oh, you messed up big time?"
+
+        j "Yeah, you could say that. But, we got to meet each other because I did, so it could be worse."
+
+        g "Yeah! A lot worse. You could be dead, and I could be friendless."
+
+        j "You certainly have a way of viewing the world."
+
+        g "It's like I said, with or without the dark. Thanks for being my friend, Julian."
+
+        g "We should set up a signal or something, like a flare."
+
+        j "I could just come back here in three days, at nightfall."
+
+        g "Can we make it two hours after nightfall? That's the best hunting, at dusk."
+
+        j "Sure. I'll see you then, Inya"
+
+        n "The goblin giggles."
+
+        g "Yeah you will. I'll see you first though."
+
+        n "The newly acquainted pair part, for now - Inya, back to the sewers, and Julian, to an uncertain fate in an unfriendly world."
 
         jump witchstart
+
 
     label attackgoblin:
-    $ choosen = "goblindead"
+        $ choosen = "goblindead"
 
-    j "im not taking any chances not in this place die you fiend"
+    "I don't really know what I'm looking at, but I don't like it. It's time to get out of here - no witnesses."
+
+    j "I'm actually a landed noble - the baron."
+
+    j "I'm here on a mission to investigate rumors of goblins personally, to give the effort a hands-on approach."
+
+    g "I don't know what that is or parti- grk…"
 
     hide goblin
 
-    n "you violently attack and kill the goblin"
+    n "Approaching slowly during the conversation, Julian strikes down the goblin with his blade before she can react."
 
-    j "it had to be done"
+    "Well, that was easy. I feel guilty, but a bit less guilty this go around. I'd best keep moving and not think about it too hard."
 
-    scene city
+    n "Julian, indeed, made his way through the sewers, into the city. "
+
+    n "It was just as dreadful and stinky as he thought it would be, and in the end, he had nothing to show for his effort."
+
+    n "Alone he remained, with only the stolen goods loaned to him by the Archdruid to keep him company."
+
+    scene blackscreen
     with pixellate
 
-    n "eventually you find a path leading back to the city, contract abandon and nothing to show for it"
+    j "I had best lay low for a while. That magician will inevitably send cronies after me if he really did have one hundred crowns to just throw around. "
+
+    j "What did he call these things - a silvered blade and a shield capable of deflecting dark magic?"
+
+    j "I'll have to keep an ear to the ground for the right buyers."
 
     jump witchstart
 
 label nogoblin:
 
-    j "no I can't abandon my mission now"
+    j "Lucky me, I have just the right tool for the job - but I can't be serious with this. I've come all this way for nothing?"
+
+    j "One hundred crowns could keep me fed for months, and I could buy some new equipment, not even considering the connections the Archdruid might have for me."
+
+    j "I'm better than this. Let's be thorough."
 
     n "You return back to artium"
 
@@ -615,49 +816,141 @@ label nogoblin:
     
 label golemchoice:
 
-    n "more golem and room desciptions"
+    n "Before you is tunnel that is barricaded by a few simple boards"
 
-    j " something something should I touch it?"
+    j "Ugh, do I really want to be doing this?"
+
+    j "There's a quarter inch of dust covering literally everything. If I found this demon in such a cramped space, I don't think I'd even be able to swing my sword…."
 
     menu:
 
-        "touch the golem":
-            jump touchgolem
+        "Dismantle Barricade":
+            jump gogolem
 
-        "leave it alone":
+        "Turn Back":
             jump leavegolem
 
-    label touchgolem:
+    label gogolem:
 
-        n "you reach out your hand and gently touch the golem"
-        n "more text about the magic activing"
-        $ choosen = "golemactive"
+        j "Here goes nothing. These boards look simple enough to remove by hand. Dry rot and the ravages of time have reduced them practically to splinters."
 
-        j "wow, I wonder what kind of magic that was but it doesnt seem to change anything but glowing"
-        j "I should get back to task at hand"
-        hide golem
+        j "It's going to be a tight fit. I can't even stand up straight in this cramped tunnel."
+
+        jump tunnel
+    
+label tunnel:
+
+    scene tunnel
+    with pixellate
         
+if choosen == "havetorch":
+        j "I should be on guard. It's unusually stuffy in this tunnel, and black as pitch."
+
+        j "It reminds me of an abandoned factory, or that mage's study years past…" 
+            
+        j "Well, here goes nothing."
+
+        jump warehouse
+
+elif choosen == "notorch":
+            
+        j "I should come back with a light source."
+
+        j "This place stinks of a trap. It would be foolish to fumble around in the dark and step on a nail, or worse."
+
+        n "You go back the way you came."
+
         scene room1
         with pixellate
-        
+
         n "where will you go?"
 
         jump LookLeftLookRight
-    
-    label leavegolem:
 
-        n "you decide to leave it alone"
-        $ choosen = "goleminactive"
+label leavegolem:
+
+        j "No, something is wrong about this place. It's like it has been pulled from a different place and time."
+
+        j "I might come back to it, if this creature isn't anywhere else in this crypt, provided I can think of a plan…"
         
-        j "I should be touching things I have no idea what they do"
+        n "You go back the way you came."
 
-        n "seeing nothing else of note, you leave and return to the atrium"
-
-        hide golem
         scene room1
-        
+        with pixellate
+
         n "where will you go?"
+
         jump LookLeftLookRight
+
+label warehouse:
+        scene warehouse
+        with pixellate
+
+        show golem:
+            alpha .3
+        j "Whatever this was, it's a trash heap now."
+
+menu:
+        "Search rubble":
+            j "I might as well try to find something useful while I'm here."
+
+            n "You sort throught the rubble and find a set of bolt cutter"
+            $ choosen ="boltcutters"
+
+            j "Huh. These might come in handy, I guess. Nobody else is using them, I might as well bring them along."
+
+            jump golemtouch
+
+        "Turn back":
+            j "Well, this is a dead end."
+
+            j "There's plenty of this crypt left to explore. The demon is here somewhere."
+
+            n "You go back the way you came."
+
+            hide golem
+
+            scene room1
+            with pixellate
+
+            n "where will you go?"
+
+            jump LookLeftLookRight
+
+label golemtouch:
+
+        j "There is some strange text on these stones. Strange, it almost looks like an arm…"
+
+        j "Maybe this was a sculptor's studio? That doesn't seem quite right."
+        
+menu:
+        "Touch symbol":
+            $ choosen = "golemactive"
+            n "The pile of rubble begins to shake, and the runes in the rubble pile begin to glow with a dim blue light."
+
+            j "I'm not getting paid enough for this. This isn't a demon, it's somebody else's problem. I'm getting out of here."
+
+            n "You go back the way you came."
+            hide golem
+        
+            scene room1
+            with pixellate
+        
+            n "where will you go?"
+
+            jump LookLeftLookRight
+    
+        "Turn back":
+            j "I'd better not. There's plenty left to do here. I'll think about it."
+
+            hide golem
+
+            scene room1
+            with pixellate
+
+            n "where will you go?"
+
+            jump LookLeftLookRight
 
 
 label choice1_done:

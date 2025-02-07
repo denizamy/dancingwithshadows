@@ -454,7 +454,6 @@ label start:
         $ inventory_items.append("Torch")
 
 
-
         hide unlit
         with dissolve
 
@@ -1172,109 +1171,6 @@ menu:
         "Return to the atrium":
             jump atrium
             with longdissolve
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-gl "The interloper - the intruder in this one's master's domain fled. Senseless cowardice. Shame and guilt. The interloper has much to answer for. This is not the first murder he committed. He shall answer for his crimes."
-
-gl "Fear was the last emotion she felt. A sting of betrayal - fading optimism and curiosity."
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

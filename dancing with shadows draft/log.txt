@@ -1,34 +1,33 @@
-2025-02-07 13:38:16 UTC
+2025-02-07 14:25:15 UTC
 Windows-10-10.0.22631
 Ren'Py 8.3.4.24120703
 
 Early init took 0.05s
 Loading error handling took 0.02s
-Loading script took 0.25s
+Loading script took 0.16s
 Loading save slot metadata took 0.03s
 Loading persistent took 0.00s
 Running init code took 0.04s
 Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
+Reloading save slot metadata took 0.03s
 Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Lake\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
 Dump and make backups took 0.03s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.02s
+Initial gc took 0.03s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
-Creating interface object took 0.16s
+Creating interface object took 0.17s
 Cleaning stores took 0.00s
 Init translation took 0.02s
 Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
+Load screen analysis took 0.01s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
 Prepare screens took 0.03s
-Save pyanalysis. took 0.01s
+Save pyanalysis. took 0.00s
 Save bytecode. took 0.02s
 Running _start took 0.00s
 Interface start took 0.04s
@@ -45,29 +44,473 @@ Screen sizes: virtual=(1920, 1080) physical=(1285, 723) drawable=(1285, 723)
 Maximum texture size: 4096x4096
 
 Full traceback:
-  File "game/script.rpy", line 1457, in script
-    jump goodend
-  File "E:\GitHub\dancingwithshadows\renpy\ast.py", line 1705, in execute
-    rv = renpy.game.script.lookup(target)
-  File "E:\GitHub\dancingwithshadows\renpy\script.py", line 1103, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'goodend'.
+  File "game/script.rpy", line 328, in script
+    if acceptdruid:
+  File "E:\GitHub\dancingwithshadows\renpy\ast.py", line 1849, in execute
+    if renpy.python.py_eval(condition):
+  File "E:\GitHub\dancingwithshadows\renpy\python.py", line 1209, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "E:\GitHub\dancingwithshadows\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 328, in <module>
+    if acceptdruid:
+NameError: name 'acceptdruid' is not defined
 
 While running game code:
-  File "game/script.rpy", line 1457, in script
-    jump goodend
-ScriptError: could not find label 'goodend'.
+  File "game/script.rpy", line 328, in script
+    if acceptdruid:
+  File "game/script.rpy", line 328, in <module>
+    if acceptdruid:
+NameError: name 'acceptdruid' is not defined
 
 Full traceback:
-  File "game/script.rpy", line 1436, in script
-    jump neutralend
+  File "game/script.rpy", line 328, in script
+    if acceptdruid:
+  File "E:\GitHub\dancingwithshadows\renpy\ast.py", line 1849, in execute
+    if renpy.python.py_eval(condition):
+  File "E:\GitHub\dancingwithshadows\renpy\python.py", line 1209, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "E:\GitHub\dancingwithshadows\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 328, in <module>
+    if acceptdruid:
+NameError: name 'acceptdruid' is not defined
+
+While running game code:
+  File "game/script.rpy", line 328, in script
+    if acceptdruid:
+  File "game/script.rpy", line 328, in <module>
+    if acceptdruid:
+NameError: name 'acceptdruid' is not defined
+Resetting cache.
+Early init took 90.34s
+Loading error handling took 0.02s
+Loading script took 0.17s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Lake\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.15s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4090/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1285, 723) drawable=(1285, 723)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 328, in script
+    if $acceptdruid:
+  File "E:\GitHub\dancingwithshadows\renpy\ast.py", line 1849, in execute
+    if renpy.python.py_eval(condition):
+  File "E:\GitHub\dancingwithshadows\renpy\python.py", line 1207, in py_eval
+    code = py_compile(code, 'eval')
+  File "E:\GitHub\dancingwithshadows\renpy\python.py", line 1144, in py_compile
+    raise e
+  File "E:\GitHub\dancingwithshadows\renpy\python.py", line 1081, in py_compile
+    raise orig_e
+  File "E:\GitHub\dancingwithshadows\renpy\python.py", line 1073, in py_compile
+    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
+SyntaxError: invalid syntax (game/script.rpy, line 328)
+
+While running game code:
+  File "game/script.rpy", line 328, in script
+    if $acceptdruid:
+SyntaxError: invalid syntax (game/script.rpy, line 328)
+Resetting cache.
+Early init took 116.16s
+Loading error handling took 0.01s
+Loading script took 0.15s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Lake\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.16s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4090/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1285, 723) drawable=(1285, 723)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 330, in script
+    if acceptdruid:
+  File "E:\GitHub\dancingwithshadows\renpy\ast.py", line 1849, in execute
+    if renpy.python.py_eval(condition):
+  File "E:\GitHub\dancingwithshadows\renpy\python.py", line 1209, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "E:\GitHub\dancingwithshadows\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 330, in <module>
+    if acceptdruid:
+NameError: name 'acceptdruid' is not defined
+
+While running game code:
+  File "game/script.rpy", line 330, in script
+    if acceptdruid:
+  File "game/script.rpy", line 330, in <module>
+    if acceptdruid:
+NameError: name 'acceptdruid' is not defined
+
+Full traceback:
+  File "game/script.rpy", line 330, in script
+    if acceptdruid:
+  File "E:\GitHub\dancingwithshadows\renpy\ast.py", line 1849, in execute
+    if renpy.python.py_eval(condition):
+  File "E:\GitHub\dancingwithshadows\renpy\python.py", line 1209, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "E:\GitHub\dancingwithshadows\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 330, in <module>
+    if acceptdruid:
+NameError: name 'acceptdruid' is not defined
+
+While running game code:
+  File "game/script.rpy", line 330, in script
+    if acceptdruid:
+  File "game/script.rpy", line 330, in <module>
+    if acceptdruid:
+NameError: name 'acceptdruid' is not defined
+Resetting cache.
+Early init took 146.48s
+Loading error handling took 0.01s
+Loading script took 0.14s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Lake\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.15s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4090/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1285, 723) drawable=(1285, 723)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 330, in script
+    if acceptdruid:
+  File "E:\GitHub\dancingwithshadows\renpy\ast.py", line 1849, in execute
+    if renpy.python.py_eval(condition):
+  File "E:\GitHub\dancingwithshadows\renpy\python.py", line 1209, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "E:\GitHub\dancingwithshadows\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 330, in <module>
+    if acceptdruid:
+NameError: name 'acceptdruid' is not defined
+
+While running game code:
+  File "game/script.rpy", line 330, in script
+    if acceptdruid:
+  File "game/script.rpy", line 330, in <module>
+    if acceptdruid:
+NameError: name 'acceptdruid' is not defined
+Resetting cache.
+Early init took 155.46s
+Loading error handling took 0.01s
+Loading script took 0.07s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.15s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4090/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1285, 723) drawable=(1285, 723)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 330, in script
+    if acceptdruid:
+  File "E:\GitHub\dancingwithshadows\renpy\ast.py", line 1849, in execute
+    if renpy.python.py_eval(condition):
+  File "E:\GitHub\dancingwithshadows\renpy\python.py", line 1209, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "E:\GitHub\dancingwithshadows\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 330, in <module>
+    if acceptdruid:
+NameError: name 'acceptdruid' is not defined
+
+While running game code:
+  File "game/script.rpy", line 330, in script
+    if acceptdruid:
+  File "game/script.rpy", line 330, in <module>
+    if acceptdruid:
+NameError: name 'acceptdruid' is not defined
+Resetting cache.
+Early init took 211.41s
+Loading error handling took 0.01s
+Loading script took 0.15s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Lake\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.15s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4090/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1285, 723) drawable=(1285, 723)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 225.17s
+Loading error handling took 0.01s
+Loading script took 0.15s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Lake\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.16s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4090/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1285, 723) drawable=(1285, 723)
+Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 1484, in script
+    jump witchstart
   File "E:\GitHub\dancingwithshadows\renpy\ast.py", line 1705, in execute
     rv = renpy.game.script.lookup(target)
   File "E:\GitHub\dancingwithshadows\renpy\script.py", line 1103, in lookup
     raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'neutralend'.
+ScriptError: could not find label 'witchstart'.
 
 While running game code:
-  File "game/script.rpy", line 1436, in script
-    jump neutralend
-ScriptError: could not find label 'neutralend'.
+  File "game/script.rpy", line 1484, in script
+    jump witchstart
+ScriptError: could not find label 'witchstart'.
+
+Full traceback:
+  File "game/script.rpy", line 1505, in script
+    $ golempulltogether = true
+  File "E:\GitHub\dancingwithshadows\renpy\ast.py", line 827, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "E:\GitHub\dancingwithshadows\renpy\python.py", line 1178, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/script.rpy", line 1505, in <module>
+    $ golempulltogether = true
+NameError: name 'true' is not defined
+
+While running game code:
+  File "game/script.rpy", line 1505, in script
+    $ golempulltogether = true
+  File "game/script.rpy", line 1505, in <module>
+    $ golempulltogether = true
+NameError: name 'true' is not defined
+Resetting cache.
+Early init took 402.56s
+Loading error handling took 0.01s
+Loading script took 0.14s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Lake\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.15s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 4090/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1285, 723) drawable=(1285, 723)
+Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s

@@ -116,8 +116,17 @@ screen inventory_item_description:
 
 
 
-
-
+define acceptdruid = False
+define noacceptdruid = False
+define golemactive = False
+define boltcutters = False
+define barricade = False
+define havetorch = False
+define notorch = False
+define nolight = False
+define light = False
+define havecoin = False
+define nocoin = False
 
 
 
@@ -127,7 +136,6 @@ screen inventory_item_description:
 # The game starts here ######################################################################
 
 label start:
-
     
     play music "Deep Haze.mp3"
     scene blackscreen
@@ -173,7 +181,7 @@ label start:
 
     menu:
         "Remain aloof":
-            $ choosen = "noacceptdruid"
+            $ noacceptdruid = True
             jump druidchoice1
         "Take a seat and accept the Archdruid's hospitality":
             jump druidchoice2
@@ -208,10 +216,10 @@ label start:
 
     menu:
         "Accept the offer":
-            $ choosen = "acceptdruid"
+            $ acceptdruid = True
             jump acceptdruid
         "Decline":
-            $ choosen = "noacceptdruid"
+            $ noacceptdruid = True
             n "Julian's reply is quick, with a hint of tension."
 
             j "I'd rather keep my wits about me. You have a job for me, right?"
@@ -316,7 +324,7 @@ label start:
     with fade
     stop music fadeout 15.0
 
-    if choosen == "acceptdruid":
+    if acceptdruid:
         j "That place was like a dream. I remember the important bits, for now, but I ought to write it down in case I forget."
 
         j "He said his name is 'Kolya', I think… I've never met someone with such a strange name."
@@ -330,7 +338,7 @@ label start:
         j "Maybe. I'll have time to think about this more later. For now, the job."
 
         jump crypttime
-    elif choosen == "noacceptdruid":
+    elif noacceptdruid:
         j "I'll be six feet in the dirt if I ever deal with another magician after this job. If there is a next job."
 
         j "One hundred is about what I'd need to bother with another of these tricksters, and I have a nasty feeling it isn't the last of them on this journey."
@@ -455,7 +463,7 @@ label start:
             jump choice2_nopick
     
     label choice2_torch:
-        $ choosen ="havetorch"
+        $ havetorch = True
             
         show unlit at deadcenter
         with dissolve
@@ -470,7 +478,7 @@ label start:
         jump choice2_done
 
     label choice2_nopick:
-        $ choosen ="notorch"
+        $ notorch = True
 
         f "I'll be fine."
 
@@ -514,17 +522,17 @@ label start:
 
     label choice1_right:
 
-        if choosen == "golemactive":
+        if golemactive:
             j "I'd rather not mingle any more with sorcerous experiments left in storage for a hundred years."
             j "Like I said, it's somebody else's problem now."
             j "If they want me to take care of it, well, another hundred crowns would be nice."
             hide golem 
             scene room1
             jump LookLeftLookRight
-        elif choosen == "boltcutters":
+        elif boltcutters:
             scene warehouse
             jump golemtouch
-        elif choosen == "barricade":
+        elif barricade:
             jump tunnel
 
         jump golemchoice
@@ -547,7 +555,7 @@ label start:
 
     j " I'll have to give it a think."
 
-    if choosen == "boltcutters":
+    if boltcutters:
         jump cutbolt
 
     jump cutbolt
@@ -626,7 +634,7 @@ label cutbolt:
                 jump attackgoblin
 
         label flirtygoblin:
-            $ choosen = "leftwithgoblin"
+            $ leftwithgoblin = True
 
         "I can't believe I'm doing this."
 
@@ -799,7 +807,7 @@ label cutbolt:
 
 
     label attackgoblin:
-        $ choosen = "goblindead"
+        $ goblindead = True
 
     "I don't really know what I'm looking at, but I don't like it. It's time to get out of here - no witnesses."
 
@@ -878,7 +886,7 @@ label tunnel:
     scene tunnel
     with pixellate
         
-if choosen == "havetorch":
+if havetorch:
         j "I should be on guard. It's unusually stuffy in this tunnel, and black as pitch."
 
         j "It reminds me of an abandoned factory, or that mage's study years past…" 
@@ -887,7 +895,7 @@ if choosen == "havetorch":
 
         jump warehouse
 
-elif choosen == "notorch":
+elif notorch:
             
         j "I should come back with a light source."
 
@@ -930,7 +938,7 @@ menu:
             j "I might as well try to find something useful while I'm here."
 
             n "You sort throught the rubble and find a set of bolt cutter"
-            $ choosen ="boltcutters"
+            $ boltcutters = True
 
             j "Huh. These might come in handy, I guess. Nobody else is using them, I might as well bring them along."
 
@@ -960,7 +968,7 @@ label golemtouch:
         
 menu:
         "Touch symbol":
-            $ choosen = "golemactive"
+            $ golemactive = True
             n "The pile of rubble begins to shake, and the runes in the rubble pile begin to glow with a dim blue light."
 
             j "I'm not getting paid enough for this. This isn't a demon, it's somebody else's problem. I'm getting out of here."
@@ -994,9 +1002,9 @@ label choice1_done:
 
     "The rooms ahead are shrouded in oppressive darkness - likely the work of this demon."
    
-    if choosen == "havetorch":
+    if havetorch:
         jump choice3_torch
-    elif choosen == "notorch":
+    elif notorch:
         jump choice3_done
 
     label choice3_torch:
@@ -1016,7 +1024,7 @@ label choice1_done:
                 jump choice3_nolight
 
     label choice3_light:
-        $ choosen = "light"
+        $ light = True
         n "you stike the torch along the stone walls"
 
         hide unlit
@@ -1037,7 +1045,7 @@ label choice1_done:
         jump choice3_done
 
     label choice3_nolight:
-        $ choosen = "no light"
+        $ nolight = True
         j "these do not last long, I'll use it only if I absolutely need too"
         n "You leave the torch unlit"
         jump choice3_done
@@ -1048,7 +1056,7 @@ label choice1_done:
 
     scene wrathhall
     with pixellate
-    if choosen == "nolight":
+    if nolight:
         jump killbywraith
 
     f "The Archdruid warned me about these Wraithspawn. They are the creations of my quarry, this Demon of Shadow."
@@ -1126,7 +1134,7 @@ label choice1_done:
             jump choice2_take
 
     label choice2_ignore:
-        $ choosen = "nocoin"
+        $ nocoin = True
 
         f "Something is off about this. I should trust my gut. Much is amiss in this tomb, and I had best not tempt the spirits. One monster is enough…"
 
@@ -1135,7 +1143,7 @@ label choice1_done:
         hide coin
 
     label choice2_take:
-            $ choosen = "havecoin"
+            $ havecoin = True
             
             show coin at deadcenter
             with dissolve
@@ -1455,32 +1463,32 @@ label demonessresolution4:
 
 label neutralend:
 
-	scene endingscreen
-	with pixellate
+    scene endingscreen
+    with pixellate
 
-	#if the golem is been activated, then jump to golem waking up
-    if choosen == "golemactive":
+    #if the golem is been activated, then jump to golem waking up
+    if golemactive:
         jump golemstart
 
     jump witchstart
 
 label goodend:
 
-	scene endingscreen
-	with pixellate
+    scene endingscreen
+    with pixellate
 
-	#if the golem is been activated, then jump to golem waking up
-	if choosen == "golemactive":
-		jump golemstart
+    #if the golem is been activated, then jump to golem waking up
+    if golemactive:
+        jump golemstart
 
-	jump witchstart
+    jump witchstart
 
 label golemstart:
 
-	scene golemroom
-	with pixellate
+    scene golemroom
+    with pixellate
 
-	gl "Sensation… A touch…"
+    gl "Sensation… A touch…"
 
     gl "The touch is familiar, but so distant…"
 
@@ -1494,8 +1502,8 @@ label golemstart:
 
     label golemmirror:
 
-    $ golempulltogether = true
-    $ golembreakmirror = true
+    define golempulltogether = True
+    define golembreakmirror = True
 
     menu:
     
@@ -1524,7 +1532,7 @@ label golemstart:
 
             gl "The memory is indistinct, but tangible - out of reach. I must press on."
 
-            golempulltogether = false
+            $ golempulltogether = False
 
             jump golemmirror
 
@@ -1536,7 +1544,7 @@ label golemstart:
 
             gl "… I press on."
 
-            golembreakmirror = false
+            $ golembreakmirror = False
 
             jump golemmirror
 
@@ -1578,12 +1586,15 @@ label golemproceed:
 
     menu:
 
-		"Press on ahead":
+        "Press on ahead":
 
-			jump golemahead
+            jump golemgoblin
 
-		"Press on to the left:
+        "Press on to the left":
 
-			jump golemleft
+            jump golemadesse
 
-          
+label golemgoblin:
+
+    
+label golemadesse:

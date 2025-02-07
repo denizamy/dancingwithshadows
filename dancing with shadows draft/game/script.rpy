@@ -1342,10 +1342,7 @@ label demonessresolution1:
 
     stop music fadeout 15.0
 
-    #if the golem is been activated, then jump to golem waking up
-    if choosen == "golemactive":
-        jump golemstart
-    jump witchstart
+    jump neutralend
         
 label demonessresolution2:
 
@@ -1456,3 +1453,137 @@ label demonessresolution4:
 
     jump goodend
 
+label neutralend:
+
+	scene endingscreen
+	with pixellate
+
+	#if the golem is been activated, then jump to golem waking up
+    if choosen == "golemactive":
+        jump golemstart
+
+    jump witchstart
+
+label goodend:
+
+	scene endingscreen
+	with pixellate
+
+	#if the golem is been activated, then jump to golem waking up
+	if choosen == "golemactive":
+		jump golemstart
+
+	jump witchstart
+
+label golemstart:
+
+	scene golemroom
+	with pixellate
+
+	gl "Sensation… A touch…"
+
+    gl "The touch is familiar, but so distant…"
+
+    gl "Distant like another life."
+
+    gl "Sculpted from stone, was I. Once inert, once lifeless, but given life by my creator. Where is my creator? Who am I?"
+
+    gl "The memories are dark, with spots of color - feelings, and meaning almost indecipherable in the static."
+
+    gl "The music is gone. This one's creator is missing. There is nothing left. I must press on."
+
+    label golemmirror:
+
+    $ golempulltogether = true
+    $ golembreakmirror = true
+
+    menu:
+    
+        "Pull yourself together" if golempulltogether:
+
+            gl "Sundered, but not destroyed, I remain - and will persist, until this one's destruction."
+
+            n "The Golem wills its body into its proper configuration. The clamor of objects flying through the room lit by a bright blue flash as its stone body reassembles is unnoticed - or perhaps is just unremarkable to the Golem."
+
+            show golem:
+                alpha .3
+                alpha .5
+                alpha .7
+                alpha .9
+                alpha 1.0
+
+            n "A dirty mirror, covered in years of dust and grime. The Golem wipes away the thick coating of dust."
+
+            gl "This one's appearance is clarified - but this one's objective is unclear. Identity is lost - purpose, undetermined."
+    
+            gl "These mirrors are created by covering a glass pane with a tin-quicksilver amalgam, then heating the pane to evaporate the quicksilver."
+
+            gl "A protective covering of copper may be added to reduce corrosion. This one suspects this mirror has been treated with such a coating."
+
+            gl "Much like this one, it has endured the ravages of time. Like this one, it presses on without its creator - without purpose. How long has it been?"
+
+            gl "The memory is indistinct, but tangible - out of reach. I must press on."
+
+            golempulltogether = false
+
+            jump golemmirror
+
+        "Break the mirror" if golembreakmirror:
+
+            #TODO: Add sfx of glass breaking, image of broken mirror, etc.
+
+            gl "Memories of fury - of violence. I wish not to reflect. I wish not to suffer. I must not yearn."
+
+            gl "… I press on."
+
+            golembreakmirror = false
+
+            jump golemmirror
+
+        "Leave":
+
+            jump golempresson
+
+label golempresson:
+
+    #TODO: grayscale depiction of the cramped tunnel Julian passed through, with a trail of footprints / implied darkvision
+
+    n "The path is dark and cramped. A recent trail is seen in the dust."
+
+    gl "Footsteps in the dust. A human passed through here - not my creator . . . An interloper."
+
+    menu:
+
+        "Express Rage":
+                
+            gl "None may tread into my creator's sanctum. This interloper will be located, and exterminated."
+                
+            jump golemproceed
+
+        "Express Gratitude":
+
+            gl "This interloper stirred this one from an eternal reverie. This one is grateful. This one may seek its objective . . . once an objective is determined."
+
+            jump golemproceed
+
+        "Proceed":
+
+            jump golemproceed
+
+label golemproceed:
+
+    n "The Golem retraces Julian's steps to the crypt's atrium. It studies its surroundings - a sealed door to its right, unfamiliar stonework leading to an access tunnel of some kind dead ahead, and a path deeper into the crypt to its left."
+
+    gl "It is now clear to this one a considerable amount of time has passed in this one's reverie. I must press on."
+
+    menu:
+
+		"Press on ahead":
+
+			jump golemahead
+
+		"Press on to the left:
+
+			jump golemleft
+
+          

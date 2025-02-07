@@ -1995,5 +1995,24 @@ label golemescape5:
 
             n "This gives the Golem pause. It resolves to show the enemy of its enemy respect"
 
+            gl "The interloper perished to your spawn. You have this one's gratitude and admiration. I seek my creator."
+
+            n "The demoness wickedly quirks an eyebrow - her lips curl into a mischievous smile."
+
+            u "Oh, yes, yes, very good. And what are you? Who intrudes into my lair?"
+
+            "What is . . . my name?"
+
+            $x = "Character Name"
+
+            "I shall be [x]"
+            
+            gl "I am [x]"
+
+                    
+
+
+
+
 
 

@@ -442,7 +442,7 @@ label start:
     scene room1
     with pixellate
 
-    n "A great stone arch allows passage further in this dark place. 
+    n "A great stone arch allows passage further in this dark place."
 
     n "It seems the townsfolk or druids left a torch here for your use."
 

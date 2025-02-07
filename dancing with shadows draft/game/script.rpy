@@ -1088,11 +1088,20 @@ label choice1_done:
 
     j "It's so dark. Something here is wrong… It's too dark."
 
+    label badend:
+
     n "In the total darkness of the crypt, Julian is slain by the lurking spawn of the Demon of Shadow."
 
     n "This story, however, is far from over. Perchance, even Julian still has a role to play."
 
-    If 
+    scene endingscreen
+	with pixellate
+
+	#if the golem is been activated, then jump to golem waking up
+	if choosen == "golemactive":
+		jump golemstart
+
+	jump witchstart
 
 
     label momumentchamber:

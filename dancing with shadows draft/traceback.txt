@@ -1,14 +1,14 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 1492, in script
+  File "game/script.rpy", line 1685, in script
     jump witchstart
 ScriptError: could not find label 'witchstart'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 1492, in script
+  File "game/script.rpy", line 1685, in script
     jump witchstart
   File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\ast.py", line 1705, in execute
     rv = renpy.game.script.lookup(target)
@@ -19,4 +19,4 @@ ScriptError: could not find label 'witchstart'.
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.3.4.24120703
 dancing with shadows draft 1.0
-Fri Feb  7 10:59:52 2025
+Fri Feb  7 11:44:51 2025

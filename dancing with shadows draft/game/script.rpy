@@ -644,7 +644,7 @@ label cutbolt:
                 jump attackgoblin
 
         label flirtygoblin:
-            $ leftwithgoblin = True
+        $ leftwithgoblin = True
 
         "I can't believe I'm doing this."
 
@@ -813,11 +813,17 @@ label cutbolt:
 
         n "The newly acquainted pair part, for now - Inya, back to the sewers, and Julian, to an uncertain fate in an unfriendly world."
 
+        define leftwithgoblin = True
+        $ leftwithgoblin = True
+
+        if golemactive:
+            jump golemstart
+
         jump witchstart
 
 
     label attackgoblin:
-        $ goblindead = True
+    $ goblindead = True
 
     "I don't really know what I'm looking at, but I don't like it. It's time to get out of here - no witnesses."
 
@@ -847,6 +853,10 @@ label cutbolt:
     j "What did he call these things - a silvered blade and a shield capable of deflecting dark magic?"
 
     j "I'll have to keep an ear to the ground for the right buyers."
+
+    if golemactive:
+        jump golemstart
+
 
     jump witchstart
 
@@ -1614,6 +1624,117 @@ label golemproceed:
             jump golemadesse
 
 label golemgoblin:
+
+    if leftwithgoblin:
+        jump golemescape1
+    elif goblindead:
+        jump golemescape2
+    
+    jump golemescape3
+
+label golemescape1:
+
+    n "The footsteps continued in this direction. The Golem tirelessly pursues this interloper - and its objective, whenever it determines what its objective may be."
+    
+    scene goblinroom
+    with pixellate
+
+    gl "The interloper joined another. This one's senses indicate one is male - human. The other is . . . an unknown female."
+
+    gl "What am I? What I was once is of little consequence - memories are no more."
+
+    menu:
+        "I am male.":
+            gl "This one's creator sculpted this one in his perfect image. Like my creator, I am male."
+            $pronoun = "He"
+            $pronouns = "his"
+        "I am female.":
+            gl "This one's creator sculpted this one to serve as his counterpart and compliment. I am female."
+            $pronoun = "She"
+            $pronouns = "her"
+        "I am something else.":
+            gl "This one is… this one. I am neither male nor female. This one's identity is this one's. Flesh, I am not. Mortal, I am not. I have been created for a purpose. This purpose is undefined. This purpose must be defined."
+            $pronoun = "It"
+            $pronouns = "its"
+
+    
+    n "[pronoun] concentrates, divining information about 'the interloper' and his acquaintance using [pronouns] recalled latent magical ability to do so."
+
+    "Skill recalled: Divination"
+
+    gl ". . . The interloper is a human male named Julian. He is deeply conflicted. His life is unpredictable and dreary."
+
+    gl "He has little trust. He was curious, cautiously hopeful and bemused."
+
+    gl "His acquaintance is named Zanya, although she has assumed the alias 'Inya'. Undocumented species. Humanoid. Assessing . . ."
+
+    gl "Likely an offshoot of humans engineered by sorcery to survive in inhospitable conditions. Slightly extended lifespan and hardiness."
+
+    gl "Reduced temperament and intellect. She was excited, insecure, and infatuated. Strong counterpoint to general emotional state."
+
+    scene blackscreen
+    with longdissolve
+
+    scene endingscreen
+    with longdissolve
+
+    gl "I have many questions. Perhaps this interloper will elucidate my purpose."
+
+    n "[x] pursues Julian and Inya through the sewers, tirelessly. [pronoun] takes stock of Inya's deviation from Julian's path, but resolves to pursue Julian in the hopes of finding answers - and a purpose."
+    
+    jump witchstart
+label golemescape2:
+
+    n "The footsteps continued in this direction. The Golem tirelessly pursues this interloper - and its objective, whenever it determines what its objective may be."
+    
+    scene goblinroom
+    with pixellate
+
+    gl "The interloper joined another. This one's senses indicate one is male - human. His name is Julian Grymwald."
+    gl "The other is . . . an unknown female. Deceased.  The female was named Zanya, although she assumed the alias 'Inya'."
+
+    n "The Golem gingerly picks up the goblin's corpse, handling it with care. It inspects the wounds, then carefully deposits the goblin where it previously lied."
+
+    n "Tenderly, the Golem closes the goblin's eyelids."
+
+    n "The Golem concentrates, divining information about 'the interloper' and his acquaintance using their recalled latent magical ability to do so"
+
+    "Skill recalled: Divination"
+
+    gl "Fear was the last emotion she felt. A sting of betrayal - fading optimism and curiosity."
+
+    gl "The interloper - the intruder in this one's master's domain fled. Senseless cowardice. Shame and guilt. The interloper has much to answer for. This is not the first murder he committed. He shall answer for his crimes."
+
+    n "Using its recalled skill, the Golem pondered on what this information meant, and how it relates to it."
+        
+    gl "What am I? What I was once is of little consequence - memories are no more."
+
+    menu:
+        "I am male.":
+            gl "This one's creator sculpted this one in his perfect image. Like my creator, I am male."
+            $pronoun = "He"
+            $pronouns = "his"
+        "I am female.":
+            gl "This one's creator sculpted this one to serve as his counterpart and compliment. I am female."
+            $pronoun = "She"
+            $pronouns = "her"
+        "I am something else.":
+            gl "This one is… this one. I am neither male nor female. This one's identity is this one's. Flesh, I am not. Mortal, I am not. I have been created for a purpose. This purpose is undefined. This purpose must be defined."
+            $pronoun = "It"
+            $pronouns = "its"
+
+    scene blackscreen
+    with longdissolve
+
+    scene endingscreen
+    with longdissolve
+
+    n "The Golem followed Julian's trail through the sewers, exiting to the city streets. [pronoun] found [pronous] purpose and [pronous] objective."
+    
+    n "The conclusion and confrontation between the golem and Julian will play out, in time."
+
+    jump witchstart
+
 
     
 label golemadesse:

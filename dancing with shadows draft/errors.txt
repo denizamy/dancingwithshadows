@@ -2,17 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 1649: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    $pronoun = "He"
-    ^
-
-File "game/script.rpy", line 1652: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    $pronoun = "She"
-    ^
-
-File "game/script.rpy", line 1655: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    $pronoun = "It"
+File "game/script.rpy", line 1752: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    jump golemescape4
     ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Fri Feb  7 11:41:36 2025
+Fri Feb  7 12:39:08 2025

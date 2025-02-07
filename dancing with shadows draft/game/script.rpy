@@ -644,7 +644,6 @@ label cutbolt:
                 jump attackgoblin
 
         label flirtygoblin:
-        $ leftwithgoblin = True
 
         "I can't believe I'm doing this."
 
@@ -823,7 +822,6 @@ label cutbolt:
 
 
     label attackgoblin:
-    $ goblindead = True
 
     "I don't really know what I'm looking at, but I don't like it. It's time to get out of here - no witnesses."
 
@@ -845,6 +843,7 @@ label cutbolt:
 
     n "Alone he remained, with only the stolen goods loaned to him by the Archdruid to keep him company."
 
+
     scene endingscreen
     with pixellate
 
@@ -853,6 +852,9 @@ label cutbolt:
     j "What did he call these things - a silvered blade and a shield capable of deflecting dark magic?"
 
     j "I'll have to keep an ear to the ground for the right buyers."
+
+    define goblindead = True
+    $ leftwithgoblin = False
 
     if golemactive:
         jump golemstart
@@ -1627,6 +1629,7 @@ label golemgoblin:
 
     if leftwithgoblin:
         jump golemescape1
+
     elif goblindead:
         jump golemescape2
     
@@ -1683,6 +1686,7 @@ label golemescape1:
     n "[x] pursues Julian and Inya through the sewers, tirelessly. [pronoun] takes stock of Inya's deviation from Julian's path, but resolves to pursue Julian in the hopes of finding answers - and a purpose."
     
     jump witchstart
+
 label golemescape2:
 
     n "The footsteps continued in this direction. The Golem tirelessly pursues this interloper - and its objective, whenever it determines what its objective may be."
@@ -1729,11 +1733,221 @@ label golemescape2:
     scene endingscreen
     with longdissolve
 
-    n "The Golem followed Julian's trail through the sewers, exiting to the city streets. [pronoun] found [pronous] purpose and [pronous] objective."
+    n "The Golem followed Julian's trail through the sewers, exiting to the city streets. [pronoun] found [pronouns] purpose and [pronouns] objective."
     
     n "The conclusion and confrontation between the golem and Julian will play out, in time."
 
     jump witchstart
+
+label golemescape3:
+    
+    n "The footsteps deviate to the left. This gives the Golem pause."
+
+    menu:
+
+        "Reconsider your pursuit, and investigate the access tunnel":
+            gl "This merits a closer investigation. The interloper cannot elude this one forever."
+            gl "This one does not sleep. This one does not eat. This one shall pursue this one's quarry tirelessly."
+
+            jump golemescape4
+
+        "Pursue the Interloper":
+
+            jump golemadesse
+
+label golemescape4:
+
+    n "The way is blocked by iron bars. The Golem pauses, reflecting on the obstacle."
+
+    "Skill recalled: Surge of Strength"
+
+    n "Mere iron cannot stop the Golem. It snaps the bars like insignificant twigs."
+
+    scene goblinroom
+    with pixellate
+
+    g "Whoa! Hey! Don't hurt me!"
+
+    show goblin
+
+    n "A tiny form, compared to the Golem, stirs in the darkness. A moment of eye shine in the scant light betrays her position to the Golem."
+
+    n "This development gives the Golem pause, who reflects on this development."
+
+    "This creature presents me no threat. It appears to carry a blowgun, which fires darts traditionally bearing poisons harmful to organic creatures."
+
+    "Flesh, I am not. Threatened, I am not. This unknown creature poses no threat to "
+
+    gl "You pose no threat to this one. You shall not be harmed, if you remain pacified."
+
+    g "Huh? Why do you talk like that? Who is that one?"
+
+    gl "I am this one."
+
+    g "Nobody talks like that. But um… You're really strong, that's so cool! What's your name?"
+
+    "What is . . . my name?"
+    $x = "character name"
+
+    "I shall be [x]."
+
+    "I am [x]."
+
+    g "Okay, [x]. What are you? I've never seen anything like you, you're so cool."
+
+    gl "I do not experience temperature as an organic creature - such as yourself does."
+
+    gl "If I am too hot, I melt. If I am too cold, I can no longer move. There is no discomfort."
+
+    g "Yeah… okay. I don't know why any of that matters, but you seem nice. I'm Inya."
+
+    gl "Understood, Inya. Do you know the fate of my creator, or the interloper?"
+
+    n "Inya laughs, caught off guard. She seems to find delight in verbally prodding this anomaly."
+
+    i "I don't know what any of that means."
+
+    i "Are you a boy or a girl, [x]?"
+    
+    "What am I? What I was once is of little consequence - memories are no more."
+
+    menu:
+        "I am male.":
+            "This one's creator sculpted this one in his perfect image. Like my creator, I am male."
+            $pronoun = "He"
+            $pronouns = "his"
+            $selection = "male"
+        "I am female.":
+            "This one's creator sculpted this one to serve as his counterpart and compliment. I am female."
+            $pronoun = "She"
+            $pronouns = "her"
+            $selection = "female"
+        "I am something else.":
+            "This one is… this one. I am neither male nor female. This one's identity is this one's. Flesh, I am not. Mortal, I am not. I have been created for a purpose. This purpose is undefined. This purpose must be defined."
+            $pronoun = "It"
+            $pronouns = "its"
+            $selection = "something else"
+
+    "I am as I choose."
+
+    n "Inya glances at [x] quizzically in its moment of introspection."
+
+    i "I'm sorry… I guess you probably don't work like us?"
+
+    gl "I have concluded I am [selection]."
+
+    i "You take a while to think. Sometimes I do that too. What are you doing down here anyway? Where did you come from?"
+
+    gl "Parameters unclear. My purpose is to find the interloper and my creator."
+
+    i "Someone made you, and the interloper did something bad?"
+
+    n "Inya appears genuinely puzzled."
+
+    gl "Correct."
+
+    n "She nods along, appearing perplexed for just a moment."
+
+    i "We're both uh… fre- outcasts, right? Maybe we can be friends?"
+
+    n "[x] takes a long time to consider this possibility. It knew what friendship is, in abstract, but never considered the possibility it could have a friend."
+
+    menu:
+
+        "Accept":
+            gl " I find these terms acceptable."
+
+            n "Inya appears positively delighted to have a new giant, powerful sidekick."
+
+            i "Yay! Okay, there's something I've always wanted to do. Since we're friends, maybe you can help me."
+
+            gl "State your request, creature of flesh."
+
+            i "I was getting to that! So… for a while now, I've wanted to make a human friend."
+
+            i "We could all be friends. They're afraid of me, and every time I've tried, well… it hasn't gone well."
+
+            i "If I'm riding on your shoulders, they'd have to at least hear me out, right?"
+
+            i "No more rocks, no more bows pointed at me… It could work!"
+
+            gl "Your plan is ill conceived, creature of flesh. However, as your… friend… I shall humor it."
+
+            i "Um… okay. Thanks I guess. Do you have a better idea?"
+
+            gl "I do not."
+
+            i "So you agree then, great! I'll lead you to the surface, and then we can… I don't know, we can figure it out."
+
+            gl "I have professed my compliance, friend. We shall proceed."
+
+            scene endingscreen
+            with longdissolve
+
+            n "Inya nods, contextually learning new vocabulary words from [x] as they speak."
+            
+            n "She appears to be genuinely hopeful and excited for this new adventure. "
+
+            n "The pair leave immediately, heading through the sewers to the city as they prepare to execute Inya's ill-conceived scheme."
+
+            jump witchstart
+
+        "Refuse":
+            gl "There is no purpose in affecting 'friendship'. I am stone, and you are flesh."
+
+            n "Inya looks genuinely hurt, and gravely disappointed. Her optimism was dashed away in an instant."
+
+            i "I guess you've made up your mind then."
+
+            gl "Indeed. It is not meant to be, creature of flesh. We must part ways."
+
+            n "Tears well up in the goblin's tiny pink eyes."
+
+            i "Okay… I'm leaving then. I don't care what you do."
+
+            n "Inya walks off into the sewers she made her home, almost managing to sound sincere." 
+            
+            n "Her quiet sobbing betrays her true emotions, however."
+
+            "My purpose is undefined. I must not linger."
+
+            scene endingscreen 
+            with longdissolve  
+            
+            n "[x] proceeds through the sewer system into the city, ignoring the echoes of the sobbing heartbroken goblin as stoically as stone."
+
+            n "[pronoun] knew not what awaited them in this cold world, but [pronoun] was prepared for it."
+
+            n "[pronoun] knew not what awaited them in this cold world, but [pronoun] was prepared for it."
+
+            jump witchstart
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     

@@ -11,8 +11,8 @@ define g = Character("Goblin",color="60e683")
 define u = Character("Demoness")
 define x = Character("Unknown Voice",color="652EAF")
 define i = Character("Inya",color ="ff5dcf")
+define t = Character("Tess",color="eebf00")
 define gl = Character("Golem")
-define dm = Character("Demoness")
 
 
 image sword = "sword.png"
@@ -1194,25 +1194,178 @@ n "There - on the other side of the platform, the shadows take shape - the demon
 
 show addesse at deadcenter with dissolve
 
-dm "Many other mortals have fled, yet here you are… Did you mean to assail me here, in my chosen domain? Are you lost, Julian?"
+u "Many other mortals have fled, yet here you are… Did you mean to assail me here, in my chosen domain? Are you lost, Julian?"
 
-menu:
-        "Fight the demoness":
-            jump fightdemoness
-            j "You will haunt this place no longer, foul demon! Face me!"
-            n "The demoness fires a barrage of needle-like spines of solid shadow."
+label fightorquestiondemoness1
 
+    menu:
+            "Fight the demoness":
 
+                j "You will haunt this place no longer, foul demon! Face me!"
+                
+                n "The demoness fires a barrage of needle-like spines of solid shadow."
+            
+                jump fightdemoness1              
 
+            "Question the demoness":
 
-        "Question the demoness":
-            jump questiondemoness
-            j "Are you? I see - you divined my name."
-            "(stumbling over words)"
-            j "You, uh... look different from uh, what I expected."
+                j "Are you? I see - you divined my name."
+                
+                "(stumbling over words)"
+                
+                j "You, uh... look different from uh, what I expected."
+                
+                jump questiondemoness1
 
+label fightdemoness1
 
+	n "The demoness fires a barrage of needle-like spines of solid shadow."
 
+	menu:
+		"Dodge":
+			jump dodgedemoness1
+			
+		"Block":
+			jump blockdemoness1
 
+        "Attack":
+            jump attackdemoness1
 
+label dodgedemoness1
+
+	j "I can see the shadows moving, I can dodge them!"
+	n "Julian dodges the demoness' attack."
+	j "I can do this. I can do this."
+	n "The demoness fires another barrage of needle-like spines of solid shadow."
+    jump fightdemoness2
+
+label blockdemoness1
+
+	j "I can block them with my shield!"
+	n "The dark magic spines melt like snow against Julian's blessed shield.  The deomoness gathers energy for her next spell, giving Julian an opportunity to strike."
+	jump fightdemoness2
+
+label attackdemoness1
+	j "I can strike her now!"
+	n "Julian's opportunity to strike is lost as the demoness fires another barrage of needle-like spines of solid shadow."
+	jump fightdemoness2
+
+label fightdemoness2
+
+    menu:
+        "Dodge":
+        	jump dodgedemoness2
+    
+        "Block":
+            jump blockdemoness2
+
+        "Attack":
+			jump attackdemoness2
+
+label dodgedemoness2
+
+	j "I've changed my mind, hold your strike and let's talk..."
+    jump fightorquestiondemoness1
+
+label blockdemoness2
+
+	n "Julian's opportunity to strike was squandered. The demoness finishes casting her spell, sending razorblades of darkness hurtling towards Julian from all directions. Perhaps thanks to his armor or an absurdly good stroke of luck, he manages to cling to life and consciousness, but only just."
+    jump demonessresolution1
+
+label attackdemoness2
+    n "A desperate, vicious strike. A fateful strike. Abandoning caution, Julian hurtles towards his foe. In a confluence of circumstance and power, desperation and need, he executes an overhead swing with his Demonslaying Blade. The demoness's self-satisfied expression fades as the blade slices through her cranium."
+    
+    j "There's… no blood. But it's gone. I can feel its absence."
+    
+    jump demonessresolution2
+
+label demonessresolution1
+
+	n "Julian's vision blurs as he bleeds out against the cold stone. Revealed in blood-blurred snapshots as he blinks, unbelievably, he sees a warrior doing battle with the Demon of Shadow. A few moments of combat pass, and then silence. The room fills with the smell of sweet sulfur, and Julian, losing consciousness, feels a slight stab of pain. His hero - this masked avenger crouches down to check his vitals and speaks in a soft, deep female voice."
+
+    t "You shouldn't be here. Did Nikolai put you up to this?"
+
+    n "The warrior sighs, audibly unbuckling the clasp securing her pack, and withdraws salves, a splint kit, a needle, and thread."
+
+    t "If you can hear me… I'm going to tend to your wounds. This is going to hurt a lot. You've proven your bravery, soldier. I just need you to hang in there just a little bit longer."
+
+    n "The warrior sutures Julian's wounds and stops the worst of his bleeding. Time lost meaning to Julian, amidst the agony of his countless injuries. And yet, somehow, he clings to consciousness."
+
+    t "C'mon, stay with me… you can't die on me just yet."
+
+    t "I've tended to your scrapes and stopped the bleeding. You're doing great, but we're not out of the woods yet. I'm going to set your leg. Bite down if you need to, or you're going to bite through your tongue and suffocate on your own blood."
+
+    n "Bleary-eyed, Julian scans the room. There is no trace of the demon - save a suspicious, soft-looking stone where she fell. Likewise, the shadows have stopped moving of their own accord. He looks over to his savior."
+
+    n "Until she spoke, he had no indication this powerful warrior was a woman. She eschews armor for green and brown traveler's leathers, adorned with protective talismans. Her longboots are characteristic of the locality. Her saw-toothed metal staff and iron mask strike Julian as distinct, but wracking his brain, he comes up with nothing for their origin. Whomever she is, she is a skilled warrior and healer."
+
+    n "The warrior slips a bit made of hard rubber into Julian's mouth and prepares to set his leg."
+
+    t "Stay with me here..."
+
+    t "3..."
+
+    t "2..."
+
+    t "1..."
+
+    n "An audible crunch disturbs the silence of the chamber as she sets the bone. Julian, despite his wounded and half-conscious state, lets out a muffled wail, biting down hard on the bit."
+
+    t "We're almost done. Hang in there. You're doing great."
+
+    n "The warrior removes his plated leggings and rips his pant leg, using the material to bind the splint."
+
+    t "I'm going to pick you up. It's going to hurt a bit. You really shouldn't be moved in this condition, but we're not exactly swimming in options. You're in good hands. You can leave as soon as you have recovered, but I'm going to have some questions for you first. You can call me Tess. I think you're brave, for whatever that's worth."
+
+    n "Tess carefully heaves Julian over her shoulder. Julian passes out shortly thereafter."
+
+	scene blackscreen
+	with longdissolve
+
+	stop music fadeout 15.0
+
+    #if the golem is been activated, then jump to golem waking up
+    if choosen == "golemactive":
+		jump golemstart
+	jump witchstart
+        
+label demonessresolution2
+
+    j "The deed is done. The demon is vanquished. Strange, it seems the foul harpy left a trinket among her remains. A soft, sulfurous stone - proof of my victory. It’s a shame to fell such a striking beauty. It invaded my mind… and seemed to know me. Perplexing, and dangerous. Why do I feel a sense of loss? An emptiness, left in the wake of my fallen foe? I had best put aside these thoughts. I should return promptly to the Archdruid, for he will want word of my success."
+
+    scene blackscreen
+    with longdissolve
+
+    stop music fadeout 15.0
+
+    jump neutralend
+
+label questiondemoness1
+
+    n "The demoness narrows her eyes and scowls."
+
+    u "My nature dictates me to assume a form that resonates with the desires of those who behold me. Perhaps you would be best served reflecting on your own preferences... This parley tires me - accept this small mercy before I reconsider. I have harmed none of the hapless fools who wandered into my domain, and I extend the same courtesy to you - in honor of the dead. This place is meant for the grieving, is it not? Leave me to grieve."
+
+    label fightorquestiondemoness2
+    
+    menu:
+		"Fight the demoness":
+
+			n "Drawing your blade, you steel yourself for battle."
+			
+			j "The Archdruid cautioned me against the lies of your kind. You’re afraid, monster - and I am no fool. If you have an ounce of honor, face me. I offer you a duel. Your life or mine. Let us settle this now."
+		
+			jump fightdemoness1              
+
+		"Question the demoness":
+
+			n "Contemplating the small atrocities this fiend has personally wrought in this tomb, you withdraw the antique coin you collected on the upper levels."
+
+            j "Your kind only sows grief with every new widow and orphan you leave to face this world alone. To grieve, you have to feel loss. What could you possibly know of grief"		
+		
+			jump questiondemoness2
+
+label questiondemoness2
+
+    n "The demoness’s eyes look distant, and she appears forlorn."
 

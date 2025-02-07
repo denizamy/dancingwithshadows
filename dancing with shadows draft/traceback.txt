@@ -1,22 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 1159, in script
-    jump ladderdown
-ScriptError: could not find label 'ladderdown'.
+  File "game/script.rpy", line 778, in script
+    jump witchstart
+ScriptError: could not find label 'witchstart'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 1159, in script
-    jump ladderdown
-  File "D:\dws renpy test fuck me\dancingwithshadows\renpy\ast.py", line 1705, in execute
+  File "game/script.rpy", line 778, in script
+    jump witchstart
+  File "E:\GitHub\dancingwithshadows\renpy\ast.py", line 1705, in execute
     rv = renpy.game.script.lookup(target)
-  File "D:\dws renpy test fuck me\dancingwithshadows\renpy\script.py", line 1103, in lookup
+  File "E:\GitHub\dancingwithshadows\renpy\script.py", line 1103, in lookup
     raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'ladderdown'.
+ScriptError: could not find label 'witchstart'.
 
-Windows-10-10.0.19045 AMD64
+Windows-10-10.0.22631 AMD64
 Ren'Py 8.3.4.24120703
 dancing with shadows draft 1.0
-Fri Feb  7 01:01:21 2025
+Thu Feb  6 23:42:45 2025

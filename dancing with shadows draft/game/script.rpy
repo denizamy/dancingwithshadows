@@ -803,7 +803,7 @@ label cutbolt:
 
     n "Alone he remained, with only the stolen goods loaned to him by the Archdruid to keep him company."
 
-    scene blackscreen
+    scene endingscreen
     with pixellate
 
     j "I had best lay low for a while. That magician will inevitably send cronies after me if he really did have one hundred crowns to just throw around. "

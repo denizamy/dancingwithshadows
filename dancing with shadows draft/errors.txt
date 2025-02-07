@@ -2,9 +2,37 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 1206: expected statement.
-    adesse transform move_slide:
+File "game/script.rpy", line 220: expected statement.
+    acceptdruid = True
+                ^
+
+File "game/script.rpy", line 223: expected statement.
+    noacceptdruid = True
+                  ^
+
+File "game/script.rpy", line 1028: expected statement.
+    light = True
+          ^
+
+File "game/script.rpy", line 1049: expected statement.
+    nolight = True
+            ^
+
+File "game/script.rpy", line 1138: expected statement.
+    nocoin = True
            ^
 
+File "game/script.rpy", line 1147: expected statement.
+    havecoin = True
+             ^
+
+File "game/script.rpy", line 1536: expected statement.
+    golempulltogether = false
+                      ^
+
+File "game/script.rpy", line 1548: expected statement.
+    golembreakmirror = false
+                     ^
+
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Fri Feb  7 05:27:14 2025
+Fri Feb  7 06:17:01 2025

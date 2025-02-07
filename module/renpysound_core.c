@@ -601,7 +601,7 @@ static int check_channel(int c) {
 
         for (i = num_channels; i <= c; i++) {
 
-        	memset(&channels[i], 0, sizeof(struct Channel));
+            memset(&channels[i], 0, sizeof(struct Channel));
 
             channels[i].mixer_volume = 1.0;
             channels[i].paused = 0;
@@ -1290,9 +1290,9 @@ int RPS_video_ready(int channel) {
  * Marks channel as a video channel.
  */
 void RPS_set_video(int channel, int video) {
-	struct Channel *c;
+    struct Channel *c;
 
-	if (check_channel(channel)) {
+    if (check_channel(channel)) {
         return;
     }
 
@@ -1435,7 +1435,7 @@ void RPS_periodic() {
 }
 
 void RPS_advance_time(void) {
-	media_advance_time();
+    media_advance_time();
 }
 
 
@@ -1443,9 +1443,9 @@ void RPS_sample_surfaces(PyObject *rgb, PyObject *rgba) {
     import_pygame_sdl2();
 
     media_sample_surfaces(
-			PySurface_AsSurface(rgb),
-			PySurface_AsSurface(rgba)
-		);
+            PySurface_AsSurface(rgb),
+            PySurface_AsSurface(rgba)
+        );
 
 }
 

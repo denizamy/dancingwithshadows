@@ -1,22 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 778, in script
-    jump witchstart
-ScriptError: could not find label 'witchstart'.
+  File "game/script.rpy", line 1443, in script
+    jump goodend
+ScriptError: could not find label 'goodend'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 778, in script
-    jump witchstart
+  File "game/script.rpy", line 1443, in script
+    jump goodend
   File "E:\GitHub\dancingwithshadows\renpy\ast.py", line 1705, in execute
     rv = renpy.game.script.lookup(target)
   File "E:\GitHub\dancingwithshadows\renpy\script.py", line 1103, in lookup
     raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'witchstart'.
+ScriptError: could not find label 'goodend'.
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.3.4.24120703
 dancing with shadows draft 1.0
-Thu Feb  6 23:42:45 2025
+Fri Feb  7 05:34:13 2025

@@ -1186,6 +1186,8 @@ menu:
             jump atrium
             with longdissolve
 
+label ladderdown:
+
 "The shadows dance here, I must be close. There is a narrow walkway encircling an open pit, where the less fortunate are tossed to rot."
 "At least these are embalmed - a small courtesy for the poor."
 "It's a dead end. The demon is surely here. But where?"
@@ -1198,7 +1200,13 @@ n "There - on the other side of the platform, the shadows take shape - the demon
 "… … … "
 "What in the world?"
 
-show addesse at deadcenter with dissolve
+#show adesse with slide Down
+
+show adesse:
+    size (1240, 1754)
+    xalign 0.5 yalign 1.0
+    linear 6.0 yalign 0.0
+
 
 u "Many other mortals have fled, yet here you are… Did you mean to assail me here, in my chosen domain? Are you lost, Julian?"
 
@@ -1207,9 +1215,7 @@ label fightorquestiondemoness1:
     menu:
             "Fight the demoness":
 
-                j "You will haunt this place no longer, foul demon! Face me!"
-                
-                n "The demoness fires a barrage of needle-like spines of solid shadow."
+                j "You will haunt this place no longer, foul demon! Face me!"        
             
                 jump fightdemoness1              
 
@@ -1227,55 +1233,55 @@ label fightdemoness1:
 
     n "The demoness fires a barrage of needle-like spines of solid shadow."
 
-	menu:
-		"Dodge":
-			jump dodgedemoness1
-			
-		"Block":
-			jump blockdemoness1
+    menu:
+        "Dodge":
+            jump dodgedemoness1
+            
+        "Block":
+            jump blockdemoness1
 
         "Attack":
             jump attackdemoness1
 
 label dodgedemoness1:
 
-	j "I can see the shadows moving, I can dodge them!"
-	n "Julian dodges the demoness' attack."
-	j "I can do this. I can do this."
-	n "The demoness fires another barrage of needle-like spines of solid shadow."
+    j "I can see the shadows moving, I can dodge them!"
+    n "Julian dodges the demoness' attack."
+    j "I can do this. I can do this."
+    n "The demoness fires another barrage of needle-like spines of solid shadow."
     jump fightdemoness2
 
 label blockdemoness1:
 
-	j "I can block them with my shield!"
-	n "The dark magic spines melt like snow against Julian's blessed shield.  The deomoness gathers energy for her next spell, giving Julian an opportunity to strike."
-	jump fightdemoness2
+    j "I can block them with my shield!"
+    n "The dark magic spines melt like snow against Julian's blessed shield.  The deomoness gathers energy for her next spell, giving Julian an opportunity to strike."
+    jump fightdemoness2
 
 label attackdemoness1:
-	j "I can strike her now!"
-	n "Julian's opportunity to strike is lost as the demoness fires another barrage of needle-like spines of solid shadow."
-	jump fightdemoness2
+    j "I can strike her now!"
+    n "Julian's opportunity to strike is lost as the demoness fires another barrage of needle-like spines of solid shadow."
+    jump fightdemoness2
 
 label fightdemoness2:
 
     menu:
         "Dodge":
-        	jump dodgedemoness2
+            jump dodgedemoness2
     
         "Block":
             jump blockdemoness2
 
         "Attack":
-			jump attackdemoness2
+            jump attackdemoness2
 
 label dodgedemoness2:
 
-	j "I've changed my mind, hold your strike and let's talk..."
+    j "I've changed my mind, hold your strike and let's talk..."
     jump fightorquestiondemoness1
 
 label blockdemoness2:
 
-	n "Julian's opportunity to strike was squandered. The demoness finishes casting her spell, sending razorblades of darkness hurtling towards Julian from all directions. Perhaps thanks to his armor or an absurdly good stroke of luck, he manages to cling to life and consciousness, but only just."
+    n "Julian's opportunity to strike was squandered. The demoness finishes casting her spell, sending razorblades of darkness hurtling towards Julian from all directions. Perhaps thanks to his armor or an absurdly good stroke of luck, he manages to cling to life and consciousness, but only just."
     jump demonessresolution1
 
 label attackdemoness2:
@@ -1287,7 +1293,7 @@ label attackdemoness2:
 
 label demonessresolution1:
 
-	n "Julian's vision blurs as he bleeds out against the cold stone. Revealed in blood-blurred snapshots as he blinks, unbelievably, he sees a warrior doing battle with the Demon of Shadow. A few moments of combat pass, and then silence. The room fills with the smell of sweet sulfur, and Julian, losing consciousness, feels a slight stab of pain. His hero - this masked avenger crouches down to check his vitals and speaks in a soft, deep female voice."
+    n "Julian's vision blurs as he bleeds out against the cold stone. Revealed in blood-blurred snapshots as he blinks, unbelievably, he sees a warrior doing battle with the Demon of Shadow. A few moments of combat pass, and then silence. The room fills with the smell of sweet sulfur, and Julian, losing consciousness, feels a slight stab of pain. His hero - this masked avenger crouches down to check his vitals and speaks in a soft, deep female voice."
 
     t "You shouldn't be here. Did Nikolai put you up to this?"
 
@@ -1325,15 +1331,15 @@ label demonessresolution1:
 
     n "Tess carefully heaves Julian over her shoulder. Julian passes out shortly thereafter."
 
-	scene blackscreen
-	with longdissolve
+    scene blackscreen
+    with longdissolve
 
-	stop music fadeout 15.0
+    stop music fadeout 15.0
 
     #if the golem is been activated, then jump to golem waking up
     if choosen == "golemactive":
-		jump golemstart
-	jump witchstart
+        jump golemstart
+    jump witchstart
         
 label demonessresolution2:
 
@@ -1349,35 +1355,39 @@ label demonessresolution2:
 label questiondemoness1:
 
     hide adesse
-    show adesse_angry at deadcenter
+    show adesse_angry:
+        size (1240, 1754)
+        xalign 0.5 yalign 0.0
 
     n "The demoness narrows her eyes and scowls."
 
     u "My nature dictates me to assume a form that resonates with the desires of those who behold me. Perhaps you would be best served reflecting on your own preferences... This parley tires me - accept this small mercy before I reconsider. I have harmed none of the hapless fools who wandered into my domain, and I extend the same courtesy to you - in honor of the dead. This place is meant for the grieving, is it not? Leave me to grieve."
 
-    label fightorquestiondemoness2
+    label fightorquestiondemoness2:
     
     menu:
-		"Fight the demoness":
+        "Fight the demoness":
 
-			n "Drawing your blade, you steel yourself for battle."
-			
-			j "The Archdruid cautioned me against the lies of your kind. You’re afraid, monster - and I am no fool. If you have an ounce of honor, face me. I offer you a duel. Your life or mine. Let us settle this now."
-		
-			jump fightdemoness1              
+            n "Drawing your blade, you steel yourself for battle."
+            
+            j "The Archdruid cautioned me against the lies of your kind. You’re afraid, monster - and I am no fool. If you have an ounce of honor, face me. I offer you a duel. Your life or mine. Let us settle this now."
+        
+            jump fightdemoness1              
 
-		"Question the demoness":
+        "Question the demoness":
 
-			n "Contemplating the small atrocities this fiend has personally wrought in this tomb, you withdraw the antique coin you collected on the upper levels."
+            n "Contemplating the small atrocities this fiend has personally wrought in this tomb, you withdraw the antique coin you collected on the upper levels."
 
-            j "Your kind only sows grief with every new widow and orphan you leave to face this world alone. To grieve, you have to feel loss. What could you possibly know of grief"		
-		
-			jump questiondemoness2
+            j "Your kind only sows grief with every new widow and orphan you leave to face this world alone. To grieve, you have to feel loss. What could you possibly know of grief"        
+        
+            jump questiondemoness2
 
 label questiondemoness2:
 
     hide adesse_angry
-    show adesse_distant at deadcenter
+    show adesse_distant:
+        size (1240, 1754)
+        xalign 0.5 yalign 0.0
 
     n "The demoness’s eyes look distant, and she appears forlorn."
 
@@ -1391,7 +1401,7 @@ label questiondemoness2:
             jump demonessresolution3
 
         "This coin was hers, then? The druids tell many horrible tales of your kind - never have I heard of a demon grieving for a lost mortal.":
-			
+            
             n "You continue on deliberately, despite your apprehension, ensuring to choose your words with great care. For the briefest moment, you consider if you were misled by the Archdruid. Ultimately, who could know?"
             
             j "May she rest in peace. Your fallen paramour must have been truly special."
@@ -1401,7 +1411,9 @@ label questiondemoness2:
 label demonessresolution3:
 
     hide adesse_distant
-    show adesse_neutral at deadcenter
+    show adesse_neutral:
+        size (1240, 1754)
+        xalign 0.5 yalign 0.0
 
     u "You are most unusual and merciful for one who has lived such a dastardly life, Julian. Only an orphan such as yourself could truly understand that sting of loss… The druids caution many against the worst atrocities of my kind, and they speak true…  We part, monster and murderer. We shall meet again."
 
@@ -1414,7 +1426,9 @@ label demonessresolution3:
 label demonessresolution4:
 
     hide adesse_distant
-    show adesse_flirty at deadcenter
+    show adesse_flirty:
+        size (1240, 1754)
+        xalign 0.5 yalign 0.0
 
     n "The dark energies dance in the room, possibly reflecting the demon’s state of mind. Her expression softens. She seems incapable of tears, perhaps due to her nature."
 

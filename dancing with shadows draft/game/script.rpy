@@ -13,6 +13,8 @@ define x = Character("Unknown Voice",color="652EAF")
 define i = Character("Inya",color ="ff5dcf")
 define gl = Character("Golem")
 
+
+
 image sword = "sword.png"
 image shield = "Shield.webp"
 image backpack = "backpack.png"
@@ -27,7 +29,6 @@ image blackscreen = "blackscreen.jpg"
 image coin = "thecoin.png"
 image golem = "golem.png"
 image adesse = "adessefull.jpg"
-
 
 
 
@@ -358,9 +359,9 @@ label start:
 
     n "Along the way, he heard rumors of locals being harassed when mourning their dead, statues and monuments within the crypt being toppled, and unsettling shadows darting around the crypt, irrespective of the lack of wind and torch."
 
-     "The Archdruid told me my quarry is a Demon of Shadow - not a trivial, nor a major demon. I should be on my guard."
+    "The Archdruid told me my quarry is a Demon of Shadow - not a trivial, nor a major demon. I should be on my guard."
 
-     "The blasted thing must be inside. I should keep stock of my belongings before I head in."
+    "The blasted thing must be inside. I should keep stock of my belongings before I head in."
 
     hide crypt with dissolve
 
@@ -423,12 +424,12 @@ label start:
 
     n "You are trapped down here with the demon, and it with you, until one of you perishes."
 
-    "Torchlight glints off of brass embellishments on the sarcophagi populating this moderately impressive tomb.
+    "Torchlight glints off of brass embellishments on the sarcophagi populating this moderately impressive tomb."
 
     
-        show shadow at right
+    show shadow at right
     
-        hide shadow with fastdissolve
+    hide shadow with fastdissolve
 
     "On the periphery of your vision, you notice unusual fleeting shadows. The demon must not be far off, and it has nowhere to run. One of you must perish today."
 
@@ -475,7 +476,7 @@ label start:
 
         n "A service entrance to a cramped, dark tunnel lies to the left."
 
-        n "A stone passage, comprised of stonework typical of the city proper lies to the right.""
+        n "A stone passage, comprised of stonework typical of the city proper lies to the right."
 
         n "Where will you go?" 
 
@@ -1179,19 +1180,23 @@ menu:
             jump atrium
             with longdissolve
 
-    "The shadows dance here, I must be close. There is a narrow walkway encircling an open pit, where the less fortunate are tossed to rot."
-    "At least these are embalmed - a small courtesy for the poor."
-    "It’s a dead end. The demon is surely here. But where?"
-    "Ugh, I don’t think I can bear this stench for much longer…"
+"The shadows dance here, I must be close. There is a narrow walkway encircling an open pit, where the less fortunate are tossed to rot."
+"At least these are embalmed - a small courtesy for the poor."
+"It’s a dead end. The demon is surely here. But where?"
+"Ugh, I don’t think I can bear this stench for much longer…"
 
 
-    n "There - on the other side of the platform, the shadows take shape - the demon manifests.""
-    # sound
+n "There - on the other side of the platform, the shadows take shape - the demon manifests."
+# sound
 
-    "… … … "
-    "What in the world?"
+"… … … "
+"What in the world?"
 
-    show addesse at deadcenter with dissolve
+show addesse at deadcenter with dissolve
+
+
+
+
 
 
 

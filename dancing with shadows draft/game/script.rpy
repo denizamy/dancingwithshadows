@@ -1516,6 +1516,8 @@ label goodend:
 
 label golemstart:
 
+    play music "Myst on the Moor.mp3"
+
     scene warehouse
     with pixellate
 

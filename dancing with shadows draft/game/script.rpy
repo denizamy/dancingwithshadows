@@ -1293,7 +1293,9 @@ label attackdemoness2:
 
 label demonessresolution1:
 
-    n "Julian's vision blurs as he bleeds out against the cold stone. Revealed in blood-blurred snapshots as he blinks, unbelievably, he sees a warrior doing battle with the Demon of Shadow. A few moments of combat pass, and then silence. The room fills with the smell of sweet sulfur, and Julian, losing consciousness, feels a slight stab of pain. His hero - this masked avenger crouches down to check his vitals and speaks in a soft, deep female voice."
+    n "Julian's vision blurs as he bleeds out against the cold stone. Revealed in blood-blurred snapshots as he blinks, unbelievably, he sees a warrior doing battle with the Demon of Shadow. A few moments of combat pass, and then silence."
+
+    n "The room fills with the smell of sweet sulfur, and Julian, losing consciousness, feels a slight stab of pain. His hero - this masked avenger crouches down to check his vitals and speaks in a soft, deep female voice."
 
     t "You shouldn't be here. Did Nikolai put you up to this?"
 
@@ -1309,7 +1311,9 @@ label demonessresolution1:
 
     n "Bleary-eyed, Julian scans the room. There is no trace of the demon - save a suspicious, soft-looking stone where she fell. Likewise, the shadows have stopped moving of their own accord. He looks over to his savior."
 
-    n "Until she spoke, he had no indication this powerful warrior was a woman. She eschews armor for green and brown traveler's leathers, adorned with protective talismans. Her longboots are characteristic of the locality. Her saw-toothed metal staff and iron mask strike Julian as distinct, but wracking his brain, he comes up with nothing for their origin. Whomever she is, she is a skilled warrior and healer."
+    n "Until she spoke, he had no indication this powerful warrior was a woman. She eschews armor for green and brown traveler's leathers, adorned with protective talismans. Her longboots are characteristic of the locality."
+
+    n "Her saw-toothed metal staff and iron mask strike Julian as distinct, but wracking his brain, he comes up with nothing for their origin. Whomever she is, she is a skilled warrior and healer."
 
     n "The warrior slips a bit made of hard rubber into Julian's mouth and prepares to set his leg."
 
@@ -1327,7 +1331,9 @@ label demonessresolution1:
 
     n "The warrior removes his plated leggings and rips his pant leg, using the material to bind the splint."
 
-    t "I'm going to pick you up. It's going to hurt a bit. You really shouldn't be moved in this condition, but we're not exactly swimming in options. You're in good hands. You can leave as soon as you have recovered, but I'm going to have some questions for you first. You can call me Tess. I think you're brave, for whatever that's worth."
+    t "I'm going to pick you up. It's going to hurt a bit. You really shouldn't be moved in this condition, but we're not exactly swimming in options. You're in good hands. You can leave as soon as you have recovered, but I'm going to have some questions for you first."
+
+    t "You can call me Tess. I think you're brave, for whatever that's worth."
 
     n "Tess carefully heaves Julian over her shoulder. Julian passes out shortly thereafter."
 
@@ -1343,7 +1349,9 @@ label demonessresolution1:
         
 label demonessresolution2:
 
-    j "The deed is done. The demon is vanquished. Strange, it seems the foul harpy left a trinket among her remains. A soft, sulfurous stone - proof of my victory. It’s a shame to fell such a striking beauty. It invaded my mind… and seemed to know me. Perplexing, and dangerous. Why do I feel a sense of loss? An emptiness, left in the wake of my fallen foe? I had best put aside these thoughts. I should return promptly to the Archdruid, for he will want word of my success."
+    j "The deed is done. The demon is vanquished. Strange, it seems the foul harpy left a trinket among her remains. A soft, sulfurous stone - proof of my victory. It’s a shame to fell such a striking beauty. It invaded my mind… and seemed to know me."
+
+    j "Perplexing, and dangerous. Why do I feel a sense of loss? An emptiness, left in the wake of my fallen foe? I had best put aside these thoughts. I should return promptly to the Archdruid, for he will want word of my success."
 
     scene blackscreen
     with longdissolve
@@ -1361,7 +1369,9 @@ label questiondemoness1:
 
     n "The demoness narrows her eyes and scowls."
 
-    u "My nature dictates me to assume a form that resonates with the desires of those who behold me. Perhaps you would be best served reflecting on your own preferences... This parley tires me - accept this small mercy before I reconsider. I have harmed none of the hapless fools who wandered into my domain, and I extend the same courtesy to you - in honor of the dead. This place is meant for the grieving, is it not? Leave me to grieve."
+    u "My nature dictates me to assume a form that resonates with the desires of those who behold me. Perhaps you would be best served reflecting on your own preferences... This parley tires me - accept this small mercy before I reconsider."
+
+    u "I have harmed none of the hapless fools who wandered into my domain, and I extend the same courtesy to you - in honor of the dead. This place is meant for the grieving, is it not? Leave me to grieve."
 
     label fightorquestiondemoness2:
     
@@ -1419,7 +1429,9 @@ label demonessresolution3:
 
     n "The demoness vanishes, and the dancing shadows in the room stall to a halt."
 
-    j "What an ordeal… Demons are both very like and very unlike how Archdruid described them. I couldn’t have possibly prepared for this. Even so… I can’t help but have my thoughts wander to that beshadowed beauty. It’s a pity I never learned her name - although I shudder at the thought of meeting again. She seemed quite confident we would… but if she knows the worst of my crimes, how could she see anything good in me? Perhaps… I can only be my truest, deepest self with a demon. Nay, I should banish the thought."
+    j "What an ordeal… Demons are both very like and very unlike how Archdruid described them. I couldn’t have possibly prepared for this. Even so… I can’t help but have my thoughts wander to that beshadowed beauty. It’s a pity I never learned her name - although I shudder at the thought of meeting again."
+
+    j "She seemed quite confident we would… but if she knows the worst of my crimes, how could she see anything good in me? Perhaps… I can only be my truest, deepest self with a demon. Nay, I should banish the thought."
 
     jump neutralend
 
@@ -1438,7 +1450,9 @@ label demonessresolution4:
 
     n "A bittersweet smile colors Adesse’s ethereal features moments before she vanishes, and the dancing shadows in the room stall to a halt."
 
-    j "She just vanished. Well, that’s great. Am I cursed now, haunted? I should be more worried about that, probably… but even though it has been but a moment, I can’t keep my thoughts off of her. I want to see her again. Adesse… such a peculiar name. I wonder if it was given to her. If I have been deceived, surely I will find the truth of things - for now, I shall report my success to the Archdruid."
+    j "She just vanished. Well, that’s great. Am I cursed now, haunted? I should be more worried about that, probably… but even though it has been but a moment, I can’t keep my thoughts off of her. I want to see her again. Adesse… such a peculiar name. I wonder if it was given to her."
+
+    j "If I have been deceived, surely I will find the truth of things - for now, I shall report my success to the Archdruid."
 
     jump goodend
 

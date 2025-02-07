@@ -425,13 +425,9 @@ label start:
 
     n "As you enter, you hear hydraulic mechanisms automatically shut the large steel gate behind you."
 
-    stop music
-
     play sound "gateclose.wav"
 
     scene closinggate
-
-    play music "darkest_child.mp3"
     
 
     j "A security measure by the townsfolk, surely."
@@ -454,6 +450,8 @@ label start:
 
     n "It seems the townsfolk or druids left a torch here for your use."
 
+    j 'Oh, a torch'
+
     label picktorch:
 
     menu:
@@ -475,21 +473,24 @@ label start:
 
         j "A sturdy branch topped with dry cloth soaked in pitch and an alchemical mixture. I can ignite it by striking it against the wall. These don’t last forever…"
 
+        hide unlit
+
+        play sound "torchlighting.mp3"
+        
         n "You stike the torch along the stone walls"
 
-        hide unlit
-            
-        play sound "torchlighting.mp3"
 
         show lit at deadcenter
         with dissolve
-        hide unlit
+        hide lit
         with dissolve
 
         jump choice2_done
 
     label choice2_nopick:
         $ notorch = True
+        
+        hide unlit
 
         f "I'll be fine."
 
@@ -568,8 +569,6 @@ label start:
 
     if boltcutters:
         jump cutbolt
-
-    jump cutbolt
 
     n "Julian returns to the Atrium"
 
@@ -1047,7 +1046,7 @@ label choice1_done:
     if notorch:
         jump killbywraith
 
-     j "I vaguely remember texts from the monastery describing the spawn of demons of shadow… it's been a while, but I think they're called Wraithspawn."
+    j "I vaguely remember texts from the monastery describing the spawn of demons of shadow… it's been a while, but I think they're called Wraithspawn."
 
     j "They are the creations of my quarry, if I'm right.. As unsettling as they are, I don't think they don’t present a threat unless I provoke them - so long as my torch lasts."
 
@@ -1090,42 +1089,45 @@ label choice1_done:
     hide dog
     hide ghost
     
-    jump momumentchamber
+    jump monumentchamber
 
     label killbywraith:
 
     j "It's so dark. Something here is wrong… It's too dark."
 
     label badend:
+    scene endingscreen 
+    with pixellate
 
     n "In the total darkness of the crypt, Julian is slain by the lurking spawn of the Demon of Shadow."
 
     n "This story, however, is far from over. Perchance, even Julian still has a role to play."
 
-    scene endingscreen
-	with pixellate
-
-	#if the golem is been activated, then jump to golem waking up
-	if golemactive:
-		jump golemstart
-
-	jump witchstart
+    if golemactive:
+        jump golemstart
+    jump witchstart
 
 
-    label momumentchamber:
+    label monumentchamber:
 
-    scene blackscreen
+    scene monument
     # Room 3 - Monument Chamber
 
-    n "placeholder for explaining your phsyical movement into the monument chamber"
+    n "One thing is certain, this place has been vandalized. The locals surely wouldn't do this..."    
 
-    j "One thing is certain, this place has been vandalized. The locals surely wouldn't do this..."    
+    n "Statues are torn from the podiums from which they rested, and stone slabs commemorating the deeds of the heroic dead have been toppled."
 
-    j "Statues are torn from the podiums from which they rested, and stone slabs commemorating the deeds of the heroic dead have been toppled."
-
-    n "Perhaps you should be on guard and gather your bearings before pushing ahead."
+    n " The floor is littered with debris and dust. Despite this, there isn’t a single footprint to be seen."
 
     n "Aside from the ladder down and the way you entered, it appears all of the connecting chambers are blocked by collapsed rubble."
+
+    j "The locals surely wouldn’t do this"
+
+    j "I should be on guard and gather my bearings before pushing ahead."
+
+    menu:
+        "Look around":
+            n "You look around and see an Antique Silver Coin"
 
     show coin at deadcenter
 
@@ -1316,6 +1318,8 @@ label attackdemoness2:
 
 label demonessresolution1:
 
+    hide adesse
+
     n "Julian's vision blurs as he bleeds out against the cold stone. Revealed in blood-blurred snapshots as he blinks, unbelievably, he sees a warrior doing battle with the Demon of Shadow. A few moments of combat pass, and then silence."
 
     n "The room fills with the smell of sweet sulfur, and Julian, losing consciousness, feels a slight stab of pain. His hero - this masked avenger crouches down to check his vitals and speaks in a soft, deep female voice."
@@ -1500,7 +1504,7 @@ label goodend:
 
 label golemstart:
 
-    scene golemroom
+    scene warehouse
     with pixellate
 
     gl "Sensation… A touch…"

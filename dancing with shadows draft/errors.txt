@@ -2,37 +2,7 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 220: expected statement.
-    acceptdruid = True
-                ^
-
-File "game/script.rpy", line 223: expected statement.
-    noacceptdruid = True
-                  ^
-
-File "game/script.rpy", line 1028: expected statement.
-    light = True
-          ^
-
-File "game/script.rpy", line 1049: expected statement.
-    nolight = True
-            ^
-
-File "game/script.rpy", line 1138: expected statement.
-    nocoin = True
-           ^
-
-File "game/script.rpy", line 1147: expected statement.
-    havecoin = True
-             ^
-
-File "game/script.rpy", line 1536: expected statement.
-    golempulltogether = false
-                      ^
-
-File "game/script.rpy", line 1548: expected statement.
-    golembreakmirror = false
-                     ^
+File "game/script.rpy", line 1050: Indentation mismatch.
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Fri Feb  7 06:17:01 2025
+Fri Feb  7 09:45:52 2025

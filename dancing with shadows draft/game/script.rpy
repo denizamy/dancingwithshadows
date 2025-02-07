@@ -8,6 +8,10 @@ define d = Character("Archdruid",color="164622")
 define j = Character("Julian",color="#3366cc")
 define f = Character("Julian",color="#3366cc")
 define g = Character("Goblin",color="60e683")
+define u = Character("Demoness")
+define x = Character("Unknown Voice",color="652EAF")
+
+
 image sword = "sword.png"
 image shield = "Shield.webp"
 image backpack = "backpack.png"
@@ -17,8 +21,12 @@ image lit = "lit.webp"
 image dog = "dog.png"
 image ghost = "ghost.png"
 image goblin = "goblin.jpg"
-image golem = "golem.png"
+image golem = "golem.jpg"
 image druid = "druid.png"
+image blackscreen = "blackscreen.jpg"
+image coin = "thecoin.png"
+
+
 transform deadcenter:
     xalign 0.5
     yalign 0.5
@@ -90,7 +98,7 @@ screen inventory_item_description:
 
 
 
-# The game starts here.
+# The game starts here ######################################################################
 
 label start:
 
@@ -306,9 +314,7 @@ label start:
         j "One hundred crowns is worth the effort, if it doesn't kill me."
 
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
+    ########################################
 
     label crypttime:
 
@@ -327,12 +333,8 @@ label start:
     with fade
     
 
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
+    #########################################
 
-
-    # These display lines of dialogue.
     "Recently, you have accepted a contract from the Archdruid to investigate the local crypt."
 
     "As of late, locals have been harassed when mourning their dead, statues and monuments have been toppled, and unsettling shadows have darted around the crypt, irrespective of the lack of wind and torch."
@@ -369,7 +371,7 @@ label start:
     show crypt at deadcenter
 
     
-    f "Okay enough stalling, lets do this"
+    f "Okay, enough stalling... let's do this"
 
     menu:
 
@@ -380,6 +382,7 @@ label start:
 
     scene room1
     with pixellate
+    label atrium:
 
     "A large stone room, far underground."
 
@@ -458,7 +461,7 @@ label start:
         "go right":
             jump choice1_right
 
-        "Go Forward":
+        "go forward":
             jump choice1_forward
 
     label choice1_left:
@@ -471,18 +474,29 @@ label start:
         n "You see a room with a ladder leading down "
         jump goblinchoice
 
-     label choice1_right:
+    label choice1_right:
+
+        $ darkness += 1
+
+        scene rightroom
+        with pixellate
+
+        show golem
+        
+        n "You find yourself in some sort of store room. In the corner sits a very out of place golem"
+
+        j "What is this creature doing here?" 
 
         if choosen == "golemactive":
-            j "I'd rather not mingle any more with sorcerous experiments left in storage for a hundred years."
-            j "Like I said, it's somebody else's problem now."
-            j "If they want me to take care of it, well, another hundred crowns would be nice."
+            j "The thing is glowing, I should return to the task at hand"
             hide golem 
             scene room1
             jump LookLeftLookRight
-        elif choosen == "boltcutters":
-            scene warehouse
-            jump golemtouch
+        elif choosen == "goleminactive":
+            j "I should leave it alone, I need to return to my mission"
+            hide golem 
+            scene room1
+            jump LookLeftLookRight
 
         jump golemchoice
 
@@ -601,143 +615,50 @@ label nogoblin:
     
 label golemchoice:
 
-    n "Ancient, crumbling boards practically hang from the nails they were fixed to many decades ago. Even so, they do the trick. The way is blocked."
+    n "more golem and room desciptions"
 
-    j "Ugh, do I really want to be doing this?"
-
-    j "There's a quarter inch of dust covering literally everything. If I found this demon in such a cramped space, I don't think I'd even be able to swing my sword…."
+    j " something something should I touch it?"
 
     menu:
 
-        "Dismantle Barricade":
-            jump gogolem
+        "touch the golem":
+            jump touchgolem
 
-        "Turn Back":
+        "leave it alone":
             jump leavegolem
 
-    label gogolem:
+    label touchgolem:
 
-        j "Here goes nothing. These boards look simple enough to remove by hand. Dry rot and the ravages of time have reduced them practically to splinters."
+        n "you reach out your hand and gently touch the golem"
+        n "more text about the magic activing"
+        $ choosen = "golemactive"
 
-        j "It's going to be a tight fit. I can't even stand up straight in this cramped tunnel."
-
-        j "As he takes a single step down the confined space, a cloud of dust wafts through the air."
+        j "wow, I wonder what kind of magic that was but it doesnt seem to change anything but glowing"
+        j "I should get back to task at hand"
+        hide golem
         
-        scene tunnel
-        with pixellate
-
-        n "The service tunnel is cramped. Julian needs to stoop to enter, and there's barely a body's width of breadth to the space."
-        
-        if choosen == "havetorch":
-            j "I should be on guard. It's unusually stuffy in this tunnel, and black as pitch."
-
-            j "It reminds me of an abandoned factory, or that mage's study years past…" 
-            
-            j "Well, here goes nothing."
-            jump warehouse
-
-        elif choosen == "notorch":
-            j "I should come back with a light source."
-
-            j "This place stinks of a trap. It would be foolish to fumble around in the dark and step on a nail, or worse."
-
-            n "You go back the way you came."
-
-            scene room1
-            with pixellate
-
-            n "where will you go?"
-
-            jump LookLeftLookRight
-
-    label leavegolem:
-
-        j "No, something is wrong about this place. It's like it has been pulled from a different place and time."
-
-        j "I might come back to it, if this creature isn't anywhere else in this crypt, provided I can think of a plan…"
-        
-        n "You go back the way you came."
-
         scene room1
         with pixellate
-
+        
         n "where will you go?"
 
         jump LookLeftLookRight
-
-    label warehouse:
-        scene warehouse
-        with pixellate
-
-        show golem:
-            alpha .3
-
-        n "To describe this room as a hoarding or a bandit's treasure pile would be incorrect. Broken bottles, ruined alchemical apparatuses, and alembics can be spotted among the rubble."
-        n "Straining his eyes, Julian spots some salvageable copper wire."
-
-        j "Whatever this was, it's a trash heap now."
-
-    menu:
-        "Search rubble":
-            j "I might as well try to find something useful while I'm here."
-
-            n "You sort throught the rubble and find a set of bolt cutter"
-            $ choosen = "boltcutters"
-
-            j "Huh. These might come in handy, I guess. Nobody else is using them, I might as well bring them along."
-
-            jump golemtouch
-
-        "Turn back":
-            j "Well, this is a dead end."
-
-            j "There's plenty of this crypt left to explore. The demon is here somewhere."
-
-            n "You go back the way you came."
-
-            hide golem
-
-            scene room1
-            with pixellate
-
-            n "where will you go?"
-
-            jump LookLeftLookRight
-
-    label golemtouch:
-
-        j "There is some strange text on these stones. Strange, it almost looks like an arm…"
-
-        j "Maybe this was a sculptor's studio? That doesn't seem quite right."
-        
-    menu:
-        "Touch symbol":
-            $ choosen = "golemactive"
-            n "The pile of rubble begins to shake, and the runes in the rubble pile begin to glow with a dim blue light."
-
-            j "I'm not getting paid enough for this. This isn't a demon, it's somebody else's problem. I'm getting out of here."
-
-            n "You go back the way you came."
-            hide golem
-        
-            scene room1
-            with pixellate
-        
-            n "where will you go?"
-
-            jump LookLeftLookRight
     
-        "Turn back":
-            j "I'd better not. There's plenty left to do here. I'll think about it."
+    label leavegolem:
 
-            hide golem
+        n "you decide to leave it alone"
+        $ choosen = "goleminactive"
+        
+        j "I should be touching things I have no idea what they do"
 
-            scene room1
-            with pixellate
+        n "seeing nothing else of note, you leave and return to the atrium"
 
-            n "where will you go?"
+        hide golem
+        scene room1
+        
+        n "where will you go?"
+        jump LookLeftLookRight
 
-            jump LookLeftLookRight
 
 label choice1_done:
     scene darkhall1
@@ -804,7 +725,7 @@ label choice1_done:
 
     f "The Archdruid warned me about these Wraithspawn. They are the creations of my quarry, this Demon of Shadow."
 
-    f "As unsettling as they are, they don’t present a threat unless I provoke them."
+    f "As unsettling as they are, they don't present a threat unless I provoke them."
     
     show lit at deadcenter
     with dissolve
@@ -819,13 +740,13 @@ label choice1_done:
         alpha .3
        
 
-    f  "I can’t see it at all without my torch." 
+    f  "I can't see it at all without my torch." 
 
     n "Maimed Wraithspawn,  This one suffered a major injury in life."
 
     n "its spine folds like an accordion, and its arm drags limply at its side." 
 
-    f "It doesn’t seem to be in pain, at least. I wonder if it knows where it is?"
+    f "It doesn't seem to be in pain, at least. I wonder if it knows where it is?"
 
 
     show dog at offleft:
@@ -838,47 +759,100 @@ label choice1_done:
     f "Why was this innocent creature cursed to wander like this?"
 
 
+    hide dog
+    hide ghost
 
 
+    scene blackscreen
+    # Room 3 - Monument Chamber
 
-    
+    n "placeholder for explaining your phsyical movement into the monument chamber"
 
-    
+    j "One thing is certain, this place has been vandalized. The locals surely wouldn't do this..."    
 
-    # This ends the game.
+    j "Statues are torn from the podiums from which they rested, and stone slabs commemorating the deeds of the heroic dead have been toppled."
 
-    return
+    n "Perhaps you should be on guard and gather your bearings before pushing ahead."
 
+    n "Aside from the ladder down and the way you entered, it appears all of the connecting chambers are blocked by collapsed rubble."
 
+    show coin at deadcenter
 
 
+    j "The old farts at the monastery and maybe some of the druids remember when these were minted."
 
+    j "They're at least half zinc, more than a quarter copper, but there's a bit of silver in there... I guess that's why they're called silver coins."
 
+    j "It's strange to find something like this here."
 
+    j "There is a puncture near the edge of the coin, as if it were attached as a necklace."
 
+    j "How odd. Maybe one of the townies dropped it while fleeing...."
 
+    menu:
 
+        "Ignore it":
+            jump choice2_ignore
 
+        "Take the coin":
+            jump choice2_take
 
+    label choice2_ignore:
+        $ choosen = "nocoin"
 
+        f "Something is off about this. I should trust my gut. Much is amiss in this tomb, and I had best not tempt the spirits. One monster is enough…"
 
+        n "You leave the coin and move on"
 
+        hide coin
 
+    label choice2_take:
+            $ choosen = "havecoin"
+            
+            show coin at deadcenter
+            with dissolve
 
+            f "Whatever, it's mine now. Whoever lost it is long dead. In their place, I wouldn't begrudge me."
+            $ inventory_items.append("coin")
 
+            hide coin
+            with dissolve
 
+    n "Despite the flickering flame of the torch, the shadows stir - and speak!" 
 
+    n "Haphazardly drawing his blade, Julian stumbles backwards, caught off guard."
 
+    x "Mortal, the light you bring to my domain is most unwelcome. Leave this place, or meet your end."
 
+    x "Return your filchings to their proper place, and forget all you have seen here."
 
+    j "Unsettling. The torch has sent the fiend fleeing - I had best pursue it..."
 
+menu:
+        "Turn back":
+            j "I need to get my bearings. I'm not sure I'm ready for all this just yet. I need to be absolutely sure before I hunt down this creature."
+            jump atrium
+            with pixelate
 
+        "Continue forward":
+            jump memorials
 
+label memorials:
+            n "Toppled Memorials: Dedicated to heroes who were stalwart defenders of the people - soldiers and sellswords alike. Many of them fell to demons."
 
+            j "It seems like a bit of a petulant tantrum, doesn't it? Perhaps my expectations of these creatures were too lofty."
 
+            n "Ladder: A ladder in the center of the room, leading down to the peasant's graves. It looks freshly disturbed. "
 
+            j "What purpose could this demon have disturbing the remains of the destitute?"
 
+menu:
+        "Go down the ladder":
+            jump ladderdown
 
+        "Return to the atrium":
+            jump atrium
+            with pixelate
 
 
 
@@ -916,6 +890,4 @@ label choice1_done:
 
 
 
-    # The end little bitch
 
-    return

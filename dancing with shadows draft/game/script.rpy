@@ -20,7 +20,7 @@ image shadow = "shadow.png"
 image lit = "lit.webp"
 image dog = "dog.png"
 image ghost = "ghost.png"
-image goblin = "goblin.jpg"
+image goblin = "goblin.png"
 image druid = "druid.png"
 image blackscreen = "blackscreen.jpg"
 image coin = "thecoin.png"
@@ -1163,10 +1163,6 @@ menu:
             with longdissolve
 
 
-
-
-
-bitch
 
 
 

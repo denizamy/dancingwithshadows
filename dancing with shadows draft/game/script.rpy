@@ -467,7 +467,7 @@ label start:
 
         j "A sturdy branch topped with dry cloth soaked in pitch and an alchemical mixture. I can ignite it by striking it against the wall. These don’t last forever…"
 
-        n "you stike the torch along the stone walls"
+        n "You stike the torch along the stone walls"
 
         hide unlit
             

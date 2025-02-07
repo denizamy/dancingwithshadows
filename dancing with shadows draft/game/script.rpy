@@ -223,7 +223,7 @@ label start:
 
         d "A bit of a house special. You'd call it Waldwine."
 
-        d "Its a bit of a rarity, nowadays..."
+        d "It's a bit of a rarity, nowadays..."
 
         j "I've never heard of it, but it's nice. I'd kill a bottle or two."
 

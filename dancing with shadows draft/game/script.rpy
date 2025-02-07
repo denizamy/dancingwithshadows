@@ -26,6 +26,9 @@ image druid = "druid.png"
 image blackscreen = "blackscreen.jpg"
 image coin = "thecoin.png"
 image golem = "golem.png"
+image adesse = "adessefull.jpg"
+
+
 
 
 transform deadcenter:
@@ -1138,9 +1141,13 @@ label choice1_done:
 
     n "Despite the flickering flame of the torch, the shadows stir - and speak!" 
 
+    # sound
+
     n "Haphazardly drawing his blade, Julian stumbles backwards, caught off guard."
 
     x "Mortal, the light you bring to my domain is most unwelcome. Leave this place, or meet your end."
+
+    # sound
 
     x "Return your filchings to their proper place, and forget all you have seen here."
 
@@ -1172,9 +1179,19 @@ menu:
             jump atrium
             with longdissolve
 
+    "The shadows dance here, I must be close. There is a narrow walkway encircling an open pit, where the less fortunate are tossed to rot."
+    "At least these are embalmed - a small courtesy for the poor."
+    "It’s a dead end. The demon is surely here. But where?"
+    "Ugh, I don’t think I can bear this stench for much longer…"
 
 
+    n "There - on the other side of the platform, the shadows take shape - the demon manifests.""
+    # sound
 
+    "… … … "
+    "What in the world?"
+
+    show addesse at deadcenter with dissolve
 
 
 

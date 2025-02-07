@@ -3,14 +3,14 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define n = Character("Narrator")
+define n = Character("Narrator",color="808080")
 define d = Character("Archdruid",color="164622")
 define j = Character("Julian",color="#3366cc")
 define f = Character("Julian",color="#3366cc")
 define g = Character("Goblin",color="60e683")
 define u = Character("Demoness")
 define x = Character("Unknown Voice",color="652EAF")
-
+define i = Character("Inya",color ="ff5dcf")
 
 image sword = "sword.png"
 image shield = "Shield.webp"
@@ -350,13 +350,13 @@ label start:
 
     #########################################
 
-    "Recently, you have accepted a contract from the Archdruid to investigate the local crypt."
+    n "The Archdruid's contract led Julian to a crypt on the outskirts."
 
-    "As of late, locals have been harassed when mourning their dead, statues and monuments have been toppled, and unsettling shadows have darted around the crypt, irrespective of the lack of wind and torch."
+    n "Along the way, he heard rumors of locals being harassed when mourning their dead, statues and monuments within the crypt being toppled, and unsettling shadows darting around the crypt, irrespective of the lack of wind and torch."
 
     f "The Archdruid told me my quarry is a Demon of Shadow - not a trivial, nor a major demon. I should be on my guard."
 
-    f "I should take note of my tools of the trade."
+    f "The blasted thing must be inside. I should keep stock of my belongings before I head in."
 
     hide crypt with dissolve
 
@@ -421,7 +421,7 @@ label start:
     
     n "It would also seem that a torch was left for you"
 
-    j "The druids must have left me this."
+    j "Oh, a torch."
 
     label picktorch:
 
@@ -440,6 +440,8 @@ label start:
         with dissolve
 
         f "A sturdy branch topped with dry cloth soaked in pitch and an alchemical mixture. I can ignite it by striking it against the wall. These don’t last forever…"
+
+        f "I should take it. A light source would be useful in this dark place… especially with a demon of shadow lurking nearby."
         $ inventory_items.append("Torch")
 
         hide unlit
@@ -450,7 +452,7 @@ label start:
     label choice2_nopick:
         $ choosen ="notorch"
 
-        f "I dont need this, I should just keep moving."
+        f "I'll be fine."
 
         n "You leave the torch behind"
         
@@ -716,27 +718,27 @@ label cutbolt:
 
         j "Okay, in-ya what?"
 
-        g "I… never thought of it like that. Hey…"
+        i "I… never thought of it like that. Hey…"
 
         n "The goblin seems genuinely perplexed by the realization her name can be made into a joke."
 
-        g "I like 'Inya'. It sounds so much nicer and more refined than my goblin name." 
+        i "I like 'Inya'. It sounds so much nicer and more refined than my goblin name." 
 
-        g "And don't even ask, I'm not telling you."
+        i "And don't even ask, I'm not telling you."
 
         j "Okay, Inya it is."
 
-        g "Yes, that's what I am."
+        i "Yes, that's what I am."
 
         n "Julian deliberately nods, affirming their agreement to call Inya 'Inya'."
 
         j "Inya, do you know how I might get to the city?"
 
-        g "Yeah, it's above you. Are you dumb?"
+        i "Yeah, it's above you. Are you dumb?"
 
         j "I'm starting to feel that way, I confess… Can you lead me there, to the streets?"
 
-        g "Oh! Sure! We can go together."
+        i "Oh! Sure! We can go together."
 
         j "Thank you."
 
@@ -745,33 +747,33 @@ label cutbolt:
 
         n "Julian, led by Inya, made their way to the streets. Silently indicating the direction of a culvert, Inya hurriedly catches up to Julian, and tugs on his arm to get his attention. She looks oddly emotional and introspective."
 
-        g "I can see you again, right? We're friends?"
+        i "I can see you again, right? We're friends?"
 
         j "Yes, Inya. You have been a friend to me. I might have died back there without your help."
 
         j "I'm going to have to lay low for a while because of… well, I'd better not say."
 
-        g "Uh oh, you messed up big time?"
+        i "Uh oh, you messed up big time?"
 
         j "Yeah, you could say that. But, we got to meet each other because I did, so it could be worse."
 
-        g "Yeah! A lot worse. You could be dead, and I could be friendless."
+        i "Yeah! A lot worse. You could be dead, and I could be friendless."
 
         j "You certainly have a way of viewing the world."
 
-        g "It's like I said, with or without the dark. Thanks for being my friend, Julian."
+        i "It's like I said, with or without the dark. Thanks for being my friend, Julian."
 
-        g "We should set up a signal or something, like a flare."
+        i "We should set up a signal or something, like a flare."
 
         j "I could just come back here in three days, at nightfall."
 
-        g "Can we make it two hours after nightfall? That's the best hunting, at dusk."
+        i "Can we make it two hours after nightfall? That's the best hunting, at dusk."
 
         j "Sure. I'll see you then, Inya"
 
         n "The goblin giggles."
 
-        g "Yeah you will. I'll see you first though."
+        i "Yeah you will. I'll see you first though."
 
         n "The newly acquainted pair part, for now - Inya, back to the sewers, and Julian, to an uncertain fate in an unfriendly world."
 

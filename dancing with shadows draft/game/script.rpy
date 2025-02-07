@@ -11,6 +11,7 @@ define g = Character("Goblin",color="60e683")
 define u = Character("Demoness")
 define x = Character("Unknown Voice",color="652EAF")
 define i = Character("Inya",color ="ff5dcf")
+define gl = Character("Golem")
 
 image sword = "sword.png"
 image shield = "Shield.webp"
@@ -354,30 +355,33 @@ label start:
 
     n "Along the way, he heard rumors of locals being harassed when mourning their dead, statues and monuments within the crypt being toppled, and unsettling shadows darting around the crypt, irrespective of the lack of wind and torch."
 
-    f "The Archdruid told me my quarry is a Demon of Shadow - not a trivial, nor a major demon. I should be on my guard."
+     "The Archdruid told me my quarry is a Demon of Shadow - not a trivial, nor a major demon. I should be on my guard."
 
-    f "The blasted thing must be inside. I should keep stock of my belongings before I head in."
+     "The blasted thing must be inside. I should keep stock of my belongings before I head in."
 
     hide crypt with dissolve
 
     show black with dissolve
     show screen inventory_display_toggle
    
-    n "Slay and banish the presence, whatever it may be, from this formerly sanctified place of rest."
-    $ inventory_items.append("Contract")
+    "Sealed with a wax stamp. Strange, it looks like the monastery sigil."
 
-    j "A steel arming sword plated with silver along the edge - said to scourge demons. The druids placed a blessing on it. Normal weapons can't even scratch their flesh. I might stand a chance with this blade, if I'm lucky."
-    $ inventory_items.append("Demonsalying blade")
+    n "It reads: Slay and banish the presence, whatever it may be, from this formerly sanctified place of rest."
 
-    j "The sheen on this steel heater is phenomenal, and as long as there is even a scant amount of light, the Archdruid reassured me none of the demon's shadow magic can harm me."
-    $ inventory_items.append("Blessed Shield")
+    show sword at deadcenter
+    hide sword with dissolve
 
-    j "I don't even want to think about hardtack if I can't soften it up first. It's about as hard and appetizing as a brick."
-    $ inventory_items.append("Hardtack")
+    j "The sheen on this steel heater is phenomenal, and as long as there is even a scant amount of light, the Archdruid reassured me none of the demon’s shadow magic can harm me."
 
-    j "It's filled with three-day-old small beer. Smells sour. I probably shouldn't, unless I really need to."
-    $ inventory_items.append("Waterskin")
-   
+    show backpack at deadcenter
+
+    j "I don’t even want to think about hardtack if I can’t soften it up first. It’s about as hard and appetizing as a brick."
+
+    j "It’s filled with three-day old small beer. Smells sour. I probably shouldn’t, unless I really need to."
+
+    hide backpack
+    with dissolve
+
     j "That's it."
 
     hide screen inventory_display_toggle
@@ -401,7 +405,7 @@ label start:
 
     "A large stone room, far underground."
 
-    "Torchlight glints off of brass embellishments on the sarcophagi populating this moderately impressive tomb."
+    "As you enter, you hear hydraulic mechanisms automatically shut the large steel gate behind you."
 
     stop music
 
@@ -412,16 +416,23 @@ label start:
     play music "darkest_child.mp3"
     
 
-    "You hear hydraulic mechanisms automatically shut the large steel gate behind you. A security measure by the townsfolk, surely. You are trapped down here with the demon, and it with you, until one of you perishes."
+    "A security measure by the townsfolk, surely."
+
+    n "You are trapped down here with the demon, and it with you, until one of you perishes."
+
+    "Torchlight glints off of brass embellishments on the sarcophagi populating this moderately impressive tomb.
+
+    
+        show shadow at right
+    
+        hide shadow with fastdissolve
+
+    "On the periphery of your vision, you notice unusual fleeting shadows. The demon must not be far off, and it has nowhere to run. One of you must perish today."
 
     scene room1
     with pixellate
 
-    n "A quick scan of the area reveals passageways to your left and right as well as a stone arch leading deeper into the crpt"
-    
-    n "It would also seem that a torch was left for you"
-
-    j "Oh, a torch."
+    n "A great stone arch allows passage further in this dark place. It seems the townsfolk or druids left a torch here for your use."
 
     label picktorch:
 
@@ -439,10 +450,10 @@ label start:
         show unlit at deadcenter
         with dissolve
 
-        f "A sturdy branch topped with dry cloth soaked in pitch and an alchemical mixture. I can ignite it by striking it against the wall. These don’t last forever…"
-
         f "I should take it. A light source would be useful in this dark place… especially with a demon of shadow lurking nearby."
         $ inventory_items.append("Torch")
+
+
 
         hide unlit
         with dissolve
@@ -459,26 +470,24 @@ label start:
         jump choice2_done
 
     label choice2_done:
-    
-        show shadow at right
-    
-        hide shadow with fastdissolve
 
-        n "On the periphery of your vision, you notice unusual fleeting shadows. The demon must not be far off, and it has nowhere to run. One of you must perish today."
-        
+        n "A service entrance to a cramped, dark tunnel lies to the left."
+
+        n "A stone passage, comprised of stonework typical of the city proper lies to the right.""
+
         n "Where will you go?" 
 
     label LookLeftLookRight:
 
     menu:
 
-        "go left":
+        "Investigate the service entrance to the left":
             jump choice1_left
 
-        "go right":
+        "Investigate the stone passage to the right":
             jump choice1_right
 
-        "Go Forward":
+        "Head deeper into the crypt":
             jump choice1_forward
 
     label choice1_left:
@@ -1171,6 +1180,85 @@ menu:
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+gl "The interloper - the intruder in this one's master's domain fled. Senseless cowardice. Shame and guilt. The interloper has much to answer for. This is not the first murder he committed. He shall answer for his crimes."
+
+gl "Fear was the last emotion she felt. A sting of betrayal - fading optimism and curiosity."
 
 
 

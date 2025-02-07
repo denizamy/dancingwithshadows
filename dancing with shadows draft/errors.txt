@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 1752: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    jump golemescape4
-    ^
+File "game/script.rpy", line 1980: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Express triumphant exultation over the interloper's demise"
+                                                                ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Fri Feb  7 12:39:08 2025
+Fri Feb  7 13:31:33 2025

@@ -1104,7 +1104,7 @@ label choice1_done:
     jump monumentchamber
 
     label killbywraith:
-    define deadjulian: = True
+    define deadjulian = True
 
     j "It's so dark. Something here is wrong… It's too dark."
     
@@ -1929,10 +1929,10 @@ label golemescape4:
             jump witchstart
 
 label golemadesse:
-    if deadjulian
+    if deadjulian:
         jump golemescape5
 
-    elif leftwithgoblin
+    elif leftwithgoblin:
         jump golemescape6
 
     jump golemescape7
@@ -1949,7 +1949,7 @@ label golemescape5:
         alpha .3
     show dog at offleft:
         alpha .3 
-    n "Faint, indistinct, macabre wraithspawn lurk in the corners of this place. In the center of the room lies the face-down corpse of the Golem's foe - this "interloper" oozing blood from its many wounds."
+    n "Faint, indistinct, macabre wraithspawn lurk in the corners of this place. In the center of the room lies the face-down corpse of the Golem's foe - this interloper oozing blood from its many wounds."
 
     "I must neutralize these threats."
 
@@ -1977,9 +1977,22 @@ label golemescape5:
             n "A narrow walkway encircles an open pit full of decomposing bodies of the less fortunate. Tenebrous shapes skirt the edge of the Golem's vision. From the opposing side of the pit - it manifests!"
 
             jump golemtess
+        "Express triumphant exultation over the interloper's demise":
+            gl "The interloper has been neutralized. Objective complete. The location of this one's creator remains unknown."
+            gl "Perhaps the interloper's slayer shall know the location of this one's creator. I press on."
 
-    
+            n "Purpose elucidated, the Golem proceeds through the crypt and glides down the vertical shaft into the Peasant's Graves."
 
+            scene monument
+            with fade    
+
+            n "A narrow walkway encircles an open pit full of decomposing bodies of the less fortunate. Tenebrous shapes skirt the edge of the Golem's vision. From the opposing side of the pit - it manifests!"
+            
+            show adesse
+
+            u "Fascinating. An arcane anomaly."
+
+            n "This gives the Golem pause. It resolves to show the enemy of its enemy respect"
 
 
 

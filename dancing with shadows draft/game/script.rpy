@@ -1214,6 +1214,8 @@ label memorials:
             n "Ladder: A ladder in the center of the room, leading down to the peasant's graves. It looks freshly disturbed. "
 
             j "What purpose could this demon have disturbing the remains of the destitute?"
+            $ goblindead = False
+            $ leftwithgoblin = False
 
 menu:
         "Go down the ladder":

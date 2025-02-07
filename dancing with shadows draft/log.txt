@@ -1,93 +1,17 @@
-2025-02-07 17:38:46 UTC
+2025-02-07 17:58:30 UTC
 Windows-10-10.0.22631
 Ren'Py 8.3.4.24120703
 
-Early init took 0.06s
+Early init took 0.05s
 Loading error handling took 0.02s
 Loading script took 0.07s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-
-File "game/script.rpy", line 1872: is not terminated with a newline. (Check strings and parenthesis.)
-(Perhaps you left out a " at the end of the first line.)
-                i "No more rocks, no more bows pointed at me… It could work!""
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Interface start took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'ATI Technologies Inc.'"
-Renderer: b'AMD Radeon RX 6800 XT'
-Version: b'4.6.0 Compatibility Profile Context 24.10.27.02.241120'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1278, 719) drawable=(1278, 719)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 21.69s
-Loading error handling took 0.02s
-Loading script took 0.15s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-
-File "game/script.rpy", line 1752: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    jump golemescape4
-    ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Interface start took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'ATI Technologies Inc.'"
-Renderer: b'AMD Radeon RX 6800 XT'
-Version: b'4.6.0 Compatibility Profile Context 24.10.27.02.241120'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1278, 719) drawable=(1278, 719)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 22.23s
-Loading error handling took 0.02s
-Loading script took 0.11s
-Loading save slot metadata took 0.01s
-Loading persistent took 0.00s
-
-File "game/script.rpy", line 1752: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    jump golemescape4
-    ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Interface start took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'ATI Technologies Inc.'"
-Renderer: b'AMD Radeon RX 6800 XT'
-Version: b'4.6.0 Compatibility Profile Context 24.10.27.02.241120'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1278, 719) drawable=(1278, 719)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 65.05s
-Loading error handling took 0.02s
-Loading script took 0.17s
 Loading save slot metadata took 0.02s
 Loading persistent took 0.00s
 Running init code took 0.03s
 Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
+Reloading save slot metadata took 0.01s
 Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
 Dump and make backups took 0.03s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
@@ -99,14 +23,14 @@ Creating interface object took 0.00s
 Cleaning stores took 0.00s
 Init translation took 0.02s
 Build styles took 0.00s
-Load screen analysis took 0.00s
+Load screen analysis took 0.01s
 Analyze screens took 0.00s
-Save screen analysis took 0.01s
+Save screen analysis took 0.00s
 Prepare screens took 0.03s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
+Save bytecode. took 0.00s
 Running _start took 0.00s
-Interface start took 0.03s
+Interface start took 0.04s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 2560, 1440)
@@ -116,13 +40,19 @@ Vendor: "b'ATI Technologies Inc.'"
 Renderer: b'AMD Radeon RX 6800 XT'
 Version: b'4.6.0 Compatibility Profile Context 24.10.27.02.241120'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1278, 719) drawable=(1278, 719)
+Screen sizes: virtual=(1920, 1080) physical=(1976, 1112) drawable=(1976, 1112)
 Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1369) drawable=(2560, 1369)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1369) drawable=(2560, 1369)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1369) drawable=(2560, 1369)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(1278, 719) drawable=(1278, 719)
-Maximum texture size: 4096x4096
+
+Full traceback:
+  File "game/script.rpy", line 1897, in script
+    jump witchstart
+  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\ast.py", line 1705, in execute
+    rv = renpy.game.script.lookup(target)
+  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\script.py", line 1103, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'witchstart'.
+
+While running game code:
+  File "game/script.rpy", line 1897, in script
+    jump witchstart
+ScriptError: could not find label 'witchstart'.

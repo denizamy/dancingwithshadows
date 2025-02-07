@@ -1104,8 +1104,10 @@ label choice1_done:
     jump monumentchamber
 
     label killbywraith:
+    define deadjulian: = True
 
     j "It's so dark. Something here is wrong… It's too dark."
+    
 
     label badend:
     scene endingscreen 
@@ -1926,33 +1928,58 @@ label golemescape4:
 
             jump witchstart
 
+label golemadesse:
+    if deadjulian
+        jump golemescape5
 
+    elif leftwithgoblin
+        jump golemescape6
 
+    jump golemescape7
 
+label golemescape5:
+    "The interloper's footsteps are fresh. I proceed."
+    
+    n "The Golem follows Julian's tracks into the main vestibule."
+    
+    scene wrathhall
+    with pixellate
+    n "A massive subterranean corridor. Sarcophagi line each side of this room."
+    show ghost at offright:
+        alpha .3
+    show dog at offleft:
+        alpha .3 
+    n "Faint, indistinct, macabre wraithspawn lurk in the corners of this place. In the center of the room lies the face-down corpse of the Golem's foe - this "interloper" oozing blood from its many wounds."
 
+    "I must neutralize these threats."
 
+    "Skill recalled: Blinding Flash"
+    
+    n "The Golem emits a blinding pulse of radiance. The wraithspawn dissipate."
 
+    hide ghost
+    hide dog
 
+    "The interloper is vanquished, and I have no answers. No purpose."
+    
+    n "The Golem, with a shred of hesitation, as if accepting the reality that this 'interloper' truly doesn't have any answers, tenderly flips over Julian's lifeless corpse."
 
+    menu:
+        "Express pity over the interloper's demise":
+            gl "A life taken prematurely. A senseless tragedy. The one responsible is nearby, and must pay."
+            gl "Wraiths are never directionless. A flame casts a shadow. I must extinguish this flame. This one's purpose is clear."
 
+            n "Purpose elucidated, the Golem proceeds through the crypt and glides down the vertical shaft into the Peasant's Graves."
 
+            scene monument
+            with fade
 
+            n "A narrow walkway encircles an open pit full of decomposing bodies of the less fortunate. Tenebrous shapes skirt the edge of the Golem's vision. From the opposing side of the pit - it manifests!"
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            jump golemtess
 
     
-label golemadesse:
+
+
+
+

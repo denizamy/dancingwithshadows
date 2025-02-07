@@ -29,6 +29,12 @@ image blackscreen = "blackscreen.jpg"
 image coin = "thecoin.png"
 image golem = "golem.png"
 image adesse = "adessefull.jpg"
+image adesse_angry = "adesse_angry.jpg"
+image adesse_distant = "adesse_distant.jpg"
+image adesse_flirty = "adesse_flirty.jpg"
+image adesse_flirty_melancholic = "adesse_flirty_melancholic.jpg"
+image adesse_hurt = "adesse_hurt.jpg"
+image adesse_neutral = "adesse_neutral.jpg"
 
 
 
@@ -1196,7 +1202,7 @@ show addesse at deadcenter with dissolve
 
 u "Many other mortals have fled, yet here you are… Did you mean to assail me here, in my chosen domain? Are you lost, Julian?"
 
-label fightorquestiondemoness1
+label fightorquestiondemoness1:
 
     menu:
             "Fight the demoness":
@@ -1217,9 +1223,9 @@ label fightorquestiondemoness1
                 
                 jump questiondemoness1
 
-label fightdemoness1
+label fightdemoness1:
 
-	n "The demoness fires a barrage of needle-like spines of solid shadow."
+    n "The demoness fires a barrage of needle-like spines of solid shadow."
 
 	menu:
 		"Dodge":
@@ -1231,7 +1237,7 @@ label fightdemoness1
         "Attack":
             jump attackdemoness1
 
-label dodgedemoness1
+label dodgedemoness1:
 
 	j "I can see the shadows moving, I can dodge them!"
 	n "Julian dodges the demoness' attack."
@@ -1239,18 +1245,18 @@ label dodgedemoness1
 	n "The demoness fires another barrage of needle-like spines of solid shadow."
     jump fightdemoness2
 
-label blockdemoness1
+label blockdemoness1:
 
 	j "I can block them with my shield!"
 	n "The dark magic spines melt like snow against Julian's blessed shield.  The deomoness gathers energy for her next spell, giving Julian an opportunity to strike."
 	jump fightdemoness2
 
-label attackdemoness1
+label attackdemoness1:
 	j "I can strike her now!"
 	n "Julian's opportunity to strike is lost as the demoness fires another barrage of needle-like spines of solid shadow."
 	jump fightdemoness2
 
-label fightdemoness2
+label fightdemoness2:
 
     menu:
         "Dodge":
@@ -1262,24 +1268,24 @@ label fightdemoness2
         "Attack":
 			jump attackdemoness2
 
-label dodgedemoness2
+label dodgedemoness2:
 
 	j "I've changed my mind, hold your strike and let's talk..."
     jump fightorquestiondemoness1
 
-label blockdemoness2
+label blockdemoness2:
 
 	n "Julian's opportunity to strike was squandered. The demoness finishes casting her spell, sending razorblades of darkness hurtling towards Julian from all directions. Perhaps thanks to his armor or an absurdly good stroke of luck, he manages to cling to life and consciousness, but only just."
     jump demonessresolution1
 
-label attackdemoness2
+label attackdemoness2:
     n "A desperate, vicious strike. A fateful strike. Abandoning caution, Julian hurtles towards his foe. In a confluence of circumstance and power, desperation and need, he executes an overhead swing with his Demonslaying Blade. The demoness's self-satisfied expression fades as the blade slices through her cranium."
     
     j "There's… no blood. But it's gone. I can feel its absence."
     
     jump demonessresolution2
 
-label demonessresolution1
+label demonessresolution1:
 
 	n "Julian's vision blurs as he bleeds out against the cold stone. Revealed in blood-blurred snapshots as he blinks, unbelievably, he sees a warrior doing battle with the Demon of Shadow. A few moments of combat pass, and then silence. The room fills with the smell of sweet sulfur, and Julian, losing consciousness, feels a slight stab of pain. His hero - this masked avenger crouches down to check his vitals and speaks in a soft, deep female voice."
 
@@ -1329,7 +1335,7 @@ label demonessresolution1
 		jump golemstart
 	jump witchstart
         
-label demonessresolution2
+label demonessresolution2:
 
     j "The deed is done. The demon is vanquished. Strange, it seems the foul harpy left a trinket among her remains. A soft, sulfurous stone - proof of my victory. It’s a shame to fell such a striking beauty. It invaded my mind… and seemed to know me. Perplexing, and dangerous. Why do I feel a sense of loss? An emptiness, left in the wake of my fallen foe? I had best put aside these thoughts. I should return promptly to the Archdruid, for he will want word of my success."
 
@@ -1340,7 +1346,10 @@ label demonessresolution2
 
     jump neutralend
 
-label questiondemoness1
+label questiondemoness1:
+
+    hide adesse
+    show adesse_angry at deadcenter
 
     n "The demoness narrows her eyes and scowls."
 
@@ -1365,7 +1374,57 @@ label questiondemoness1
 		
 			jump questiondemoness2
 
-label questiondemoness2
+label questiondemoness2:
+
+    hide adesse_angry
+    show adesse_distant at deadcenter
 
     n "The demoness’s eyes look distant, and she appears forlorn."
+
+    n "Her gaze drifts from the silver coin to the pit between you and her - this pit where the bodies of the destitute are unceremoniously thrown and left to rot."
+
+    u "There was another mortal, not unlike yourself. We shared a bond, of sorts. Like you, she lived a fickle and fleeting life, and was taken from me - like you, she hesitated, and like you, she showed me mercy. She rests here, in this muck of unfortunates."
+
+    menu:
+        
+        "How unusual. You have satisfied my curiosity. I offer you this - I inform the Archdruid that the disturbance has been dealt with, and you say your last goodbyes to your… paramour.":
+            jump demonessresolution3
+
+        "This coin was hers, then? The druids tell many horrible tales of your kind - never have I heard of a demon grieving for a lost mortal.":
+			
+            n "You continue on deliberately, despite your apprehension, ensuring to choose your words with great care. For the briefest moment, you consider if you were misled by the Archdruid. Ultimately, who could know?"
+            
+            j "May she rest in peace. Your fallen paramour must have been truly special."
+
+            jump demonessresolution4
+
+label demonessresolution3:
+
+    hide adesse_distant
+    show adesse_neutral at deadcenter
+
+    u "You are most unusual and merciful for one who has lived such a dastardly life, Julian. Only an orphan such as yourself could truly understand that sting of loss… The druids caution many against the worst atrocities of my kind, and they speak true…  We part, monster and murderer. We shall meet again."
+
+    n "The demoness vanishes, and the dancing shadows in the room stall to a halt."
+
+    j "What an ordeal… Demons are both very like and very unlike how Archdruid described them. I couldn’t have possibly prepared for this. Even so… I can’t help but have my thoughts wander to that beshadowed beauty. It’s a pity I never learned her name - although I shudder at the thought of meeting again. She seemed quite confident we would… but if she knows the worst of my crimes, how could she see anything good in me? Perhaps… I can only be my truest, deepest self with a demon. Nay, I should banish the thought."
+
+    jump neutralend
+
+label demonessresolution4:
+
+    hide adesse_distant
+    show adesse_flirty at deadcenter
+
+    n "The dark energies dance in the room, possibly reflecting the demon’s state of mind. Her expression softens. She seems incapable of tears, perhaps due to her nature."
+
+    u "I am called Adesse, mortal. You have given me much to consider - but I believe this encounter draws to an end"
+
+    u "I shall say my final farewell and depart. You may tell your superiors whatever you choose - but this is not our last meeting, Julian. You’re… intriguing - and you remind me of someone I once loved."
+
+    n "A bittersweet smile colors Adesse’s ethereal features moments before she vanishes, and the dancing shadows in the room stall to a halt."
+
+    j "She just vanished. Well, that’s great. Am I cursed now, haunted? I should be more worried about that, probably… but even though it has been but a moment, I can’t keep my thoughts off of her. I want to see her again. Adesse… such a peculiar name. I wonder if it was given to her. If I have been deceived, surely I will find the truth of things - for now, I shall report my success to the Archdruid."
+
+    jump goodend
 

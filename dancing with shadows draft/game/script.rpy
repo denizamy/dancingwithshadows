@@ -12,7 +12,7 @@ define u = Character("Demoness")
 define x = Character("Unknown Voice",color="652EAF")
 define i = Character("Inya",color ="ff5dcf")
 define gl = Character("Golem")
-
+define dm = Character("Demoness")
 
 
 image sword = "sword.png"
@@ -1182,8 +1182,8 @@ menu:
 
 "The shadows dance here, I must be close. There is a narrow walkway encircling an open pit, where the less fortunate are tossed to rot."
 "At least these are embalmed - a small courtesy for the poor."
-"It’s a dead end. The demon is surely here. But where?"
-"Ugh, I don’t think I can bear this stench for much longer…"
+"It's a dead end. The demon is surely here. But where?"
+"Ugh, I don't think I can bear this stench for much longer…"
 
 
 n "There - on the other side of the platform, the shadows take shape - the demon manifests."
@@ -1194,7 +1194,22 @@ n "There - on the other side of the platform, the shadows take shape - the demon
 
 show addesse at deadcenter with dissolve
 
+dm "Many other mortals have fled, yet here you are… Did you mean to assail me here, in my chosen domain? Are you lost, Julian?"
 
+menu:
+        "Fight the demoness":
+            jump fightdemoness
+            j "You will haunt this place no longer, foul demon! Face me!"
+            n "The demoness fires a barrage of needle-like spines of solid shadow."
+
+
+
+
+        "Question the demoness":
+            jump questiondemoness
+            j "Are you? I see - you divined my name."
+            "(stumbling over words)"
+            j "You, uh... look different from uh, what I expected."
 
 
 

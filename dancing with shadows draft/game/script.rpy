@@ -50,6 +50,11 @@ screen inventory_display_toggle:
 
         on "hide" action Hide("inventory_item_description")
 
+define longdissolve = Dissolve(3.0)
+
+
+
+
 
 default item_descriptions = {"key" : "a mysterious key", "bottle" : "it's full of... something", "broom" : "it sweeps. or rather, you do. with it.", "Cholula" : "yum!"}
 default inventory_items = []
@@ -95,6 +100,16 @@ screen inventory_item_description:
                 textbutton item:
                     action SetVariable("item_description", item_descriptions.get(item))
                     selected False
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1125,7 +1140,7 @@ menu:
         "Turn back":
             j "I need to get my bearings. I'm not sure I'm ready for all this just yet. I need to be absolutely sure before I hunt down this creature."
             jump atrium
-            with pixelate
+            with longdissolve
 
         "Continue forward":
             jump memorials
@@ -1145,7 +1160,7 @@ menu:
 
         "Return to the atrium":
             jump atrium
-            with pixelate
+            with longdissolve
 
 
 

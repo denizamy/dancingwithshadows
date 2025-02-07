@@ -329,7 +329,7 @@ def change_icons(oldexe, icofn):
     # As a related note, apparently this flag has been deprecated, but appears to be set (I think ..) in the renpy.exe that is used to build from..
     # no idea of a consequence, just an observation
     # https://docs.microsoft.com/en-us/windows/win32/debug/pe-format#characteristics , see "IMAGE_FILE_LINE_NUMS_STRIPPED" :
-    #	COFF line numbers have been removed. This flag is deprecated and should be zero.
+    #    COFF line numbers have been removed. This flag is deprecated and should be zero.
     # In renpy.exe, this 2-byte  flag is @ 0x096 and 0x097  in little-endian
     ######
 

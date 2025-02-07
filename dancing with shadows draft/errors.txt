@@ -2,7 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 1230: Tab characters are not allowed in Ren'Py scripts.
+File "game/script.rpy", line 1206: expected statement.
+    adesse transform move_slide:
+           ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Fri Feb  7 04:54:25 2025
+Fri Feb  7 05:27:14 2025

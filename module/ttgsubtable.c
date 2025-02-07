@@ -112,7 +112,7 @@ void free_gsubtable(TTGSUBTable *table)
             if(subt[j].Coverage.CoverageFormat == 1) {
                 free(subt[j].Coverage.GlyphArray);
             } else if(subt[j].Coverage.CoverageFormat == 2) {
-            	free(subt[j].Coverage.RangeRecord);
+                free(subt[j].Coverage.RangeRecord);
             }
             if(subt[j].SubstFormat == 2)
                 free(subt[j].Substitute);

@@ -421,9 +421,9 @@ label start:
     with pixellate
     label atrium:
 
-    "A large stone room, far underground."
+    n "A large stone room, far underground."
 
-    "As you enter, you hear hydraulic mechanisms automatically shut the large steel gate behind you."
+    n "As you enter, you hear hydraulic mechanisms automatically shut the large steel gate behind you."
 
     stop music
 
@@ -434,23 +434,25 @@ label start:
     play music "darkest_child.mp3"
     
 
-    "A security measure by the townsfolk, surely."
+    j "A security measure by the townsfolk, surely."
 
     n "You are trapped down here with the demon, and it with you, until one of you perishes."
 
-    "Torchlight glints off of brass embellishments on the sarcophagi populating this moderately impressive tomb."
+    n "Torchlight glints off of brass embellishments on the sarcophagi populating this moderately impressive tomb."
 
     
     show shadow at right
     
     hide shadow with fastdissolve
 
-    "On the periphery of your vision, you notice unusual fleeting shadows. The demon must not be far off, and it has nowhere to run. One of you must perish today."
+    n "On the periphery of your vision, you notice unusual fleeting shadows. The demon must not be far off, and it has nowhere to run. One of you must perish today."
 
     scene room1
     with pixellate
 
-    n "A great stone arch allows passage further in this dark place. It seems the townsfolk or druids left a torch here for your use."
+    n "A great stone arch allows passage further in this dark place. 
+
+    n "It seems the townsfolk or druids left a torch here for your use."
 
     label picktorch:
 
@@ -471,7 +473,16 @@ label start:
         f "I should take it. A light source would be useful in this dark place… especially with a demon of shadow lurking nearby."
         $ inventory_items.append("Torch")
 
+        j "A sturdy branch topped with dry cloth soaked in pitch and an alchemical mixture. I can ignite it by striking it against the wall. These don’t last forever…"
 
+        n "you stike the torch along the stone walls"
+
+        hide unlit
+            
+        play sound "torchlighting.mp3"
+
+        show lit at deadcenter
+        with dissolve
         hide unlit
         with dissolve
 
@@ -1008,47 +1019,21 @@ label choice1_done:
         jump choice3_done
 
     label choice3_torch:
+       
+    play sound "torchlighting.mp3"
 
-    f "I should be well prepared for the push ahead...."
-
-    show unlit at deadcenter
+    show lit at deadcenter
     with dissolve
 
-    f "at the very least, I should have a light source."
+    scene lithall
+    with pixellate
 
-    menu:
-            "Light Torch":
-                jump choice3_light
+    hide lit
+    with dissolve
 
-            "Save for later":
-                jump choice3_nolight
+    j "I should be well prepared for the push ahead. If I squint, I can see solid silhouettes deeper in this place."
 
-    label choice3_light:
-        $ light = True
-        n "you stike the torch along the stone walls"
-
-        hide unlit
-            
-        play sound "torchlighting.mp3"
-
-        show lit at deadcenter
-        with dissolve
-
-        scene lithall
-        with pixellate
-
-        hide lit
-        with dissolve
-
-        f "If I squint, I can see solid silhouettes deeper in this place."
-
-        jump choice3_done
-
-    label choice3_nolight:
-        $ nolight = True
-        j "these do not last long, I'll use it only if I absolutely need too"
-        n "You leave the torch unlit"
-        jump choice3_done
+    jump choice3_done
 
     label choice3_done:
 
@@ -1056,12 +1041,19 @@ label choice1_done:
 
     scene wrathhall
     with pixellate
-    if nolight:
+
+    n "A massive subterranean corridor. Sarcophagi line each side of this room. The rooms ahead are shrouded in oppressive darkness."
+
+    if notorch:
         jump killbywraith
 
-    f "The Archdruid warned me about these Wraithspawn. They are the creations of my quarry, this Demon of Shadow."
+     j "I vaguely remember texts from the monastery describing the spawn of demons of shadow… it's been a while, but I think they're called Wraithspawn."
 
-    f "As unsettling as they are, they don't present a threat unless I provoke them."
+    j "They are the creations of my quarry, if I'm right.. As unsettling as they are, I don't think they don’t present a threat unless I provoke them - so long as my torch lasts."
+
+    j "They appear as they did at death - the old, the infirm, the maimed, and the beloved pets of the townsfolk as well."
+
+    j "They didn’t embellish their tales. This is grim indeed."
     
     show lit at deadcenter
     with dissolve
@@ -1076,9 +1068,9 @@ label choice1_done:
         alpha .3
        
 
-    f  "I can't see it at all without my torch." 
+    n "A dark silhouette like a blot in space." 
 
-    n "Maimed Wraithspawn,  This one suffered a major injury in life."
+    j "Maimed Wraithspawn,  This one suffered a major injury in life."
 
     n "its spine folds like an accordion, and its arm drags limply at its side." 
 
@@ -1088,16 +1080,39 @@ label choice1_done:
     show dog at offleft:
         alpha .3 
     
-    n "Canine Wraithspawn - A beloved family pet, perhaps?"
+    j "Canine Wraithspawn - A beloved family pet, perhaps?"
      
-    n "It paces throughout the chamber as if seeking out its master."
+    j "It paces throughout the chamber as if seeking out its master."
      
-    f "Why was this innocent creature cursed to wander like this?"
+    j "Why was this innocent creature cursed to wander like this?"
 
 
     hide dog
     hide ghost
+    
+    jump momumentchamber
 
+    label killbywraith:
+
+    j "It's so dark. Something here is wrong… It's too dark."
+
+    label badend:
+
+    n "In the total darkness of the crypt, Julian is slain by the lurking spawn of the Demon of Shadow."
+
+    n "This story, however, is far from over. Perchance, even Julian still has a role to play."
+
+    scene endingscreen
+	with pixellate
+
+	#if the golem is been activated, then jump to golem waking up
+	if golemactive:
+		jump golemstart
+
+	jump witchstart
+
+
+    label momumentchamber:
 
     scene blackscreen
     # Room 3 - Monument Chamber

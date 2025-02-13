@@ -288,7 +288,7 @@ label start:
 
     d "To defend from its treacherous dark magic, a shield warded against such sorcery - but note, it requires a source of light, even if it is just a spark."
 
-    d " Naturally, you will be allotted a day's rations for your journey."
+    d " Naturally, you will be allotted three days' rations for your journey."
 
     d "You'll find everything you need packed by the door. Complete the job, and return here for payment and debriefing."
 

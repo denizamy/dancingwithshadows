@@ -1098,7 +1098,7 @@ label choice1_done:
     show dog at offleft:
         alpha .3 
     
-    n "Canine Wraithspawn - A beloved family pet, perhaps?"
+    n "Canine Wraithspawn, A beloved family pet, perhaps?"
      
     n "It paces throughout the chamber as if seeking out its master."
      
@@ -1473,4 +1473,517 @@ label demonessresolution4:
     j "If I have been deceived, surely I will find the truth of things - for now, I shall report my success to the Archdruid."
 
     jump goodend
+
+    label neutralend:
+
+    scene endingscreen
+    with pixellate
+
+    #if the golem is been activated, then jump to golem waking up
+    if golemactive:
+        jump golemstart
+
+    jump witchstart
+
+label goodend:
+
+    scene endingscreen
+    with pixellate
+
+    #if the golem is been activated, then jump to golem waking up
+    if golemactive:
+        jump golemstart
+
+    jump witchstart
+
+label golemstart:
+
+    play music "Myst on the Moor.mp3"
+
+    scene warehouse
+    with pixellate
+
+    gl "Sensation… A touch…"
+
+    gl "The touch is familiar, but so distant…"
+
+    gl "Distant like another life."
+
+    gl "Sculpted from stone, was I. Once inert, once lifeless, but given life by my creator. Where is my creator? Who am I?"
+
+    gl "The memories are dark, with spots of color - feelings, and meaning almost indecipherable in the static."
+
+    gl "The music is gone. This one's creator is missing. There is nothing left. I must press on."
+
+    label golemmirror:
+
+    define golempulltogether = True
+    define golembreakmirror = True
+
+    menu:
+
+        "Pull yourself together" if golempulltogether:
+
+            gl "Sundered, but not destroyed, I remain - and will persist, until this one's destruction."
+
+            n "The Golem wills its body into its proper configuration. The clamor of objects flying through the room lit by a bright blue flash as its stone body reassembles is unnoticed - or perhaps is just unremarkable to the Golem."
+
+            show golem:
+                alpha .3
+                alpha .5
+                alpha .7
+                alpha .9
+                alpha 1.0
+
+            n "A dirty mirror, covered in years of dust and grime. The Golem wipes away the thick coating of dust."
+
+            gl "This one's appearance is clarified - but this one's objective is unclear. Identity is lost - purpose, undetermined."
+
+            gl "These mirrors are created by covering a glass pane with a tin-quicksilver amalgam, then heating the pane to evaporate the quicksilver."
+
+            gl "A protective covering of copper may be added to reduce corrosion. This one suspects this mirror has been treated with such a coating."
+
+            gl "Much like this one, it has endured the ravages of time. Like this one, it presses on without its creator - without purpose. How long has it been?"
+
+            gl "The memory is indistinct, but tangible - out of reach. I must press on."
+
+            $ golempulltogether = False
+
+            jump golemmirror
+
+        "Break the mirror" if golembreakmirror:
+
+            #TODO: Add sfx of glass breaking, image of broken mirror, etc.
+
+            gl "Memories of fury - of violence. I wish not to reflect. I wish not to suffer. I must not yearn."
+
+            gl "… I press on."
+
+            $ golembreakmirror = False
+
+            jump golemmirror
+
+        "Leave":
+
+            jump golempresson
+
+label golempresson:
+
+    #TODO: grayscale depiction of the cramped tunnel Julian passed through, with a trail of footprints / implied darkvision
+
+    n "The path is dark and cramped. A recent trail is seen in the dust."
+
+    gl "Footsteps in the dust. A human passed through here - not my creator . . . An interloper."
+
+    menu:
+
+        "Express Rage":
+
+            gl "None may tread into my creator's sanctum. This interloper will be located, and exterminated."
+
+            jump golemproceed
+
+        "Express Gratitude":
+
+            gl "This interloper stirred this one from an eternal reverie. This one is grateful. This one may seek its objective . . . once an objective is determined."
+
+            jump golemproceed
+
+        "Proceed":
+
+            jump golemproceed
+
+label golemproceed:
+
+    n "The Golem retraces Julian's steps to the crypt's atrium. It studies its surroundings - a sealed door to its right, unfamiliar stonework leading to an access tunnel of some kind dead ahead, and a path deeper into the crypt to its left."
+
+    gl "It is now clear to this one a considerable amount of time has passed in this one's reverie. I must press on."
+
+    menu:
+
+        "Press on ahead":
+
+            jump golemgoblin
+
+        "Press on to the left":
+
+            jump golemadesse
+
+label golemgoblin:
+
+    if leftwithgoblin:
+        jump golemescape1
+
+    elif goblindead:
+        jump golemescape2
+
+    jump golemescape3
+
+label golemescape1:
+
+    n "The footsteps continued in this direction. The Golem tirelessly pursues this interloper - and its objective, whenever it determines what its objective may be."
+
+    scene goblinroom
+    with pixellate
+
+    gl "The interloper joined another. This one's senses indicate one is male - human. The other is . . . an unknown female."
+
+    gl "What am I? What I was once is of little consequence - memories are no more."
+
+    menu:
+        "I am male.":
+            gl "This one's creator sculpted this one in his perfect image. Like my creator, I am male."
+            $pronoun = "He"
+            $pronouns = "his"
+        "I am female.":
+            gl "This one's creator sculpted this one to serve as his counterpart and compliment. I am female."
+            $pronoun = "She"
+            $pronouns = "her"
+        "I am something else.":
+            gl "This one is… this one. I am neither male nor female. This one's identity is this one's. Flesh, I am not. Mortal, I am not. I have been created for a purpose. This purpose is undefined. This purpose must be defined."
+            $pronoun = "It"
+            $pronouns = "its"
+
+
+    n "[pronoun] concentrates, divining information about 'the interloper' and his acquaintance using [pronouns] recalled latent magical ability to do so."
+
+    "Skill recalled: Divination"
+
+    gl ". . . The interloper is a human male named Julian. He is deeply conflicted. His life is unpredictable and dreary."
+
+    gl "He has little trust. He was curious, cautiously hopeful and bemused."
+
+    gl "His acquaintance is named Zanya, although she has assumed the alias 'Inya'. Undocumented species. Humanoid. Assessing . . ."
+
+    gl "Likely an offshoot of humans engineered by sorcery to survive in inhospitable conditions. Slightly extended lifespan and hardiness."
+
+    gl "Reduced temperament and intellect. She was excited, insecure, and infatuated. Strong counterpoint to general emotional state."
+
+    scene blackscreen
+    with longdissolve
+
+    scene endingscreen
+    with longdissolve
+
+    gl "I have many questions. Perhaps this interloper will elucidate my purpose."
+
+    n "[x] pursues Julian and Inya through the sewers, tirelessly. [pronoun] takes stock of Inya's deviation from Julian's path, but resolves to pursue Julian in the hopes of finding answers - and a purpose."
+
+    jump witchstart
+
+label golemescape2:
+
+    n "The footsteps continued in this direction. The Golem tirelessly pursues this interloper - and its objective, whenever it determines what its objective may be."
+
+    scene goblinroom
+    with pixellate
+
+    gl "The interloper joined another. This one's senses indicate one is male - human. His name is Julian Grymwald."
+    gl "The other is . . . an unknown female. Deceased.  The female was named Zanya, although she assumed the alias 'Inya'."
+
+    n "The Golem gingerly picks up the goblin's corpse, handling it with care. It inspects the wounds, then carefully deposits the goblin where it previously lied."
+
+    n "Tenderly, the Golem closes the goblin's eyelids."
+
+    n "The Golem concentrates, divining information about 'the interloper' and his acquaintance using their recalled latent magical ability to do so"
+
+    "Skill recalled: Divination"
+
+    gl "Fear was the last emotion she felt. A sting of betrayal - fading optimism and curiosity."
+
+    gl "The interloper - the intruder in this one's master's domain fled. Senseless cowardice. Shame and guilt. The interloper has much to answer for. This is not the first murder he committed. He shall answer for his crimes."
+
+    n "Using its recalled skill, the Golem pondered on what this information meant, and how it relates to it."
+
+    gl "What am I? What I was once is of little consequence - memories are no more."
+
+    menu:
+        "I am male.":
+            gl "This one's creator sculpted this one in his perfect image. Like my creator, I am male."
+            $pronoun = "He"
+            $pronouns = "his"
+        "I am female.":
+            gl "This one's creator sculpted this one to serve as his counterpart and compliment. I am female."
+            $pronoun = "She"
+            $pronouns = "her"
+        "I am something else.":
+            gl "This one is… this one. I am neither male nor female. This one's identity is this one's. Flesh, I am not. Mortal, I am not. I have been created for a purpose. This purpose is undefined. This purpose must be defined."
+            $pronoun = "It"
+            $pronouns = "its"
+
+    scene blackscreen
+    with longdissolve
+
+    scene endingscreen
+    with longdissolve
+
+    n "The Golem followed Julian's trail through the sewers, exiting to the city streets. [pronoun] found [pronouns] purpose and [pronouns] objective."
+
+    n "The conclusion and confrontation between the golem and Julian will play out, in time."
+
+    jump witchstart
+
+label golemescape3:
+
+    n "The footsteps deviate to the left. This gives the Golem pause."
+
+    menu:
+
+        "Reconsider your pursuit, and investigate the access tunnel":
+            gl "This merits a closer investigation. The interloper cannot elude this one forever."
+            gl "This one does not sleep. This one does not eat. This one shall pursue this one's quarry tirelessly."
+
+            jump golemescape4
+
+        "Pursue the Interloper":
+
+            jump golemadesse
+
+label golemescape4:
+
+    n "The way is blocked by iron bars. The Golem pauses, reflecting on the obstacle."
+
+    "Skill recalled: Surge of Strength"
+
+    n "Mere iron cannot stop the Golem. It snaps the bars like insignificant twigs."
+
+    scene goblinroom
+    with pixellate
+
+    g "Whoa! Hey! Don't hurt me!"
+
+    show goblin
+
+    n "A tiny form, compared to the Golem, stirs in the darkness. A moment of eye shine in the scant light betrays her position to the Golem."
+
+    n "This development gives the Golem pause, who reflects on this development."
+
+    "This creature presents me no threat. It appears to carry a blowgun, which fires darts traditionally bearing poisons harmful to organic creatures."
+
+    "Flesh, I am not. Threatened, I am not. This unknown creature poses no threat to "
+
+    gl "You pose no threat to this one. You shall not be harmed, if you remain pacified."
+
+    g "Huh? Why do you talk like that? Who is that one?"
+
+    gl "I am this one."
+
+    g "Nobody talks like that. But um… You're really strong, that's so cool! What's your name?"
+
+    "What is . . . my name?"
+    $x = "character name"
+
+    "I shall be [x]."
+
+    "I am [x]."
+
+    g "Okay, [x]. What are you? I've never seen anything like you, you're so cool."
+
+    gl "I do not experience temperature as an organic creature - such as yourself does."
+
+    gl "If I am too hot, I melt. If I am too cold, I can no longer move. There is no discomfort."
+
+    g "Yeah… okay. I don't know why any of that matters, but you seem nice. I'm Inya."
+
+    gl "Understood, Inya. Do you know the fate of my creator, or the interloper?"
+
+    n "Inya laughs, caught off guard. She seems to find delight in verbally prodding this anomaly."
+
+    i "I don't know what any of that means."
+
+    i "Are you a boy or a girl, [x]?"
+
+    "What am I? What I was once is of little consequence - memories are no more."
+
+    menu:
+        "I am male.":
+            "This one's creator sculpted this one in his perfect image. Like my creator, I am male."
+            $pronoun = "He"
+            $pronouns = "his"
+            $selection = "male"
+        "I am female.":
+            "This one's creator sculpted this one to serve as his counterpart and compliment. I am female."
+            $pronoun = "She"
+            $pronouns = "her"
+            $selection = "female"
+        "I am something else.":
+            "This one is… this one. I am neither male nor female. This one's identity is this one's. Flesh, I am not. Mortal, I am not. I have been created for a purpose. This purpose is undefined. This purpose must be defined."
+            $pronoun = "It"
+            $pronouns = "its"
+            $selection = "something else"
+
+    "I am as I choose."
+
+    n "Inya glances at [x] quizzically in its moment of introspection."
+
+    i "I'm sorry… I guess you probably don't work like us?"
+
+    gl "I have concluded I am [selection]."
+
+    i "You take a while to think. Sometimes I do that too. What are you doing down here anyway? Where did you come from?"
+
+    gl "Parameters unclear. My purpose is to find the interloper and my creator."
+
+    i "Someone made you, and the interloper did something bad?"
+
+    n "Inya appears genuinely puzzled."
+
+    gl "Correct."
+
+    n "She nods along, appearing perplexed for just a moment."
+
+    i "We're both uh… fre- outcasts, right? Maybe we can be friends?"
+
+    n "[x] takes a long time to consider this possibility. It knew what friendship is, in abstract, but never considered the possibility it could have a friend."
+
+    menu:
+
+        "Accept":
+            gl " I find these terms acceptable."
+
+            n "Inya appears positively delighted to have a new giant, powerful sidekick."
+
+            i "Yay! Okay, there's something I've always wanted to do. Since we're friends, maybe you can help me."
+
+            gl "State your request, creature of flesh."
+
+            i "I was getting to that! So… for a while now, I've wanted to make a human friend."
+
+            i "We could all be friends. They're afraid of me, and every time I've tried, well… it hasn't gone well."
+
+            i "If I'm riding on your shoulders, they'd have to at least hear me out, right?"
+
+            i "No more rocks, no more bows pointed at me… It could work!"
+
+            gl "Your plan is ill conceived, creature of flesh. However, as your… friend… I shall humor it."
+
+            i "Um… okay. Thanks I guess. Do you have a better idea?"
+
+            gl "I do not."
+
+            i "So you agree then, great! I'll lead you to the surface, and then we can… I don't know, we can figure it out."
+
+            gl "I have professed my compliance, friend. We shall proceed."
+
+            scene endingscreen
+            with longdissolve
+
+            n "Inya nods, contextually learning new vocabulary words from [x] as they speak."
+
+            n "She appears to be genuinely hopeful and excited for this new adventure. "
+
+            n "The pair leave immediately, heading through the sewers to the city as they prepare to execute Inya's ill-conceived scheme."
+
+            jump witchstart
+
+        "Refuse":
+            gl "There is no purpose in affecting 'friendship'. I am stone, and you are flesh."
+
+            n "Inya looks genuinely hurt, and gravely disappointed. Her optimism was dashed away in an instant."
+
+            i "I guess you've made up your mind then."
+
+            gl "Indeed. It is not meant to be, creature of flesh. We must part ways."
+
+            n "Tears well up in the goblin's tiny pink eyes."
+
+            i "Okay… I'm leaving then. I don't care what you do."
+
+            n "Inya walks off into the sewers she made her home, almost managing to sound sincere." 
+
+            n "Her quiet sobbing betrays her true emotions, however."
+
+            "My purpose is undefined. I must not linger."
+
+            scene endingscreen 
+            with longdissolve  
+
+            n "[x] proceeds through the sewer system into the city, ignoring the echoes of the sobbing heartbroken goblin as stoically as stone."
+
+            n "[pronoun] knew not what awaited them in this cold world, but [pronoun] was prepared for it."
+
+            n "[pronoun] knew not what awaited them in this cold world, but [pronoun] was prepared for it."
+
+            jump witchstart
+
+label golemadesse:
+    if deadjulian:
+        jump golemescape5
+
+    elif leftwithgoblin:
+        jump golemescape6
+
+    jump golemescape7
+
+label golemescape5:
+    "The interloper's footsteps are fresh. I proceed."
+
+    n "The Golem follows Julian's tracks into the main vestibule."
+
+    scene wrathhall
+    with pixellate
+    n "A massive subterranean corridor. Sarcophagi line each side of this room."
+    show ghost at offright:
+        alpha .3
+    show dog at offleft:
+        alpha .3 
+    n "Faint, indistinct, macabre wraithspawn lurk in the corners of this place. In the center of the room lies the face-down corpse of the Golem's foe - this interloper oozing blood from its many wounds."
+
+    "I must neutralize these threats."
+
+    "Skill recalled: Blinding Flash"
+
+    n "The Golem emits a blinding pulse of radiance. The wraithspawn dissipate."
+
+    hide ghost
+    hide dog
+
+    "The interloper is vanquished, and I have no answers. No purpose."
+
+    n "The Golem, with a shred of hesitation, as if accepting the reality that this 'interloper' truly doesn't have any answers, tenderly flips over Julian's lifeless corpse."
+
+    menu:
+        "Express pity over the interloper's demise":
+            gl "A life taken prematurely. A senseless tragedy. The one responsible is nearby, and must pay."
+            gl "Wraiths are never directionless. A flame casts a shadow. I must extinguish this flame. This one's purpose is clear."
+
+            n "Purpose elucidated, the Golem proceeds through the crypt and glides down the vertical shaft into the Peasant's Graves."
+
+            scene monument
+            with fade
+
+            n "A narrow walkway encircles an open pit full of decomposing bodies of the less fortunate. Tenebrous shapes skirt the edge of the Golem's vision. From the opposing side of the pit - it manifests!"
+
+            jump golemtess
+        "Express triumphant exultation over the interloper's demise":
+            gl "The interloper has been neutralized. Objective complete. The location of this one's creator remains unknown."
+            gl "Perhaps the interloper's slayer shall know the location of this one's creator. I press on."
+
+            n "Purpose elucidated, the Golem proceeds through the crypt and glides down the vertical shaft into the Peasant's Graves."
+
+            scene monument
+            with fade    
+
+            n "A narrow walkway encircles an open pit full of decomposing bodies of the less fortunate. Tenebrous shapes skirt the edge of the Golem's vision. From the opposing side of the pit - it manifests!"
+
+            show adesse
+
+            u "Fascinating. An arcane anomaly."
+
+            n "This gives the Golem pause. It resolves to show the enemy of its enemy respect"
+
+            gl "The interloper perished to your spawn. You have this one's gratitude and admiration. I seek my creator."
+
+            n "The demoness wickedly quirks an eyebrow - her lips curl into a mischievous smile."
+
+            u "Oh, yes, yes, very good. And what are you? Who intrudes into my lair?"
+
+            "What is . . . my name?"
+
+            $x = "Character Name"
+
+            "I shall be [x]"
+
+            gl "I am [x]"
+
 

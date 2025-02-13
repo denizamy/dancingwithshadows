@@ -1,8 +1,5 @@
 # The script of the game goes in this file.
 
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
-
 define n = Character("Narrator",color="808080")
 define d = Character("Archdruid",color="164622")
 define j = Character("Julian",color="#3366cc")
@@ -14,6 +11,8 @@ define i = Character("Inya",color ="ff5dcf")
 define t = Character("Tess",color="eebf00")
 define gl = Character("Golem")
 define a = Character("Adesse",color="ff0000")
+define dh = Character("Dhalia",color="9e0000")
+
 
 image sword = "sword.png"
 image shield = "Shield.webp"
@@ -52,7 +51,7 @@ transform offright:
 
 transform topright:
     xalign 1.0
-    yalign 0.9
+    yalign 1.0
 
 screen inventory_display_toggle:
         zorder 92
@@ -70,7 +69,7 @@ define longdissolve = Dissolve(3.0)
 
 define fastdissolve = Dissolve(0.7)
 
-define quickdissolve = Dissolve(0.5)
+define quickdissolve = Dissolve(0.3)
 
 
 
@@ -289,7 +288,7 @@ label start:
 
     d "To defend from its treacherous dark magic, a shield warded against such sorcery - but note, it requires a source of light, even if it is just a spark."
 
-    d " Naturally, you will be allotted a days' rations for your journey."
+    d " Naturally, you will be allotted a day's rations for your journey."
 
     d "You'll find everything you need packed by the door. Complete the job, and return here for payment and debriefing."
 
@@ -367,9 +366,7 @@ label start:
 
     n "He wasted no time attending to the dubious duty he took as his yoke, all in the promise of gold."
 
-    scene crypt
-    with fade
-    
+    scene crypt with fade
 
     #########################################
 
@@ -381,10 +378,10 @@ label start:
 
     "The blasted thing must be inside. I should keep stock of my belongings before I head in."
 
-    hide crypt with dissolve
+    # i can't get this shit to transition smoothly without the fucking transparent checkerboard bullshit 
 
-    show black with dissolve
-    show screen inventory_display_toggle
+    hide crypt
+    scene black with dissolve
    
     "Sealed with a wax stamp. Strange, it looks like the monastery sigil."
     #contrackk imag 
@@ -406,8 +403,7 @@ label start:
     #fuckitweball, an open backpack next to the items above
     j "That's it."
 
-    hide screen inventory_display_toggle
-    show black with Dissolve(3)
+    show black with dissolve
     
     show crypt at deadcenter
 
@@ -448,6 +444,9 @@ label start:
     show shadow at offleft
     hide shadow with quickdissolve
     
+    show shadow at deadcenter
+    hide shadow with quickdissolve
+
     show shadow at topright 
     hide shadow with quickdissolve
 

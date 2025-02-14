@@ -1265,7 +1265,9 @@ show adesse:
     linear 6.0 yalign 0.0
 
 
-u "Many other mortals have fled, yet here you are… Did you mean to assail me here, in my chosen domain? Are you lost, Julian?"
+u "Many other mortals have fled, yet here you are…"
+
+u "Did you mean to assail me here, in my chosen domain? Are you lost, Julian?"
 
 label fightorquestiondemoness1:
 
@@ -1278,7 +1280,7 @@ label fightorquestiondemoness1:
 
             "Question the demoness":
 
-                j "Are you? I see - you divined my name."
+                j "Are {i}you{/i}? I see - you divined my name."
                 
                 "(stumbling over words)"
                 

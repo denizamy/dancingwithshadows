@@ -10,11 +10,6 @@ define x = Character("Unknown Voice",color="652EAF")
 define i = Character("Inya",color ="ff5dcf")
 define t = Character("Tess",color="eebf00")
 define gl = Character("Golem")
-<<<<<<< HEAD
-define a = Character("Adesse",color="ff0000")
-define dh = Character("Dhalia",color="9e0000")
-=======
->>>>>>> parent of 7413ee4 (Update script.rpy)
 
 
 image sword = "sword.png"
@@ -51,13 +46,6 @@ transform offright:
     xalign 1.0
     yalign 0.7
 
-<<<<<<< HEAD
-transform topright:
-    xalign 1.0
-    yalign 1.0
-
-=======
->>>>>>> parent of 7413ee4 (Update script.rpy)
 screen inventory_display_toggle:
         zorder 92
         frame:
@@ -73,10 +61,6 @@ screen inventory_display_toggle:
 define longdissolve = Dissolve(3.0)
 
 
-<<<<<<< HEAD
-define quickdissolve = Dissolve(0.3)
-=======
->>>>>>> parent of 7413ee4 (Update script.rpy)
 
 
 
@@ -298,11 +282,7 @@ label start:
 
     d "To defend from its treacherous dark magic, a shield warded against such sorcery - but note, it requires a source of light, even if it is just a spark."
 
-<<<<<<< HEAD
-    d " Naturally, you will be allotted a day's rations for your journey."
-=======
     d " Naturally, you will be allotted three days' rations for your journey."
->>>>>>> parent of 7413ee4 (Update script.rpy)
 
     d "You'll find everything you need packed by the door. Complete the job, and return here for payment and debriefing."
 
@@ -453,15 +433,7 @@ label start:
     
     show shadow at right
     
-<<<<<<< HEAD
-    show shadow at deadcenter
-    hide shadow with quickdissolve
-
-    show shadow at topright 
-    hide shadow with quickdissolve
-=======
     hide shadow with fastdissolve
->>>>>>> parent of 7413ee4 (Update script.rpy)
 
     n "On the periphery of your vision, you notice unusual fleeting shadows. The demon must not be far off, and it has nowhere to run. One of you must perish today."
 
@@ -1113,7 +1085,7 @@ label choice1_done:
     show dog at offleft:
         alpha .3 
     
-    j "Canine Wraithspawn - A beloved family pet, perhaps?"
+    n "Canine Wraithspawn, A beloved family pet, perhaps?"
      
     j "It paces throughout the chamber as if seeking out its master."
      
@@ -1519,7 +1491,7 @@ label demonessresolution4:
 
     jump goodend
 
-label neutralend:
+    label neutralend:
 
     scene endingscreen
     with pixellate
@@ -1566,7 +1538,6 @@ label golemstart:
     define golembreakmirror = True
 
     menu:
-    
         "Pull yourself together" if golempulltogether:
 
             gl "Sundered, but not destroyed, I remain - and will persist, until this one's destruction."
@@ -1583,7 +1554,6 @@ label golemstart:
             n "A dirty mirror, covered in years of dust and grime. The Golem wipes away the thick coating of dust."
 
             gl "This one's appearance is clarified - but this one's objective is unclear. Identity is lost - purpose, undetermined."
-    
             gl "These mirrors are created by covering a glass pane with a tin-quicksilver amalgam, then heating the pane to evaporate the quicksilver."
 
             gl "A protective covering of copper may be added to reduce corrosion. This one suspects this mirror has been treated with such a coating."
@@ -1623,9 +1593,9 @@ label golempresson:
     menu:
 
         "Express Rage":
-                
+
             gl "None may tread into my creator's sanctum. This interloper will be located, and exterminated."
-                
+
             jump golemproceed
 
         "Express Gratitude":
@@ -1661,13 +1631,11 @@ label golemgoblin:
 
     elif goblindead:
         jump golemescape2
-    
     jump golemescape3
 
 label golemescape1:
 
     n "The footsteps continued in this direction. The Golem tirelessly pursues this interloper - and its objective, whenever it determines what its objective may be."
-    
     scene goblinroom
     with pixellate
 
@@ -1689,7 +1657,6 @@ label golemescape1:
             $pronoun = "It"
             $pronouns = "its"
 
-    
     n "[pronoun] concentrates, divining information about 'the interloper' and his acquaintance using [pronouns] recalled latent magical ability to do so."
 
     "Skill recalled: Divination"
@@ -1713,13 +1680,11 @@ label golemescape1:
     gl "I have many questions. Perhaps this interloper will elucidate my purpose."
 
     n "[x] pursues Julian and Inya through the sewers, tirelessly. [pronoun] takes stock of Inya's deviation from Julian's path, but resolves to pursue Julian in the hopes of finding answers - and a purpose."
-    
     jump witchstart
 
 label golemescape2:
 
     n "The footsteps continued in this direction. The Golem tirelessly pursues this interloper - and its objective, whenever it determines what its objective may be."
-    
     scene goblinroom
     with pixellate
 
@@ -1739,7 +1704,6 @@ label golemescape2:
     gl "The interloper - the intruder in this one's master's domain fled. Senseless cowardice. Shame and guilt. The interloper has much to answer for. This is not the first murder he committed. He shall answer for his crimes."
 
     n "Using its recalled skill, the Golem pondered on what this information meant, and how it relates to it."
-        
     gl "What am I? What I was once is of little consequence - memories are no more."
 
     menu:
@@ -1763,13 +1727,11 @@ label golemescape2:
     with longdissolve
 
     n "The Golem followed Julian's trail through the sewers, exiting to the city streets. [pronoun] found [pronouns] purpose and [pronouns] objective."
-    
     n "The conclusion and confrontation between the golem and Julian will play out, in time."
 
     jump witchstart
 
 label golemescape3:
-    
     n "The footsteps deviate to the left. This gives the Golem pause."
 
     menu:
@@ -1837,7 +1799,6 @@ label golemescape4:
     i "I don't know what any of that means."
 
     i "Are you a boy or a girl, [x]?"
-    
     "What am I? What I was once is of little consequence - memories are no more."
 
     menu:
@@ -1914,7 +1875,6 @@ label golemescape4:
             with longdissolve
 
             n "Inya nods, contextually learning new vocabulary words from [x] as they speak."
-            
             n "She appears to be genuinely hopeful and excited for this new adventure. "
 
             n "The pair leave immediately, heading through the sewers to the city as they prepare to execute Inya's ill-conceived scheme."
@@ -1935,14 +1895,12 @@ label golemescape4:
             i "Okay… I'm leaving then. I don't care what you do."
 
             n "Inya walks off into the sewers she made her home, almost managing to sound sincere." 
-            
             n "Her quiet sobbing betrays her true emotions, however."
 
             "My purpose is undefined. I must not linger."
 
             scene endingscreen 
             with longdissolve  
-            
             n "[x] proceeds through the sewer system into the city, ignoring the echoes of the sobbing heartbroken goblin as stoically as stone."
 
             n "[pronoun] knew not what awaited them in this cold world, but [pronoun] was prepared for it."
@@ -1962,9 +1920,9 @@ label golemadesse:
 
 label golemescape5:
     "The interloper's footsteps are fresh. I proceed."
-    
+
     n "The Golem follows Julian's tracks into the main vestibule."
-    
+
     scene wrathhall
     with pixellate
     n "A massive subterranean corridor. Sarcophagi line each side of this room."
@@ -1977,14 +1935,12 @@ label golemescape5:
     "I must neutralize these threats."
 
     "Skill recalled: Blinding Flash"
-    
     n "The Golem emits a blinding pulse of radiance. The wraithspawn dissipate."
 
     hide ghost
     hide dog
 
     "The interloper is vanquished, and I have no answers. No purpose."
-    
     n "The Golem, with a shred of hesitation, as if accepting the reality that this 'interloper' truly doesn't have any answers, tenderly flips over Julian's lifeless corpse."
 
     menu:
@@ -2010,7 +1966,6 @@ label golemescape5:
             with fade    
 
             n "A narrow walkway encircles an open pit full of decomposing bodies of the less fortunate. Tenebrous shapes skirt the edge of the Golem's vision. From the opposing side of the pit - it manifests!"
-            
             show adesse
 
             u "Fascinating. An arcane anomaly."
@@ -2028,13 +1983,7 @@ label golemescape5:
             $x = "Character Name"
 
             "I shall be [x]"
-            
+
             gl "I am [x]"
-
-                    
-
-
-
-
 
 

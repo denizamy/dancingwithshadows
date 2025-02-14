@@ -10,7 +10,8 @@ define x = Character("Unknown Voice",color="652EAF")
 define i = Character("Inya",color ="ff5dcf")
 define t = Character("Tess",color="eebf00")
 define gl = Character("Golem")
-
+define a = Character("Adesse",color="ff0000")
+define dh = Character("Dhalia",color="9e0000")
 
 image sword = "sword.png"
 image shield = "Shield.webp"
@@ -45,6 +46,9 @@ transform offleft:
 transform offright:
     xalign 1.0
     yalign 0.7
+transform topright:
+    xalign 1.0
+    yalign 1.0
 
 screen inventory_display_toggle:
         zorder 92
@@ -59,7 +63,7 @@ screen inventory_display_toggle:
         on "hide" action Hide("inventory_item_description")
 
 define longdissolve = Dissolve(3.0)
-
+define quickdissolve = Dissolve(0.3)
 
 
 
@@ -282,7 +286,7 @@ label start:
 
     d "To defend from its treacherous dark magic, a shield warded against such sorcery - but note, it requires a source of light, even if it is just a spark."
 
-    d " Naturally, you will be allotted three days' rations for your journey."
+    d "Naturally, you will be allotted three days' rations for your journey."
 
     d "You'll find everything you need packed by the door. Complete the job, and return here for payment and debriefing."
 
@@ -431,9 +435,11 @@ label start:
     n "Torchlight glints off of brass embellishments on the sarcophagi populating this moderately impressive tomb."
 
     
-    show shadow at right
-    
-    hide shadow with fastdissolve
+    show shadow at deadcenter
+    hide shadow with quickdissolve
+
+    show shadow at topright 
+    hide shadow with quickdissolve
 
     n "On the periphery of your vision, you notice unusual fleeting shadows. The demon must not be far off, and it has nowhere to run. One of you must perish today."
 
@@ -1085,7 +1091,7 @@ label choice1_done:
     show dog at offleft:
         alpha .3 
     
-    n "Canine Wraithspawn, A beloved family pet, perhaps?"
+    n "A beloved family pet, perhaps?"
      
     j "It paces throughout the chamber as if seeking out its master."
      

@@ -12,6 +12,8 @@ define t = Character("Tess",color="eebf00")
 define gl = Character("Golem")
 define a = Character("Adesse",color="ff0000")
 define dh = Character("Dhalia",color="9e0000")
+define uw = Character("Unknown Warrior",color="eebf00")
+                      
 
 image sword = "sword.png"
 image shield = "Shield.webp"
@@ -1353,7 +1355,7 @@ label attackdemoness2:
     n "In a confluence of circumstance and power, desperation and need, he executes an overhead swing with his Demonslaying Blade."
 
     #nasty cranium slicing sound
-    
+
     n "The demoness's self-satisfied expression fades as the blade slices through her cranium."
     
     j "There's… no blood. But it's gone. I can feel its absence."
@@ -1364,47 +1366,69 @@ label demonessresolution1:
 
     hide adesse
 
-    n "Julian's vision blurs as he bleeds out against the cold stone. Revealed in blood-blurred snapshots as he blinks, unbelievably, he sees a warrior doing battle with the Demon of Shadow. A few moments of combat pass, and then silence."
+    n "Julian's vision blurs as he bleeds out against the cold stone."
 
-    n "The room fills with the smell of sweet sulfur, and Julian, losing consciousness, feels a slight stab of pain. His hero - this masked avenger crouches down to check his vitals and speaks in a soft, deep female voice."
+    n "Revealed in blood-blurred snapshots as he blinks, unbelievably, he sees a warrior doing battle with the Demon of Shadow."
 
-    t "You shouldn't be here. Did Nikolai put you up to this?"
+    n "A few moments of combat pass, and then silence."
+
+    n "The room fills with the smell of sweet sulfur, and Julian, losing consciousness, feels a slight stab of pain."
+
+    n "His hero - this masked avenger, crouches down to check his vitals and speaks in a soft, deep female voice."
+
+    uw "You shouldn't be here. Did Nikolai put you up to this?"
 
     n "The warrior sighs, audibly unbuckling the clasp securing her pack, and withdraws salves, a splint kit, a needle, and thread."
 
-    t "If you can hear me… I'm going to tend to your wounds. This is going to hurt a lot. You've proven your bravery, soldier. I just need you to hang in there just a little bit longer."
+    uw "If you can hear me… I'm going to tend to your wounds. This is going to hurt a lot."
+    
+    uw "You've proven your bravery, soldier. I need you to hang in there just a little bit longer."
 
-    n "The warrior sutures Julian's wounds and stops the worst of his bleeding. Time lost meaning to Julian, amidst the agony of his countless injuries. And yet, somehow, he clings to consciousness."
+    n "The warrior sutures Julian's wounds and stops the worst of his bleeding."
 
-    t "C'mon, stay with me… you can't die on me just yet."
+    n "Time lost meaning to Julian, amidst the agony of his countless injuries. And yet, somehow, he clings to consciousness."
 
-    t "I've tended to your scrapes and stopped the bleeding. You're doing great, but we're not out of the woods yet. I'm going to set your leg. Bite down if you need to, or you're going to bite through your tongue and suffocate on your own blood."
+    uw "C'mon, stay with me… you can't die on me just yet."
 
-    n "Bleary-eyed, Julian scans the room. There is no trace of the demon - save a suspicious, soft-looking stone where she fell. Likewise, the shadows have stopped moving of their own accord. He looks over to his savior."
+    uw "I've tended to your scrapes and stopped the bleeding. You're doing great, but we're not out of the woods yet."
 
-    n "Until she spoke, he had no indication this powerful warrior was a woman. She eschews armor for green and brown traveler's leathers, adorned with protective talismans. Her longboots are characteristic of the locality."
+    uw "I'm going to set your leg. Bite down if you need to, or you're going to bite through your tongue and suffocate on your own blood."
 
-    n "Her saw-toothed metal staff and iron mask strike Julian as distinct, but wracking his brain, he comes up with nothing for their origin. Whomever she is, she is a skilled warrior and healer."
+    n "Bleary-eyed, Julian scans the room. There is no trace of the demon - save a suspicious, soft-looking stone where she fell."
+
+    n "Likewise, the shadows have stopped moving of their own accord. He looks over to his savior."
+
+    n "Until she spoke, he had no indication this powerful warrior was a woman."
+
+    n "She eschews armor for green and brown traveler's leathers, adorned with protective talismans. Her longboots are characteristic of the locality."
+
+    n "Her saw-toothed metal staff and iron mask strike Julian as distinct, but wracking his brain, he comes up with nothing for their origin."
+
+    n "Whomever she is, she is a skilled warrior and healer."
 
     n "The warrior slips a bit made of hard rubber into Julian's mouth and prepares to set his leg."
 
-    t "Stay with me here..."
+    uw "Stay with me here..."
 
-    t "3..."
+    uw "3..."
 
-    t "2..."
+    uw "2..."
 
-    t "1..."
+    uw "1..."
 
-    n "An audible crunch disturbs the silence of the chamber as she sets the bone. Julian, despite his wounded and half-conscious state, lets out a muffled wail, biting down hard on the bit."
+    n "An audible crunch disturbs the silence of the chamber as she sets the bone."
 
-    t "We're almost done. Hang in there. You're doing great."
+    n "Julian, despite his wounded and half-conscious state, lets out a muffled wail, biting down hard on the bit."
+
+    uw "We're almost done. Hang in there. You're doing great."
 
     n "The warrior removes his plated leggings and rips his pant leg, using the material to bind the splint."
 
-    t "I'm going to pick you up. It's going to hurt a bit. You really shouldn't be moved in this condition, but we're not exactly swimming in options. You're in good hands. You can leave as soon as you have recovered, but I'm going to have some questions for you first."
+    uw "I'm going to pick you up. It's going to hurt a bit. You really shouldn't be moved in this condition, but we're not exactly swimming in options."
 
-    t "You can call me Tess. I think you're brave, for whatever that's worth."
+    uw "You're in good hands. You can leave as soon as you have recovered, but I'm going to have some questions for you first."
+
+    uw "You can call me Tess. I think you're brave, for whatever that's worth."
 
     n "Tess carefully heaves Julian over her shoulder. Julian passes out shortly thereafter."
 

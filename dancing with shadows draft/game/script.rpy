@@ -686,7 +686,7 @@ label cutbolt:
 
         g "But uh, that is why I'm here. I wanted to see if there's any substance to the rumors!"
 
-        g "Some tales have truth to them, and some don't. The bars were disappointing - but now they're not! "
+        g "Some tales have truth to them, and some don't. The bars were disappointing - but now they're not!"
 
         g "Thanks Mr. human guy. What's your name?"
 
@@ -698,7 +698,7 @@ label cutbolt:
 
         g "Oooh, no."
 
-        g "I'm not familiar with them, but I'd like to be. I haven't even met one, but the farmers are afraid of them too, like you. "
+        g "I'm not familiar with them, but I'd like to be. I haven't even met one, but the farmers are afraid of them too, like you."
 
         g "Their tales about magicians are a little different like… the magicians cursed the crops, or made someone's baby be born under an 'ill omen'. But no kidnapping."
 
@@ -722,7 +722,7 @@ label cutbolt:
 
         n "She continues on, frowning and obviously just a bit uncomfortable. At the same time, she seems desperate for social contact, and most likely doesn't have much experience socializing."
 
-        g "When I was young, a bit too young, I was exiled from my tribe on account of my 'difference"
+        g "When I was young, a bit too young, I was exiled from my tribe on account of my 'difference.'"
 
         n "The goblin gestures at herself, presumably indicating the ivory color of her skin, her pink eyes, and white hair."
 
@@ -734,9 +734,9 @@ label cutbolt:
 
         g "You'd find what I eat gross, but it's not gross for goblins. Well…"
 
-        g "I've made a bit of a life for myself up here. Down here. Wherever 'here' is at the moment. "
+        g "I've made a bit of a life for myself up here. Down here. Wherever 'here' is at the moment."
 
-        g "I'm really familiar with the sewers, because listening to the same rumors and legends gets pretty boring. I keep myself safe with my blowgun, aaaaannnnnd… "
+        g "I'm really familiar with the sewers, because listening to the same rumors and legends gets pretty boring. I keep myself safe with my blowgun, aaaaannnnnd…"
 
         g "I pretty much never get lost. As for my tribe…You don't need to worry about them. They live much farther down."
 
@@ -776,7 +776,7 @@ label cutbolt:
 
         i "Yes, that's what I am."
 
-        n "Julian deliberately nods, affirming their agreement to call Inya 'Inya'."
+        n "Julian deliberately nods, affirming their agreement to call Inya 'Inya.'"
 
         j "Inya, do you know how I might get to the city?"
 
@@ -815,7 +815,7 @@ label cutbolt:
 
         i "Can we make it two hours after nightfall? That's the best hunting, at dusk."
 
-        j "Sure. I'll see you then, Inya"
+        j "Sure. I'll see you then, Inya."
 
         n "The goblin giggles."
 
@@ -848,7 +848,7 @@ label cutbolt:
 
     "Well, that was easy. I feel guilty, but a bit less guilty this go around. I'd best keep moving and not think about it too hard."
 
-    n "Julian, indeed, made his way through the sewers, into the city. "
+    n "Julian, indeed, made his way through the sewers, into the city."
 
     n "It was just as dreadful and stinky as he thought it would be, and in the end, he had nothing to show for his effort."
 
@@ -858,7 +858,7 @@ label cutbolt:
     scene endingscreen
     with pixellate
 
-    j "I had best lay low for a while. That magician will inevitably send cronies after me if he really did have one hundred crowns to just throw around. "
+    j "I had best lay low for a while. That magician will inevitably send cronies after me if he really did have one hundred crowns to just throw around."
 
     j "What did he call these things - a silvered blade and a shield capable of deflecting dark magic?"
 
@@ -881,7 +881,7 @@ label nogoblin:
 
     j "I'm better than this. Let's be thorough."
 
-    n "You return back to artium"
+    n "You return back to artium."
 
     scene room1
     with pixellate
@@ -892,7 +892,7 @@ label nogoblin:
     
 label golemchoice:
 
-    n "Before you is tunnel that is barricaded by a few simple boards"
+    n "Before you is tunnel that is barricaded by a few simple boards."
 
     j "Ugh, do I really want to be doing this?"
 
@@ -1059,7 +1059,7 @@ label choice1_done:
 
     label choice3_done:
 
-    j "I must hurry, time is of the essence"
+    j "Let's keep moving."
 
     scene wrathhall
     with pixellate
@@ -1142,20 +1142,20 @@ label choice1_done:
 
     n "Statues are torn from the podiums from which they rested, and stone slabs commemorating the deeds of the heroic dead have been toppled."
 
-    n " The floor is littered with debris and dust. Despite this, there isn’t a single footprint to be seen."
+    n " The floor is littered with debris and dust. Despite this, there isn't a single footprint to be seen."
 
     n "Aside from the ladder down and the way you entered, it appears all of the connecting chambers are blocked by collapsed rubble."
 
-    j "The locals surely wouldn’t do this"
+    j "The locals surely wouldn't do this"
 
     j "I should be on guard and gather my bearings before pushing ahead."
 
     menu:
         "Look around":
-            n "You look around and see an Antique Silver Coin"
+            n "You look around and see an Antique Silver Coin."
 
     show coin at deadcenter
-
+    #find a less stupid coin image with a transparent background
 
     j "The old farts at the monastery and maybe some of the druids remember when these were minted."
 
@@ -1180,7 +1180,7 @@ label choice1_done:
 
         f "Something is off about this. I should trust my gut. Much is amiss in this tomb, and I had best not tempt the spirits. One monster is enough…"
 
-        n "You leave the coin and move on"
+        n "You leave the coin and move on."
 
         hide coin
 

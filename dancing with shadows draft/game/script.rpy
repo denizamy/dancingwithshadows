@@ -1740,7 +1740,7 @@ label golemescape1:
 
     gl "He has little trust. He was curious, cautiously hopeful and bemused."
 
-    gl "His acquaintance is named Zanya, although she has assumed the alias 'Inya'. Undocumented species. Humanoid. Assessing . . ."
+    gl "His acquaintance is named Zanya, although she has assumed the alias 'Inya.' Undocumented species. Humanoid. Assessing . . ."
 
     gl "Likely an offshoot of humans engineered by sorcery to survive in inhospitable conditions. Slightly extended lifespan and hardiness."
 
@@ -1764,7 +1764,7 @@ label golemescape2:
     with pixellate
 
     gl "The interloper joined another. This one's senses indicate one is male - human. His name is Julian Grymwald."
-    gl "The other is . . . an unknown female. Deceased.  The female was named Zanya, although she assumed the alias 'Inya'."
+    gl "The other is . . . an unknown female. Deceased. The female was named Zanya, although she assumed the alias 'Inya.'"
 
     n "The Golem gingerly picks up the goblin's corpse, handling it with care. It inspects the wounds, then carefully deposits the goblin where it previously lied."
 
@@ -1773,12 +1773,13 @@ label golemescape2:
     n "The Golem concentrates, divining information about 'the interloper' and his acquaintance using their recalled latent magical ability to do so"
 
     "Skill recalled: Divination"
-
+    #different text color maybe?
     gl "Fear was the last emotion she felt. A sting of betrayal - fading optimism and curiosity."
 
     gl "The interloper - the intruder in this one's master's domain fled. Senseless cowardice. Shame and guilt. The interloper has much to answer for. This is not the first murder he committed. He shall answer for his crimes."
 
     n "Using its recalled skill, the Golem pondered on what this information meant, and how it relates to it."
+
     gl "What am I? What I was once is of little consequence - memories are no more."
 
     menu:
@@ -1826,8 +1827,10 @@ label golemescape4:
     n "The way is blocked by iron bars. The Golem pauses, reflecting on the obstacle."
 
     "Skill recalled: Surge of Strength"
+    #different text color maybe?
 
     n "Mere iron cannot stop the Golem. It snaps the bars like insignificant twigs."
+    #bar breaking sfx
 
     scene goblinroom
     with pixellate
@@ -1842,7 +1845,7 @@ label golemescape4:
 
     "This creature presents me no threat. It appears to carry a blowgun, which fires darts traditionally bearing poisons harmful to organic creatures."
 
-    "Flesh, I am not. Threatened, I am not. This unknown creature poses no threat to "
+    "Flesh, I am not. Threatened, I am not. This unknown creature poses no threat to [x]"
 
     gl "You pose no threat to this one. You shall not be harmed, if you remain pacified."
 
@@ -2010,6 +2013,7 @@ label golemescape5:
     "I must neutralize these threats."
 
     "Skill recalled: Blinding Flash"
+    #different text color maybe?
     n "The Golem emits a blinding pulse of radiance. The wraithspawn dissipate."
 
     hide ghost

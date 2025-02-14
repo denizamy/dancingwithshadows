@@ -1313,7 +1313,8 @@ label dodgedemoness1:
 label blockdemoness1:
 
     j "I can block them with my shield!"
-    n "The dark magic spines melt like snow against Julian's blessed shield.  The deomoness gathers energy for her next spell, giving Julian an opportunity to strike."
+    n "The dark magic spines melt like snow against Julian's blessed shield."
+    n "The deomoness gathers energy for her next spell, giving Julian an opportunity to strike."
     jump fightdemoness2
 
 label attackdemoness1:
@@ -1340,7 +1341,10 @@ label dodgedemoness2:
 
 label blockdemoness2:
 
-    n "Julian's opportunity to strike was squandered. The demoness finishes casting her spell, sending razorblades of darkness hurtling towards Julian from all directions. Perhaps thanks to his armor or an absurdly good stroke of luck, he manages to cling to life and consciousness, but only just."
+    n "Julian's opportunity to strike was squandered. The demoness finishes casting her spell, sending razorblades of darkness hurtling towards Julian from all directions."
+
+    n "Perhaps thanks to his armor or an absurdly good stroke of luck, he manages to cling to life and consciousness, but only just."
+
     jump demonessresolution1
 
 label attackdemoness2:

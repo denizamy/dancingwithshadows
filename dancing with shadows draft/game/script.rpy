@@ -1220,11 +1220,11 @@ menu:
             jump memorials
 
 label memorials:
-            n "Toppled Memorials: Dedicated to heroes who were stalwart defenders of the people - soldiers and sellswords alike. Many of them fell to demons."
+            n "Dedicated to heroes who were stalwart defenders of the people - soldiers and sellswords alike. Many of them fell to demons."
 
             j "It seems like a bit of a petulant tantrum, doesn't it? Perhaps my expectations of these creatures were too lofty."
 
-            n "Ladder: A ladder in the center of the room, leading down to the peasant's graves. It looks freshly disturbed. "
+            n "A ladder in the center of the room, leading down to the peasant's graves. It looks freshly disturbed."
 
             j "What purpose could this demon have disturbing the remains of the destitute?"
             
@@ -1242,15 +1242,19 @@ menu:
 label ladderdown:
 
 "The shadows dance here, I must be close. There is a narrow walkway encircling an open pit, where the less fortunate are tossed to rot."
+
 "At least these are embalmed - a small courtesy for the poor."
+
 "It's a dead end. The demon is surely here. But where?"
+
 "Ugh, I don't think I can bear this stench for much longer…"
 
 
 n "There - on the other side of the platform, the shadows take shape - the demon manifests."
 # sound
 
-"… … … "
+"… … …"
+
 "What in the world?"
 
 #show adesse with slide Down

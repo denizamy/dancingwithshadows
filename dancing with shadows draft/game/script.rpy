@@ -167,6 +167,7 @@ label start:
     show druid at deadcenter:
         alpha .5
 
+    play sound "fireplace.mp3"
 
     n "A small, sincere smile colors the Archdruid's features upon spotting Julian - wicked away in an instant as he studies the young mercenary."
 
@@ -174,7 +175,7 @@ label start:
 
     n "He gestures at the open seat next to the fire and speaks with a soft woody baritone - akin to the rumble of straining mine supports deep in the earth."
 
-    j "Magicians of any kind make me nervous. He seems friendly enough, but I shouldn't let my guard down."
+    "Magicians of any kind make me nervous. He seems friendly enough, but I shouldn't let my guard down."
 
     d "A friend told me you would come. Thank you for your interest in this assignment, young fellow. Take a seat and relax - this is a truly safe place. This world could use a few more of those."
 
@@ -193,7 +194,7 @@ label start:
 
         n "A certain magic fades from the air, as if Julian's pronouncement conflicted with the place itself, despite the Archdruid remaining largely unfazed."
 
-        n  "Julian sighs, realizing his faux pas."
+        n "Julian sighs, realizing his faux pas."
 
         d "I shan't begrudge the intemperance of youth."
 
@@ -237,7 +238,11 @@ label start:
 
         j "I suppose… well, I don't see why not."
 
+        play sound "pouring.mp3"
+
         n "The Archdruid rises from his seat and pours a dark orange liquid into two polished wooden cups. There's a bit of relief reflected in his dark eyes. He passes a cup to Julian, who hastily downs the contents."
+
+        play sound "fireplace.mp3"
 
         j "It's warming. What is this?"
 
@@ -304,7 +309,7 @@ label start:
 
     n "The Archdruid grunts. It's not abundantly clear if he found some humor in Julian's statement, or if he's annoyed."
 
-    d "Reflect on my words young man. Be safe and swift."
+    d "Reflect on my words, young man. Be safe and swift."
 
     hide druid
 
@@ -356,7 +361,7 @@ label start:
 
     play music "Floating Cities.mp3"
 
-    n "Julian undergoes a three-day travel through the city, to the outskirts. "
+    n "Julian undergoes a daylong travel through the city, to the outskirts. "
     
     n "Primarily, Julian spent the time reflecting on his mission and the Archdruid, and speculated on what was to come. "
 
@@ -383,18 +388,24 @@ label start:
    
     "Sealed with a wax stamp. Strange, it looks like the monastery sigil."
 
+    #contrackk imag
+
     n "It reads: Slay and banish the presence, whatever it may be, from this formerly sanctified place of rest."
 
     show sword at deadcenter
-    hide sword with dissolve
 
     j "The sheen on this steel heater is phenomenal, and as long as there is even a scant amount of light, the Archdruid reassured me none of the demon’s shadow magic can harm me."
 
+    hide sword with dissolve
     show backpack at deadcenter
 
-    j "I don’t even want to think about hardtack if I can’t soften it up first. It’s about as hard and appetizing as a brick."
+    j "I don't even want to think about hardtack if I can't soften it up first. It's about as hard and appetizing as a brick."
 
-    j "It’s filled with three-day old small beer. Smells sour. I probably shouldn’t, unless I really need to."
+    #hardtack image maybe?
+
+    j "It's filled with three-day old small beer. Smells sour. I probably shouldn't, unless I really need to."
+
+    #nasty lil bottle of beer image maybe?
 
     hide backpack
     with dissolve
@@ -406,7 +417,7 @@ label start:
     show crypt at deadcenter
 
     
-    f "Okay, enough stalling... let's do this"
+    f "Okay, enough stalling... let's do this."
 
     menu:
 
@@ -450,7 +461,7 @@ label start:
 
     n "It seems the townsfolk or druids left a torch here for your use."
 
-    j 'Oh, a torch'
+    j 'Oh, a torch.'
 
     label picktorch:
 
@@ -477,7 +488,7 @@ label start:
 
         play sound "torchlighting.mp3"
         
-        n "You stike the torch along the stone walls"
+        n "You stike the torch along the stone walls."
 
 
         show lit at deadcenter
@@ -494,7 +505,7 @@ label start:
 
         f "I'll be fine."
 
-        n "You leave the torch behind"
+        n "You leave the torch behind."
         
         jump choice2_done
 
@@ -570,7 +581,7 @@ label start:
     if boltcutters:
         jump cutbolt
 
-    n "Julian returns to the Atrium"
+    n "Julian returns to the Atrium."
 
     jump LookLeftLookRight
     
@@ -596,7 +607,7 @@ label cutbolt:
 
         n "Julian makes quick work of the bolts."
 
-        n "The way to the sewers is clear, even though the hydraulic lock to the crypt holds fast. "
+        n "The way to the sewers is clear, even though the hydraulic lock to the crypt holds fast."
 
         n "There is a way out yet, even if it is a dismal path."
 
@@ -609,11 +620,11 @@ label cutbolt:
 
         show goblin at deadcenter
 
-        n "The lurking creature speaks, with a scratchy, but distinctly feminine voice. "
+        n "The lurking creature speaks, with a scratchy, but distinctly feminine voice."
 
         g "Heya. I've been watching you."
 
-        j "You what? I… What the hell are you"
+        j "You what? I… What the hell are you?"
 
         g "Haha. I'm a goblin."
 

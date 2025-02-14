@@ -1461,9 +1461,13 @@ label questiondemoness1:
 
     n "The demoness narrows her eyes and scowls."
 
-    u "My nature dictates me to assume a form that resonates with the desires of those who behold me. Perhaps you would be best served reflecting on your own preferences... This parley tires me - accept this small mercy before I reconsider."
+    u "My nature dictates me to assume a form that resonates with the desires of those who behold me. Perhaps you would be best served reflecting on your own preferences..." 
+    
+    u "This parley tires me - accept this small mercy before I reconsider."
 
-    u "I have harmed none of the hapless fools who wandered into my domain, and I extend the same courtesy to you - in honor of the dead. This place is meant for the grieving, is it not? Leave me to grieve."
+    u "I have harmed none of the hapless fools who wandered into my domain, and I extend the same courtesy to you - in honor of the dead."
+    
+    u "This place is meant for the grieving, is it not? Leave me to grieve."
 
     label fightorquestiondemoness2:
     
@@ -1472,7 +1476,9 @@ label questiondemoness1:
 
             n "Drawing your blade, you steel yourself for battle."
             
-            j "The Archdruid cautioned me against the lies of your kind. You’re afraid, monster - and I am no fool. If you have an ounce of honor, face me. I offer you a duel. Your life or mine. Let us settle this now."
+            j "The Archdruid cautioned me against the lies of your kind. You’re afraid, monster - and I am no fool."
+            
+            j "If you have an ounce of honor, face me. I offer you a duel. Your life or mine. Let us settle this now."
         
             jump fightdemoness1              
 
@@ -1491,11 +1497,13 @@ label questiondemoness2:
         size (1240, 1754)
         xalign 0.5 yalign 0.0
 
-    n "The demoness’s eyes look distant, and she appears forlorn."
+    n "The demoness's eyes look distant, and she appears forlorn."
 
     n "Her gaze drifts from the silver coin to the pit between you and her - this pit where the bodies of the destitute are unceremoniously thrown and left to rot."
 
-    u "There was another mortal, not unlike yourself. We shared a bond, of sorts. Like you, she lived a fickle and fleeting life, and was taken from me - like you, she hesitated, and like you, she showed me mercy. She rests here, in this muck of unfortunates."
+    u "There was another mortal, not unlike yourself. We shared a bond, of sorts."
+    
+    u "Like you, she lived a fickle and fleeting life, and was taken from me - like you, she hesitated, and like you, she showed me mercy. She rests here, in this muck of unfortunates."
 
     menu:
         
@@ -1517,13 +1525,19 @@ label demonessresolution3:
         size (1240, 1754)
         xalign 0.5 yalign 0.0
 
-    u "You are most unusual and merciful for one who has lived such a dastardly life, Julian. Only an orphan such as yourself could truly understand that sting of loss… The druids caution many against the worst atrocities of my kind, and they speak true…  We part, monster and murderer. We shall meet again."
+    u "You are most unusual and merciful for one who has lived such a dastardly life, Julian. Only an orphan such as yourself could truly understand that sting of loss…"
+    
+    u "The druids caution many against the worst atrocities of my kind, and they speak true…  We part, monster and murderer. We shall meet again."
 
     n "The demoness vanishes, and the dancing shadows in the room stall to a halt."
 
-    j "What an ordeal… Demons are both very like and very unlike how Archdruid described them. I couldn’t have possibly prepared for this. Even so… I can’t help but have my thoughts wander to that beshadowed beauty. It’s a pity I never learned her name - although I shudder at the thought of meeting again."
+    j "What an ordeal… Demons are both very like and very unlike how Archdruid described them. I couldn’t have possibly prepared for this."
+    
+    j "Even so… I can’t help but have my thoughts wander to that beshadowed beauty. It’s a pity I never learned her name - although I shudder at the thought of meeting again."
 
-    j "She seemed quite confident we would… but if she knows the worst of my crimes, how could she see anything good in me? Perhaps… I can only be my truest, deepest self with a demon. Nay, I should banish the thought."
+    j "She seemed quite confident we would… but if she knows the worst of my crimes, how could she see anything good in me?"
+    
+    j "Perhaps… I can only be my truest, deepest self with a demon. Nay, I should banish the thought."
 
     jump neutralend
 
@@ -1538,11 +1552,15 @@ label demonessresolution4:
 
     u "I am called Adesse, mortal. You have given me much to consider - but I believe this encounter draws to an end"
 
-    u "I shall say my final farewell and depart. You may tell your superiors whatever you choose - but this is not our last meeting, Julian. You’re… intriguing - and you remind me of someone I once loved."
+    a "I shall say my final farewell and depart. You may tell your superiors whatever you choose - but this is not our last meeting, Julian. 
+    
+    a "You're… intriguing - and you remind me of someone I once loved."
 
-    n "A bittersweet smile colors Adesse’s ethereal features moments before she vanishes, and the dancing shadows in the room stall to a halt."
+    n "A bittersweet smile colors Adesse's ethereal features moments before she vanishes, and the dancing shadows in the room stall to a halt."
 
-    j "She just vanished. Well, that’s great. Am I cursed now, haunted? I should be more worried about that, probably… but even though it has been but a moment, I can’t keep my thoughts off of her. I want to see her again. Adesse… such a peculiar name. I wonder if it was given to her."
+    j "She just vanished. Well, that's great. Am I cursed now, haunted? I should be more worried about that, probably… but even though it has been but a moment, I can’t keep my thoughts off of her."
+    
+    j "I want to see her again. Adesse… such a peculiar name. I wonder if it was given to her."
 
     j "If I have been deceived, surely I will find the truth of things - for now, I shall report my success to the Archdruid."
 

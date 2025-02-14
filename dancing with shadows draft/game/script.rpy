@@ -1348,7 +1348,13 @@ label blockdemoness2:
     jump demonessresolution1
 
 label attackdemoness2:
-    n "A desperate, vicious strike. A fateful strike. Abandoning caution, Julian hurtles towards his foe. In a confluence of circumstance and power, desperation and need, he executes an overhead swing with his Demonslaying Blade. The demoness's self-satisfied expression fades as the blade slices through her cranium."
+    n "A desperate, vicious strike. A fateful strike. Abandoning caution, Julian hurtles towards his foe."
+
+    n "In a confluence of circumstance and power, desperation and need, he executes an overhead swing with his Demonslaying Blade."
+
+    #nasty cranium slicing sound
+    
+    n "The demoness's self-satisfied expression fades as the blade slices through her cranium."
     
     j "There's… no blood. But it's gone. I can feel its absence."
     

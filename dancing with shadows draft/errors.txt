@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 1980: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "Express triumphant exultation over the interloper's demise"
-                                                                ^
+File "game/script.rpy", line 134: expected statement.
+    defibe deadjulian = False
+                      ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Fri Feb  7 13:31:33 2025
+Mon Feb 17 00:09:53 2025

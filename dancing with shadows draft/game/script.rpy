@@ -130,6 +130,9 @@ define nolight = False
 define light = False
 define havecoin = False
 define nocoin = False
+define deadjulian = False
+define leftwithgoblin = False
+
 
 
 
@@ -1117,7 +1120,7 @@ label choice1_done:
     jump monumentchamber
 
     label killbywraith:
-    define deadjulian = True
+        $deadjulian = True
 
     j "It's so dark. Something here is wrong… It's too dark."
     
@@ -1233,8 +1236,8 @@ label memorials:
 
 menu:
         "Go down the ladder":
-            $ goblindead = False
-            $ leftwithgoblin = False
+            $goblindead = False
+            $leftwithgoblin = False
             jump ladderdown
 
         "Return to the atrium":
@@ -1552,7 +1555,7 @@ label demonessresolution4:
 
     u "I am called Adesse, mortal. You have given me much to consider - but I believe this encounter draws to an end"
 
-    a "I shall say my final farewell and depart. You may tell your superiors whatever you choose - but this is not our last meeting, Julian. 
+    a "I shall say my final farewell and depart. You may tell your superiors whatever you choose - but this is not our last meeting, Julian." 
     
     a "You're… intriguing - and you remind me of someone I once loved."
 
@@ -1661,6 +1664,8 @@ label golempresson:
 
     #TODO: grayscale depiction of the cramped tunnel Julian passed through, with a trail of footprints / implied darkvision
 
+    scene tunnel
+
     n "The path is dark and cramped. A recent trail is seen in the dust."
 
     gl "Footsteps in the dust. A human passed through here - not my creator . . . An interloper."
@@ -1684,6 +1689,8 @@ label golempresson:
             jump golemproceed
 
 label golemproceed:
+
+    scene room1
 
     n "The Golem retraces Julian's steps to the crypt's atrium. It studies its surroundings - a sealed door to its right, unfamiliar stonework leading to an access tunnel of some kind dead ahead, and a path deeper into the crypt to its left."
 
@@ -2045,7 +2052,10 @@ label golemescape5:
             with fade    
 
             n "A narrow walkway encircles an open pit full of decomposing bodies of the less fortunate. Tenebrous shapes skirt the edge of the Golem's vision. From the opposing side of the pit - it manifests!"
-            show adesse
+            show adesse:
+                size (1240, 1754)
+                xalign 0.5 yalign 1.0
+                linear 6.0 yalign 0.0
 
             u "Fascinating. An arcane anomaly."
 
@@ -2060,9 +2070,481 @@ label golemescape5:
             "What is . . . my name?"
 
             $x = "Character Name"
+            $X = "Character Name"
 
             "I shall be [x]"
 
             gl "I am [x]"
+
+            u "I see. And what are you, [x]?"
+
+            u "You look lost."
+
+            u "Like a fly wandering into a web... but you are most certainly not harmless like a fly."
+
+            u "You destroyed my spawn trivially, and I shant begrudge such an indulgence."
+
+            u "Most certainly not when opportunity presents itself so… earnestly"
+
+            u "You may know me as Adesse."
+
+            n "Adesse floats down to where the [x] stands, and grazes its unfeeling stone jaw with her bladed, beshadowed fingernail."
+
+            n "[x] contemplates her inquiry."
+            
+            "What am I? What I was once is of little consequence - memories are no more."
+
+    menu:
+        "I am male.":
+                "This one's creator sculpted this one in his perfect image. Like my creator, I am male."
+                $pronoun = "He"
+                $pronouns = "his"
+                $selection = "male"
+        "I am female.":
+                "This one's creator sculpted this one to serve as his counterpart and compliment. I am female."
+                $pronoun = "She"
+                $pronouns = "her"
+                $selection = "female"
+        "I am something else.":
+                "This one is… this one. I am neither male nor female. This one's identity is this one's. Flesh, I am not. Mortal, I am not."
+                "I have been created for a purpose. This purpose is undefined. This purpose must be defined."
+                $pronoun = "It"
+                $pronouns = "its"
+                $selection = "something else"
+            
+    "I am as I choose"
+
+    gl "I have determined I am [selection]"
+
+    a "Ah… of course. I have a proposition for you, [x]. "
+
+    a "My business here is concluded, and you've caught my eye…"
+
+    a "I believe we can aid one another. Accompany me out of this crypt. I am marked by enemies of my kind, and many would seek your destruction for simply being what you are."
+
+    a "We find ourselves alike. I can assist you in finding your creator, if you can assist me in… ensuring my safety. "
+
+    a "We both simply strive for survival, do we not?"
+
+    n "[X] considers Adesse's proposal. A loneliness tugs from deep within."
+
+    n " Was Adesse altogether candid? Or did she take note of [x]'s latent yearning? "
+
+    n "he creator's absence was felt deeply. Could she fill that void? Did she intend to help [x] find [pronouns] creator earnestly?"
+
+    gl "I… accept your accord. We shall assist one another."
+
+    a "Marvelous. Firstly, let us escape this domain of death. Accompany me."
+
+    hide adesse
+    scene endingscreen
+    with longdissolve 
+
+    n "[x] and Adesse leave the crypt, accompanying each other - an unsteady accord cementing their tenuous bond."
+
+    n "Adesse surely had foes to contend with - foes who placed a mark on her head. "
+
+    n "[x] sought [pronouns] creator. "
+
+    n "For now, their agreement was mutual. The future may have other plans. It remains to be seen."
+
+    jump witchstart
+
+    label golemtess:
+    show adesse:
+        size (1240, 1754)
+        xalign 0.5 yalign 1.0
+        linear 6.0 yalign 0.0
+
+    gl "It is unavoidable. We must do battle."
+
+    n "The demoness hesitates for but a moment, puzzled by the anomalous creature intruding into her domain. She grins an unnaturally wide grin."
+
+    show adesse:
+        size (1240, 1754)
+        xalign 0.5 yalign 1.0
+        linear 6.0 yalign 0.0
+
+    u "If we must. So be it."
+
+    n "Seizing initiative, the Golem dashes forward, casting the chamber with a blue glow."
+
+    n "The demoness, however, is prepared for this advance. A beshadowed hemisphere created by the demoness's sorcery separates her from the Golem - and swiftly envelops the Golem, halting its advance."
+
+    n "The Golem remains held fast by the demoness's sorcery. She grins broadly in triumph."
+
+    u "You thought it simple to vanquish me? You're trapped."
+
+    u "You're mine for as long as I like. A plaything, should I choose. It's unavoidable."
+
+    n "The demoness's monologue is cut short by a sturdy figure rappelling down the ladder leading to the depths of the crypt."
+    # need tess image
+    show tess
+
+    n "The warrior eschews armor for green and brown traveler's leathers, adorned with protective talismans. "
+
+    n "Their longboots are characteristic of the locality."
+
+    n "The saw-toothed metal staff wielded by the warrior and the iron mask strike the Golem as distinct, but mysterious in origin. Whomever this is, they strike an imposing form in the gray-hued darkness of the crypt."
+
+    n "Without uttering a word, the warrior's talismans emit a bright glow, and they bound forth through the chamber, acrobatically and powerfully vaulting from the lip of the precipice transecting the room."
+    #show talisman? with bright light?
+
+    n "The demoness's eyes widen in shock when presented with this threat. She launches sorcerous bolts of solid darkness towards the charging warrior - to utterly no effect."
+
+    n "Several of the countless protective talismans warding the warrior tremble and sunder, joining the human swamp below."
+
+    n "Yet, the demoness's efforts are for naught. The warrior's weighted sawtoothed staff hurtles down at the end of the charge, pulping the demoness's skull with a sickening crunch."
+
+    hide adesse
+
+    n "The demoness discorporates, the look of revulsion and shock remaining the last features adorning her perfect face."
+    
+    n  "A smooth, sulfurous stone is all that remains of the pristine villainess."
+    # picture of stone?
+
+    n "The warrior heaves a deep breath, quickly recovering after clutching their chest in pain."
+
+    n "They quickly filch up the stone with a handkerchief drawn from their pack. The warrior places the stone with great care into their pack and surveys the room."
+
+    n "The Golem bears mute testament to this scene. The demoness's enveloping shadows wane, and reveal the Golem's form to the warrior."
+
+    uw "Eh?!"
+
+    n "A female voice, if low in pitch - accompanied by a startled gasp."
+
+    uw "What in the world…? Who are you? What are you? Can you understand me?"
+
+    ". . . "
+
+    "What is... my name"
+    $x = "Character Name"
+    $X = "Character Name"
+
+    "I shall be [X]"
+
+    gl "I am [X]"
+
+    "What am I? What I was once is of little consequence - memories are no more."
+
+    menu:
+        "I am male.":
+            "This one's creator sculpted this one in his perfect image. Like my creator, I am male."
+            $pronoun = "He"
+            $pronouns = "his"
+            $selection = "male"
+        "I am female.":
+            "This one's creator sculpted this one to serve as his counterpart and compliment. I am female."
+            $pronoun = "She"
+            $pronouns = "her"
+            $selection = "female"
+        "I am something else.":
+            "This one is… this one. I am neither male nor female. This one's identity is this one's. Flesh, I am not. Mortal, I am not."
+            "I have been created for a purpose. This purpose is undefined. This purpose must be defined."
+            $pronoun = "It"
+            $pronouns = "its"
+            $selection = "something else"
+
+    "I am as I choose"
+
+    gl "I understand you. I am [X]. I am [selection]"
+
+    n "This pronouncement gives the warrior pause, who deigns not to question the strange behavior - produced by an even stranger creature."
+
+    uw "Right then… I'm Tess, female."
+
+    t "I don't know who or what you are, really and yes, I understand you just told me."
+
+    t "I'm sure you have questions, and so do I. We can get them all answered once we're out of here."
+
+    gl "I seek to elucidate the fate of my creator, and seek my purpose. If you can assist in this endeavor, so be it."
+
+    n "Tess gapes at [X], staring in utter disbelief. Composing herself, she replies."
+
+    t "... Let's be off then. Up the way we came."
+
+    hide tess
+    scene endingscreen
+    with longdissolve
+
+    n "Tess and [x] return through the unlocked crypt entrance, relatively unscathed."
+    
+    n "Their futures are murky, but for now, they have the dubious company of one another."
+
+    jump witchstart
+
+label golemescape6:
+
+"I must be thorough. The crypt must be searched for evidence of this one's creator's whereabouts."
+
+n "The Golem proceeds into the main vestibule."
+
+scene wrathhall
+with pixellate
+n "A massive subterranean corridor. Sarcophagi line each side of this room."
+show ghost at offright:
+    alpha .3
+show dog at offleft:
+    alpha .3 
+
+"The Golem emits a blinding pulse of radiance. The wraithspawn dissipate."
+
+"Skill recalled Blinding Flash"
+
+n "The Golem emits a blinding pulse of radiance. The wraithspawn dissipate."
+
+". . . ."
+
+"The threats are neutralized. I proceed."
+
+". . . ."
+
+menu:
+    "These living shadows are abeerations.":
+        gl "… And their creator is a monster. Intuitively, I know this to be a demon."
+        gl "This one's creator opposed demons. This demon must be destroyed. This one's purpose is clear."
+
+        n "Purpose elucidated, the Golem proceeds through the crypt and glides down the vertical shaft into the Peasant's Graves."
+
+        scene monument
+        with fade
+
+        n "A narrow walkway encircles an open pit full of decomposing bodies of the less fortunate. Tenebrous shapes skirt the edge of the Golem's vision. From the opposing side of the pit - it manifests!"
+
+        jump golemtess
+    "The creator these creatures may eludicate the fate of my creator":
+        gl "This one's purpose remains unclear. The creator of these creatures may elucidate the fate of my creator."
+        gl "This one lacks a purpose. A flame casts shadows, and this one shall seek truth within the flame."
+
+        n "Purpose elucidated, the Golem proceeds through the crypt and glides down the vertical shaft into the Peasant's Graves."
+
+        scene monument
+        with fade
+
+        n "A narrow walkway encircles an open pit full of decomposing bodies of the less fortunate." 
+
+        n "Tenebrous shapes skirt the edge of the Golem's vision. From the opposing side of the pit - it manifests!"
+
+        show adesse:
+            size (1240, 1754)
+            xalign 0.5 yalign 1.0
+            linear 6.0 yalign 0.0
+
+        u "Fascinating. An arcane anomaly."
+
+        n "This gives the Golem pause. It resolves to show the enemy of its enemy respect."
+
+        gl "I seek my creator."
+
+        n "The demoness wickedly quirks an eyebrow - her lips curl into a mischievous smile."
+
+        u "Oh, yes, yes, very good. And what are you? Who intrudes into my lair?"
+
+        "What is . . . my name?"
+
+        $x = "Character Name"
+        $X = "Character Name"
+
+        "I shall be [x]"
+
+        gl "I am [x]"
+
+        u "I see. And what are you, [x]?"
+
+        u "You look lost."
+
+        u "Like a fly wandering into a web... but you are most certainly not harmless like a fly."
+
+        u "You destroyed my spawn trivially, and I shant begrudge such an indulgence."
+
+        u "Most certainly not when opportunity presents itself so… earnestly"
+
+        u "You may know me as Adesse."
+
+        n "Adesse floats down to where the [x] stands, and grazes its unfeeling stone jaw with her bladed, beshadowed fingernail."
+
+        n "[x] contemplates her inquiry."
+            
+        "What am I? What I was once is of little consequence - memories are no more."
+
+        menu:
+            "I am male.":
+                "This one's creator sculpted this one in his perfect image. Like my creator, I am male."
+                $pronoun = "He"
+                $pronouns = "his"
+                $selection = "male"
+            "I am female.":
+                "This one's creator sculpted this one to serve as his counterpart and compliment. I am female."
+                $pronoun = "She"
+                $pronouns = "her"
+                $selection = "female"
+            "I am something else.":
+                "This one is… this one. I am neither male nor female. This one's identity is this one's. Flesh, I am not. Mortal, I am not."
+                "I have been created for a purpose. This purpose is undefined. This purpose must be defined."
+                $pronoun = "It"
+                $pronouns = "its"
+                $selection = "something else"
+            
+        "I am as I choose"
+
+        gl "I have determined I am [selection]"
+
+        a "Ah… of course. I have a proposition for you, [x]. My business here is concluded, and you've caught my eye… "
+
+        a "I believe we can aid one another. Accompany me out of this crypt. I am marked by enemies of my kind, and many would seek your destruction for simply being what you are."
+
+        a "We find ourselves alike. I can assist you in finding your creator, if you can assist me in… ensuring my safety."
+
+        a "We both simply strive for survival, do we not?"
+
+        n "[x] considers Adesse's proposal. A loneliness tugs from deep within. Was Adesse altogether candid?"
+
+        n "Or did she take note of [x's] latent yearning? The creator's absence was felt deeply."
+
+        n " Could she fill that void? Did she intend to help [x] find [pronoun's] creator earnestly?"
+
+        l "I… accept your accord. We shall assist one another."
+
+        a "Marvelous. Firstly, let us escape this domain of death. Accompany me."
+
+        hide adesse
+        scene endingscreen
+        with longdissolve
+
+        n "[x] and Adesse leave the crypt, accompanying each other - an unsteady accord cementing their tenuous bond."
+
+        n "Adesse surely had foes to contend with - foes who placed a mark on her head. [x] sought [pronouns] creator. "
+
+        n "For now, their agreement was mutual. The future may have other plans. It remains to be seen."
+
+        jump witchstart
+
+label golemescape7:
+
+    scene wrathhall
+    with pixellate
+
+    "The interloper's footsteps are fresh. I proceed."
+
+    n "The Golem pauses, closely examining the single set of footprints entering and leaving the crypt. "
+
+    n "Waning daylight intrudes upon this place of rest. The Golem contemplates the sequence of events, and is hit with a sudden realization - the interloper has fled with an accomplice."
+
+    "Skill Recalled: Moment of Prescience"
+
+    n "A mental flash - the spark of prescience. The Golem realized it would be soon met by another - a friend, perhaps."
+
+    n "A warrior, a healer, and a former druidess. The Golem's form would startle her, and she would elucidate much about the Golem's purpose… and their ultimate destiny."
+
+    n "A burly form lumbers into the crypt - just as the Golem foresaw."
+
+    show tess
+
+    n "The warrior eschews armor for green and brown traveler's leathers, adorned with protective talismans. Their longboots are characteristic of the locality."
+
+    n "The saw-toothed metal staff wielded by the warrior and the iron mask strike the Golem as distinct, but mysterious in origin."
+
+    n "Whomever this is, they strike an imposing form in the twilit hues of the crypt entrance."
+
+    n "The warrior pauses, stock still at the sight of the Golem mutely studying them."
+
+    uw "Shit. I'm too late. . . . "
+
+    uw "Eh?!"
+
+    n "A female voice, if low in pitch - accompanied by a startled gasp."
+
+    uw "What in the world…?"
+
+    uw "Who are you? What are you? Can you understand me?"
+
+    "What is . . . my name?"
+    $x = "Character Name"
+    $X = "Character Name"
+
+    "I shall be [x]"
+
+    gl "I am [x]"
+
+    ". . . ."
+
+    "What am I? What I was once is of little consequence - memories are no more."
+
+    menu:
+        "I am male.":
+            "This one's creator sculpted this one in his perfect image. Like my creator, I am male."
+            $pronoun = "He"
+            $pronouns = "his"
+            $selection = "male"
+        "I am female.":
+            "This one's creator sculpted this one to serve as his counterpart and compliment. I am female."
+            $pronoun = "She"
+            $pronouns = "her"
+            $selection = "female"
+        "I am something else.":
+            "This one is… this one. I am neither male nor female. This one's identity is this one's. Flesh, I am not. Mortal, I am not."
+            "I have been created for a purpose. This purpose is undefined. This purpose must be defined."
+            $pronoun = "It"
+            $pronouns = "its"
+            $selection = "something else"
+            
+    "I am as I choose"
+
+    gl "I understand you. I am [x]. I am [selection]"
+
+    n "This pronouncement gives the warrior pause, who deigns not to question the strange behavior - produced by an even stranger creature."
+
+    uw "Right then… I'm Tess, female."
+
+    t "I don't know who or what you are, really - and yes, I understand you just told me."
+
+    t "'m sure you have questions, and so do I."
+
+    t "We can get them all answered soon. It seems as if I'm just a bit late, and you're… well…"
+
+    gl "I seek to elucidate the fate of my creator, and seek my purpose. If you can assist in this endeavor, so be it."
+
+    n "Tess gapes at [x], staring in utter disbelief. Composing herself, she replies."
+
+    t "... Let's be off then. Up the way we came. I'm going to have some choice words with Nikolai."
+
+    scene endingscreen
+    with longdissolve
+
+    n "Tess and [x] promptly exit the crypt."
+    n "Their futures are murky, but for now, they have the dubious company of one another." 
+
+    jump witchstart
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

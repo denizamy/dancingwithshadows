@@ -52,6 +52,8 @@ transform topright:
     xalign 1.0
     yalign 1.0
 
+define longpixellate = Pixellate(5.0)
+
 screen inventory_display_toggle:
         zorder 92
         frame:
@@ -1219,9 +1221,15 @@ label choice1_done:
 
 menu:
         "Turn back":
+            scene blackscreen with pixellate
+            hide monumentchamber with dissolve
+            hide monument with dissolve
+        
             j "I need to get my bearings. I'm not sure I'm ready for all this just yet. I need to be absolutely sure before I hunt down this creature."
+            scene room1 with pixellate
             jump LookLeftLookRight
-            with longdissolve
+            with dissolve
+            
 
         "Continue forward":
             jump memorials

@@ -610,9 +610,10 @@ label cutbolt:
 
         j "I'll be damned twice if I end up dead doing the bidding of an out of touch old fart."
 
-        n "Julian makes quick work of the bolts."
-
-        n "The way to the sewers is clear, even though the hydraulic lock to the crypt holds fast."
+        queue sound "cutbolt.mp3"
+        queue sound "boltfloor.mp3"
+        
+        n "Julian makes quick work of the bolts. The way to the sewers is clear, even though the hydraulic lock to the crypt holds fast."
 
         n "There is a way out yet, even if it is a dismal path."
 
@@ -891,7 +892,7 @@ label nogoblin:
     scene room1
     with pixellate
 
-    n "where will you go?"
+    n "Where will you go?"
 
     jump LookLeftLookRight 
     
@@ -944,7 +945,7 @@ elif notorch:
         scene room1
         with pixellate
 
-        n "where will you go?"
+        n "Where will you go?"
 
         jump LookLeftLookRight
 
@@ -959,7 +960,7 @@ label leavegolem:
         scene room1
         with pixellate
 
-        n "where will you go?"
+        n "Where will you go?"
 
         jump LookLeftLookRight
 
@@ -975,7 +976,7 @@ menu:
         "Search rubble":
             j "I might as well try to find something useful while I'm here."
 
-            n "You sort throught the rubble and find a set of bolt cutter"
+            n "You sort throught the rubble and find a set of bolt cutters"
             $ boltcutters = True
 
             j "Huh. These might come in handy, I guess. Nobody else is using them, I might as well bring them along."
@@ -994,7 +995,7 @@ menu:
             scene room1
             with pixellate
 
-            n "where will you go?"
+            n "Where will you go?"
 
             jump LookLeftLookRight
 
@@ -1007,6 +1008,7 @@ label golemtouch:
 menu:
         "Touch symbol":
             $ golemactive = True
+            play sound "rocks.mp3"
             n "The pile of rubble begins to shake, and the runes in the rubble pile begin to glow with a dim blue light."
 
             j "I'm not getting paid enough for this. This isn't a demon, it's somebody else's problem. I'm getting out of here."
@@ -1017,7 +1019,7 @@ menu:
             scene room1
             with pixellate
         
-            n "where will you go?"
+            n "Where will you go?"
 
             jump LookLeftLookRight
     
@@ -1029,7 +1031,7 @@ menu:
             scene room1
             with pixellate
 
-            n "where will you go?"
+            n "Where will you go?"
 
             jump LookLeftLookRight
 
@@ -1218,7 +1220,7 @@ label choice1_done:
 menu:
         "Turn back":
             j "I need to get my bearings. I'm not sure I'm ready for all this just yet. I need to be absolutely sure before I hunt down this creature."
-            jump atrium
+            jump LookLeftLookRight
             with longdissolve
 
         "Continue forward":
@@ -1489,7 +1491,7 @@ label questiondemoness1:
 
             n "Contemplating the small atrocities this fiend has personally wrought in this tomb, you withdraw the antique coin you collected on the upper levels."
 
-            j "Your kind only sows grief with every new widow and orphan you leave to face this world alone. To grieve, you have to feel loss. What could you possibly know of grief"        
+            j "Your kind only sows grief with every new widow and orphan you leave to face this world alone. To grieve, you have to feel loss. What could you possibly know of grief?"        
         
             jump questiondemoness2
 
@@ -2179,6 +2181,7 @@ label golemescape5:
 
     n "The demoness's monologue is cut short by a sturdy figure rappelling down the ladder leading to the depths of the crypt."
     # need tess image
+    hide adesse
     show tess
 
     n "The warrior eschews armor for green and brown traveler's leathers, adorned with protective talismans. "
@@ -2275,7 +2278,7 @@ label golemescape5:
 
 label golemescape6:
 
-"I must be thorough. The crypt must be searched for evidence of this one's creator's whereabouts."
+gl "I must be thorough. The crypt must be searched for evidence of this one's creator's whereabouts."
 
 n "The Golem proceeds into the main vestibule."
 
@@ -2498,7 +2501,7 @@ label golemescape7:
 
     t "I don't know who or what you are, really - and yes, I understand you just told me."
 
-    t "'m sure you have questions, and so do I."
+    t "I'm sure you have questions, and so do I."
 
     t "We can get them all answered soon. It seems as if I'm just a bit late, and you're… well…"
 

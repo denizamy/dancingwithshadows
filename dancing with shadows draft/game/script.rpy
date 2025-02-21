@@ -3257,6 +3257,8 @@ menu:
 
 label endofprologue:
 
+"To be continued..."
+
 play music "Casa Bossa Nova.mp3"
 
 centered "{size=+75}{cps=8} Credits {/cps}{/size}{p=5.0}{nw}"
@@ -3265,7 +3267,7 @@ $ renpy.pause(1.5)
 
 centered "{size=+75}{cps=8} Narrative / Project Manager: \nBarry Weber{/cps}{/size}{p=5.0}{nw}"
 
-$ renpy.pause(1.5)
+"Rachel 'Des' Marzzarella\\Lake Watkins\\Deniz Balik"
 
 centered "{size=+75}{cps=8} Code/Script: \nRachel 'Des' Marzzarella\nLake Watkins\nDeniz Balik{/cps}{/size}{p=5.0}{nw}"
 

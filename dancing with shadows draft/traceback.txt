@@ -1,28 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 2552, in script
-    with pixelate
-  File "game/script.rpy", line 2552, in <module>
-    with pixelate
-NameError: name 'pixelate' is not defined
+  File "game/script.rpy", line 2684, in script
+    if  golemleftwithtess and leftwithadesse:
+SyntaxError: invalid syntax (game/script.rpy, line 2687)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 2552, in script
-    with pixelate
-  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\ast.py", line 1360, in execute
-    trans = renpy.python.py_eval(self.expr)
-  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\python.py", line 1209, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 2552, in <module>
-    with pixelate
-NameError: name 'pixelate' is not defined
+  File "game/script.rpy", line 2684, in script
+    if  golemleftwithtess and leftwithadesse:
+  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\ast.py", line 1849, in execute
+    if renpy.python.py_eval(condition):
+  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\python.py", line 1207, in py_eval
+    code = py_compile(code, 'eval')
+  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\python.py", line 1144, in py_compile
+    raise e
+  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\python.py", line 1081, in py_compile
+    raise orig_e
+  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\python.py", line 1073, in py_compile
+    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
+SyntaxError: invalid syntax (game/script.rpy, line 2687)
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.3.4.24120703
 dancing with shadows draft 1.0
-Thu Feb 20 20:28:29 2025
+Fri Feb 21 02:23:46 2025

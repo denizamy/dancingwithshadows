@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 2807: reached end of line when expecting ':'.
-    if deadjulian
-                 ^
+File "game/script.rpy", line 2312: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    $golemleftwithtess = True
+    ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Thu Feb 20 22:44:54 2025
+Fri Feb 21 02:49:14 2025

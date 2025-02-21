@@ -36,6 +36,7 @@ image adesse_flirty_melancholic = "adesse_flirty_melancholic.jpg"
 image adesse_hurt = "adesse_hurt.jpg"
 image adesse_neutral = "adesse_neutral.jpg"
 image julian = "julian.png"
+image tess = "Tess.png"
 
 
 
@@ -138,6 +139,7 @@ define leftwithgoblin = False
 define leftwithadesse = False
 define leftwithtess = False
 define golemleftwithtess = False
+define golemleftwithgoblin = False
 
 
 
@@ -1380,6 +1382,7 @@ label attackdemoness2:
     jump demonessresolution2
 
 label demonessresolution1:
+    $leftwithtess = True
 
     hide adesse
 
@@ -1392,6 +1395,8 @@ label demonessresolution1:
     n "The room fills with the smell of sweet sulfur, and Julian, losing consciousness, feels a slight stab of pain."
 
     n "His hero - this masked avenger, crouches down to check his vitals and speaks in a soft, deep female voice."
+
+    show tess
 
     uw "You shouldn't be here. Did Nikolai put you up to this?"
 
@@ -1448,7 +1453,6 @@ label demonessresolution1:
     uw "You can call me Tess. I think you're brave, for whatever that's worth."
 
     n "Tess carefully heaves Julian over her shoulder. Julian passes out shortly thereafter."
-
     $leftwithtess = True
 
     scene blackscreen
@@ -1490,7 +1494,7 @@ label questiondemoness1:
 
     label fightorquestiondemoness2:
 
-    if nocoin:
+    if havecoin:
         menu:
             "Fight the demoness":
 
@@ -1985,6 +1989,7 @@ label golemescape4:
             i "So you agree then, great! I'll lead you to the surface, and then we can… I don't know, we can figure it out."
 
             gl "I have professed my compliance, friend. We shall proceed."
+            $golemleftwithgoblin = True
 
             scene endingscreen
             with longdissolve
@@ -1993,6 +1998,8 @@ label golemescape4:
             n "She appears to be genuinely hopeful and excited for this new adventure. "
 
             n "The pair leave immediately, heading through the sewers to the city as they prepare to execute Inya's ill-conceived scheme."
+            $golemleftwithgoblin = True
+
 
             jump witchstart
 
@@ -2302,6 +2309,8 @@ label golemescape5:
     n "Tess and [x] return through the unlocked crypt entrance, relatively unscathed."
     
     n "Their futures are murky, but for now, they have the dubious company of one another."
+
+    $golemleftwithtess = True
 
     jump witchstart
 
@@ -2677,12 +2686,21 @@ label backtoatrium:
 scene room1
 with pixellate
 
-if deadjulian:
-    jump raisejulian
+if golemleftwithtess and leftwithgoblin:
+    jump witchsolo
+
+elif golemleftwithgoblin and leftwithtess:
+    jump witchsolo
+
+elif deadjulian:
+        jump raisejulian
 
 elif leftwithadesse:
-    jump witchtess
-   
+        jump witchtess
+
+elif leftwithtess:
+        jump witchgoblin
+
 jump witchadesse
 
 label raisejulian:
@@ -2841,7 +2859,7 @@ if golemleftwithtess:
 
 n "Dahlia hastens to the depths of the crypt with supernatural speed."
 
-scene momument
+scene monument
 with fastdissolve
 
 n "Silently, she lands in the depths of the place overlooking a bit transecting the center of the room."
@@ -2882,7 +2900,7 @@ dh "Tessanrae. A beautiful name for a beautiful woman. "
 
 dh "It's a pity you hide your beauty behind a mask of iron - and the beauty of your name behind a base alias like 'Tess'."
 
-dh "The world should behold the beauty you possess, my 'Tess' and tremble.""
+dh "The world should behold the beauty you possess, my 'Tess' and tremble."
 
 n "Dahlia's slight sardonic bite seems to fall on deaf ears, to her slight displeasure."
 
@@ -2983,8 +3001,239 @@ n "A scheming, curious smile creeps across her black lips."
 dh "What do we have here? Oh, how I love surprise visitors."
 
 n "A flick of the wrist, a draw on the latent thaumaturgical current."
+
 n "The bars blocking the path to the service entrance turn red, then white, then pool as a liquid on the ground."
-n ""
+
+n " As a bit of flair, Dahlia makes a show of exhaling in the direction of the molten metal, while concealing her gestures, freezing it."
+
+scene goblinroom
+with pixellate
+
+show goblin
+
+g "Wooooooow! You're a magician!"
+
+dh "A goblin so close to the surface? Bless your heart, you're deformed… but alive."
+
+n "Dahlia appears genuinely impressed, realizing the implications of the goblin's predicament quickly."
+
+g "Are all magicians so rude? You're tall like a man and really creepy."
+
+n "Dahlia chuckles darkly."
+
+dh "My dear, pardon my disrespect. You have done well for yourself."
+
+dh "You're a survivor, and you've taught yourself our language. "
+
+dh "You've triumphed over your impediments, and for that, you have my ardent admiration."
+
+g "I…"
+
+n "The goblin is momentarily stunned by Dahlia's words."
+
+g "..I'm Inya."
+
+dh "Zanya. You are Zanya. "
+
+dh "Inya is a cute name, but it draws too many unfortunate comparisons… "
+
+dh " but it may be as you wish. "
+
+dh " I am Dahlia. It is a pleasure to meet you."
+
+n "Inya blinks, processing the fact Dahlia somehow knew her birth name. The realization hits her."
+
+i "Oh… you figured out my goblin name with your magic."
+
+i " I wish you wouldn't do things like that. I like 'Inya'. It sounds so much more refined."
+
+n "Inya pouts, to Dahlia's muted amusement."
+
+dh "It shan't happen again, my little morsel. "
+
+dh "I have divined all I need to know about you, and I find you starkly unique, and simply fascinating."
+
+i "Y-you do?"
+
+dh "I do."
+
+i "It's a little creepy when you call people things like 'morsel'. Just call me Inya."
+
+n "Dahlia frowns."
+
+dh "You would begrudge an artful turn of phrase? Very well, my Inya."
+
+dh "It seems my quarry in this dreadful hole has eluded me. I must retire to my lair. Perhaps you would accompany me?"
+
+i "Um, things are moving a little fast, don't you think? We only just met."
+
+dh "You're lonely. You've been seeking a human friend for fourteen years since your cruel abandonment by your tribe."
+
+dh "I'm offering you a home, and a human companion."
+
+dh "I am the answer to your deepest desires. "
+
+dh " know everything about you, my Inya, and I find you worthy and fascinating."
+
+n "Inya blushes a deep red and nearly faints. Meekly, she replies."
+
+i "That's a lot to think over, ma'am. I suppose you're right though. You seem like you're always right."
+
+dh "Yes, my dear, I am. "
+
+dh " You may ask your questions on the way. The front door will do."
+
+dh "You're coming with me - if that is your wish."
+
+n "As with anything Dahlia says, her suggestions are almost always demands."
+
+i "I have so many questions. But uh, I'll ask them on our way, like you said. Looks like you're right again, Ms. D."
+
+n "Dahlia smiles affirmingly."
+
+hide goblin
+
+scene endingscreen
+with longdissolve
+
+n "Guiding her by her hand, Dahlia leads Inya out of the crypt."
+
+n "Enroute to Dahlia's lair, Inya incessantly prattled on about each and every thing that whizzed through her mind, and Dahlia patiently obliged her."
+
+n " In truth, Dahlia saw a bit of herself in the goblin, and more importantly, had plans for her. "
+
+n "Plans take time to cultivate, and Dahlia was nothing, if not patient."
+
+jump endofprologue
+
+label witchsolo:
+
+scene blackscreen
+with longdissolve
+
+scene room1
+with longdissolve
+
+n "Dahlia's search of the crypt was futile. She walked back to the entrance, in defeat."
+
+dh "What a waste of time. Dreadful."
+
+n "Dahlia sighs deeply and focuses her mind. Her magical senses probe her surroundings and detect the presence of recent creatures."
+
+dh "… But the trails are fresh. I cannot possibly pursue them all."
+
+dh "Who shall it be, hm? It would be a pity for my time to be wasted."
+
+menu:
+    "The Mercenary":
+        dh "Nikolai's lapdog."
+        dh " It would be suitable to wrap him around my finger, whether he is willing or not, and use this… distasteful attempt to thwart me against that pest."
+
+        scene endingscreen
+        with longdissolve
+
+        n "Motivated foremost by spite, Dahlia resolved to pursue the gnat Nikolai flung in her direction - successfully disrupting her effort."
+
+        n " Dahlia was irritated, and an avid enjoyer of irony. She simply couldn't pass up this opportunity to harass Nikolai with his pawn."
+
+        n "Perhaps she could make this mercenary a better offer - whether that be gold, or whatever else enticed him."
+
+        n "If he proved unyielding, well, Dahlia always had her way."
+        jump endofprologue
+    "The Arcane Anomaly":
+        dh "My goal has not changed, despite this… unprecedented setback. "
+
+        dh " Foremost, the arcane core is my quarry. I shan't tarry."
+
+        scene endingscreen
+        with longdissolve
+
+        n "Resolved and focused, and with a fresh lead, Dahlia decided to pursue the Arcane Anomaly."
+
+        n " She would harvest its arcane core and latent power. It was, after all, the first step in creating a golem of her own."
+
+        n "She couldn't pass up that opportunity. These cores are artifacts, and their personalities were ever so malleable."
+
+        n "How could she waste such an enticing opportunity?"
+        jump endofprologue
+    "The Unusual Goblin":
+        dh "An albino. An outcast."
+
+        dh " She hasn't perished, despite her deformity."
+
+        dh "Marvelous - it speaks to her ingenuity. I can use that."
+
+        scene endingscreen
+        with longdissolve
+
+        n "Interest piqued at the novelty of this goblin, Dahlia resolved to pursue her. "
+
+        n " She would handle her with care, for she saw potential… and a bit of herself in what she could divine about the small creature."
+
+        n " Dahlia departed to her lair to plan the pursuit and her strategy."
+        jump endofprologue
+    "The Warden":
+        dh "A warden… and a traitor to her kind. How unique. "
+        dh " The roots of this conspiracy go deep."
+        dh " Perhaps if she were under my thumb I could root out the core of this wart, and collect a novel plaything."
+        dh "'Tessanrae'... Few of her kind survive. "
+        dh "She shall be the crowning jewel of my collection."
+
+        scene endingscreen
+        with longdissolve
+
+        n "Dahlia resolved to pursue Tessanrae, wherever she may flee."
+
+        n "Her unique quirks interested Dahlia even more than the allure of an arcane anomaly."
+
+        n "Dahlia got what she wanted - always."
+        jump endofprologue
+    "It is time to confront Nikolai once and for all.":
+        n "Dahlia takes a deep breath, and lets out a long, irritated sigh."
+        dh "Nikolai has thwarted me at every turn. "
+        dh "His lairs are hidden, but not inaccessible… "
+        dh "It is long overdue to pay him a friendly visit."
+
+        scene endingscreen
+        with longdissolve
+
+        n "Dahlia left the crypt, returning to her lair to scheme."
+
+        n " This was not the first time Nikolai attempted to thwart her, but it was the first time he had found success."
+
+        n "Dahlia had never been one to forgive or forget. She was planning something, as she always was."
+
+        n "She would have the last word… as always."
+        jump endofprologue
+    "My efforts are best actualized elsewhere…":
+        n "This is a waste of time."
+        dh "These fools are beneath me."
+        dh "I shall return to my lair."
+        dh "The fruits of my labor shall be actualized… elsewhere."
+
+        scene endingscreen
+        with longdissolve
+
+        n "Failures upset Dahlia, but she was never one to truly rest."
+
+        n "  She knew it was best to move on to the next project or scheme."
+
+        n "She departed the crypt, returning to her reclusive lair."
+        jump endofprologue
+
+label endofprologue:
+
+return
+
+
+
+
+
+
+
+
+
+
 
 
 

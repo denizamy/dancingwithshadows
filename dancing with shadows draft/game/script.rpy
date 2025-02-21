@@ -135,6 +135,9 @@ define havecoin = False
 define nocoin = False
 define deadjulian = False
 define leftwithgoblin = False
+define leftwithadesse = False
+define leftwithtess = False
+define golemleftwithtess = False
 
 
 
@@ -1446,6 +1449,8 @@ label demonessresolution1:
 
     n "Tess carefully heaves Julian over her shoulder. Julian passes out shortly thereafter."
 
+    $leftwithtess = True
+
     scene blackscreen
     with longdissolve
 
@@ -1530,6 +1535,8 @@ label questiondemoness2:
     u "There was another mortal, not unlike yourself. We shared a bond, of sorts."
     
     u "Like you, she lived a fickle and fleeting life, and was taken from me - like you, she hesitated, and like you, she showed me mercy. She rests here, in this muck of unfortunates."
+
+    $leftwithadesse = True
 
     menu:
         
@@ -2158,6 +2165,7 @@ label golemescape5:
     gl "I… accept your accord. We shall assist one another."
 
     a "Marvelous. Firstly, let us escape this domain of death. Accompany me."
+    $golemleftwithtess = True
 
     hide adesse
     scene endingscreen
@@ -2537,6 +2545,7 @@ label golemescape7:
 
     n "Tess and [x] promptly exit the crypt."
     n "Their futures are murky, but for now, they have the dubious company of one another." 
+    $golemleftwithtess = True
 
     jump witchstart
 
@@ -2670,6 +2679,10 @@ with pixellate
 
 if deadjulian:
     jump raisejulian
+
+elif leftwithadesse:
+    jump witchtess
+   
 jump witchadesse
 
 label raisejulian:
@@ -2820,6 +2833,164 @@ n "A likely pair, perhaps, but the future remains uncertain."
 n "Dahlia's designs for Adesse are yet unclear - surely a sorceress as powerful as she would not travel such a great distance and go to such lengths to entrap a specific demon for naught."
 
 jump endofprologue
+
+label witchtess:
+
+if golemleftwithtess:
+    jump witchgoblin
+
+n "Dahlia hastens to the depths of the crypt with supernatural speed."
+
+scene momument
+with fastdissolve
+
+n "Silently, she lands in the depths of the place overlooking a bit transecting the center of the room."
+
+n "The pit is filled with the decaying remains of the less fortunate - a particularly putrid soup, of sorts."
+
+dh "… I'm too late."
+
+n "Indeed, the absence of animate shadows indicates the witch's estimation is correct. Dahlia is disappointed, but just for mere moments."
+
+n "A sturdy figure rappels down the ladder leading to the depths of the crypt."
+
+show tess
+
+n "The warrior eschews armor for green and brown traveler's leathers, adorned with protective talismans."
+
+n "Their longboots are characteristic of the locality."
+
+n "The saw-toothed metal staff wielded by the warrior and the iron mask strike Dahlia as distinct, but mysterious in origin. "
+
+n "Whomever this is, they strike an imposing form in the gray-hued darkness of the crypt."
+
+dh "Not so fast."
+
+n "The witch gestures dramatically, buckling the warrior's knees."
+
+n "She wails in pain, dry heaving as the intense pain topples her."
+
+dh "The pain shall pass."
+
+dh "You should know better than to barrel into rooms like that. You'll upset people."
+
+dh "Perhaps… honey would be a better approach."
+
+n "Dahlia, continuing the momentum established with her sorcery, gestures a charm, and a mental probe."
+
+dh "Tessanrae. A beautiful name for a beautiful woman. "
+
+dh "It's a pity you hide your beauty behind a mask of iron - and the beauty of your name behind a base alias like 'Tess'."
+
+dh "The world should behold the beauty you possess, my 'Tess' and tremble.""
+
+n "Dahlia's slight sardonic bite seems to fall on deaf ears, to her slight displeasure."
+
+dh "Druidic wards may protect against demonic magic, but not all of mine."
+
+dh "Demonology… necromancy… thaumaturgy… conjuration… enchantment… I have so many to choose from."
+
+n "Tess catches her breath, managing not to vomit in her helmet."
+
+n " She places a hand on her knee and forces herself to rise, reaching for her weapon."
+
+n "Dahlia mimes a gesture and locks eyes with the larger woman."
+
+dh "I wouldn't. Don't you recall moments ago, my dear?"
+
+dh " Can't we just have a peaceful chat?"
+
+n "Tess grunts, eschewing her weapon despite her better judgement."
+
+n "Dimly, she screams at herself, realizing on some distant level she is subject to this witch's charm hex."
+
+t "We can parley. Who are you and what do you want?"
+
+dh "That's better. You may call me Dahlia."
+
+dh "My goal appears to be misplaced… but you're interesting."
+
+dh "What business do you have in an old dusty tomb, my Tessie?"
+
+t "I really don't like being called Tessie. But… I'll forgive you."
+
+t "This time."
+
+t " I learned Nikolai is sending mercenaries to handle stray demons. That old fool has really lost the plot."
+
+n "The witch grins as her charm bears fruit - the moments of agony so easily forgotten and forgiven."
+
+dh "It would seem our common goal is absent. It's a pity, isn't it?"
+
+t "A pity? Well, it worries me."
+
+dh "Cast aside your doubts."
+
+dh "Look into my eyes."
+
+n "Tess obliges, despite a subconscious realization she is being magically manipulated."
+
+n "As she meets Dahlia's eyes, the witch's charm truly bears fruit - and allows her to leave a lasting imprint in the warden's mind"
+
+dh "You're interesting. I want to see you again."
+
+dh " I will call to you, and you will come, unarmed. "
+
+dh "We will next meet in your dreams. I ever so look forward to it."
+
+n "Tess's slight alarm is concealed by her mask."
+
+t "That sounds unlikely, but if you say so."
+
+dh "I do, I do. Wait five minutes in this place, standing still, then you may leave. "
+
+dh "It's been fascinating, my dear."
+
+t "That seems reasonable enough, you need to escape, and you'd prefer if I wasn't able to trail you."
+
+dh "Precisely. You're quite perceptive. I'll be off, then."
+
+n "Tess does as directed, allowing Dahlia to escape."
+
+hide tess
+scene endingscreen
+with longdissolve
+
+n "Frustrated at the fruits of her labor going unrealized, but tantalized by the mirth tormenting a warden will bring, Dahlia departs."
+
+n "Tess obediently waits five minutes, precisely as directed. "
+
+n " Both Dahlia and Tess have a feeling they will see each other again - perhaps sooner than expected."
+
+jump endofprologue
+
+label witchgoblin:
+
+scene blackscreen
+with longdissolve
+
+scene room1
+with longdissolve
+
+n "Dahlia's search of the crypt was futile. She walked back to the entrance, in defeat."
+
+dh "What a waste of time. Dreadful."
+
+n "Utilizing her keen senses, Dahlia spots the glimmer of eye shine from the corner of her eye."
+
+n "A scheming, curious smile creeps across her black lips."
+
+dh "What do we have here? Oh, how I love surprise visitors."
+
+n "A flick of the wrist, a draw on the latent thaumaturgical current."
+n "The bars blocking the path to the service entrance turn red, then white, then pool as a liquid on the ground."
+n ""
+
+
+
+
+
+
 
 
 

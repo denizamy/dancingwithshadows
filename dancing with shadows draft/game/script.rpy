@@ -1662,7 +1662,7 @@ label golemstart:
     label golemmirror:
 
     define golempulltogether = True
-    define golembreakmirror = True
+    define golembreakmirror = False
 
     menu:
         "Pull yourself together" if golempulltogether:
@@ -1701,7 +1701,7 @@ label golemstart:
 
             gl "… I press on."
 
-            $ golembreakmirror = False
+            $ golembreakmirror = True
 
             jump golemmirror
 

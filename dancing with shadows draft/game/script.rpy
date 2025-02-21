@@ -1,18 +1,18 @@
 # The script of the game goes in this file.
 
 define n = Character("Narrator",color="808080")
-define d = Character("Archdruid",color="164622")
-define j = Character("Julian",color="#3366cc")
-define f = Character("Julian",color="#3366cc")
-define g = Character("Goblin",color="60e683")
-define u = Character("Demoness")
-define x = Character("Unknown Voice",color="652EAF")
+define d = Character("Archdruid",color="664D43")
+define j = Character("Julian",color="0032FF")
+define vj = Character("Julian",color="F0BD00")
+define g = Character("Goblin",color="ff5dcf")
+define u = Character("Demoness",color="732ADC")
+define uv = Character("Unknown Voice",color="732ADC")
 define i = Character("Inya",color ="ff5dcf")
-define t = Character("Tess",color="eebf00")
-define gl = Character("Golem")
-define a = Character("Adesse",color="ff0000")
-define dh = Character("Dhalia",color="9e0000")
-define uw = Character("Unknown Warrior",color="eebf00")
+define t = Character("Tess",color="9e0000")
+define gl = Character("Golem",color="0BC4ED")
+define a = Character("Adesse",color="732ADC")
+define dh = Character("Dahlia",color="2F6A33")
+define uw = Character("Unknown Warrior",color="9e0000")
                       
 
 image sword = "sword.png"
@@ -28,15 +28,13 @@ image druid = "druid.png"
 image blackscreen = "blackscreen.jpg"
 image coin = "thecoin.png"
 image golem = "golem.png"
-image adesse = "adessefull.jpg"
-image adesse_angry = "adesse_angry.jpg"
-image adesse_distant = "adesse_distant.jpg"
-image adesse_flirty = "adesse_flirty.jpg"
-image adesse_flirty_melancholic = "adesse_flirty_melancholic.jpg"
-image adesse_hurt = "adesse_hurt.jpg"
-image adesse_neutral = "adesse_neutral.jpg"
+image adesse_angry = "adesse_angry.png"
+image adesse_distant = "adesse_distant.png"
+image adesse_flirty = "adesse_flirty.png"
+image adesse_flirty_melancholic = "adesse_flirty_melancholic.png"
+image adesse_hurt = "adesse_hurt.png"
+image adesse_neutral = "adesse_neutral.png"
 image julian = "julian.png"
-image tess = "Tess.png"
 
 
 
@@ -139,7 +137,6 @@ define leftwithgoblin = False
 define leftwithadesse = False
 define leftwithtess = False
 define golemleftwithtess = False
-define golemleftwithgoblin = False
 
 
 
@@ -296,7 +293,7 @@ label start:
 
     d "Oh, spare an old man the haggle. I'm offering you one hundred crowns for a job well done, and evidence of the slaying."
 
-    n "Julian whistles slowly"
+    n "Julian whistles slowly."
 
     j "No argruments here."
 
@@ -430,7 +427,7 @@ label start:
     show crypt at deadcenter
 
     
-    f "Okay, enough stalling... let's do this."
+    j "Okay, enough stalling... let's do this."
 
     menu:
 
@@ -492,7 +489,7 @@ label start:
         show unlit at deadcenter
         with dissolve
 
-        f "I should take it. A light source would be useful in this dark place… especially with a demon of shadow lurking nearby."
+        j "I should take it. A light source would be useful in this dark place… especially with a demon of shadow lurking nearby."
         $ inventory_items.append("Torch")
 
         j "A sturdy branch topped with dry cloth soaked in pitch and an alchemical mixture. I can ignite it by striking it against the wall. These don’t last forever…"
@@ -516,7 +513,7 @@ label start:
         
         hide unlit
 
-        f "I'll be fine."
+        j "I'll be fine."
 
         n "You leave the torch behind."
         
@@ -734,7 +731,9 @@ label cutbolt:
 
         j "Uh… I see. And yes, I really want to know."
 
-        n "She continues on, frowning and obviously just a bit uncomfortable. At the same time, she seems desperate for social contact, and most likely doesn't have much experience socializing."
+        n "She continues on, frowning, and obviously just a bit uncomfortable." 
+        
+        n "At the same time, she seems desperate for social contact, and most likely doesn't have much experience socializing."
 
         g "When I was young, a bit too young, I was exiled from my tribe on account of my 'difference.'"
 
@@ -805,7 +804,11 @@ label cutbolt:
         scene endingscreen
         with pixellate
 
-        n "Julian, led by Inya, made their way to the streets. Silently indicating the direction of a culvert, Inya hurriedly catches up to Julian, and tugs on his arm to get his attention. She looks oddly emotional and introspective."
+        n "Julian, led by Inya, made their way to the streets."
+        
+        n "Silently indicating the direction of a culvert, Inya hurriedly catches up to Julian, and tugs on his arm to get his attention."
+        
+        n "She looks oddly emotional and introspective."
 
         i "I can see you again, right? We're friends?"
 
@@ -889,13 +892,15 @@ label cutbolt:
 
 label nogoblin:
 
-    j "Lucky me, I have just the right tool for the job - but I can't be serious with this. I've come all this way for nothing?"
+    j "Lucky me, I have just the right tool for the job - but I can't be serious with this."
+    
+    j "I've come all this way for nothing?"
 
     j "One hundred crowns could keep me fed for months, and I could buy some new equipment, not even considering the connections the Archdruid might have for me."
 
     j "I'm better than this. Let's be thorough."
 
-    n "You return back to artium."
+    n "You return back to atrium."
 
     scene room1
     with pixellate
@@ -910,7 +915,9 @@ label golemchoice:
 
     j "Ugh, do I really want to be doing this?"
 
-    j "There's a quarter inch of dust covering literally everything. If I found this demon in such a cramped space, I don't think I'd even be able to swing my sword…."
+    j "There's a quarter inch of dust covering literally everything."
+    
+    j "If I found this demon in such a cramped space, I don't think I'd even be able to swing my sword..."
 
     menu:
 
@@ -984,7 +991,7 @@ menu:
         "Search rubble":
             j "I might as well try to find something useful while I'm here."
 
-            n "You sort throught the rubble and find a set of bolt cutters"
+            n "You sort throught the rubble and find a set of bolt cutters."
             $ boltcutters = True
 
             j "Huh. These might come in handy, I guess. Nobody else is using them, I might as well bring them along."
@@ -1107,9 +1114,9 @@ label choice1_done:
 
     n "A dark silhouette like a blot in space." 
 
-    j "Maimed Wraithspawn,  This one suffered a major injury in life."
+    j "This one suffered a major injury in life."
 
-    n "its spine folds like an accordion, and its arm drags limply at its side." 
+    n "Its spine folds like an accordion, and its arm drags limply at its side." 
 
     f "It doesn't seem to be in pain, at least. I wonder if it knows where it is?"
 
@@ -1153,7 +1160,7 @@ label choice1_done:
     scene monument
     # Room 3 - Monument Chamber
 
-    n "One thing is certain, this place has been vandalized. The locals surely wouldn't do this..."    
+    n "One thing is certain, this place has been vandalized."    
 
     n "Statues are torn from the podiums from which they rested, and stone slabs commemorating the deeds of the heroic dead have been toppled."
 
@@ -1161,20 +1168,20 @@ label choice1_done:
 
     n "Aside from the ladder down and the way you entered, it appears all of the connecting chambers are blocked by collapsed rubble."
 
-    j "The locals surely wouldn't do this"
+    j "The locals surely wouldn't do this."
 
     j "I should be on guard and gather my bearings before pushing ahead."
 
     menu:
         "Look around":
-            n "You look around and see an Antique Silver Coin."
+            n "You look around and see an antique silver coin."
 
     show coin at deadcenter
     #find a less stupid coin image with a transparent background
 
     j "The old farts at the monastery and maybe some of the druids remember when these were minted."
 
-    j "They're at least half zinc, more than a quarter copper, but there's a bit of silver in there... I guess that's why they're called silver coins."
+    j "They're at least half zinc, more than a quarter copper, but there's a bit of silver in there... I guess that's why they're called 'silver coins.'"
 
     j "It's strange to find something like this here."
 
@@ -1221,7 +1228,7 @@ label choice1_done:
 
     # sound
 
-    x "Return your filchings to their proper place, and forget all you have seen here."
+    uv "Return your filchings to their proper place, and forget all you have seen here."
 
     j "Unsettling. The torch has sent the fiend fleeing - I had best pursue it..."
 
@@ -1278,9 +1285,7 @@ n "There - on the other side of the platform, the shadows take shape - the demon
 
 "What in the world?"
 
-#show adesse with slide Down
-
-show adesse:
+show adesse_neutral:
     size (1240, 1754)
     xalign 0.5 yalign 1.0
     linear 6.0 yalign 0.0
@@ -1314,22 +1319,11 @@ label fightdemoness1:
     n "The demoness fires a barrage of needle-like spines of solid shadow."
 
     menu:
-        "Dodge":
-            jump dodgedemoness1
-            
         "Block":
             jump blockdemoness1
 
         "Attack":
             jump attackdemoness1
-
-label dodgedemoness1:
-
-    j "I can see the shadows moving, I can dodge them!"
-    n "Julian dodges the demoness' attack."
-    j "I can do this. I can do this."
-    n "The demoness fires another barrage of needle-like spines of solid shadow."
-    jump fightdemoness2
 
 label blockdemoness1:
 
@@ -1346,19 +1340,11 @@ label attackdemoness1:
 label fightdemoness2:
 
     menu:
-        "Dodge":
-            jump dodgedemoness2
-    
         "Block":
             jump blockdemoness2
 
         "Attack":
             jump attackdemoness2
-
-label dodgedemoness2:
-
-    j "I've changed my mind, hold your strike and let's talk..."
-    jump fightorquestiondemoness1
 
 label blockdemoness2:
 
@@ -1382,10 +1368,9 @@ label attackdemoness2:
     jump demonessresolution2
 
 label demonessresolution1:
-    $leftwithtess = True
 
-    hide adesse
-
+    hide adesse_neutral
+    # blurry text or something idk 
     n "Julian's vision blurs as he bleeds out against the cold stone."
 
     n "Revealed in blood-blurred snapshots as he blinks, unbelievably, he sees a warrior doing battle with the Demon of Shadow."
@@ -1395,8 +1380,6 @@ label demonessresolution1:
     n "The room fills with the smell of sweet sulfur, and Julian, losing consciousness, feels a slight stab of pain."
 
     n "His hero - this masked avenger, crouches down to check his vitals and speaks in a soft, deep female voice."
-
-    show tess
 
     uw "You shouldn't be here. Did Nikolai put you up to this?"
 
@@ -1422,7 +1405,9 @@ label demonessresolution1:
 
     n "Until she spoke, he had no indication this powerful warrior was a woman."
 
-    n "She eschews armor for green and brown traveler's leathers, adorned with protective talismans. Her longboots are characteristic of the locality."
+    n "She eschews armor for green and brown traveler's leathers, adorned with protective talismans."
+    
+    n "Her longboots are characteristic of the locality."
 
     n "Her saw-toothed metal staff and iron mask strike Julian as distinct, but wracking his brain, he comes up with nothing for their origin."
 
@@ -1437,7 +1422,7 @@ label demonessresolution1:
     uw "2..."
 
     uw "1..."
-
+    # bone cronch 
     n "An audible crunch disturbs the silence of the chamber as she sets the bone."
 
     n "Julian, despite his wounded and half-conscious state, lets out a muffled wail, biting down hard on the bit."
@@ -1453,6 +1438,7 @@ label demonessresolution1:
     uw "You can call me Tess. I think you're brave, for whatever that's worth."
 
     n "Tess carefully heaves Julian over her shoulder. Julian passes out shortly thereafter."
+
     $leftwithtess = True
 
     scene blackscreen
@@ -1477,7 +1463,7 @@ label demonessresolution2:
 
 label questiondemoness1:
 
-    hide adesse
+    hide adesse_neutral
     show adesse_angry:
         size (1240, 1754)
         xalign 0.5 yalign 0.0
@@ -1494,7 +1480,7 @@ label questiondemoness1:
 
     label fightorquestiondemoness2:
 
-    if havecoin:
+    if nocoin:
         menu:
             "Fight the demoness":
 
@@ -1935,7 +1921,7 @@ label golemescape4:
             "This one is… this one. I am neither male nor female. This one's identity is this one's. Flesh, I am not. Mortal, I am not. I have been created for a purpose. This purpose is undefined. This purpose must be defined."
             $pronoun = "It"
             $pronouns = "its"
-            $selection = "something else"
+            $selection = "something else."
 
     "I am as I choose."
 
@@ -1989,17 +1975,14 @@ label golemescape4:
             i "So you agree then, great! I'll lead you to the surface, and then we can… I don't know, we can figure it out."
 
             gl "I have professed my compliance, friend. We shall proceed."
-            $golemleftwithgoblin = True
 
             scene endingscreen
             with longdissolve
 
             n "Inya nods, contextually learning new vocabulary words from [x] as they speak."
-            n "She appears to be genuinely hopeful and excited for this new adventure. "
+            n "She appears to be genuinely hopeful and excited for this new adventure."
 
             n "The pair leave immediately, heading through the sewers to the city as they prepare to execute Inya's ill-conceived scheme."
-            $golemleftwithgoblin = True
-
 
             jump witchstart
 
@@ -2052,7 +2035,9 @@ label golemescape5:
         alpha .3
     show dog at offleft:
         alpha .3 
-    n "Faint, indistinct, macabre wraithspawn lurk in the corners of this place. In the center of the room lies the face-down corpse of the Golem's foe - this interloper oozing blood from its many wounds."
+    n "Faint, indistinct, macabre wraithspawn lurk in the corners of this place."
+    
+    n "In the center of the room lies the face-down corpse of the Golem's foe - this interloper oozing blood from its many wounds."
 
     "I must neutralize these threats."
 
@@ -2088,7 +2073,11 @@ label golemescape5:
             scene monument
             with fade    
 
-            n "A narrow walkway encircles an open pit full of decomposing bodies of the less fortunate. Tenebrous shapes skirt the edge of the Golem's vision. From the opposing side of the pit - it manifests!"
+            n "A narrow walkway encircles an open pit full of decomposing bodies of the less fortunate."
+            
+            n "Tenebrous shapes skirt the edge of the Golem's vision."
+            
+            n "From the opposing side of the pit - it manifests!"
             show adesse:
                 size (1240, 1754)
                 xalign 0.5 yalign 1.0
@@ -2125,7 +2114,7 @@ label golemescape5:
 
             u "You may know me as Adesse."
 
-            n "Adesse floats down to where the [x] stands, and grazes its unfeeling stone jaw with her bladed, beshadowed fingernail."
+            n "Adesse floats down to where [x] stands, and grazes its unfeeling stone jaw with her bladed, beshadowed fingernail."
 
             n "[x] contemplates her inquiry."
             
@@ -2141,15 +2130,15 @@ label golemescape5:
                 "This one's creator sculpted this one to serve as his counterpart and compliment. I am female."
                 $pronoun = "She"
                 $pronouns = "her"
-                $selection = "female"
+                $selection = "female."
         "I am something else.":
                 "This one is… this one. I am neither male nor female. This one's identity is this one's. Flesh, I am not. Mortal, I am not."
                 "I have been created for a purpose. This purpose is undefined. This purpose must be defined."
                 $pronoun = "It"
                 $pronouns = "its"
-                $selection = "something else"
+                $selection = "something else."
             
-    "I am as I choose"
+    "I am as I choose."
 
     gl "I have determined I am [selection]"
 
@@ -2157,21 +2146,25 @@ label golemescape5:
 
     a "My business here is concluded, and you've caught my eye…"
 
-    a "I believe we can aid one another. Accompany me out of this crypt. I am marked by enemies of my kind, and many would seek your destruction for simply being what you are."
+    a "I believe we can aid one another. Accompany me out of this crypt."
+    
+    a "I am marked by enemies of my kind, and many would seek your destruction for simply being what you are."
 
-    a "We find ourselves alike. I can assist you in finding your creator, if you can assist me in… ensuring my safety. "
+    a "We find ourselves alike. I can assist you in finding your creator, if you can assist me in… ensuring my safety."
 
     a "We both simply strive for survival, do we not?"
 
     n "[X] considers Adesse's proposal. A loneliness tugs from deep within."
 
-    n " Was Adesse altogether candid? Or did she take note of [x]'s latent yearning? "
+    n "Was Adesse altogether candid? Or did she take note of [x]'s latent yearning?"
 
-    n "he creator's absence was felt deeply. Could she fill that void? Did she intend to help [x] find [pronouns] creator earnestly?"
+    n "The creator's absence was felt deeply. Could she fill that void? Did she intend to help [x] find [pronouns] creator earnestly?"
 
     gl "I… accept your accord. We shall assist one another."
 
-    a "Marvelous. Firstly, let us escape this domain of death. Accompany me."
+    a "Marvelous."
+    
+    a "Firstly, let us escape this domain of death. Accompany me."
     $golemleftwithtess = True
 
     hide adesse
@@ -2196,7 +2189,9 @@ label golemescape5:
 
     gl "It is unavoidable. We must do battle."
 
-    n "The demoness hesitates for but a moment, puzzled by the anomalous creature intruding into her domain. She grins an unnaturally wide grin."
+    n "The demoness hesitates for but a moment, puzzled by the anomalous creature intruding into her domain."
+    
+    n "She grins an unnaturally wide grin."
 
     show adesse:
         size (1240, 1754)
@@ -2207,7 +2202,9 @@ label golemescape5:
 
     n "Seizing initiative, the Golem dashes forward, casting the chamber with a blue glow."
 
-    n "The demoness, however, is prepared for this advance. A beshadowed hemisphere created by the demoness's sorcery separates her from the Golem - and swiftly envelops the Golem, halting its advance."
+    n "The demoness, however, is prepared for this advance." 
+    
+    n "A beshadowed hemisphere created by the demoness's sorcery separates her from the Golem - and swiftly envelops the Golem, halting its advance."
 
     n "The Golem remains held fast by the demoness's sorcery. She grins broadly in triumph."
 
@@ -2224,16 +2221,22 @@ label golemescape5:
 
     n "Their longboots are characteristic of the locality."
 
-    n "The saw-toothed metal staff wielded by the warrior and the iron mask strike the Golem as distinct, but mysterious in origin. Whomever this is, they strike an imposing form in the gray-hued darkness of the crypt."
+    n "The saw-toothed metal staff wielded by the warrior and the iron mask strike the Golem as distinct, but mysterious in origin."
+    
+    n "Whomever this is, they strike an imposing form in the gray-hued darkness of the crypt."
 
     n "Without uttering a word, the warrior's talismans emit a bright glow, and they bound forth through the chamber, acrobatically and powerfully vaulting from the lip of the precipice transecting the room."
     #show talisman? with bright light?
 
-    n "The demoness's eyes widen in shock when presented with this threat. She launches sorcerous bolts of solid darkness towards the charging warrior - to utterly no effect."
+    n "The demoness's eyes widen in shock when presented with this threat."
+    
+    n "She launches sorcerous bolts of solid darkness towards the charging warrior - to utterly no effect."
 
     n "Several of the countless protective talismans warding the warrior tremble and sunder, joining the human swamp below."
 
-    n "Yet, the demoness's efforts are for naught. The warrior's weighted sawtoothed staff hurtles down at the end of the charge, pulping the demoness's skull with a sickening crunch."
+    n "Yet, the demoness's efforts are for naught."
+    
+    n "The warrior's weighted sawtoothed staff hurtles down at the end of the charge, pulping the demoness's skull with a sickening crunch."
 
     hide adesse
 
@@ -2276,15 +2279,15 @@ label golemescape5:
             "This one's creator sculpted this one to serve as his counterpart and compliment. I am female."
             $pronoun = "She"
             $pronouns = "her"
-            $selection = "female"
+            $selection = "female."
         "I am something else.":
             "This one is… this one. I am neither male nor female. This one's identity is this one's. Flesh, I am not. Mortal, I am not."
             "I have been created for a purpose. This purpose is undefined. This purpose must be defined."
             $pronoun = "It"
             $pronouns = "its"
-            $selection = "something else"
+            $selection = "something else."
 
-    "I am as I choose"
+    "I am as I choose."
 
     gl "I understand you. I am [X]. I am [selection]"
 
@@ -2310,8 +2313,6 @@ label golemescape5:
     
     n "Their futures are murky, but for now, they have the dubious company of one another."
 
-    $golemleftwithtess = True
-
     jump witchstart
 
 label golemescape6:
@@ -2330,7 +2331,7 @@ show dog at offleft:
 
 "The Golem emits a blinding pulse of radiance. The wraithspawn dissipate."
 
-"Skill recalled Blinding Flash"
+"Skill recalled: Blinding Flash"
 
 n "The Golem emits a blinding pulse of radiance. The wraithspawn dissipate."
 
@@ -2341,7 +2342,7 @@ n "The Golem emits a blinding pulse of radiance. The wraithspawn dissipate."
 ". . . ."
 
 menu:
-    "These living shadows are abeerations.":
+    "These living shadows aberrations.":
         gl "… And their creator is a monster. Intuitively, I know this to be a demon."
         gl "This one's creator opposed demons. This demon must be destroyed. This one's purpose is clear."
 
@@ -2353,7 +2354,7 @@ menu:
         n "A narrow walkway encircles an open pit full of decomposing bodies of the less fortunate. Tenebrous shapes skirt the edge of the Golem's vision. From the opposing side of the pit - it manifests!"
 
         jump golemtess
-    "The creator these creatures may eludicate the fate of my creator":
+    "The creator these creatures may eludicate the fate of my creator.":
         gl "This one's purpose remains unclear. The creator of these creatures may elucidate the fate of my creator."
         gl "This one lacks a purpose. A flame casts shadows, and this one shall seek truth within the flame."
 
@@ -2398,7 +2399,7 @@ menu:
 
         u "You destroyed my spawn trivially, and I shant begrudge such an indulgence."
 
-        u "Most certainly not when opportunity presents itself so… earnestly"
+        u "Most certainly not when opportunity presents itself so… earnestly."
 
         u "You may know me as Adesse."
 
@@ -2424,15 +2425,17 @@ menu:
                 "I have been created for a purpose. This purpose is undefined. This purpose must be defined."
                 $pronoun = "It"
                 $pronouns = "its"
-                $selection = "something else"
+                $selection = "something else."
             
-        "I am as I choose"
+        "I am as I choose."
 
-        gl "I have determined I am [selection]"
+        gl "I have determined I am [selection]."
 
-        a "Ah… of course. I have a proposition for you, [x]. My business here is concluded, and you've caught my eye… "
+        a "Ah… of course. I have a proposition for you, [x]. My business here is concluded, and you've caught my eye…"
 
-        a "I believe we can aid one another. Accompany me out of this crypt. I am marked by enemies of my kind, and many would seek your destruction for simply being what you are."
+        a "I believe we can aid one another. Accompany me out of this crypt."
+        
+        a "I am marked by enemies of my kind, and many would seek your destruction for simply being what you are."
 
         a "We find ourselves alike. I can assist you in finding your creator, if you can assist me in… ensuring my safety."
 
@@ -2442,9 +2445,9 @@ menu:
 
         n "Or did she take note of [x's] latent yearning? The creator's absence was felt deeply."
 
-        n " Could she fill that void? Did she intend to help [x] find [pronoun's] creator earnestly?"
+        n "Could she fill that void? Did she intend to help [x] find [pronoun's] creator earnestly?"
 
-        l "I… accept your accord. We shall assist one another."
+        gl "I… accept your accord. We shall assist one another."
 
         a "Marvelous. Firstly, let us escape this domain of death. Accompany me."
 
@@ -2469,7 +2472,9 @@ label golemescape7:
 
     n "The Golem pauses, closely examining the single set of footprints entering and leaving the crypt. "
 
-    n "Waning daylight intrudes upon this place of rest. The Golem contemplates the sequence of events, and is hit with a sudden realization - the interloper has fled with an accomplice."
+    n "Waning daylight intrudes upon this place of rest."
+    
+    n "The Golem contemplates the sequence of events, and is hit with a sudden realization - the interloper has fled with an accomplice."
 
     "Skill Recalled: Moment of Prescience"
 
@@ -2481,7 +2486,9 @@ label golemescape7:
 
     show tess
 
-    n "The warrior eschews armor for green and brown traveler's leathers, adorned with protective talismans. Their longboots are characteristic of the locality."
+    n "The warrior eschews armor for green and brown traveler's leathers, adorned with protective talismans."
+    
+    n "Their longboots are characteristic of the locality."
 
     n "The saw-toothed metal staff wielded by the warrior and the iron mask strike the Golem as distinct, but mysterious in origin."
 
@@ -2527,11 +2534,11 @@ label golemescape7:
             "I have been created for a purpose. This purpose is undefined. This purpose must be defined."
             $pronoun = "It"
             $pronouns = "its"
-            $selection = "something else"
+            $selection = "something else."
             
-    "I am as I choose"
+    "I am as I choose."
 
-    gl "I understand you. I am [x]. I am [selection]"
+    gl "I understand you. I am [x]. I am [selection]."
 
     n "This pronouncement gives the warrior pause, who deigns not to question the strange behavior - produced by an even stranger creature."
 
@@ -2573,7 +2580,7 @@ n "The pressure on the hydraulics of the crypt's door is released with a gesture
 
 dh "It will do."
 
-dh  " The anomaly, and the demon."
+dh "The anomaly, and the demon."
 
 dh "One to be harvested, one to be bound. Good help is so very hard to find."
 
@@ -2582,12 +2589,12 @@ n "Confidently, the witch struts into the crypt."
 scene room1
 with pixellate
 
-n " She follows the path in her divination - first, to the arcane anomaly."
+n "She follows the path in her divination - first, to the arcane anomaly."
 
 if barricade:
     n "Ancient, crumbling boards practically hang from the nails they were fixed to many decades ago."
 
-    n " Even so, they do the trick. The way is blocked."
+    n "Even so, they do the trick. The way is blocked."
 
     dh "A trifle."
     #add spelleffect
@@ -2675,7 +2682,7 @@ if golembreakmirror:
 
 dh "Disappointing, but not the end of the road."
 
-dh " It seems another has hastened to the prize."
+dh "It seems another has hastened to the prize."
 
 dh "I have a competitor. No sense in wasting precious time."
 
@@ -2686,21 +2693,12 @@ label backtoatrium:
 scene room1
 with pixellate
 
-if golemleftwithtess and leftwithgoblin:
-    jump witchsolo
-
-elif golemleftwithgoblin and leftwithtess:
-    jump witchsolo
-
-elif deadjulian:
-        jump raisejulian
+if deadjulian:
+    jump raisejulian
 
 elif leftwithadesse:
-        jump witchtess
-
-elif leftwithtess:
-        jump witchgoblin
-
+    jump witchtess
+   
 jump witchadesse
 
 label raisejulian:
@@ -2729,7 +2727,7 @@ n "Dahlia takes a moment to clear her head and muster her might."
 
 n "She casts a powerful hex, utilizing the latent remnants of guilt Julian's soul possessed"
 
-n " Binding the weight of his guilt to the blood remaining in his body, her spell concludes."
+n "Binding the weight of his guilt to the blood remaining in his body, her spell concludes."
 
 n "A stirring digit."
 
@@ -2741,7 +2739,7 @@ dh "You may move when I permit."
 
 dh "Nikolai sent you, I presume? That doddering old fool."
 
-j "... Yes."
+vj "... Yes."
 
 dh "Hm. Responsive to commands."
 
@@ -2751,19 +2749,19 @@ n "Dahlia's malice softens, and a small wicked smile graces her black lips."
 
 dh "Your new existence will be confusing, but you may take my lead."
 
-dh "Call me Dahlia. Provide me with your name, if you please"
+dh "Call me Dahlia. Provide me with your name, if you please."
 
 n "The witch's politeness belied the bidding of a magical pact binding her now to Julian - she did not offer a polite suggestion."
 
 n "She issued a command."
 
-n "Julian coughs, nearly vomiting, sputtering out the remaining blood in his esophagus and lungs. "
+n "Julian coughs, nearly vomiting, sputtering out the remaining blood in his esophagus and lungs."
 
 n "Rising to his feet, he marveled at his healed wounds, newfound vitality, and ability to see in the overbearing, oppressive darkness of the crypt."
 
 n "Yet, a gnawing, unfamiliar hunger brewed in his gut - mingled with dread. He did as he was bidden by Dahlia."
 
-j "Julian… Grymwald."
+vj "Julian… Grymwald."
 
 dh "You have the look of a town guard, Mr. Grymwald, or a mercenary."
 
@@ -2771,7 +2769,7 @@ dh "Oh, please tell me you were a druid. That would truly tickle me."
 
 n "Still recovering from his ordeal, Julian stammers out a response."
 
-j "M-mercenary."
+vj "M-mercenary."
 
 dh "Mm, I see. Await me outside."
 
@@ -2842,7 +2840,7 @@ if deadjulian:
     n "Dahlia's designs for them are yet unclear, but the hands of the malevolent are rarely still."
     jump endofprologue
 
-n "The pair departed the crypt"
+n "The pair departed the crypt."
 
 n "A witch and a demon."
 
@@ -2859,7 +2857,7 @@ if golemleftwithtess:
 
 n "Dahlia hastens to the depths of the crypt with supernatural speed."
 
-scene monument
+scene momument
 with fastdissolve
 
 n "Silently, she lands in the depths of the place overlooking a bit transecting the center of the room."
@@ -2868,7 +2866,9 @@ n "The pit is filled with the decaying remains of the less fortunate - a particu
 
 dh "… I'm too late."
 
-n "Indeed, the absence of animate shadows indicates the witch's estimation is correct. Dahlia is disappointed, but just for mere moments."
+n "Indeed, the absence of animate shadows indicates the witch's estimation is correct."
+
+n "Dahlia is disappointed, but just for mere moments."
 
 n "A sturdy figure rappels down the ladder leading to the depths of the crypt."
 
@@ -2878,7 +2878,7 @@ n "The warrior eschews armor for green and brown traveler's leathers, adorned wi
 
 n "Their longboots are characteristic of the locality."
 
-n "The saw-toothed metal staff wielded by the warrior and the iron mask strike Dahlia as distinct, but mysterious in origin. "
+n "The saw-toothed metal staff wielded by the warrior and the iron mask strike Dahlia as distinct, but mysterious in origin."
 
 n "Whomever this is, they strike an imposing form in the gray-hued darkness of the crypt."
 
@@ -2896,9 +2896,9 @@ dh "Perhaps… honey would be a better approach."
 
 n "Dahlia, continuing the momentum established with her sorcery, gestures a charm, and a mental probe."
 
-dh "Tessanrae. A beautiful name for a beautiful woman. "
+dh "Tessanrae. A beautiful name for a beautiful woman."
 
-dh "It's a pity you hide your beauty behind a mask of iron - and the beauty of your name behind a base alias like 'Tess'."
+dh "It's a pity you hide your beauty behind a mask of iron - and the beauty of your name behind a base alias like 'Tess.'"
 
 dh "The world should behold the beauty you possess, my 'Tess' and tremble."
 
@@ -2934,7 +2934,7 @@ t "I really don't like being called Tessie. But… I'll forgive you."
 
 t "This time."
 
-t " I learned Nikolai is sending mercenaries to handle stray demons. That old fool has really lost the plot."
+t "I learned Nikolai is sending mercenaries to handle stray demons. That old fool has really lost the plot."
 
 n "The witch grins as her charm bears fruit - the moments of agony so easily forgotten and forgiven."
 
@@ -2948,11 +2948,11 @@ dh "Look into my eyes."
 
 n "Tess obliges, despite a subconscious realization she is being magically manipulated."
 
-n "As she meets Dahlia's eyes, the witch's charm truly bears fruit - and allows her to leave a lasting imprint in the warden's mind"
+n "As she meets Dahlia's eyes, the witch's charm truly bears fruit - and allows her to leave a lasting imprint in the warden's mind."
 
 dh "You're interesting. I want to see you again."
 
-dh " I will call to you, and you will come, unarmed. "
+dh "I will call to you, and you will come, unarmed."
 
 dh "We will next meet in your dreams. I ever so look forward to it."
 
@@ -2960,7 +2960,7 @@ n "Tess's slight alarm is concealed by her mask."
 
 t "That sounds unlikely, but if you say so."
 
-dh "I do, I do. Wait five minutes in this place, standing still, then you may leave. "
+dh "I do, I do. Wait five minutes in this place, standing still, then you may leave."
 
 dh "It's been fascinating, my dear."
 
@@ -2976,9 +2976,9 @@ with longdissolve
 
 n "Frustrated at the fruits of her labor going unrealized, but tantalized by the mirth tormenting a warden will bring, Dahlia departs."
 
-n "Tess obediently waits five minutes, precisely as directed. "
+n "Tess obediently waits five minutes, precisely as directed."
 
-n " Both Dahlia and Tess have a feeling they will see each other again - perhaps sooner than expected."
+n "Both Dahlia and Tess have a feeling they will see each other again - perhaps sooner than expected."
 
 jump endofprologue
 
@@ -3004,7 +3004,7 @@ n "A flick of the wrist, a draw on the latent thaumaturgical current."
 
 n "The bars blocking the path to the service entrance turn red, then white, then pool as a liquid on the ground."
 
-n " As a bit of flair, Dahlia makes a show of exhaling in the direction of the molten metal, while concealing her gestures, freezing it."
+n "As a bit of flair, Dahlia makes a show of exhaling in the direction of the molten metal, while concealing her gestures, freezing it."
 
 scene goblinroom
 with pixellate
@@ -3023,7 +3023,7 @@ n "Dahlia chuckles darkly."
 
 dh "My dear, pardon my disrespect. You have done well for yourself."
 
-dh "You're a survivor, and you've taught yourself our language. "
+dh "You're a survivor, and you've taught yourself our language."
 
 dh "You've triumphed over your impediments, and for that, you have my ardent admiration."
 
@@ -3037,7 +3037,7 @@ dh "Zanya. You are Zanya. "
 
 dh "Inya is a cute name, but it draws too many unfortunate comparisons… "
 
-dh " but it may be as you wish. "
+dh " but it may be as you wish."
 
 dh " I am Dahlia. It is a pleasure to meet you."
 
@@ -3049,7 +3049,7 @@ i " I wish you wouldn't do things like that. I like 'Inya'. It sounds so much mo
 
 n "Inya pouts, to Dahlia's muted amusement."
 
-dh "It shan't happen again, my little morsel. "
+dh "It shan't happen again, my little morsel."
 
 dh "I have divined all I need to know about you, and I find you starkly unique, and simply fascinating."
 
@@ -3071,17 +3071,17 @@ dh "You're lonely. You've been seeking a human friend for fourteen years since y
 
 dh "I'm offering you a home, and a human companion."
 
-dh "I am the answer to your deepest desires. "
+dh "I am the answer to your deepest desires."
 
-dh " know everything about you, my Inya, and I find you worthy and fascinating."
+dh "I know everything about you, my Inya, and I find you worthy and fascinating."
 
 n "Inya blushes a deep red and nearly faints. Meekly, she replies."
 
 i "That's a lot to think over, ma'am. I suppose you're right though. You seem like you're always right."
 
-dh "Yes, my dear, I am. "
+dh "Yes, my dear, I am."
 
-dh " You may ask your questions on the way. The front door will do."
+dh "You may ask your questions on the way. The front door will do."
 
 dh "You're coming with me - if that is your wish."
 
@@ -3141,7 +3141,7 @@ menu:
         n "If he proved unyielding, well, Dahlia always had her way."
         jump endofprologue
     "The Arcane Anomaly":
-        dh "My goal has not changed, despite this… unprecedented setback. "
+        dh "My goal has not changed, despite this… unprecedented setback."
 
         dh " Foremost, the arcane core is my quarry. I shan't tarry."
 
@@ -3150,7 +3150,7 @@ menu:
 
         n "Resolved and focused, and with a fresh lead, Dahlia decided to pursue the Arcane Anomaly."
 
-        n " She would harvest its arcane core and latent power. It was, after all, the first step in creating a golem of her own."
+        n "She would harvest its arcane core and latent power. It was, after all, the first step in creating a golem of her own."
 
         n "She couldn't pass up that opportunity. These cores are artifacts, and their personalities were ever so malleable."
 
@@ -3159,24 +3159,24 @@ menu:
     "The Unusual Goblin":
         dh "An albino. An outcast."
 
-        dh " She hasn't perished, despite her deformity."
+        dh "She hasn't perished, despite her deformity."
 
         dh "Marvelous - it speaks to her ingenuity. I can use that."
 
         scene endingscreen
         with longdissolve
 
-        n "Interest piqued at the novelty of this goblin, Dahlia resolved to pursue her. "
+        n "Interest piqued at the novelty of this goblin, Dahlia resolved to pursue her."
 
-        n " She would handle her with care, for she saw potential… and a bit of herself in what she could divine about the small creature."
+        n "She would handle her with care, for she saw potential… and a bit of herself in what she could divine about the small creature."
 
-        n " Dahlia departed to her lair to plan the pursuit and her strategy."
+        n "Dahlia departed to her lair to plan the pursuit and her strategy."
         jump endofprologue
     "The Warden":
-        dh "A warden… and a traitor to her kind. How unique. "
-        dh " The roots of this conspiracy go deep."
-        dh " Perhaps if she were under my thumb I could root out the core of this wart, and collect a novel plaything."
-        dh "'Tessanrae'... Few of her kind survive. "
+        dh "A warden… and a traitor to her kind. How unique."
+        dh "The roots of this conspiracy go deep."
+        dh "Perhaps if she were under my thumb I could root out the core of this wart, and collect a novel plaything."
+        dh "'Tessanrae'... Few of her kind survive."
         dh "She shall be the crowning jewel of my collection."
 
         scene endingscreen
@@ -3190,8 +3190,8 @@ menu:
         jump endofprologue
     "It is time to confront Nikolai once and for all.":
         n "Dahlia takes a deep breath, and lets out a long, irritated sigh."
-        dh "Nikolai has thwarted me at every turn. "
-        dh "His lairs are hidden, but not inaccessible… "
+        dh "Nikolai has thwarted me at every turn."
+        dh "His lairs are hidden, but not inaccessible…"
         dh "It is long overdue to pay him a friendly visit."
 
         scene endingscreen
@@ -3199,7 +3199,7 @@ menu:
 
         n "Dahlia left the crypt, returning to her lair to scheme."
 
-        n " This was not the first time Nikolai attempted to thwart her, but it was the first time he had found success."
+        n "This was not the first time Nikolai attempted to thwart her, but it was the first time he had found success."
 
         n "Dahlia had never been one to forgive or forget. She was planning something, as she always was."
 
@@ -3224,71 +3224,6 @@ menu:
 label endofprologue:
 
 return
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

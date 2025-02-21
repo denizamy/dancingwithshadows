@@ -2,9 +2,17 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 134: expected statement.
-    defibe deadjulian = False
-                      ^
+File "game/script.rpy", line 2532: expected statement.
+    Scene crypt
+               ^
+
+File "game/script.rpy", line 2583: reached end of line when expecting ':'.
+    if golemactive
+                  ^
+
+File "game/script.rpy", line 2637: reached end of line when expecting ':'.
+    if golembreakmirror
+                       ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Mon Feb 17 00:09:53 2025
+Thu Feb 20 20:25:50 2025

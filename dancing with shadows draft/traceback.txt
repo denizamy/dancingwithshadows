@@ -1,22 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 2517, in script
-    jump witchstart
-ScriptError: could not find label 'witchstart'.
+  File "game/script.rpy", line 2552, in script
+    with pixelate
+  File "game/script.rpy", line 2552, in <module>
+    with pixelate
+NameError: name 'pixelate' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 2517, in script
-    jump witchstart
-  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\ast.py", line 1705, in execute
-    rv = renpy.game.script.lookup(target)
-  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\script.py", line 1103, in lookup
-    raise ScriptError("could not find label '%s'." % str(original))
-ScriptError: could not find label 'witchstart'.
+  File "game/script.rpy", line 2552, in script
+    with pixelate
+  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\ast.py", line 1360, in execute
+    trans = renpy.python.py_eval(self.expr)
+  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\python.py", line 1209, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 2552, in <module>
+    with pixelate
+NameError: name 'pixelate' is not defined
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.3.4.24120703
 dancing with shadows draft 1.0
-Mon Feb 17 00:23:50 2025
+Thu Feb 20 20:28:29 2025

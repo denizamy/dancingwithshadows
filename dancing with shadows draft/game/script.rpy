@@ -2529,7 +2529,7 @@ label golemescape7:
 
 label witchstart:
 
-Scene crypt
+scene crypt
 with longdissolve
 
 play music "Oppressive Gloom.mp3"
@@ -2540,7 +2540,124 @@ n "The pressure on the hydraulics of the crypt's door is released with a gesture
 
 # add sound effect
 
-dl 
+dh "It will do."
+
+dh  " The anomaly, and the demon."
+
+dh "One to be harvested, one to be bound. Good help is so very hard to find."
+
+n "Confidently, the witch struts into the crypt."
+
+scene room1
+with pixellate
+
+n " She follows the path in her divination - first, to the arcane anomaly."
+
+if barricade:
+    n "Ancient, crumbling boards practically hang from the nails they were fixed to many decades ago."
+
+    n " Even so, they do the trick. The way is blocked."
+
+    dh "A trifle."
+    #add spelleffect
+
+    n "A deadly gesture - moderate necromancy."
+
+    n "The boards wither and crumble before Dahlia's eyes, collapsing in a parched pile at her feet."
+
+    n "She proceeds down the narrow tunnel to her first destination."
+
+    jump golemnotactived
+
+n "Boards, once comprising a barricade, lie in a disassembled heap at Dahlia's feet."
+
+dh "My, my. Unsavory complications. "
+
+dh "They will be managed."
+
+n "Despite her confidence, Dahlia scowls."
+
+n " She hated complications."
+
+n "She proceeds down the narrow tunnel to her first destination."
+if golemactive:
+    jump golemactived
+
+label golemnotactived:
+
+scene warehouse
+with fade
+
+n "A room full of detritus. A disused artificer's lab, surely, by Dahlia's estimation."
+
+n "Her eyes settle on her prize."
+
+show golem:
+    alpha .3
+
+dh "My dear, sweet thing. I've traveled leagues for you."
+
+n "Mustering her magical might, the room glows alight with a fel crimson bloom."
+
+#more spell effects
+
+hide golem
+
+n "The dismembered torso of the Golem rises in rhythm with the malevolent pulse. "
+
+n "Dahlia gestures sharply, and the Golem's stone torso is violently torn asunder - revealing a pristine core, alight with a blue glow."
+
+# add core item
+
+n "The neutral blue of its light is drowned in Dahlia's sea of crimson."
+
+dh "Marvelous! And now for my sweet…"
+
+n "Dahlia unclasps her pack, retrieving a silvered bird cage like receptacle for the Golem's heart."
+
+n "Using minor telekinesis, she hefts the Golem's heart - ablaze with raw magic as it is, into the receptacle, and shuts it. "
+
+#mooooorreee spell effects
+
+n "The witch breathes a self-satisfied sigh of contentment and beams."
+
+n "Dahlia hastens to her task, returning to the Atrium."
+
+jump backtoatrium
+
+label golemactived:
+
+scene warehouse 
+with fade
+
+n "A room full of detritus. A disused artificer's lab, surely, by Dahlia's estimation."
+
+n "She peers carefully through the mess, coming up empty."
+
+if golembreakmirror:
+
+    n "Broken shards of glass litter the floor."
+
+    n "Dahlia spots the source - a broken mirror from across the room. Whatever impacted the mirror struck it hard."
+
+    dh "A temper tantrum… not entirely unexpected."
+
+dh "Disappointing, but not the end of the road."
+
+dh " It seems another has hastened to the prize."
+
+dh "I have a competitor. No sense in wasting precious time."
+
+n "Dahlia hastens to her task, returning to the Atrium"
+
+
+
+
+
+
+
+
+
 
 
 

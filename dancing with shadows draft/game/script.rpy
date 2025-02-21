@@ -131,7 +131,7 @@ define havetorch = False
 define notorch = False
 define nolight = False
 define light = False
-define havecoin = True
+define havecoin = False
 define nocoin = False
 define deadjulian = False
 define leftwithgoblin = False
@@ -1186,7 +1186,7 @@ label choice1_done:
             jump choice2_take
 
     label choice2_ignore:
-        $ havecoin = False
+        $havecoin = False
 
         f "Something is off about this. I should trust my gut. Much is amiss in this tomb, and I had best not tempt the spirits. One monster is enough…"
 
@@ -1195,7 +1195,7 @@ label choice1_done:
         hide coin
 
     label choice2_take:
-            $ havecoin = True
+            $havecoin = True
             
             show coin at deadcenter
             with dissolve
@@ -1485,7 +1485,7 @@ label questiondemoness1:
 
     label fightorquestiondemoness2:
 
-    if havecoin:
+    if nocoin:
         menu:
             "Fight the demoness":
 

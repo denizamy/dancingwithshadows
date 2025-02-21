@@ -1661,11 +1661,11 @@ label golemstart:
 
     label golemmirror:
 
-    define golempulltogether = True
+    define golempulltogether = False
     define golembreakmirror = False
 
     menu:
-        "Pull yourself together" if golempulltogether:
+        "Pull yourself together" if not golempulltogether:
 
             gl "Sundered, but not destroyed, I remain - and will persist, until this one's destruction."
 
@@ -1689,11 +1689,11 @@ label golemstart:
 
             gl "The memory is indistinct, but tangible - out of reach. I must press on."
 
-            $ golempulltogether = False
+            $ golempulltogether = True
 
             jump golemmirror
 
-        "Break the mirror" if golembreakmirror:
+        "Break the mirror" if not golembreakmirror:
 
             #TODO: Add sfx of glass breaking, image of broken mirror, etc.
 
@@ -2699,7 +2699,7 @@ n "A room full of detritus. A disused artificer's lab, surely, by Dahlia's estim
 
 n "She peers carefully through the mess, coming up empty."
 
-if golembreakmirror:
+if  golembreakmirror:
 
     n "Broken shards of glass litter the floor."
 
@@ -3267,7 +3267,7 @@ $ renpy.pause(1.5)
 
 centered "{size=+75}{cps=8} Narrative / Project Manager: \nBarry Weber{/cps}{/size}{p=5.0}{nw}"
 
-"Rachel 'Des' Marzzarella\\Lake Watkins\\Deniz Balik"
+centered "{size=+75}{cps=8}Rachel 'Des' Marzzarella\nLake Watkins\nDeniz Balik"
 
 centered "{size=+75}{cps=8} Code/Script: \nRachel 'Des' Marzzarella\nLake Watkins\nDeniz Balik{/cps}{/size}{p=5.0}{nw}"
 

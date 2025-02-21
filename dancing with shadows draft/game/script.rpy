@@ -13,7 +13,7 @@ define gl = Character("Golem",color="0BC4ED")
 define a = Character("Adesse",color="732ADC")
 define dh = Character("Dahlia",color="2F6A33")
 define uw = Character("Unknown Warrior",color="9e0000")
-                      
+
 
 image sword = "sword.png"
 image shield = "Shield.webp"
@@ -101,7 +101,7 @@ screen inventory_item_description:
         text item_description:
             xfill True
             yfill True
-    
+
     window:
         background "#99F9"
         xsize 1290
@@ -178,7 +178,7 @@ label start:
     scene druidgrove
     with pixellate
 
-    j ".…I really just can't believe it. Do all druids work in such secrecy, or just 'Arch'druids when they're looking for a sucker to do their dirty work?" 
+    j ".…I really just can't believe it. Do all druids work in such secrecy, or just 'Arch'druids when they're looking for a sucker to do their dirty work?"
 
     j "I'm here. This is what I came here for. There's no sense in wasting any more time."
 
@@ -317,8 +317,8 @@ label start:
 
     n "The neat bundle escaped Julian's notice entirely. It surely is where the druid said it was, but he couldn't be truly sure it was there when he entered."
 
-    j "That seems straightforward enough. I kill the fiend with the blade you're providing me." 
-    
+    j "That seems straightforward enough. I kill the fiend with the blade you're providing me."
+
     j "No strings?"
 
     d "None."
@@ -382,7 +382,7 @@ label start:
     play music "Floating Cities.mp3"
 
     n "Julian undergoes a daylong travel through the city, to the outskirts. "
-    
+
     n "Primarily, Julian spent the time reflecting on his mission and the Archdruid, and speculated on what was to come. "
 
     n " These days, he didn't get much comfort in anything, and this journey was no exception. "
@@ -401,14 +401,14 @@ label start:
 
     "The blasted thing must be inside. I should keep stock of my belongings before I head in."
 
-    # i can't get this shit to transition smoothly without the fucking transparent checkerboard bullshit 
+    # i can't get this shit to transition smoothly without the fucking transparent checkerboard bullshit
 
-    
+
     scene blackscreen
     with quickdissolve
 
     show contract at deadcenter
-   
+
     j "Sealed with a wax stamp. Strange, it looks like the monastery sigil."
 
     #contrackk imag
@@ -420,8 +420,8 @@ label start:
 
     show sword at deadcenter
 
-    n "A steel arming sword plated with silver along the edge." 
-    
+    n "A steel arming sword plated with silver along the edge."
+
     j "I might stand a chance with this blade, if I’m lucky."
 
     hide sword
@@ -452,10 +452,10 @@ label start:
     j "That's it."
 
     show black with dissolve
-    
+
     show crypt at deadcenter
 
-    
+
     j "Okay, enough stalling... let's do this."
 
     menu:
@@ -476,7 +476,7 @@ label start:
     play sound "gateclose.wav"
 
     scene closinggate
-    
+
 
     j "A security measure by the townsfolk, surely."
 
@@ -484,11 +484,11 @@ label start:
 
     n "Torchlight glints off of brass embellishments on the sarcophagi populating this moderately impressive tomb."
 
-    
+
     show shadow at deadcenter
     hide shadow with quickdissolve
 
-    show shadow at topright 
+    show shadow at topright
     hide shadow with quickdissolve
 
     n "On the periphery of your vision, you notice unusual fleeting shadows. The demon must not be far off, and it has nowhere to run. One of you must perish today."
@@ -511,10 +511,10 @@ label start:
 
         "Leave it":
             jump choice2_nopick
-    
+
     label choice2_torch:
         $ havetorch = True
-            
+
         show unlit at deadcenter
         with dissolve
 
@@ -526,7 +526,7 @@ label start:
         hide unlit
 
         play sound "torchlighting.mp3"
-        
+
         n "You stike the torch along the stone walls."
 
 
@@ -539,13 +539,13 @@ label start:
 
     label choice2_nopick:
         $ notorch = True
-        
+
         hide unlit
 
         j "I'll be fine."
 
         n "You leave the torch behind."
-        
+
         jump choice2_done
 
     label choice2_done:
@@ -554,7 +554,7 @@ label start:
 
         n "A stone passage, comprised of stonework typical of the city proper lies to the right."
 
-        n "Where will you go?" 
+        n "Where will you go?"
 
     label LookLeftLookRight:
 
@@ -579,7 +579,7 @@ label start:
 
         j "It seems a bit insensitive to connect the sewers to a crypt, but I'm not the city planner."
 
-        j "They're working with what space they have, I guess."    
+        j "They're working with what space they have, I guess."
         jump goblinchoice
 
     label choice1_right:
@@ -588,7 +588,7 @@ label start:
             j "I'd rather not mingle any more with sorcerous experiments left in storage for a hundred years."
             j "Like I said, it's somebody else's problem now."
             j "If they want me to take care of it, well, another hundred crowns would be nice."
-            hide golem 
+            hide golem
             scene room1
             jump LookLeftLookRight
         elif boltcutters:
@@ -623,19 +623,19 @@ label start:
     n "Julian returns to the Atrium."
 
     jump LookLeftLookRight
-    
+
 label cutbolt:
 
     menu:
-        
+
         "Cut the bolts and abandon the contract":
             jump meetgoblin
-        
+
         "Go back and find the demon":
             jump nogoblin
-    
+
     label meetgoblin:
-        
+
         j "I've had enough of this nonsense. I'm not about to die in a haunted crypt."
 
         j "This situation might be funny under other circumstances… circumstances I'm not in… "
@@ -646,7 +646,7 @@ label cutbolt:
 
         queue sound "cutbolt.mp3"
         queue sound "boltfloor.mp3"
-        
+
         n "Julian makes quick work of the bolts. The way to the sewers is clear, even though the hydraulic lock to the crypt holds fast."
 
         n "There is a way out yet, even if it is a dismal path."
@@ -680,8 +680,8 @@ label cutbolt:
 
         j "Who said you are the one asking questions?"
 
-        g "Why not? You're really defensive, aren't you?" 
-        
+        g "Why not? You're really defensive, aren't you?"
+
         g "I thought you'd be more exciting. Are you really that afraid of me?"
 
         label talktogoblin:
@@ -783,7 +783,7 @@ label cutbolt:
         n "The silence seems to eat at her, irrespective of the fact that was quite a bit of information for Julian to process. She gives him a plaintive expression - almost comically."
 
         j "Whoa, it's okay. It sounds like you've done well, considering your situation."
-    
+
         j "You're alive, right? And you taught yourself how to speak our language."
 
         g "For all the good that does me!"
@@ -808,7 +808,7 @@ label cutbolt:
 
         n "The goblin seems genuinely perplexed by the realization her name can be made into a joke."
 
-        i "I like 'Inya'. It sounds so much nicer and more refined than my goblin name." 
+        i "I like 'Inya'. It sounds so much nicer and more refined than my goblin name."
 
         i "And don't even ask, I'm not telling you."
 
@@ -930,8 +930,8 @@ label nogoblin:
 
     n "Where will you go?"
 
-    jump LookLeftLookRight 
-    
+    jump LookLeftLookRight
+
 label golemchoice:
 
     n "Before you is tunnel that is barricaded by a few simple boards."
@@ -956,23 +956,23 @@ label golemchoice:
         j "It's going to be a tight fit. I can't even stand up straight in this cramped tunnel."
 
         jump tunnel
-    
+
 label tunnel:
 
     scene tunnel
     with pixellate
-        
+
 if havetorch:
         j "I should be on guard. It's unusually stuffy in this tunnel, and black as pitch."
 
-        j "It reminds me of an abandoned factory, or that mage's study years past…" 
-            
+        j "It reminds me of an abandoned factory, or that mage's study years past…"
+
         j "Well, here goes nothing."
 
         jump warehouse
 
 elif notorch:
-            
+
         j "I should come back with a light source."
 
         j "This place stinks of a trap. It would be foolish to fumble around in the dark and step on a nail, or worse."
@@ -991,7 +991,7 @@ label leavegolem:
         j "No, something is wrong about this place. It's like it has been pulled from a different place and time."
 
         j "I might come back to it, if this creature isn't anywhere else in this crypt, provided I can think of a plan…"
-        
+
         n "You go back the way you came."
 
         scene room1
@@ -1041,7 +1041,7 @@ label golemtouch:
         j "There is some strange text on these stones. Strange, it almost looks like an arm…"
 
         j "Maybe this was a sculptor's studio? That doesn't seem quite right."
-        
+
 menu:
         "Touch symbol":
             $ golemactive = True
@@ -1052,14 +1052,14 @@ menu:
 
             n "You go back the way you came."
             hide golem
-        
+
             scene room1
             with pixellate
-        
+
             n "Where will you go?"
 
             jump LookLeftLookRight
-    
+
         "Turn back":
             j "I'd better not. There's plenty left to do here. I'll think about it."
 
@@ -1078,14 +1078,14 @@ label choice1_done:
     with pixellate
 
     "The rooms ahead are shrouded in oppressive darkness - likely the work of this demon."
-   
+
     if havetorch:
         jump choice3_torch
     elif notorch:
         jump choice3_done
 
     label choice3_torch:
-       
+
     play sound "torchlighting.mp3"
 
     show lit at deadcenter
@@ -1120,7 +1120,7 @@ label choice1_done:
     j "They appear as they did at death - the old, the infirm, the maimed, and the beloved pets of the townsfolk as well."
 
     j "They didn’t embellish their tales. This is grim indeed."
-    
+
     show lit at deadcenter
     with dissolve
 
@@ -1129,43 +1129,43 @@ label choice1_done:
     hide lit
     with dissolve
 
-   
+
     show ghost at offright:
         alpha .3
-       
 
-    n "A dark silhouette like a blot in space." 
+
+    n "A dark silhouette like a blot in space."
 
     n "This one suffered a major injury in life."
 
-    n "Its spine folds like an accordion, and its arm drags limply at its side." 
+    n "Its spine folds like an accordion, and its arm drags limply at its side."
 
     j "It doesn't seem to be in pain, at least. I wonder if it knows where it is?"
 
 
     show dog at offleft:
-        alpha .3 
-    
+        alpha .3
+
     n "A beloved family pet, perhaps?"
-     
+
     j "It paces throughout the chamber as if seeking out its master."
-     
+
     j "Why was this innocent creature cursed to wander like this?"
 
 
     hide dog
     hide ghost
-    
+
     jump monumentchamber
 
     label killbywraith:
         $deadjulian = True
 
     j "It's so dark. Something here is wrong… It's too dark."
-    
+
 
     label badend:
-    scene endingscreen 
+    scene endingscreen
     with pixellate
 
     n "In the total darkness of the crypt, Julian is slain by the lurking spawn of the Demon of Shadow."
@@ -1182,7 +1182,7 @@ label choice1_done:
     scene monument
     # Room 3 - Monument Chamber
 
-    n "One thing is certain, this place has been vandalized."    
+    n "One thing is certain, this place has been vandalized."
 
     n "Statues are torn from the podiums from which they rested, and stone slabs commemorating the deeds of the heroic dead have been toppled."
 
@@ -1231,7 +1231,7 @@ label choice1_done:
 
     label choice2_take:
         $havecoin = True
-            
+
         show coin at deadcenter
         with dissolve
 
@@ -1244,7 +1244,7 @@ label choice1_done:
         jump aftercoin
 
     label aftercoin:
-    n "Despite the flickering flame of the torch, the shadows stir - and speak!" 
+    n "Despite the flickering flame of the torch, the shadows stir - and speak!"
 
     # sound
 
@@ -1263,12 +1263,12 @@ menu:
             scene blackscreen with pixellate
             hide monumentchamber with dissolve
             hide monument with dissolve
-        
+
             j "I need to get my bearings. I'm not sure I'm ready for all this just yet. I need to be absolutely sure before I hunt down this creature."
             scene room1 with pixellate
             jump LookLeftLookRight
             with dissolve
-            
+
 
         "Continue forward":
             jump memorials
@@ -1281,7 +1281,7 @@ label memorials:
             n "A ladder in the center of the room, leading down to the peasant's graves. It looks freshly disturbed."
 
             j "What purpose could this demon have disturbing the remains of the destitute?"
-            
+
 
 menu:
         "Go down the ladder":
@@ -1328,18 +1328,18 @@ label fightorquestiondemoness1:
     menu:
             "Fight the demoness":
 
-                j "You will haunt this place no longer, foul demon! Face me!"        
-            
-                jump fightdemoness1              
+                j "You will haunt this place no longer, foul demon! Face me!"
+
+                jump fightdemoness1
 
             "Question the demoness":
 
                 j "Are {i}you{/i}? I see - you divined my name."
-                
+
                 "(stumbling over words)"
-                
+
                 j "You, uh... look different from uh, what I expected."
-                
+
                 jump questiondemoness1
 
 label fightdemoness1:
@@ -1367,7 +1367,7 @@ label attackdemoness1:
 
 label fightdemoness2:
 
-    menu: 
+    menu:
         "Block":
             jump blockdemoness2
 
@@ -1390,9 +1390,9 @@ label attackdemoness2:
     #nasty cranium slicing sound
 
     n "The demoness's self-satisfied expression fades as the blade slices through her cranium."
-    
+
     j "There's… no blood. But it's gone. I can feel its absence."
-    
+
     jump demonessresolution2
 
 label demonessresolution1:
@@ -1424,7 +1424,7 @@ label demonessresolution1:
     n "The warrior sighs, audibly unbuckling the clasp securing her pack, and withdraws salves, a splint kit, a needle, and thread."
 
     uw "If you can hear me… I'm going to tend to your wounds. This is going to hurt a lot."
-    
+
     uw "You've proven your bravery, soldier. I need you to hang in there just a little bit longer."
 
     n "The warrior sutures Julian's wounds and stops the worst of his bleeding."
@@ -1482,7 +1482,7 @@ label demonessresolution1:
     stop music fadeout 15.0
 
     jump neutralend
-        
+
 label demonessresolution2:
 
     j "The deed is done. The demon is vanquished. Strange, it seems the foul harpy left a trinket among her remains. A soft, sulfurous stone - proof of my victory. It’s a shame to fell such a striking beauty. It invaded my mind… and seemed to know me."
@@ -1505,12 +1505,12 @@ label questiondemoness1:
 
     n "The demoness narrows her eyes and scowls."
 
-    u "My nature dictates me to assume a form that resonates with the desires of those who behold me. Perhaps you would be best served reflecting on your own preferences..." 
-    
+    u "My nature dictates me to assume a form that resonates with the desires of those who behold me. Perhaps you would be best served reflecting on your own preferences..."
+
     u "This parley tires me - accept this small mercy before I reconsider."
 
     u "I have harmed none of the hapless fools who wandered into my domain, and I extend the same courtesy to you - in honor of the dead."
-    
+
     u "This place is meant for the grieving, is it not? Leave me to grieve."
 
     label fightorquestiondemoness2:
@@ -1520,30 +1520,30 @@ label questiondemoness1:
             "Fight the demoness":
 
                 n "Drawing your blade, you steel yourself for battle."
-            
+
                 j "The Archdruid cautioned me against the lies of your kind. You’re afraid, monster - and I am no fool."
-            
+
                 j "If you have an ounce of honor, face me. I offer you a duel. Your life or mine. Let us settle this now."
-        
-                jump fightdemoness1  
-             
+
+                jump fightdemoness1
+
             "Question the demoness":
 
                 n "Contemplating the small atrocities this fiend has personally wrought in this tomb, you withdraw the antique coin you collected on the upper levels."
 
-                j "Your kind only sows grief with every new widow and orphan you leave to face this world alone. To grieve, you have to feel loss. What could you possibly know of grief?"        
-        
+                j "Your kind only sows grief with every new widow and orphan you leave to face this world alone. To grieve, you have to feel loss. What could you possibly know of grief?"
+
                 jump questiondemoness2
     menu:
         "Fight the demoness":
 
             n "Drawing your blade, you steel yourself for battle."
-            
+
             j "The Archdruid cautioned me against the lies of your kind. You’re afraid, monster - and I am no fool."
-            
+
             j "If you have an ounce of honor, face me. I offer you a duel. Your life or mine. Let us settle this now."
-        
-            jump fightdemoness1  
+
+            jump fightdemoness1
 
 
 label questiondemoness2:
@@ -1558,20 +1558,20 @@ label questiondemoness2:
     n "Her gaze drifts from the silver coin to the pit between you and her - this pit where the bodies of the destitute are unceremoniously thrown and left to rot."
 
     u "There was another mortal, not unlike yourself. We shared a bond, of sorts."
-    
+
     u "Like you, she lived a fickle and fleeting life, and was taken from me - like you, she hesitated, and like you, she showed me mercy. She rests here, in this muck of unfortunates."
 
     $leftwithadesse = True
 
     menu:
-        
+
         "How unusual. You have satisfied my curiosity. I offer you this - I inform the Archdruid that the disturbance has been dealt with, and you say your last goodbyes to your… paramour.":
             jump demonessresolution3
 
         "This coin was hers, then? The druids tell many horrible tales of your kind - never have I heard of a demon grieving for a lost mortal.":
-            
+
             n "You continue on deliberately, despite your apprehension, ensuring to choose your words with great care. For the briefest moment, you consider if you were misled by the Archdruid. Ultimately, who could know?"
-            
+
             j "May she rest in peace. Your fallen paramour must have been truly special."
 
             jump demonessresolution4
@@ -1584,17 +1584,17 @@ label demonessresolution3:
         xalign 0.5 yalign 0.0
 
     u "You are most unusual and merciful for one who has lived such a dastardly life, Julian. Only an orphan such as yourself could truly understand that sting of loss…"
-    
+
     u "The druids caution many against the worst atrocities of my kind, and they speak true…  We part, monster and murderer. We shall meet again."
 
     n "The demoness vanishes, and the dancing shadows in the room stall to a halt."
 
     j "What an ordeal… Demons are both very like and very unlike how Archdruid described them. I couldn’t have possibly prepared for this."
-    
+
     j "Even so… I can’t help but have my thoughts wander to that beshadowed beauty. It’s a pity I never learned her name - although I shudder at the thought of meeting again."
 
     j "She seemed quite confident we would… but if she knows the worst of my crimes, how could she see anything good in me?"
-    
+
     j "Perhaps… I can only be my truest, deepest self with a demon. Nay, I should banish the thought."
 
     jump neutralend
@@ -1610,14 +1610,14 @@ label demonessresolution4:
 
     u "I am called Adesse, mortal. You have given me much to consider - but I believe this encounter draws to an end"
 
-    a "I shall say my final farewell and depart. You may tell your superiors whatever you choose - but this is not our last meeting, Julian." 
-    
+    a "I shall say my final farewell and depart. You may tell your superiors whatever you choose - but this is not our last meeting, Julian."
+
     a "You're… intriguing - and you remind me of someone I once loved."
 
     n "A bittersweet smile colors Adesse's ethereal features moments before she vanishes, and the dancing shadows in the room stall to a halt."
 
     j "She just vanished. Well, that's great. Am I cursed now, haunted? I should be more worried about that, probably… but even though it has been but a moment, I can’t keep my thoughts off of her."
-    
+
     j "I want to see her again. Adesse… such a peculiar name. I wonder if it was given to her."
 
     j "If I have been deceived, surely I will find the truth of things - for now, I shall report my success to the Archdruid."
@@ -1911,8 +1911,13 @@ label golemescape4:
 
     g "Nobody talks like that. But um… You're really strong, that's so cool! What's your name?"
 
-    "What is . . . my name?"
-    $x = "character name"
+    $x = renpy.input("What is . . . my name?")
+    $x = x.strip()
+
+    if x == "":
+        $x = "Golem"
+
+    $gl = Character(x,color="0BC4ED")
 
     "I shall be [x]."
 
@@ -2031,13 +2036,13 @@ label golemescape4:
 
             i "Okay… I'm leaving then. I don't care what you do."
 
-            n "Inya walks off into the sewers she made her home, almost managing to sound sincere." 
+            n "Inya walks off into the sewers she made her home, almost managing to sound sincere."
             n "Her quiet sobbing betrays her true emotions, however."
 
             "My purpose is undefined. I must not linger."
 
-            scene endingscreen 
-            with longdissolve  
+            scene endingscreen
+            with longdissolve
             n "[x] proceeds through the sewer system into the city, ignoring the echoes of the sobbing heartbroken goblin as stoically as stone."
 
             n "[pronoun] knew not what awaited them in this cold world, but [pronoun] was prepared for it."
@@ -2066,7 +2071,7 @@ label golemescape5:
     show ghost at offright:
         alpha .3
     show dog at offleft:
-        alpha .3 
+        alpha .3
     n "Faint, indistinct, macabre wraithspawn lurk in the corners of this place. In the center of the room lies the face-down corpse of the Golem's foe - this interloper oozing blood from its many wounds."
 
     "I must neutralize these threats."
@@ -2101,7 +2106,7 @@ label golemescape5:
             n "Purpose elucidated, the Golem proceeds through the crypt and glides down the vertical shaft into the Peasant's Graves."
 
             scene monument
-            with fade    
+            with fade
 
             n "A narrow walkway encircles an open pit full of decomposing bodies of the less fortunate. Tenebrous shapes skirt the edge of the Golem's vision. From the opposing side of the pit - it manifests!"
             show adesse_neutral:
@@ -2119,10 +2124,13 @@ label golemescape5:
 
             u "Oh, yes, yes, very good. And what are you? Who intrudes into my lair?"
 
-            "What is . . . my name?"
+            $x = renpy.input("What is . . . my name?")
+            $x = x.strip()
 
-            $x = "Character Name"
-            $X = "Character Name"
+            if x == "":
+                $x = "Golem"
+
+            $gl = Character(x,color="0BC4ED")
 
             "I shall be [x]"
 
@@ -2143,7 +2151,7 @@ label golemescape5:
             n "Adesse floats down to where [x] stands, and grazes its unfeeling stone jaw with her bladed, beshadowed fingernail."
 
             n "[x] contemplates her inquiry."
-            
+
             "What am I? What I was once is of little consequence - memories are no more."
 
     menu:
@@ -2163,7 +2171,7 @@ label golemescape5:
                 $pronoun = "It"
                 $pronouns = "its"
                 $selection = "something else"
-            
+
     "I am as I choose."
 
     gl "I have determined I am [selection]."
@@ -2178,7 +2186,7 @@ label golemescape5:
 
     a "We both simply strive for survival, do we not?"
 
-    n "[X] considers Adesse's proposal. A loneliness tugs from deep within."
+    n "[x] considers Adesse's proposal. A loneliness tugs from deep within."
 
     n "Was Adesse altogether candid? Or did she take note of [x]'s latent yearning? "
 
@@ -2191,7 +2199,7 @@ label golemescape5:
 
     hide adesse
     scene endingscreen
-    with longdissolve 
+    with longdissolve
 
     n "[x] and Adesse leave the crypt, accompanying each other - an unsteady accord cementing their tenuous bond."
 
@@ -2253,7 +2261,7 @@ label golemescape5:
     hide adesse
 
     n "The demoness discorporates, the look of revulsion and shock remaining the last features adorning her perfect face."
-    
+
     n  "A smooth, sulfurous stone is all that remains of the pristine villainess."
     # picture of stone?
 
@@ -2271,13 +2279,17 @@ label golemescape5:
 
     ". . . "
 
-    "What is... my name"
-    $x = "Character Name"
-    $X = "Character Name"
+    $x = renpy.input("What is . . . my name?")
+    $x = x.strip()
 
-    "I shall be [X]"
+    if x == "":
+        $x = "Golem"
 
-    gl "I am [X]"
+    $gl = Character(x,color="0BC4ED")
+
+    "I shall be [x]"
+
+    gl "I am [x]"
 
     "What am I? What I was once is of little consequence - memories are no more."
 
@@ -2301,7 +2313,7 @@ label golemescape5:
 
     "I am as I choose."
 
-    gl "I understand you. I am [X]. I am [selection]."
+    gl "I understand you. I am [x]. I am [selection]."
 
     n "This pronouncement gives the warrior pause, who deigns not to question the strange behavior - produced by an even stranger creature."
 
@@ -2313,7 +2325,7 @@ label golemescape5:
 
     gl "I seek to elucidate the fate of my creator, and seek my purpose. If you can assist in this endeavor, so be it."
 
-    n "Tess gapes at [X], staring in utter disbelief. Composing herself, she replies."
+    n "Tess gapes at [x], staring in utter disbelief. Composing herself, she replies."
 
     t "... Let's be off then. Up the way we came."
 
@@ -2322,7 +2334,7 @@ label golemescape5:
     with longdissolve
 
     n "Tess and [x] return through the unlocked crypt entrance, relatively unscathed."
-    
+
     n "Their futures are murky, but for now, they have the dubious company of one another."
 
     $golemleftwithtess = True
@@ -2341,7 +2353,7 @@ n "A massive subterranean corridor. Sarcophagi line each side of this room."
 show ghost at offright:
     alpha .3
 show dog at offleft:
-    alpha .3 
+    alpha .3
 
 "The Golem emits a blinding pulse of radiance. The wraithspawn dissipate."
 
@@ -2377,7 +2389,7 @@ menu:
         scene monument
         with fade
 
-        n "A narrow walkway encircles an open pit full of decomposing bodies of the less fortunate." 
+        n "A narrow walkway encircles an open pit full of decomposing bodies of the less fortunate."
 
         n "Tenebrous shapes skirt the edge of the Golem's vision. From the opposing side of the pit - it manifests!"
 
@@ -2396,10 +2408,13 @@ menu:
 
         u "Oh, yes, yes, very good. And what are you? Who intrudes into my lair?"
 
-        "What is . . . my name?"
+        $x = renpy.input("What is . . . my name?")
+        $x = x.strip()
 
-        $x = "Character Name"
-        $X = "Character Name"
+        if x == "":
+            $x = "Golem"
+
+        $gl = Character(x,color="0BC4ED")
 
         "I shall be [x]"
 
@@ -2420,7 +2435,7 @@ menu:
         n "Adesse floats down to where the [x] stands, and grazes its unfeeling stone jaw with her bladed, beshadowed fingernail."
 
         n "[x] contemplates her inquiry."
-            
+
         "What am I? What I was once is of little consequence - memories are no more."
 
         menu:
@@ -2440,7 +2455,7 @@ menu:
                 $pronoun = "It"
                 $pronouns = "its"
                 $selection = "something else"
-            
+
         "I am as I choose."
 
         gl "I have determined I am [selection]."
@@ -2514,9 +2529,13 @@ label golemescape7:
 
     uw "Who are you? What are you? Can you understand me?"
 
-    "What is . . . my name?"
-    $x = "Character Name"
-    $X = "Character Name"
+    $x = renpy.input("What is . . . my name?")
+    $x = x.strip()
+
+    if x == "":
+        $x = "Golem"
+
+    $gl = Character(x,color="0BC4ED")
 
     "I shall be [x]."
 
@@ -2543,7 +2562,7 @@ label golemescape7:
             $pronoun = "It"
             $pronouns = "its"
             $selection = "something else"
-            
+
     "I am as I choose."
 
     gl "I understand you. I am [x]. I am [selection]."
@@ -2568,7 +2587,7 @@ label golemescape7:
     with longdissolve
 
     n "Tess and [x] promptly exit the crypt."
-    n "Their futures are murky, but for now, they have the dubious company of one another." 
+    n "Their futures are murky, but for now, they have the dubious company of one another."
     $golemleftwithtess = True
 
     jump witchstart
@@ -2673,7 +2692,7 @@ jump backtoatrium
 
 label golemactived:
 
-scene warehouse 
+scene warehouse
 with fade
 
 n "A room full of detritus. A disused artificer's lab, surely, by Dahlia's estimation."
@@ -3240,33 +3259,38 @@ label endofprologue:
 
 play music "Casa Bossa Nova.mp3"
 
-"Credits"
+centered "{size=+75}{cps=8} Credits {/cps}{/size}{p=5.0}{nw}"
 
-"Narrative / Project Manager: Barry Weber"
+$ renpy.pause(1.5)
 
-"Code/Script"
+centered "{size=+75}{cps=8} Narrative / Project Manager: \nBarry Weber{/cps}{/size}{p=5.0}{nw}"
 
-"Rachel "Des" Marzzarella\\Lake Watkins\\Deniz Balik"
+$ renpy.pause(1.5)
 
-"Editing/Revsions/Special Thanks to:Lake Watkins\\Jesse Bohnet\\'Scoot Gygax'\\Miriam Bates\\Will Watkins\\Nicholas 'Evő Kolbász' Tolga Balik\\Deniz Balik\\ Nick Vitale\\Rachel 'Des' Marzzarella\\Jude Bigboy\\Jay Brinkman\\Doug 'Dr. Wasteland' Watkins\\Sarah Caldwell"
+centered "{size=+75}{cps=8} Code/Script: \nRachel 'Des' Marzzarella\nLake Watkins\nDeniz Balik{/cps}{/size}{p=5.0}{nw}"
 
-"Art:\\Rihards Kurts\\Ondrej Svinčiak"
+$ renpy.pause(1.5)
 
-"Music:\'Wholesome','Darkest Child','Midnight Tale','Deep Haze','Floating Cities','Myst on the Floor','Impact Prelude','Casa Bossa Nova' by Kevin MacLeod (incompetech.com), Licensed under Creative Commons: By Attribution 4.0 License http://creativecommons.org/licenses/by/4.0/"
+centered "{size=+40}{cps=8} Editing/Revisions/Special Thanks:\nLake Watkins\nJesse Bohnet\n'Scoot Gygax'\nMiriam Bates\nWill Watkins\nNicholas 'Evő Kolbász' Tolga Balik{/cps}{/size}{p=5.0}{nw}"
 
-"Sound effect provided by https://pixabay.com/sound-effects/ "
+centered "{size=+40}{cps=8} Deniz Balik\n Nick Vitale\nRachel 'Des' Marzzarella\nJude Bigboy\nJay Brinkman\nDoug 'Dr. Wasteland' Watkins\nSarah Caldwell {/cps}{/size}{p=5.0}{nw}"
 
-"Thanks for playing! We hope to see you in chapter 1!"
+$ renpy.pause(1.5)
 
+centered "{size=+75}{cps=8} Art:\nRihards Kurts\nOndrej Svinčiak{/cps}{/size}{p=5.0}{nw}"
 
+$ renpy.pause(1.5)
+
+centered "{size=+40}{cps=8} Music:\n'Wholesome','Darkest Child','Midnight Tale','Deep Haze','Floating Cities','Myst on the Floor','Impact Prelude','Casa Bossa Nova' by Kevin MacLeod (incompetech.com). \n\nLicensed under Creative Commons: By Attribution 4.0 License http://creativecommons.org/licenses/by/4.0/{/cps}{/size}{p=5.0}{nw}"
+
+$ renpy.pause(1.5)
+
+centered "{size=+75}{cps=8} Sound effect provided by https://pixabay.com/sound-effects/ {/cps}{/size}{p=5.0}{nw}"
+
+$ renpy.pause(1.5)
+
+centered "{size=+75}{cps=8} Thanks for playing! We hope to see you in chapter 1!{/cps}{/size}{p=5.0}{nw}"
+
+$ renpy.pause(1.5)
 
 return
-
-
-
-
-
-
-
-
-

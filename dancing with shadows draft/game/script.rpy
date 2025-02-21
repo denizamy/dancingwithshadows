@@ -3267,7 +3267,7 @@ $ renpy.pause(1.5)
 
 centered "{size=+75}{cps=8} Narrative / Project Manager: \nBarry Weber{/cps}{/size}{p=5.0}{nw}"
 
-"Rachel 'Des' Marzzarella\\Lake Watkins\\Deniz Balik"
+$ renpy.pause(1.5)
 
 centered "{size=+75}{cps=8} Code/Script: \nRachel 'Des' Marzzarella\nLake Watkins\nDeniz Balik{/cps}{/size}{p=5.0}{nw}"
 

@@ -3238,6 +3238,8 @@ menu:
 
 label endofprologue:
 
+"To be continued..."
+
 play music "Casa Bossa Nova.mp3"
 
 "Credits"
@@ -3246,7 +3248,7 @@ play music "Casa Bossa Nova.mp3"
 
 "Code/Script"
 
-"Rachel "Des" Marzzarella\\Lake Watkins\\Deniz Balik"
+"Rachel 'Des' Marzzarella\\Lake Watkins\\Deniz Balik"
 
 "Editing/Revsions/Special Thanks to:Lake Watkins\\Jesse Bohnet\\'Scoot Gygax'\\Miriam Bates\\Will Watkins\\Nicholas 'Evő Kolbász' Tolga Balik\\Deniz Balik\\ Nick Vitale\\Rachel 'Des' Marzzarella\\Jude Bigboy\\Jay Brinkman\\Doug 'Dr. Wasteland' Watkins\\Sarah Caldwell"
 

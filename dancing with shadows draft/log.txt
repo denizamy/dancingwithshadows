@@ -1,47 +1,21 @@
-2025-02-21 17:45:26 UTC
+2025-02-21 18:09:41 UTC
 Windows-10-10.0.22631
 Ren'Py 8.3.4.24120703
 
 Early init took 0.04s
-Loading error handling took 0.03s
-Loading script took 0.53s
+Loading error handling took 0.02s
+Loading script took 0.07s
 Loading save slot metadata took 0.04s
 Loading persistent took 0.00s
-
-File "game/script.rpy", line 945: choice menuitem expects a non-empty block.
-    "Dismantle Barricade":
-                          ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Interface start took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'ATI Technologies Inc.'"
-Renderer: b'AMD Radeon RX 6800 XT'
-Version: b'4.6.0 Compatibility Profile Context 24.10.27.02.241120'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 39.52s
-Loading error handling took 0.03s
-Loading script took 0.59s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.03s
+Running init code took 0.02s
 Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
 Reloading save slot metadata took 0.03s
 Index archives took 0.00s
-Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
-Dump and make backups took 0.04s
+Dump and make backups took 0.03s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.02s
+Initial gc took 0.03s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
@@ -49,14 +23,14 @@ Creating interface object took 0.00s
 Cleaning stores took 0.00s
 Init translation took 0.02s
 Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
+Load screen analysis took 0.01s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
 Prepare screens took 0.03s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
 Running _start took 0.00s
-Interface start took 0.03s
+Interface start took 0.04s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 2560, 1440)
@@ -68,29 +42,3 @@ Version: b'4.6.0 Compatibility Profile Context 24.10.27.02.241120'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
 Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/script.rpy", line 3249, in script
-    "Rachel "Des" Marzzarella\\Lake Watkins\\Deniz Balik"
-  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\ast.py", line 2579, in execute
-    Say.execute(self)
-  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\ast.py", line 621, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\exports\sayexports.py", line 130, in say
-    renpy.store.say(who, what, *args, **kwargs)
-  File "renpy/common/00library.rpy", line 324, in say
-    who(what, interact=interact, *args, **kwargs)
-  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\character.py", line 1393, in __call__
-    old_attr_state = self.handle_say_attributes(False, interact)
-  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\character.py", line 1212, in handle_say_attributes
-    if self.resolve_say_attributes(predicting, attrs):
-  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\character.py", line 1138, in resolve_say_attributes
-    raise Exception("Say has image attributes %r, but there's no image tag associated with the speaking character." % (attrs,))
-Exception: Say has image attributes ('Des',), but there's no image tag associated with the speaking character.
-
-While running game code:
-  File "game/script.rpy", line 3249, in script
-    "Rachel "Des" Marzzarella\\Lake Watkins\\Deniz Balik"
-  File "renpy/common/00library.rpy", line 324, in say
-    who(what, interact=interact, *args, **kwargs)
-Exception: Say has image attributes ('Des',), but there's no image tag associated with the speaking character.

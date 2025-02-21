@@ -2516,6 +2516,24 @@ label golemescape7:
 
     jump witchstart
 
+label witchstart:
+
+Scene crypt
+with longdissolve
+
+play music "Oppressive Gloom.mp3"
+
+n "The night watchman's body drops with a thunk presaging Dahlia's arrival."
+
+n "The pressure on the hydraulics of the crypt's door is released with a gesture and a tug of the witch's hand - a subtle thaumaturgical manipulation."
+
+# add sound effect
+
+dl 
+
+
+
+
 
 
 

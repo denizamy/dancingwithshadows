@@ -2804,7 +2804,7 @@ with fastdissolve
 
 scene endingscreen
 
-if deadjulian
+if deadjulian:
 
     n "The trio departed the crypt."
     n "A witch, a demon, and a newly awakened vampire."

@@ -2,17 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 2532: expected statement.
-    Scene crypt
-               ^
-
-File "game/script.rpy", line 2583: reached end of line when expecting ':'.
-    if golemactive
-                  ^
-
-File "game/script.rpy", line 2637: reached end of line when expecting ':'.
-    if golembreakmirror
-                       ^
+File "game/script.rpy", line 2816: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+    n "A witch and a demon.'
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Thu Feb 20 20:25:50 2025
+Thu Feb 20 22:43:59 2025

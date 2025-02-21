@@ -35,6 +35,7 @@ image adesse_flirty = "adesse_flirty.jpg"
 image adesse_flirty_melancholic = "adesse_flirty_melancholic.jpg"
 image adesse_hurt = "adesse_hurt.jpg"
 image adesse_neutral = "adesse_neutral.jpg"
+image julian = "julian.png"
 
 
 
@@ -130,7 +131,7 @@ define havetorch = False
 define notorch = False
 define nolight = False
 define light = False
-define havecoin = False
+define havecoin = True
 define nocoin = False
 define deadjulian = False
 define leftwithgoblin = False
@@ -1185,7 +1186,7 @@ label choice1_done:
             jump choice2_take
 
     label choice2_ignore:
-        $ nocoin = True
+        $ havecoin = False
 
         f "Something is off about this. I should trust my gut. Much is amiss in this tomb, and I had best not tempt the spirits. One monster is enough…"
 
@@ -1483,7 +1484,26 @@ label questiondemoness1:
     u "This place is meant for the grieving, is it not? Leave me to grieve."
 
     label fightorquestiondemoness2:
-    
+
+    if havecoin:
+        menu:
+            "Fight the demoness":
+
+                n "Drawing your blade, you steel yourself for battle."
+            
+                j "The Archdruid cautioned me against the lies of your kind. You’re afraid, monster - and I am no fool."
+            
+                j "If you have an ounce of honor, face me. I offer you a duel. Your life or mine. Let us settle this now."
+        
+                jump fightdemoness1  
+             
+            "Question the demoness":
+
+                n "Contemplating the small atrocities this fiend has personally wrought in this tomb, you withdraw the antique coin you collected on the upper levels."
+
+                j "Your kind only sows grief with every new widow and orphan you leave to face this world alone. To grieve, you have to feel loss. What could you possibly know of grief?"        
+        
+                jump questiondemoness2
     menu:
         "Fight the demoness":
 
@@ -1493,15 +1513,8 @@ label questiondemoness1:
             
             j "If you have an ounce of honor, face me. I offer you a duel. Your life or mine. Let us settle this now."
         
-            jump fightdemoness1              
+            jump fightdemoness1  
 
-        "Question the demoness":
-
-            n "Contemplating the small atrocities this fiend has personally wrought in this tomb, you withdraw the antique coin you collected on the upper levels."
-
-            j "Your kind only sows grief with every new widow and orphan you leave to face this world alone. To grieve, you have to feel loss. What could you possibly know of grief?"        
-        
-            jump questiondemoness2
 
 label questiondemoness2:
 
@@ -2649,6 +2662,175 @@ dh " It seems another has hastened to the prize."
 dh "I have a competitor. No sense in wasting precious time."
 
 n "Dahlia hastens to her task, returning to the Atrium"
+
+label backtoatrium:
+
+scene room1
+with pixellate
+
+if deadjulian:
+    jump raisejulian
+jump witchadesse
+
+label raisejulian:
+n "Dahlia proceeds through the crypt."
+
+n "Her enhanced senses give her warning - wraithspawn ahead, and a fresh body."
+
+n "She casts a spell, concealing her presence completely from the mindless undead creatures roaming the crypt."
+
+scene wrathhall
+with quickdissolve
+
+n " Entering the room, she examines the corpse with a malevolent smirk."
+
+#insert image of julian
+
+show julian
+
+dh "Delightfully fresh… and bearing the stench of transgression."
+
+n "The witch inhales deeply, stifling a chortle."
+
+dh "Awash with blood heavy with guilt. It isn't often I can reanimate a vampire."
+
+n "Dahlia takes a moment to clear her head and muster her might."
+
+n "She casts a powerful hex, utilizing the latent remnants of guilt Julian's soul possessed"
+
+n " Binding the weight of his guilt to the blood remaining in his body, her spell concludes."
+
+n "A stirring digit."
+
+n "A trembling limb."
+
+n "Julian's eyes go wide."
+
+dh "You may move when I permit."
+
+dh "Nikolai sent you, I presume? That doddering old fool."
+
+j "... Yes."
+
+dh "Hm. Responsive to commands."
+
+dh " I may keep you."
+
+n "Dahlia's malice softens, and a small wicked smile graces her black lips."
+
+dh "Your new existence will be confusing, but you may take my lead."
+
+dh "Call me Dahlia. Provide me with your name, if you please"
+
+n "The witch's politeness belied the bidding of a magical pact binding her now to Julian - she did not offer a polite suggestion."
+
+n "She issued a command."
+
+n "Julian coughs, nearly vomiting, sputtering out the remaining blood in his esophagus and lungs. "
+
+n "Rising to his feet, he marveled at his healed wounds, newfound vitality, and ability to see in the overbearing, oppressive darkness of the crypt."
+
+n "Yet, a gnawing, unfamiliar hunger brewed in his gut - mingled with dread. He did as he was bidden by Dahlia."
+
+j "Julian… Grymwald."
+
+dh "You have the look of a town guard, Mr. Grymwald, or a mercenary."
+
+dh "Oh, please tell me you were a druid. That would truly tickle me."
+
+n "Still recovering from his ordeal, Julian stammers out a response."
+
+j "M-mercenary."
+
+dh "Mm, I see. Await me outside."
+
+dh "I shan't be long now. You may go."
+
+hide julian
+
+n "Julian's limbs carried him to the entrance of the crypt, bidden by Dahlia's command."
+
+label witchadesse:
+
+n "Dahlia hastens to the depths of the crypt with supernatural speed."
+
+scene monument
+with fastdissolve
+
+n "Silently, she lands in the depths of the place overlooking a bit transecting the center of the room."
+
+n "The pit is filled with the decaying remains of the less fortunate - a particularly putrid soup, of sorts."
+
+n "The shadows dance, indicating the presence of a Demon of Shadow."
+
+n "Dahlia grins, and sharply gestures."
+
+show adesse_hurt
+
+dh "You're {i}mine{/i}. Did you think you could hide from me, my sweet?"
+
+a "A demonologist. No… I suppose I couldn't."
+
+a "You're quite competent, aren't you?"
+
+dh "Spare me the pillow talk."
+
+dh "The king's circle binds you, demon. You are mine to command."
+
+a "As you wish."
+
+a "You… seem to know what you're doing. A woman with experience."
+
+hide adesse_hurt
+with fastdissolve
+
+show adesse_flirty
+with fastdissolve
+
+a "How endearing."
+
+n "The demoness's flirtation briefly catches Dahlia off guard."
+
+n "She narrows her eyes, focusing her magical senses to probe the fiend's mind."
+
+dh "Right this way, Adesse. You may refer to me as Dahlia."
+
+a "So it shall be."
+
+n "Regaining her composure, Adesse politely curtseys to the witch."
+
+hide adesse_flirty
+with fastdissolve
+
+scene endingscreen
+
+if deadjulian
+
+    n "The trio departed the crypt."
+    n "A witch, a demon, and a newly awakened vampire."
+    n "Dahlia's designs for them are yet unclear, but the hands of the malevolent are rarely still."
+    jump endofprologue
+
+n "The pair departed the crypt"
+
+n "A witch and a demon."
+
+n "A likely pair, perhaps, but the future remains uncertain."
+
+n "Dahlia's designs for Adesse are yet unclear - surely a sorceress as powerful as she would not travel such a great distance and go to such lengths to entrap a specific demon for naught."
+
+jump endofprologue
+
+
+
+
+
+
+
+
+
+
+
 
 
 

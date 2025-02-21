@@ -2,25 +2,21 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 1920: invalid syntax
-    gl = Character($x,color="0BC4ED")
-                    ^
+File "game/script.rpy", line 2732: expected statement.
+    lif golemleftwithgoblin and goblindead:
+                                          ^
 
-File "game/script.rpy", line 2133: invalid syntax
-    gl = Character($x,color="0BC4ED")
-                    ^
+File "game/script.rpy", line 2735: expected statement.
+    elif deadjulian:
+                   ^
 
-File "game/script.rpy", line 2288: invalid syntax
-    gl = Character($x,color="0BC4ED")
-                    ^
+File "game/script.rpy", line 2738: expected statement.
+    elif leftwithadesse:
+                       ^
 
-File "game/script.rpy", line 2417: invalid syntax
-    gl = Character($x,color="0BC4ED")
-                    ^
-
-File "game/script.rpy", line 2538: invalid syntax
-    gl = Character($x,color="0BC4ED")
-                    ^
+File "game/script.rpy", line 2741: expected statement.
+    elif leftwithtess:
+                     ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Fri Feb 21 10:54:40 2025
+Fri Feb 21 16:32:42 2025

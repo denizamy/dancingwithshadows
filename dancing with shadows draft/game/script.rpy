@@ -2055,7 +2055,7 @@ label golemadesse:
     if deadjulian:
         jump golemescape5
 
-    elif leftwithgoblin:
+    elif leftwithgoblin or goblindead:
         jump golemescape6
 
     jump golemescape7
@@ -2197,7 +2197,7 @@ label golemescape5:
     a "Marvelous. Firstly, let us escape this domain of death. Accompany me."
     $golemleftwithtess = True
 
-    hide adesse
+    hide adesse_neutral
     scene endingscreen
     with longdissolve
 
@@ -2212,7 +2212,7 @@ label golemescape5:
     jump witchstart
 
     label golemtess:
-    show adesse:
+    show adesse_neutral:
         size (1240, 1754)
         xalign 0.5 yalign 1.0
         linear 6.0 yalign 0.0
@@ -2220,12 +2220,13 @@ label golemescape5:
     gl "It is unavoidable. We must do battle."
 
     n "The demoness hesitates for but a moment, puzzled by the anomalous creature intruding into her domain. She grins an unnaturally wide grin."
+    hide adesse_neutral
+    with quickdissolve
 
-    show adesse:
+    show adesse_distant:
         size (1240, 1754)
-        xalign 0.5 yalign 1.0
-        linear 6.0 yalign 0.0
-
+        xalign 0.5 yalign 0.0
+    
     u "If we must. So be it."
 
     n "Seizing initiative, the Golem dashes forward, casting the chamber with a blue glow."
@@ -2240,8 +2241,11 @@ label golemescape5:
 
     n "The demoness's monologue is cut short by a sturdy figure rappelling down the ladder leading to the depths of the crypt."
     # need tess image
-    hide adesse
-    show tess
+    hide adesse_distant
+    show tess:
+        size (780, 1080)
+        xalign 0.0 yalign 0.0
+
 
     n "The warrior eschews armor for green and brown traveler's leathers, adorned with protective talismans. "
 
@@ -2258,7 +2262,7 @@ label golemescape5:
 
     n "Yet, the demoness's efforts are for naught. The warrior's weighted sawtoothed staff hurtles down at the end of the charge, pulping the demoness's skull with a sickening crunch."
 
-    hide adesse
+    hide adesse_neutral
 
     n "The demoness discorporates, the look of revulsion and shock remaining the last features adorning her perfect face."
 
@@ -2393,7 +2397,7 @@ menu:
 
         n "Tenebrous shapes skirt the edge of the Golem's vision. From the opposing side of the pit - it manifests!"
 
-        show adesse:
+        show adesse_neutral:
             size (1240, 1754)
             xalign 0.5 yalign 1.0
             linear 6.0 yalign 0.0
@@ -2478,7 +2482,7 @@ menu:
 
         a "Marvelous. Firstly, let us escape this domain of death. Accompany me."
 
-        hide adesse
+        hide adesse_neutral
         scene endingscreen
         with longdissolve
 
@@ -2721,6 +2725,9 @@ scene room1
 with pixellate
 
 if golemleftwithtess and leftwithgoblin:
+    jump witchsolo
+
+if golemleftwithtess and goblindead:
     jump witchsolo
 
 elif golemleftwithgoblin and leftwithtess:

@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("dancing with shadows draft")
+define config.name = _("Dancing With Shadows Alpha")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -37,7 +37,7 @@ define gui.about = _p("""
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "dancingwithshadowsdraft"
+define build.name = "dancingwithshadowsAlpha"
 
 
 ## Sounds and music ############################################################
@@ -64,7 +64,7 @@ define config.has_voice = True
 
 # define config.main_menu_music = "main-menu-theme.ogg"
 
-define config.main_menu_music = "main.mp3"
+define config.main_menu_music = "Impact Prelude.mp3"
 
 ## Transitions #################################################################
 ##

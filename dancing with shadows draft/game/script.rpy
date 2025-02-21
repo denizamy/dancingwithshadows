@@ -5,7 +5,7 @@ define d = Character("Archdruid",color="664D43")
 define j = Character("Julian",color="0032FF")
 define vj = Character("Julian",color="F0BD00")
 define g = Character("Goblin",color="FF5DCF")
-define u = Character("Demoness"color="732ADC")
+define u = Character("Demoness",color="732ADC")
 define x = Character("Unknown Voice",color="732ADC")
 define i = Character("Inya",color="ff5dcf")
 define t = Character("Tess",color="9e0000")
@@ -128,7 +128,7 @@ define acceptdruid = False
 define noacceptdruid = False
 define golemactive = False
 define boltcutters = False
-define barricade = False
+define barricade = True
 define havetorch = False
 define notorch = False
 define nolight = False
@@ -151,9 +151,15 @@ define golemleftwithgoblin = False
 # The game starts here ######################################################################
 
 label start:
-    
-    play music "Deep Haze.mp3"
+
     scene blackscreen
+    "Disclaimer: This is a very early release of this prologue. There will be bugs. You may direct bug reports and feedback to slack."
+
+    "Many art assets, soundtracks, vfx, and sfx are works in progress."
+
+    "Thank you for playing."
+
+    play music "Deep Haze.mp3"
 
     j "Follow a hidden path down the alleys. Three lefts and a right, then close your eyes for twelve seconds."
 
@@ -397,22 +403,26 @@ label start:
 
     # i can't get this shit to transition smoothly without the fucking transparent checkerboard bullshit 
 
-    hide crypt
-    scene black with dissolve
+    
+    scene blackscreen
+    with quickdissolve
 
     show contract at deadcenter
    
-    "Sealed with a wax stamp. Strange, it looks like the monastery sigil."
+    j "Sealed with a wax stamp. Strange, it looks like the monastery sigil."
 
     #contrackk imag
+
+    j "I recall it reads: Slay and banish the presence, whatever it may be, from this formerly sanctified place of rest."
 
     hide contract
     with fastdissolve
 
     show sword at deadcenter
 
-
-    n "It reads: Slay and banish the presence, whatever it may be, from this formerly sanctified place of rest."
+    n "A steel arming sword plated with silver along the edge." 
+    
+    j "I might stand a chance with this blade, if I’m lucky."
 
     hide sword
     with fastdissolve
@@ -429,6 +439,8 @@ label start:
     j "I don't even want to think about hardtack if I can't soften it up first. It's about as hard and appetizing as a brick."
 
     #hardtack image maybe?
+
+    j "And the waterskin..."
 
     j "It's filled with three-day old small beer. Smells sour. I probably shouldn't, unless I really need to."
 
@@ -931,6 +943,7 @@ label golemchoice:
     menu:
 
         "Dismantle Barricade":
+            $barricade = False
             jump gogolem
 
         "Turn Back":
@@ -1123,11 +1136,11 @@ label choice1_done:
 
     n "A dark silhouette like a blot in space." 
 
-    j "This one suffered a major injury in life."
+    n "This one suffered a major injury in life."
 
     n "Its spine folds like an accordion, and its arm drags limply at its side." 
 
-    f "It doesn't seem to be in pain, at least. I wonder if it knows where it is?"
+    j "It doesn't seem to be in pain, at least. I wonder if it knows where it is?"
 
 
     show dog at offleft:
@@ -1207,26 +1220,30 @@ label choice1_done:
             jump choice2_take
 
     label choice2_ignore:
-        $havecoin = False
+        $nocoin = True
 
         j "Something is off about this. I should trust my gut. Much is amiss in this tomb, and I had best not tempt the spirits. One monster is enough…"
 
         n "You leave the coin and move on."
-0
+
         hide coin
+        jump aftercoin
 
     label choice2_take:
-            $havecoin = True
+        $havecoin = True
             
-            show coin at deadcenter
-            with dissolve
+        show coin at deadcenter
+        with dissolve
 
-            j "Whatever, it's mine now. Whoever lost it is long dead. In their place, I wouldn't begrudge me."
-            $ inventory_items.append("coin")
+        j "Whatever, it's mine now. Whoever lost it is long dead. In their place, I wouldn't begrudge me."
 
-            hide coin
-            with dissolve
+        $ inventory_items.append("coin")
 
+        hide coin
+        with dissolve
+        jump aftercoin
+
+    label aftercoin:
     n "Despite the flickering flame of the torch, the shadows stir - and speak!" 
 
     # sound
@@ -1340,7 +1357,7 @@ label blockdemoness1:
 
     j "I can block them with my shield!"
     n "The dark magic spines melt like snow against Julian's blessed shield."
-    n "The deomoness gathers energy for her next spell, giving Julian an opportunity to strike."
+    n "The demoness gathers energy for her next spell, giving Julian an opportunity to strike."
     jump fightdemoness2
 
 label attackdemoness1:
@@ -1395,7 +1412,7 @@ label demonessresolution1:
 
     n "The room fills with the smell of sweet sulfur, and Julian, losing consciousness, feels a slight stab of pain."
 
-    scene momnument
+    scene monument
     with longdissolve
 
     n "His hero - this masked avenger, crouches down to check his vitals and speaks in a soft, deep female voice."
@@ -1609,9 +1626,6 @@ label demonessresolution4:
 
     label neutralend:
 
-    scene endingscreen
-    with pixellate
-
     #if the golem is been activated, then jump to golem waking up
     if golemactive:
         jump golemstart
@@ -1619,9 +1633,6 @@ label demonessresolution4:
     jump witchstart
 
 label goodend:
-
-    scene endingscreen
-    with pixellate
 
     #if the golem is been activated, then jump to golem waking up
     if golemactive:
@@ -1890,7 +1901,7 @@ label golemescape4:
 
     "This creature presents me no threat. It appears to carry a blowgun, which fires darts traditionally bearing poisons harmful to organic creatures."
 
-    "Flesh, I am not. Threatened, I am not. This unknown creature poses no threat to [x]"
+    "Flesh, I am not. Threatened, I am not. This unknown creature poses no threat to this one."
 
     gl "You pose no threat to this one. You shall not be harmed, if you remain pacified."
 
@@ -2683,7 +2694,7 @@ dh "It seems another has hastened to the prize."
 
 dh "I have a competitor. No sense in wasting precious time."
 
-n "Dahlia hastens to her task, returning to the Atrium"
+n "Dahlia hastens to her task, returning to the Atrium."
 
 label backtoatrium:
 
@@ -3226,6 +3237,28 @@ menu:
         jump endofprologue
 
 label endofprologue:
+
+play music "Casa Bossa Nova.mp3"
+
+"Credits"
+
+"Narrative / Project Manager: Barry Weber"
+
+"Code/Script"
+
+"Rachel "Des" Marzzarella\\Lake Watkins\\Deniz Balik"
+
+"Editing/Revsions/Special Thanks to:Lake Watkins\\Jesse Bohnet\\'Scoot Gygax'\\Miriam Bates\\Will Watkins\\Nicholas 'Evő Kolbász' Tolga Balik\\Deniz Balik\\ Nick Vitale\\Rachel 'Des' Marzzarella\\Jude Bigboy\\Jay Brinkman\\Doug 'Dr. Wasteland' Watkins\\Sarah Caldwell"
+
+"Art:\\Rihards Kurts\\Ondrej Svinčiak"
+
+"Music:\'Wholesome','Darkest Child','Midnight Tale','Deep Haze','Floating Cities','Myst on the Floor','Impact Prelude','Casa Bossa Nova' by Kevin MacLeod (incompetech.com), Licensed under Creative Commons: By Attribution 4.0 License http://creativecommons.org/licenses/by/4.0/"
+
+"Sound effect provided by https://pixabay.com/sound-effects/ "
+
+"Thanks for playing! We hope to see you in chapter 1!"
+
+
 
 return
 

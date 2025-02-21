@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 2312: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    $golemleftwithtess = True
-    ^
+File "game/script.rpy", line 945: choice menuitem expects a non-empty block.
+    "Dismantle Barricade":
+                          ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Fri Feb 21 02:49:14 2025
+Fri Feb 21 12:45:27 2025

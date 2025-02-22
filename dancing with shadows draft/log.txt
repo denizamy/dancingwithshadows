@@ -1,18 +1,19 @@
-2025-02-22 02:48:18 UTC
+2025-02-22 04:06:00 UTC
 Windows-10-10.0.19045
 Ren'Py 8.3.4.24120703
 
-Early init took 0.06s
-Loading error handling took 0.03s
-Loading script took 0.54s
+Early init took 0.05s
+Loading error handling took 0.02s
+Loading script took 0.28s
 Loading save slot metadata took 0.03s
 Loading persistent took 0.00s
-Running init code took 0.05s
+Running init code took 0.03s
 Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
 Reloading save slot metadata took 0.02s
 Index archives took 0.00s
-Dump and make backups took 0.04s
+Backing up script files to 'C:\\Users\\owner\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.03s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc took 0.02s
@@ -27,7 +28,7 @@ Load screen analysis took 0.00s
 Analyze screens took 0.01s
 Save screen analysis took 0.01s
 Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
+Save pyanalysis. took 0.01s
 Save bytecode. took 0.02s
 Running _start took 0.00s
 Interface start took 0.04s

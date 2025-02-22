@@ -71,6 +71,7 @@ screen inventory_display_toggle:
 
 define longdissolve = Dissolve(3.0)
 define quickdissolve = Dissolve(0.3)
+define meddissolve = Dissolve (1.5)
 
 
 
@@ -1588,7 +1589,7 @@ label demonessresolution3:
     u "You are most unusual and merciful for one who has lived such a dastardly life, Julian. Only an orphan such as yourself could truly understand that sting of loss…"
 
     u "The druids caution many against the worst atrocities of my kind, and they speak true…  We part, monster and murderer. We shall meet again."
-    hide adesse_neutral
+    hide adesse_neutral with meddissolve
     n "The demoness vanishes, and the dancing shadows in the room stall to a halt."
 
     j "What an ordeal… Demons are both very like and very unlike how Archdruid described them. I couldn’t have possibly prepared for this."
@@ -1618,7 +1619,7 @@ label demonessresolution4:
 
     n "A bittersweet smile colors Adesse's ethereal features moments before she vanishes, and the dancing shadows in the room stall to a halt."
 
-    hide adesse_flirty
+    hide adesse_flirty with meddissolve
     j "She just vanished. Well, that's great. Am I cursed now, haunted? I should be more worried about that, probably… but even though it has been but a moment, I can’t keep my thoughts off of her."
 
     j "I want to see her again. Adesse… such a peculiar name. I wonder if it was given to her."

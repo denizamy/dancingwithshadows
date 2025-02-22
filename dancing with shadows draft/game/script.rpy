@@ -3301,5 +3301,5 @@ $ renpy.pause(1.5)
 centered "{size=+75}{cps=8} Thanks for playing! We hope to see you in chapter 1!{/cps}{/size}{p=5.0}{nw}"
 
 $ renpy.pause(1.5)
-
+# boob
 return

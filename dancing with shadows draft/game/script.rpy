@@ -171,7 +171,7 @@ label start:
 
     j "I guess this isn't a great evil if I'm just wasting my time here, in the grand scheme of things."
 
-    j  "He didn't want anything from me. I've never had a good grasp on balancing naïvety and cynicism..."
+    j "He didn't want anything from me. I've never had a good grasp on balancing naïvety and cynicism..."
 
     j "Plus, I need the work. That was my last copper gone in the tavern. My equipment is in good shape, I'm healthy and have a full belly, for now at least. Okay, it's been at least twelve seconds."
 
@@ -222,7 +222,9 @@ label start:
 
         n "The Archdruid hastily finishes his pipe and rises to his feet, joining Julian in the foyer."
 
-        n "For a man of his impressive age, he walks gracefully, almost without even a hint of sound. There is a twinge of melancholy or regret coloring his expression, but not his voice."
+        n "For a man of his impressive age, he walks gracefully, almost without even a hint of sound."
+        
+        n "There is a twinge of melancholy or regret coloring his expression, but not his voice."
 
         jump druidresolution
 
@@ -2754,7 +2756,7 @@ n "She casts a spell, concealing her presence completely from the mindless undea
 scene wrathhall
 with quickdissolve
 
-n " Entering the room, she examines the corpse with a malevolent smirk."
+n "Entering the room, she examines the corpse with a malevolent smirk."
 
 #insert image of julian
 
@@ -2770,7 +2772,7 @@ n "Dahlia takes a moment to clear her head and muster her might."
 
 n "She casts a powerful hex, utilizing the latent remnants of guilt Julian's soul possessed"
 
-n " Binding the weight of his guilt to the blood remaining in his body, her spell concludes."
+n "Binding the weight of his guilt to the blood remaining in his body, her spell concludes."
 
 n "A stirring digit."
 
@@ -2786,7 +2788,7 @@ vj "... Yes."
 
 dh "Hm. Responsive to commands."
 
-dh " I may keep you."
+dh "I may keep you."
 
 n "Dahlia's malice softens, and a small wicked smile graces her black lips."
 
@@ -2975,7 +2977,7 @@ t "I really don't like being called Tessie. But… I'll forgive you."
 
 t "This time."
 
-t " I learned Nikolai is sending mercenaries to handle stray demons. That old fool has really lost the plot."
+t "I learned Nikolai is sending mercenaries to handle stray demons. That old fool has really lost the plot."
 
 n "The witch grins as her charm bears fruit - the moments of agony so easily forgotten and forgiven."
 
@@ -2993,7 +2995,7 @@ n "As she meets Dahlia's eyes, the witch's charm truly bears fruit - and allows 
 
 dh "You're interesting. I want to see you again."
 
-dh " I will call to you, and you will come, unarmed. "
+dh "I will call to you, and you will come, unarmed. "
 
 dh "We will next meet in your dreams. I ever so look forward to it."
 
@@ -3019,7 +3021,7 @@ n "Frustrated at the fruits of her labor going unrealized, but tantalized by the
 
 n "Tess obediently waits five minutes, precisely as directed."
 
-n " Both Dahlia and Tess have a feeling they will see each other again - perhaps sooner than expected."
+n "Both Dahlia and Tess have a feeling they will see each other again - perhaps sooner than expected."
 
 jump endofprologue
 
@@ -3086,7 +3088,7 @@ n "Inya blinks, processing the fact Dahlia somehow knew her birth name. The real
 
 i "Oh… you figured out my goblin name with your magic."
 
-i " I wish you wouldn't do things like that. I like 'Inya'. It sounds so much more refined."
+i "I wish you wouldn't do things like that. I like 'Inya'. It sounds so much more refined."
 
 n "Inya pouts, to Dahlia's muted amusement."
 
@@ -3114,7 +3116,7 @@ dh "I'm offering you a home, and a human companion."
 
 dh "I am the answer to your deepest desires. "
 
-dh " know everything about you, my Inya, and I find you worthy and fascinating."
+dh "know everything about you, my Inya, and I find you worthy and fascinating."
 
 n "Inya blushes a deep red and nearly faints. Meekly, she replies."
 
@@ -3122,7 +3124,7 @@ i "That's a lot to think over, ma'am. I suppose you're right though. You seem li
 
 dh "Yes, my dear, I am. "
 
-dh " You may ask your questions on the way. The front door will do."
+dh "You may ask your questions on the way. The front door will do."
 
 dh "You're coming with me - if that is your wish."
 
@@ -3141,7 +3143,7 @@ n "Guiding her by her hand, Dahlia leads Inya out of the crypt."
 
 n "Enroute to Dahlia's lair, Inya incessantly prattled on about each and every thing that whizzed through her mind, and Dahlia patiently obliged her."
 
-n " In truth, Dahlia saw a bit of herself in the goblin, and more importantly, had plans for her. "
+n "In truth, Dahlia saw a bit of herself in the goblin, and more importantly, had plans for her. "
 
 n "Plans take time to cultivate, and Dahlia was nothing, if not patient."
 
@@ -3168,14 +3170,14 @@ dh "Who shall it be, hm? It would be a pity for my time to be wasted."
 menu:
     "The Mercenary":
         dh "Nikolai's lapdog."
-        dh " It would be suitable to wrap him around my finger, whether he is willing or not, and use this… distasteful attempt to thwart me against that pest."
+        dh "It would be suitable to wrap him around my finger, whether he is willing or not, and use this… distasteful attempt to thwart me against that pest."
 
         scene endingscreen
         with longdissolve
 
         n "Motivated foremost by spite, Dahlia resolved to pursue the gnat Nikolai flung in her direction - successfully disrupting her effort."
 
-        n " Dahlia was irritated, and an avid enjoyer of irony. She simply couldn't pass up this opportunity to harass Nikolai with his pawn."
+        n "Dahlia was irritated, and an avid enjoyer of irony. She simply couldn't pass up this opportunity to harass Nikolai with his pawn."
 
         n "Perhaps she could make this mercenary a better offer - whether that be gold, or whatever else enticed him."
 
@@ -3184,7 +3186,7 @@ menu:
     "The Arcane Anomaly":
         dh "My goal has not changed, despite this… unprecedented setback. "
 
-        dh " Foremost, the arcane core is my quarry. I shan't tarry."
+        dh "Foremost, the arcane core is my quarry. I shan't tarry."
 
         scene endingscreen
         with longdissolve
@@ -3240,7 +3242,7 @@ menu:
 
         n "Dahlia left the crypt, returning to her lair to scheme."
 
-        n " This was not the first time Nikolai attempted to thwart her, but it was the first time he had found success."
+        n "This was not the first time Nikolai attempted to thwart her, but it was the first time he had found success."
 
         n "Dahlia had never been one to forgive or forget. She was planning something, as she always was."
 
@@ -3257,7 +3259,7 @@ menu:
 
         n "Failures upset Dahlia, but she was never one to truly rest."
 
-        n "  She knew it was best to move on to the next project or scheme."
+        n "She knew it was best to move on to the next project or scheme."
 
         n "She departed the crypt, returning to her reclusive lair."
         jump endofprologue

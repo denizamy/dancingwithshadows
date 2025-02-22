@@ -391,7 +391,7 @@ label start:
 
     n "He wasted no time attending to the dubious duty he took as his yoke, all in the promise of gold."
 
-    scene crypt with fade
+    scene darkcrypt with fade
 
     #########################################
 
@@ -1588,7 +1588,7 @@ label demonessresolution3:
     u "You are most unusual and merciful for one who has lived such a dastardly life, Julian. Only an orphan such as yourself could truly understand that sting of loss…"
 
     u "The druids caution many against the worst atrocities of my kind, and they speak true…  We part, monster and murderer. We shall meet again."
-
+    hide adesse_neutral
     n "The demoness vanishes, and the dancing shadows in the room stall to a halt."
 
     j "What an ordeal… Demons are both very like and very unlike how Archdruid described them. I couldn’t have possibly prepared for this."
@@ -1618,6 +1618,7 @@ label demonessresolution4:
 
     n "A bittersweet smile colors Adesse's ethereal features moments before she vanishes, and the dancing shadows in the room stall to a halt."
 
+    hide adesse_flirty
     j "She just vanished. Well, that's great. Am I cursed now, haunted? I should be more worried about that, probably… but even though it has been but a moment, I can’t keep my thoughts off of her."
 
     j "I want to see her again. Adesse… such a peculiar name. I wonder if it was given to her."
@@ -1743,7 +1744,7 @@ label golemproceed:
 
     scene room1
 
-    n "The Golem retraces Julian's steps to the crypt's atrium. It studies its surroundings - a sealed door to its right, unfamiliar stonework leading to an access tunnel of some kind dead ahead, and a path deeper into the crypt to its left."
+    n "The Golem retraces Julian's steps to the crypt's atrium. It studies its surroundings - a sealed door to its left, unfamiliar stonework leading to an access tunnel of some kind dead ahead, and a path deeper into the crypt to its right."
 
     gl "It is now clear to this one a considerable amount of time has passed in this one's reverie. I must press on."
 
@@ -1753,7 +1754,7 @@ label golemproceed:
 
             jump golemgoblin
 
-        "Press on to the left":
+        "Press on to the right":
 
             jump golemadesse
 
@@ -1828,7 +1829,7 @@ label golemescape2:
 
     n "Tenderly, the Golem closes the goblin's eyelids."
 
-    n "The Golem concentrates, divining information about 'the interloper' and his acquaintance using their recalled latent magical ability to do so"
+    n "The Golem concentrates, divining information about 'the interloper' and his acquaintance using their recalled latent magical ability to do so."
 
     "Skill recalled: Divination"
     #different text color maybe?
@@ -2118,7 +2119,7 @@ label golemescape5:
 
             u "Fascinating. An arcane anomaly."
 
-            n "This gives the Golem pause. It resolves to show the enemy of its enemy respect"
+            n "This gives the Golem pause. It resolves to show the enemy of its enemy respect."
 
             gl "The interloper perished to your spawn. You have this one's gratitude and admiration. I seek my creator."
 
@@ -2134,9 +2135,9 @@ label golemescape5:
 
             $gl = Character(x,color="0BC4ED")
 
-            "I shall be [x]"
+            "I shall be [x]."
 
-            gl "I am [x]"
+            gl "I am [x]."
 
             u "I see. And what are you, [x]?"
 
@@ -2146,7 +2147,7 @@ label golemescape5:
 
             u "You destroyed my spawn trivially, and I shant begrudge such an indulgence."
 
-            u "Most certainly not when opportunity presents itself so… earnestly"
+            u "Most certainly not when opportunity presents itself so… earnestly."
 
             u "You may know me as Adesse."
 
@@ -2178,13 +2179,13 @@ label golemescape5:
 
     gl "I have determined I am [selection]."
 
-    a "Ah… of course. I have a proposition for you, [x]. "
+    a "Ah… of course. I have a proposition for you, [x]."
 
     a "My business here is concluded, and you've caught my eye…"
 
     a "I believe we can aid one another. Accompany me out of this crypt. I am marked by enemies of my kind, and many would seek your destruction for simply being what you are."
 
-    a "We find ourselves alike. I can assist you in finding your creator, if you can assist me in… ensuring my safety. "
+    a "We find ourselves alike. I can assist you in finding your creator, if you can assist me in… ensuring my safety."
 
     a "We both simply strive for survival, do we not?"
 
@@ -2249,7 +2250,7 @@ label golemescape5:
         xalign 0.0 yalign 0.0
 
 
-    n "The warrior eschews armor for green and brown traveler's leathers, adorned with protective talismans. "
+    n "The warrior eschews armor for green and brown traveler's leathers, adorned with protective talismans."
 
     n "Their longboots are characteristic of the locality."
 
@@ -2293,9 +2294,9 @@ label golemescape5:
 
     $gl = Character(x,color="0BC4ED")
 
-    "I shall be [x]"
+    "I shall be [x]."
 
-    gl "I am [x]"
+    gl "I am [x]."
 
     "What am I? What I was once is of little consequence - memories are no more."
 
@@ -2383,7 +2384,8 @@ menu:
         scene monument
         with fade
 
-        n "A narrow walkway encircles an open pit full of decomposing bodies of the less fortunate. Tenebrous shapes skirt the edge of the Golem's vision. From the opposing side of the pit - it manifests!"
+        n "A narrow walkway encircles an open pit full of decomposing bodies of the less fortunate."
+        n "Tenebrous shapes skirt the edge of the Golem's vision. From the opposing side of the pit - it manifests!"
 
         jump golemtess
     "The creator these creatures may eludicate the fate of {i}my{/i} creator.":
@@ -2422,11 +2424,11 @@ menu:
 
         $gl = Character(x,color="0BC4ED")
 
-        "I shall be [x]"
+        "I shall be [x]."
 
-        gl "I am [x]"
+        gl "I am [x]."
 
-        u "I see. And what are you, [x]?"
+        u "I see. And what are you, [x].?"
 
         u "You look lost."
 
@@ -2490,7 +2492,7 @@ menu:
 
         n "[x] and Adesse leave the crypt, accompanying each other - an unsteady accord cementing their tenuous bond."
 
-        n "Adesse surely had foes to contend with - foes who placed a mark on her head. [x] sought [pronouns] creator. "
+        n "Adesse surely had foes to contend with - foes who placed a mark on her head. [x] sought [pronouns] creator."
 
         n "For now, their agreement was mutual. The future may have other plans. It remains to be seen."
 
@@ -2503,7 +2505,7 @@ label golemescape7:
 
     "The interloper's footsteps are fresh. I proceed."
 
-    n "The Golem pauses, closely examining the single set of footprints entering and leaving the crypt. "
+    n "The Golem pauses, closely examining the single set of footprints entering and leaving the crypt."
 
     n "Waning daylight intrudes upon this place of rest. The Golem contemplates the sequence of events, and is hit with a sudden realization - the interloper has fled with an accomplice."
 
@@ -2575,7 +2577,7 @@ label golemescape7:
 
     n "This pronouncement gives the warrior pause, who deigns not to question the strange behavior - produced by an even stranger creature."
 
-    uw "Right then… I'm Tess, female."
+    uw "Right, then… I'm Tess, female."
 
     t "I don't know who or what you are, really - and yes, I understand you just told me."
 
@@ -2600,7 +2602,7 @@ label golemescape7:
 
 label witchstart:
 
-scene crypt
+scene darkcrypt
 with longdissolve
 
 play music "Oppressive Gloom.mp3"
@@ -2613,7 +2615,7 @@ n "The pressure on the hydraulics of the crypt's door is released with a gesture
 
 dh "It will do."
 
-dh  " The anomaly, and the demon."
+dh  "The anomaly, and the demon."
 
 dh "One to be harvested, one to be bound. Good help is so very hard to find."
 
@@ -2642,13 +2644,13 @@ if not barricade:
 
 n "Boards, once comprising a barricade, lie in a disassembled heap at Dahlia's feet."
 
-dh "My, my. Unsavory complications. "
+dh "My, my. Unsavory complications."
 
 dh "They will be managed."
 
 n "Despite her confidence, Dahlia scowls."
 
-n " She hated complications."
+n "She hated complications."
 
 n "She proceeds down the narrow tunnel to her first destination."
 if golemactive:
@@ -2674,7 +2676,7 @@ n "Mustering her magical might, the room glows alight with a fel crimson bloom."
 
 hide golem
 
-n "The dismembered torso of the Golem rises in rhythm with the malevolent pulse. "
+n "The dismembered torso of the Golem rises in rhythm with the malevolent pulse."
 
 n "Dahlia gestures sharply, and the Golem's stone torso is violently torn asunder - revealing a pristine core, alight with a blue glow."
 
@@ -2686,7 +2688,7 @@ dh "Marvelous! And now for my sweet…"
 
 n "Dahlia unclasps her pack, retrieving a silvered bird cage like receptacle for the Golem's heart."
 
-n "Using minor telekinesis, she hefts the Golem's heart - ablaze with raw magic as it is, into the receptacle, and shuts it. "
+n "Using minor telekinesis, she hefts the Golem's heart - ablaze with raw magic as it is, into the receptacle, and shuts it."
 
 #mooooorreee spell effects
 
@@ -2770,7 +2772,7 @@ dh "Awash with blood heavy with guilt. It isn't often I can reanimate a vampire.
 
 n "Dahlia takes a moment to clear her head and muster her might."
 
-n "She casts a powerful hex, utilizing the latent remnants of guilt Julian's soul possessed"
+n "She casts a powerful hex, utilizing the latent remnants of guilt Julian's soul possessed."
 
 n "Binding the weight of his guilt to the blood remaining in his body, her spell concludes."
 
@@ -2921,7 +2923,7 @@ n "The warrior eschews armor for green and brown traveler's leathers, adorned wi
 
 n "Their longboots are characteristic of the locality."
 
-n "The saw-toothed metal staff wielded by the warrior and the iron mask strike Dahlia as distinct, but mysterious in origin. "
+n "The saw-toothed metal staff wielded by the warrior and the iron mask strike Dahlia as distinct, but mysterious in origin."
 
 n "Whomever this is, they strike an imposing form in the gray-hued darkness of the crypt."
 
@@ -2991,11 +2993,11 @@ dh "Look into my eyes."
 
 n "Tess obliges, despite a subconscious realization she is being magically manipulated."
 
-n "As she meets Dahlia's eyes, the witch's charm truly bears fruit - and allows her to leave a lasting imprint in the warden's mind"
+n "As she meets Dahlia's eyes, the witch's charm truly bears fruit - and allows her to leave a lasting imprint in the warden's mind."
 
 dh "You're interesting. I want to see you again."
 
-dh "I will call to you, and you will come, unarmed. "
+dh "I will call to you, and you will come, unarmed."
 
 dh "We will next meet in your dreams. I ever so look forward to it."
 
@@ -3003,7 +3005,7 @@ n "Tess's slight alarm is concealed by her mask."
 
 t "That sounds unlikely, but if you say so."
 
-dh "I do, I do. Wait five minutes in this place, standing still, then you may leave. "
+dh "I do, I do. Wait five minutes in this place, standing still, then you may leave."
 
 dh "It's been fascinating, my dear."
 
@@ -3076,7 +3078,7 @@ n "The goblin is momentarily stunned by Dahlia's words."
 
 g "..I'm Inya."
 
-dh "Zanya. You are Zanya. "
+dh "Zanya. You are Zanya."
 
 dh "Inya is a cute name, but it draws too many unfortunate comparisons…"
 
@@ -3092,7 +3094,7 @@ i "I wish you wouldn't do things like that. I like 'Inya'. It sounds so much mor
 
 n "Inya pouts, to Dahlia's muted amusement."
 
-dh "It shan't happen again, my little morsel. "
+dh "It shan't happen again, my little morsel."
 
 dh "I have divined all I need to know about you, and I find you starkly unique, and simply fascinating."
 
@@ -3114,7 +3116,7 @@ dh "You're lonely. You've been seeking a human friend for fourteen years since y
 
 dh "I'm offering you a home, and a human companion."
 
-dh "I am the answer to your deepest desires. "
+dh "I am the answer to your deepest desires."
 
 dh "know everything about you, my Inya, and I find you worthy and fascinating."
 
@@ -3143,7 +3145,7 @@ n "Guiding her by her hand, Dahlia leads Inya out of the crypt."
 
 n "Enroute to Dahlia's lair, Inya incessantly prattled on about each and every thing that whizzed through her mind, and Dahlia patiently obliged her."
 
-n "In truth, Dahlia saw a bit of herself in the goblin, and more importantly, had plans for her. "
+n "In truth, Dahlia saw a bit of herself in the goblin, and more importantly, had plans for her."
 
 n "Plans take time to cultivate, and Dahlia was nothing, if not patient."
 
@@ -3184,7 +3186,7 @@ menu:
         n "If he proved unyielding, well, Dahlia always had her way."
         jump endofprologue
     "The Arcane Anomaly":
-        dh "My goal has not changed, despite this… unprecedented setback. "
+        dh "My goal has not changed, despite this… unprecedented setback."
 
         dh "Foremost, the arcane core is my quarry. I shan't tarry."
 
@@ -3219,7 +3221,7 @@ menu:
         dh "A warden… and a traitor to her kind. How unique."
         dh "The roots of this conspiracy go deep."
         dh "Perhaps if she were under my thumb I could root out the core of this wart, and collect a novel plaything."
-        dh "'Tessanrae'... Few of her kind survive. "
+        dh "'Tessanrae'... Few of her kind survive."
         dh "She shall be the crowning jewel of my collection."
 
         scene endingscreen

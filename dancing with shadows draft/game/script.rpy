@@ -392,7 +392,7 @@ label start:
 
     n "He wasted no time attending to the dubious duty he took as his yoke, all in the promise of gold."
 
-    scene darkcrypt with fade
+    scene crypt with fade
 
     #########################################
 
@@ -530,7 +530,7 @@ label start:
 
         play sound "torchlighting.mp3"
 
-        n "You stike the torch along the stone walls."
+        n "You strike the torch along the stone walls."
 
 
         show lit at deadcenter
@@ -1016,7 +1016,7 @@ menu:
         "Search rubble":
             j "I might as well try to find something useful while I'm here."
 
-            n "You sort throught the rubble and find a set of bolt cutters."
+            n "You sort through the rubble and find a set of bolt cutters."
             $ boltcutters = True
 
             j "Huh. These might come in handy, I guess. Nobody else is using them, I might as well bring them along."
@@ -2708,7 +2708,7 @@ n "A room full of detritus. A disused artificer's lab, surely, by Dahlia's estim
 
 n "She peers carefully through the mess, coming up empty."
 
-if  golembreakmirror:
+if not  golembreakmirror:
 
     n "Broken shards of glass litter the floor."
 
@@ -2842,7 +2842,10 @@ n "The shadows dance, indicating the presence of a Demon of Shadow."
 
 n "Dahlia grins, and sharply gestures."
 
-show adesse_hurt
+show adesse_hurt:
+    size (1240, 1754)
+    xalign 0.5 yalign 1.0
+    linear 6.0 yalign 0.0
 
 dh "You're {i}mine{/i}. Did you think you could hide from me, my sweet?"
 

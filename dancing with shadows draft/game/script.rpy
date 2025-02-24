@@ -661,7 +661,8 @@ label cutbolt:
 
         j "What's that?"
 
-        show goblin at deadcenter
+        show goblin at deadcenter:
+            size (1000,1200)
 
         n "The lurking creature speaks, with a scratchy, but distinctly feminine voice."
 
@@ -1669,7 +1670,7 @@ label golemstart:
     define golembreakmirror = False
 
     menu:
-        "Pull yourself together" if not golempulltogether:
+        "Pull yourself together":
 
             gl "Sundered, but not destroyed, I remain - and will persist, until this one's destruction."
 
@@ -1682,22 +1683,22 @@ label golemstart:
                 alpha .9
                 alpha 1.0
 
-            n "A dirty mirror, covered in years of dust and grime. The Golem wipes away the thick coating of dust."
+    n "A dirty mirror, covered in years of dust and grime. The Golem wipes away the thick coating of dust."
 
-            gl "This one's appearance is clarified - but this one's objective is unclear. Identity is lost - purpose, undetermined."
-            gl "These mirrors are created by covering a glass pane with a tin-quicksilver amalgam, then heating the pane to evaporate the quicksilver."
+    gl "This one's appearance is clarified - but this one's objective is unclear. Identity is lost - purpose, undetermined."
+    gl "These mirrors are created by covering a glass pane with a tin-quicksilver amalgam, then heating the pane to evaporate the quicksilver."
 
-            gl "A protective covering of copper may be added to reduce corrosion. This one suspects this mirror has been treated with such a coating."
+    gl "A protective covering of copper may be added to reduce corrosion. This one suspects this mirror has been treated with such a coating."
 
-            gl "Much like this one, it has endured the ravages of time. Like this one, it presses on without its creator - without purpose. How long has it been?"
+    gl "Much like this one, it has endured the ravages of time. Like this one, it presses on without its creator - without purpose. How long has it been?"
 
-            gl "The memory is indistinct, but tangible - out of reach. I must press on."
+    gl "The memory is indistinct, but tangible - out of reach. I must press on."
 
-            $ golempulltogether = True
+    $ golempulltogether = True
 
-            jump golemmirror
-
-        "Break the mirror" if not golembreakmirror:
+            
+    menu:
+        "Break the Mirror":
 
             #TODO: Add sfx of glass breaking, image of broken mirror, etc.
 
@@ -1707,7 +1708,7 @@ label golemstart:
 
             $ golembreakmirror = True
 
-            jump golemmirror
+            jump golempresson
 
         "Leave":
 
@@ -1897,8 +1898,10 @@ label golemescape4:
 
     g "Whoa! Hey! Don't hurt me!"
 
-    show goblin
-
+    show goblin at deadcenter:
+        size (1000,1200)
+        
+  
     n "A tiny form, compared to the Golem, stirs in the darkness. A moment of eye shine in the scant light betrays her position to the Golem."
 
     n "This development gives the Golem pause, who reflects on this development."
@@ -2708,7 +2711,7 @@ n "A room full of detritus. A disused artificer's lab, surely, by Dahlia's estim
 
 n "She peers carefully through the mess, coming up empty."
 
-if not  golembreakmirror:
+if golembreakmirror:
 
     n "Broken shards of glass litter the floor."
 
@@ -3058,7 +3061,8 @@ n "As a bit of flair, Dahlia makes a show of exhaling in the direction of the mo
 scene goblinroom
 with pixellate
 
-show goblin
+show goblin at deadcenter:
+        size (1000,1200)
 
 g "Wooooooow! You're a magician!"
 
@@ -3276,37 +3280,37 @@ label endofprologue:
 
 play music "Casa Bossa Nova.mp3"
 
-centered "{size=+75}{cps=8} Credits {/cps}{/size}{p=5.0}{nw}"
+centered "{size=+75}{cps=8}{color=000000} Credits {/cps}{/size}{p=5.0}{nw}"
 
 $ renpy.pause(1.5)
 
-centered "{size=+75}{cps=8} Narrative / Project Manager: \nBarry Weber{/cps}{/size}{p=5.0}{nw}"
+centered "{size=+75}{cps=8}{color=000000} Narrative / Project Manager: \nBarry Weber{/cps}{/size}{p=5.0}{nw}"
 
-centered "{size=+75}{cps=8}Rachel 'Des' Marzzarella\nLake Watkins\nDeniz Balik"
+centered "{size=+75}{cps=8}{color=000000} Rachel 'Des' Marzzarella\nLake Watkins\nDeniz Balik"
 
-centered "{size=+75}{cps=8} Code/Script: \nRachel 'Des' Marzzarella\nLake Watkins\nDeniz Balik{/cps}{/size}{p=5.0}{nw}"
-
-$ renpy.pause(1.5)
-
-centered "{size=+40}{cps=8} Editing/Revisions/Special Thanks:\nLake Watkins\nJesse Bohnet\n'Scoot Gygax'\nMiriam Bates\nWill Watkins\nNicholas 'Evő Kolbász' Tolga Balik{/cps}{/size}{p=5.0}{nw}"
-
-centered "{size=+40}{cps=8} Deniz Balik\n Nick Vitale\nRachel 'Des' Marzzarella\nJude Bigboy\nJay Brinkman\nDoug 'Dr. Wasteland' Watkins\nSarah Caldwell {/cps}{/size}{p=5.0}{nw}"
+centered "{size=+75}{cps=8}{color=000000} Code/Script: \nRachel 'Des' Marzzarella\nLake Watkins\nDeniz Balik{/cps}{/size}{p=5.0}{nw}"
 
 $ renpy.pause(1.5)
 
-centered "{size=+75}{cps=8} Art:\nRihards Kurts\nOndrej Svinčiak{/cps}{/size}{p=5.0}{nw}"
+centered "{size=+40}{cps=8}{color=000000} Editing/Revisions/Special Thanks:\nLake Watkins\nJesse Bohnet\n'Scoot Gygax'\nMiriam Bates\nWill Watkins\nNicholas 'Evő Kolbász' Tolga Balik{/cps}{/size}{p=5.0}{nw}"
+
+centered "{size=+40}{cps=8}{color=000000} Deniz Balik\n Nick Vitale\nRachel 'Des' Marzzarella\nJude Bigboy\nJay Brinkman\nDoug 'Dr. Wasteland' Watkins\nSarah Caldwell {/cps}{/size}{p=5.0}{nw}"
 
 $ renpy.pause(1.5)
 
-centered "{size=+40}{cps=8} Music:\n'Wholesome','Darkest Child','Midnight Tale','Deep Haze','Floating Cities','Myst on the Floor','Impact Prelude','Casa Bossa Nova' by Kevin MacLeod (incompetech.com). \n\nLicensed under Creative Commons: By Attribution 4.0 License http://creativecommons.org/licenses/by/4.0/{/cps}{/size}{p=5.0}{nw}"
+centered "{size=+75}{cps=8}{color=000000} Art:\nRihards Kurts\nOndrej Svinčiak{/cps}{/size}{p=5.0}{nw}"
 
 $ renpy.pause(1.5)
 
-centered "{size=+75}{cps=8} Sound effect provided by https://pixabay.com/sound-effects/ {/cps}{/size}{p=5.0}{nw}"
+centered "{size=+40}{cps=8}{color=000000}  Music:\n'Wholesome', 'Darkest Child', 'Midnight Tale', 'Deep Haze', 'Floating Cities', 'Myst on the Floor', 'Impact Prelude', 'Casa Bossa Nova' by Kevin MacLeod (incompetech.com). \n\nLicensed under Creative Commons: By Attribution 4.0 License http://creativecommons.org/licenses/by/4.0/{/cps}{/size}{p=5.0}{nw}"
 
 $ renpy.pause(1.5)
 
-centered "{size=+75}{cps=8} Thanks for playing! We hope to see you in chapter 1!{/cps}{/size}{p=5.0}{nw}"
+centered "{size=+75}{cps=8}{color=000000}  Sound effects provided by https://pixabay.com/sound-effects/ {/cps}{/size}{p=5.0}{nw}"
+
+$ renpy.pause(1.5)
+
+centered "{size=+75}{cps=8}{color=000000} Thanks for playing! We hope to see you in chapter 1!{/cps}{/size}{p=5.0}{nw}"
 
 $ renpy.pause(1.5)
 

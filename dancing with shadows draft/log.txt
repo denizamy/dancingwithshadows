@@ -1,8 +1,681 @@
-2025-02-22 04:06:00 UTC
-Windows-10-10.0.19045
+2025-02-24 04:20:32 UTC
+Windows-10-10.0.26100
 Ren'Py 8.3.4.24120703
 
-Early init took 0.05s
+Early init took 0.07s
+Loading error handling took 0.03s
+Loading script took 0.63s
+Loading save slot metadata took 0.05s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.01s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.08s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 215.68s
+Loading error handling took 0.02s
+Loading script took 0.21s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.01s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Resetting cache.
+Early init took 292.83s
+Loading error handling took 0.01s
+Loading script took 0.20s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 439.53s
+Loading error handling took 0.02s
+Loading script took 0.30s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 504.30s
+Loading error handling took 0.02s
+Loading script took 0.22s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 525.69s
+Loading error handling took 0.01s
+Loading script took 0.21s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.00s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 545.57s
+Loading error handling took 0.01s
+Loading script took 0.25s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 559.52s
+Loading error handling took 0.01s
+Loading script took 0.22s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 574.83s
+Loading error handling took 0.01s
+Loading script took 0.23s
+Loading save slot metadata took 0.07s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 590.16s
+Loading error handling took 0.01s
+Loading script took 0.21s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 603.94s
+Loading error handling took 0.01s
+Loading script took 0.22s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 696.21s
+Loading error handling took 0.01s
+Loading script took 0.21s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 713.00s
+Loading error handling took 0.01s
+Loading script took 0.23s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 731.32s
+Loading error handling took 0.01s
+Loading script took 0.21s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 740.61s
+Loading error handling took 0.01s
+Loading script took 0.24s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 808.69s
+Loading error handling took 0.01s
+Loading script took 0.16s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 664: show statement expects a non-empty block.
+    show goblin at deadcenter:
+                              ^
+
+File "game/script.rpy", line 665: expected statement.
+    size (1000,1200)
+                    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 820.83s
 Loading error handling took 0.02s
 Loading script took 0.28s
 Loading save slot metadata took 0.03s
@@ -10,17 +683,59 @@ Loading persistent took 0.00s
 Running init code took 0.03s
 Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
+Reloading save slot metadata took 0.03s
 Index archives took 0.00s
-Backing up script files to 'C:\\Users\\owner\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
 Dump and make backups took 0.03s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.02s
+Initial gc took 0.03s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.16s
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 889.03s
+Loading error handling took 0.01s
+Loading script took 0.21s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
 Cleaning stores took 0.00s
 Init translation took 0.02s
 Build styles took 0.00s
@@ -29,7 +744,49 @@ Analyze screens took 0.01s
 Save screen analysis took 0.01s
 Prepare screens took 0.04s
 Save pyanalysis. took 0.01s
-Save bytecode. took 0.02s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 913.38s
+Loading error handling took 0.01s
+Loading script took 0.21s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
 Running _start took 0.00s
 Interface start took 0.04s
 
@@ -37,11 +794,2735 @@ Initializing gl2 renderer:
 primary display bounds: (0, 0, 2560, 1440)
 swap interval: 1 frames
 Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 560.94'
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1377) drawable=(2560, 1377)
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
 Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1377) drawable=(2560, 1377)
+Resetting cache.
+Early init took 924.16s
+Loading error handling took 0.01s
+Loading script took 0.22s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 931.89s
+Loading error handling took 0.01s
+Loading script took 0.22s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 950.19s
+Loading error handling took 0.01s
+Loading script took 0.21s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 973.02s
+Loading error handling took 0.01s
+Loading script took 0.24s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 997.41s
+Loading error handling took 0.01s
+Loading script took 0.22s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1077.62s
+Loading error handling took 0.01s
+Loading script took 0.22s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.05s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.05s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1128.10s
+Loading error handling took 0.02s
+Loading script took 0.27s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1150.97s
+Loading error handling took 0.01s
+Loading script took 0.26s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1285.59s
+Loading error handling took 0.01s
+Loading script took 0.18s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 1906: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    size (25,25)
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1296.24s
+Loading error handling took 0.01s
+Loading script took 0.22s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.02s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1297.95s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1318.29s
+Loading error handling took 0.02s
+Loading script took 0.24s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1326.05s
+Loading error handling took 0.01s
+Loading script took 0.21s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1333.83s
+Loading error handling took 0.01s
+Loading script took 0.08s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.01s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1397.46s
+Loading error handling took 0.01s
+Loading script took 0.17s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 1908: ATL statement contains two expressions in a row; is one of them a misspelled property? If not, separate them with pass.
+    xalign 0.5 linear 3.0
+                         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1414.08s
+Loading error handling took 0.01s
+Loading script took 0.15s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 1908: ATL statement contains two expressions in a row; is one of them a misspelled property? If not, separate them with pass.
+    xalign 0.5 linear 3.0
+                         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1424.71s
+Loading error handling took 0.01s
+Loading script took 0.23s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 1908: ATL statement contains two expressions in a row; is one of them a misspelled property? If not, separate them with pass.
+    xalign 0.5 linear 3.0
+                         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1430.82s
+Loading error handling took 0.02s
+Loading script took 0.17s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 1908: ATL statement contains two expressions in a row; is one of them a misspelled property? If not, separate them with pass.
+    xalign 0.5 linear 3.0
+                         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1432.45s
+Loading error handling took 0.01s
+Loading script took 0.16s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 1908: ATL statement contains two expressions in a row; is one of them a misspelled property? If not, separate them with pass.
+    xalign 0.5 linear 3.0
+                         ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1441.55s
+Loading error handling took 0.01s
+Loading script took 0.22s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1453.81s
+Loading error handling took 0.01s
+Loading script took 0.21s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1476.87s
+Loading error handling took 0.01s
+Loading script took 0.23s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1505.80s
+Loading error handling took 0.01s
+Loading script took 0.24s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1521.11s
+Loading error handling took 0.01s
+Loading script took 0.17s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 1902: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    size (25,25)
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1525.76s
+Loading error handling took 0.01s
+Loading script took 0.26s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1538.03s
+Loading error handling took 0.02s
+Loading script took 0.27s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1553.30s
+Loading error handling took 0.01s
+Loading script took 0.23s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1561.03s
+Loading error handling took 0.01s
+Loading script took 0.22s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1567.28s
+Loading error handling took 0.01s
+Loading script took 0.20s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1575.07s
+Loading error handling took 0.01s
+Loading script took 0.24s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1593.35s
+Loading error handling took 0.01s
+Loading script took 0.22s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1601.09s
+Loading error handling took 0.01s
+Loading script took 0.24s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1610.35s
+Loading error handling took 0.01s
+Loading script took 0.24s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1627.12s
+Loading error handling took 0.01s
+Loading script took 0.20s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1642.43s
+Loading error handling took 0.01s
+Loading script took 0.21s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1648.69s
+Loading error handling took 0.01s
+Loading script took 0.22s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1653.40s
+Loading error handling took 0.01s
+Loading script took 0.21s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1659.63s
+Loading error handling took 0.02s
+Loading script took 0.22s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1667.41s
+Loading error handling took 0.01s
+Loading script took 0.22s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1673.70s
+Loading error handling took 0.01s
+Loading script took 0.21s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1678.40s
+Loading error handling took 0.01s
+Loading script took 0.22s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1683.16s
+Loading error handling took 0.01s
+Loading script took 0.23s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1693.94s
+Loading error handling took 0.01s
+Loading script took 0.21s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1745.49s
+Loading error handling took 0.01s
+Loading script took 0.22s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 1754.78s
+Loading error handling took 0.02s
+Loading script took 0.27s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+Resetting cache.
+Early init took 2012.42s
+Loading error handling took 0.01s
+Loading script took 0.22s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.05s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2239.08s
+Loading error handling took 0.01s
+Loading script took 0.16s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 1673: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Pull yourself together" 
+                             ^
+
+File "game/script.rpy", line 1701: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Break the mirror"
+                      ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2261.76s
+Loading error handling took 0.01s
+Loading script took 0.16s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 1673: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Pull yourself together"
+                            ^
+
+File "game/script.rpy", line 1701: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Break the mirror"
+                      ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2263.36s
+Loading error handling took 0.01s
+Loading script took 0.16s
+Loading save slot metadata took 0.05s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 1673: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Pull yourself together"
+                            ^
+
+File "game/script.rpy", line 1701: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Break the mirror"
+                      ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2274.01s
+Loading error handling took 0.01s
+Loading script took 0.16s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 1673: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Pull yourself together"
+                            ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2277.13s
+Loading error handling took 0.01s
+Loading script took 0.16s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 1673: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Pull yourself together"
+                            ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2289.32s
+Loading error handling took 0.01s
+Loading script took 0.17s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 1673: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Pull yourself together"
+                            ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2293.90s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 1686: Indentation mismatch.
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2298.51s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 1686: Indentation mismatch.
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2330.20s
+Loading error handling took 0.01s
+Loading script took 0.16s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 1679: expected menuitem
+    show golem:
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2352.82s
+Loading error handling took 0.01s
+Loading script took 0.15s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 1679: expected menuitem
+    show golem:
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2357.43s
+Loading error handling took 0.01s
+Loading script took 0.17s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 1679: expected menuitem
+    show golem:
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2369.62s
+Loading error handling took 0.01s
+Loading script took 0.16s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 1679: expected menuitem
+    show golem:
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2373.08s
+Loading error handling took 0.01s
+Loading script took 0.15s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 1679: expected menuitem
+    show golem:
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2373.93s
+Loading error handling took 0.01s
+Loading script took 0.16s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 1679: expected menuitem
+    show golem:
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2374.88s
+Loading error handling took 0.01s
+Loading script took 0.15s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 1679: expected menuitem
+    show golem:
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2378.00s
+Loading error handling took 0.02s
+Loading script took 0.20s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 1679: expected menuitem
+    show golem
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2379.78s
+Loading error handling took 0.01s
+Loading script took 0.16s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 1679: expected menuitem
+    show golem
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2380.54s
+Loading error handling took 0.01s
+Loading script took 0.15s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 1679: expected menuitem
+    show golem
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2406.24s
+Loading error handling took 0.01s
+Loading script took 0.17s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 1679: expected menuitem
+    show golem
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2410.83s
+Loading error handling took 0.01s
+Loading script took 0.16s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 1679: expected menuitem
+    show golem:
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2411.60s
+Loading error handling took 0.01s
+Loading script took 0.15s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 1679: expected menuitem
+    show golem:
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2411.94s
+Loading error handling took 0.01s
+Loading script took 0.15s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 1679: expected menuitem
+    show golem:
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2421.04s
+Loading error handling took 0.01s
+Loading script took 0.16s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 1679: expected menuitem
+    show golem:
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2433.19s
+Loading error handling took 0.01s
+Loading script took 0.17s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 1688: Only one say menuitem may exist per menu.
+    gl "This one's appearance is clarified - but this one's objective is unclear. Identity is lost - purpose, undetermined."
+                                                                                                                            ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2434.07s
+Loading error handling took 0.01s
+Loading script took 0.15s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 1688: Only one say menuitem may exist per menu.
+    gl "This one's appearance is clarified - but this one's objective is unclear. Identity is lost - purpose, undetermined."
+                                                                                                                            ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2434.41s
+Loading error handling took 0.01s
+Loading script took 0.15s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 1688: Only one say menuitem may exist per menu.
+    gl "This one's appearance is clarified - but this one's objective is unclear. Identity is lost - purpose, undetermined."
+                                                                                                                            ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2485.62s
+Loading error handling took 0.01s
+Loading script took 0.23s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 1697: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    $ golempulltogether = True
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2487.16s
+Loading error handling took 0.01s
+Loading script took 0.15s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 1697: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    $ golempulltogether = True
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2487.55s
+Loading error handling took 0.01s
+Loading script took 0.16s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 1697: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    $ golempulltogether = True
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2495.15s
+Loading error handling took 0.01s
+Loading script took 0.16s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 1700: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    menu:
+    ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2552.36s
+Loading error handling took 0.01s
+Loading script took 0.16s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+
+File "game/script.rpy", line 1701: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Break the mirror"
+                      ^
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Interface start took 0.05s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2558.53s
+Loading error handling took 0.01s
+Loading script took 0.24s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.03s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2608.72s
+Loading error handling took 0.01s
+Loading script took 0.25s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Rachel\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 2704.57s
+Loading error handling took 0.01s
+Loading script took 0.09s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.02s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Interface start took 0.04s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'ATI Technologies Inc.'"
+Renderer: b'AMD Radeon RX 6800 XT'
+Version: b'4.6.0 Compatibility Profile Context 24.10.1.241007'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1644, 925) drawable=(1644, 925)
 Maximum texture size: 4096x4096

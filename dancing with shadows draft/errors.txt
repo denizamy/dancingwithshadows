@@ -2,21 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 2732: expected statement.
-    lif golemleftwithgoblin and goblindead:
-                                          ^
-
-File "game/script.rpy", line 2735: expected statement.
-    elif deadjulian:
-                   ^
-
-File "game/script.rpy", line 2738: expected statement.
-    elif leftwithadesse:
-                       ^
-
-File "game/script.rpy", line 2741: expected statement.
-    elif leftwithtess:
-                     ^
+File "game/script.rpy", line 1701: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Break the mirror"
+                      ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Fri Feb 21 16:32:42 2025
+Mon Feb 24 00:03:04 2025

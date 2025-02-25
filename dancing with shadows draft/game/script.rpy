@@ -91,7 +91,6 @@ style inv_button_text:
     yalign 0.5
 
 screen inventory_item_description:
-    # use this based on your preference
     # modal True
     window:
         background "#AAA9"
@@ -360,7 +359,7 @@ label start:
 
         j "I haven't been so at ease and relaxed as long as I can remember. It must have been that 'Waldwine' he had me drink… "
 
-        j " Come to think of it, he must have been jesting about the murals. Some of them are at least one hundred years old. "
+        j "Come to think of it, he must have been jesting about the murals. Some of them are at least one hundred years old. "
 
         j "I suppose when you're as old as he is, everyone starts to look a bit alike. Maybe he just has one of those familiar faces."
 
@@ -388,7 +387,7 @@ label start:
 
     n "Primarily, Julian spent the time reflecting on his mission and the Archdruid, and speculated on what was to come. "
 
-    n " These days, he didn't get much comfort in anything, and this journey was no exception. "
+    n "These days, he didn't get much comfort in anything, and this journey was no exception. "
 
     n "He wasted no time attending to the dubious duty he took as his yoke, all in the promise of gold."
 
@@ -413,8 +412,6 @@ label start:
     show contract at deadcenter
 
     j "Sealed with a wax stamp. Strange, it looks like the monastery sigil."
-
-    #contrackk imag
 
     j "I recall it reads: Slay and banish the presence, whatever it may be, from this formerly sanctified place of rest."
 
@@ -614,11 +611,11 @@ label start:
 
     j "If I found something to bend or break these, maybe I could exit to the city."
 
-    j " Do I want to do that? I'd be abandoning my contract."
+    j "Do I want to do that? I'd be abandoning my contract."
 
     j "Maybe I'm not cut out for this business involving magicians and demons."
 
-    j " I'll have to give it a think."
+    j "I'll have to give it a think."
 
     if boltcutters:
         jump cutbolt
@@ -643,7 +640,7 @@ label cutbolt:
 
         j "This situation might be funny under other circumstances… circumstances I'm not in… "
 
-        j  "It's time to get the hell out of here, and quick."
+        j "It's time to get the hell out of here, and quick."
 
         j "I'll be damned twice if I end up dead doing the bidding of an out of touch old fart."
 
@@ -672,7 +669,7 @@ label cutbolt:
 
         g "Haha. I'm a goblin."
 
-        g " You've heard of goblins, right?"
+        g "You've heard of goblins, right?"
 
         g "We're scary sewer dwelling bogeymen who steal babies, or something."
 
@@ -1119,7 +1116,7 @@ label choice1_done:
 
     j "I vaguely remember texts from the monastery describing the spawn of demons of shadow… it's been a while, but I think they're called Wraithspawn."
 
-    j "They are the creations of my quarry, if I'm right.. As unsettling as they are, I don't think they don’t present a threat unless I provoke them - so long as my torch lasts."
+    j "They are the creations of my quarry, if I'm right.. As unsettling as they are, they don’t present a threat unless I provoke them - so long as my torch lasts."
 
     j "They appear as they did at death - the old, the infirm, the maimed, and the beloved pets of the townsfolk as well."
 
@@ -1190,7 +1187,7 @@ label choice1_done:
 
     n "Statues are torn from the podiums from which they rested, and stone slabs commemorating the deeds of the heroic dead have been toppled."
 
-    n " The floor is littered with debris and dust. Despite this, there isn't a single footprint to be seen."
+    n "The floor is littered with debris and dust. Despite this, there isn't a single footprint to be seen."
 
     n "Aside from the ladder down and the way you entered, it appears all of the connecting chambers are blocked by collapsed rubble."
 

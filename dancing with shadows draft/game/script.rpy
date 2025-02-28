@@ -141,6 +141,7 @@ define leftwithadesse = False
 define leftwithtess = False
 define golemleftwithtess = False
 define golemleftwithgoblin = False
+define adessedead = False
 
 
 
@@ -178,7 +179,7 @@ label start:
     scene druidgrove
     with pixellate
 
-    j ".…I really just can't believe it. Do all druids work in such secrecy, or just 'Arch'druids when they're looking for a sucker to do their dirty work?"
+    j ".…I really just can't believe it. Do all druids work in such secrecy, or just \"Arch\" druids when they're looking for a sucker to do their dirty work?"
 
     j "I'm here. This is what I came here for. There's no sense in wasting any more time."
 
@@ -191,7 +192,7 @@ label start:
 
     n "A small, sincere smile colors the Archdruid's features upon spotting Julian - wicked away in an instant as he studies the young mercenary."
 
-    n "Deep creases of worry fill the void in elderly man's expression as he strains his eyes in the firelight, as if beholding something only seen by him."
+    n "Deep creases of worry fill the void in the elderly man's expression as he strains his eyes in the firelight, as if beholding something only seen by him."
 
     n "He gestures at the open seat next to the fire and speaks with a soft woody baritone - akin to the rumble of straining mine supports deep in the earth."
 
@@ -230,7 +231,8 @@ label start:
 
     label druidchoice2:
 
-        j "Your… space is cozy."
+        j "Your… "
+        j "space is cozy."
 
         d "Thank you, young man."
 
@@ -514,6 +516,7 @@ label start:
 
     label choice2_torch:
         $ havetorch = True
+        $ notorch = False
 
         show unlit at deadcenter
         with dissolve
@@ -538,7 +541,6 @@ label start:
         jump choice2_done
 
     label choice2_nopick:
-        $ notorch = True
 
         hide unlit
 
@@ -568,6 +570,10 @@ label start:
 
         "Head deeper into the crypt":
             jump choice1_forward
+
+        "Pick Up Torch" if not havetorch:
+            n "Upon reflection, the torch is still there."
+            jump choice2_torch
 
     label choice1_left:
 
@@ -654,12 +660,23 @@ label cutbolt:
         scene goblinroom
         with pixellate
 
-        play music "Leaving Home.mp3"
+        play music "Inya Theme (First Encounter).mp3"
 
         j "What's that?"
 
         show goblin at deadcenter:
-            size (1000,1200)
+            size (1500,1700)
+            xalign 0.5 yalign 1.0
+            linear 6.0 yalign 0.0
+        pause 6.5
+            
+        hide goblin
+        with dissolve
+        
+
+        show goblin at deadcenter:
+            size (650,850)
+        with dissolve
 
         n "The lurking creature speaks, with a scratchy, but distinctly feminine voice."
 
@@ -1114,14 +1131,6 @@ label choice1_done:
     if notorch:
         jump killbywraith
 
-    j "I vaguely remember texts from the monastery describing the spawn of demons of shadow… it's been a while, but I think they're called Wraithspawn."
-
-    j "They are the creations of my quarry, if I'm right.. As unsettling as they are, they don’t present a threat unless I provoke them - so long as my torch lasts."
-
-    j "They appear as they did at death - the old, the infirm, the maimed, and the beloved pets of the townsfolk as well."
-
-    j "They didn’t embellish their tales. This is grim indeed."
-
     show lit at deadcenter
     with dissolve
 
@@ -1134,6 +1143,13 @@ label choice1_done:
     show ghost at offright:
         alpha .3
 
+    j "I vaguely remember texts from the monastery describing the spawn of demons of shadow… it's been a while, but I think they're called Wraithspawn."
+
+    j "They are the creations of my quarry, if I'm right.. As unsettling as they are, they don’t present a threat unless I provoke them - so long as my torch lasts."
+
+    j "They appear as they did at death - the old, the infirm, the maimed, and the beloved pets of the townsfolk as well."
+
+    j "They didn’t embellish their tales. This is grim indeed."
 
     n "A dark silhouette like a blot in space."
 
@@ -1194,6 +1210,9 @@ label choice1_done:
     j "The locals surely wouldn't do this."
 
     j "I should be on guard and gather my bearings before pushing ahead."
+
+    if nocoin or havecoin:
+        jump aftercoinchoice
 
     menu:
         "Look around":
@@ -1259,6 +1278,8 @@ label choice1_done:
 
     j "Unsettling. The torch has sent the fiend fleeing - I had best pursue it..."
 
+label aftercoinchoice:
+
 menu:
         "Turn back":
             scene blackscreen with pixellate
@@ -1291,7 +1312,10 @@ menu:
             jump ladderdown
 
         "Return to the atrium":
-            jump atrium
+            n "You return to the Atrium."
+            scene room1
+            n "Where will you go?"
+            jump LookLeftLookRight
             with longdissolve
 
 label ladderdown:
@@ -1344,6 +1368,13 @@ label fightorquestiondemoness1:
                 jump questiondemoness1
 
 label fightdemoness1:
+    hide adesse_neutral
+
+    show adesse_angry at deadcenter:
+        size (1240, 1754)
+        xalign 0.5 yalign 0.0
+        
+
 
     n "The demoness fires a barrage of needle-like spines of solid shadow."
 
@@ -1387,10 +1418,22 @@ label attackdemoness2:
     n "A desperate, vicious strike. A fateful strike. Abandoning caution, Julian hurtles towards his foe."
 
     n "In a confluence of circumstance and power, desperation and need, he executes an overhead swing with his Demonslaying Blade."
+ 
 
     #nasty cranium slicing sound
 
+    hide adesse_angry
+    with dissolve
+
+    show adesse_hurt:
+        size (1240, 1754)
+        xalign 0.5 yalign 0.0
+
+
     n "The demoness's self-satisfied expression fades as the blade slices through her cranium."
+
+    hide adesse_hurt
+    with dissolve
 
     j "There's… no blood. But it's gone. I can feel its absence."
 
@@ -1485,6 +1528,8 @@ label demonessresolution1:
     jump neutralend
 
 label demonessresolution2:
+    $ adessedead = True
+
 
     j "The deed is done. The demon is vanquished. Strange, it seems the foul harpy left a trinket among her remains. A soft, sulfurous stone - proof of my victory. It’s a shame to fell such a striking beauty. It invaded my mind… and seemed to know me."
 
@@ -1602,18 +1647,18 @@ label demonessresolution3:
 
 label demonessresolution4:
 
-    hide adesse_distant
-    show adesse_flirty:
-        size (1240, 1754)
-        xalign 0.5 yalign 0.0
-
     n "The dark energies dance in the room, possibly reflecting the demon’s state of mind. Her expression softens. She seems incapable of tears, perhaps due to her nature."
 
-    u "I am called Adesse, mortal. You have given me much to consider - but I believe this encounter draws to an end"
+    u "I am called Adesse, mortal. You have given me much to consider - but I believe this encounter draws to an end."
 
     a "I shall say my final farewell and depart. You may tell your superiors whatever you choose - but this is not our last meeting, Julian."
 
     a "You're… intriguing - and you remind me of someone I once loved."
+
+    hide adesse_distant
+    show adesse_flirty:
+        size (1240, 1754)
+        xalign 0.5 yalign 0.0
 
     n "A bittersweet smile colors Adesse's ethereal features moments before she vanishes, and the dancing shadows in the room stall to a halt."
 
@@ -1895,8 +1940,21 @@ label golemescape4:
 
     g "Whoa! Hey! Don't hurt me!"
 
+    play music "Inya Theme (First Encounter).mp3"
+    
     show goblin at deadcenter:
-        size (1000,1200)
+        size (1500,1700)
+        xalign 0.5 yalign 1.0
+        linear 6.0 yalign 0.0
+    pause 6.5
+            
+    hide goblin
+    with dissolve
+        
+
+    show goblin at deadcenter:
+        size (650,850)
+    with dissolve
         
   
     n "A tiny form, compared to the Golem, stirs in the darkness. A moment of eye shine in the scant light betrays her position to the Golem."
@@ -2061,6 +2119,19 @@ label golemadesse:
 
     elif leftwithgoblin or goblindead:
         jump golemescape6
+    elif leftwithtess:
+        scene wrathhall
+        with longdissolve
+        scene monument
+        with longdissolve
+        scene blackscreen
+        with longdissolve
+        scene room1
+        with longdissolve
+        gl "… Empty. The interloper has eluded this one. Pursuit, thwarted."
+        n "Indeed, it seems the hydraulic lock previously sealing Julian in the tomb reset behind him."
+        n "The Golem found itself ensnared in a trap, with only one way forward - the service entrance."
+        jump golemescape4
 
     jump golemescape7
 
@@ -2479,9 +2550,9 @@ menu:
 
         n "[x] considers Adesse's proposal. A loneliness tugs from deep within. Was Adesse altogether candid?"
 
-        n "Or did she take note of [x's] latent yearning? The creator's absence was felt deeply."
+        n "Or did she take note of [x]'s latent yearning? The creator's absence was felt deeply."
 
-        n "Could she fill that void? Did she intend to help [x] find [pronoun's] creator earnestly?"
+        n "Could she fill that void? Did she intend to help [x] find [pronouns] creator earnestly?"
 
         gl "I… accept your accord. We shall assist one another."
 
@@ -2508,7 +2579,10 @@ label golemescape7:
 
     n "The Golem pauses, closely examining the single set of footprints entering and leaving the crypt."
 
-    n "Waning daylight intrudes upon this place of rest. The Golem contemplates the sequence of events, and is hit with a sudden realization - the interloper has fled with an accomplice."
+    if leftwithadesse:
+        n "Waning daylight intrudes upon this place of rest. The Golem contemplates the sequence of events, and is hit with a sudden realization - the interloper has fled with an accomplice."
+
+    n "Waning daylight intrudes upon this place of rest. The Golem contemplates the sequence of events, and is hit with a sudden realization - the interloper has fled."
 
     "Skill Recalled: Moment of Prescience"
 
@@ -2741,10 +2815,10 @@ elif golemleftwithgoblin and leftwithtess:
 elif deadjulian:
         jump raisejulian
 
-elif leftwithadesse:
+elif leftwithadesse or adessedead:
         jump witchtess
 
-elif leftwithtess:
+elif leftwithtess or golemleftwithtess:
         jump witchgoblin
 
 jump witchadesse
@@ -3058,8 +3132,21 @@ n "As a bit of flair, Dahlia makes a show of exhaling in the direction of the mo
 scene goblinroom
 with pixellate
 
+play music "Inya Theme (First Encounter).mp3"
+
 show goblin at deadcenter:
-        size (1000,1200)
+    size (1500,1700)
+    xalign 0.5 yalign 1.0
+    linear 6.0 yalign 0.0
+pause 6.5
+            
+hide goblin
+with dissolve
+        
+
+show goblin at deadcenter:
+    size (650,850)
+with dissolve
 
 g "Wooooooow! You're a magician!"
 
@@ -3123,7 +3210,7 @@ dh "I'm offering you a home, and a human companion."
 
 dh "I am the answer to your deepest desires."
 
-dh "know everything about you, my Inya, and I find you worthy and fascinating."
+dh "I know everything about you, my Inya, and I find you worthy and fascinating."
 
 n "Inya blushes a deep red and nearly faints. Meekly, she replies."
 
@@ -3148,7 +3235,7 @@ with longdissolve
 
 n "Guiding her by her hand, Dahlia leads Inya out of the crypt."
 
-n "Enroute to Dahlia's lair, Inya incessantly prattled on about each and every thing that whizzed through her mind, and Dahlia patiently obliged her."
+n "En route to Dahlia's lair, Inya incessantly prattled on about each and every thing that whizzed through her mind, and Dahlia patiently obliged her."
 
 n "In truth, Dahlia saw a bit of herself in the goblin, and more importantly, had plans for her."
 
@@ -3202,7 +3289,7 @@ menu:
 
         n " She would harvest its arcane core and latent power. It was, after all, the first step in creating a golem of her own."
 
-        n "She couldn't pass up that opportunity. These cores are artifacts, and their personalities were ever so malleable."
+        n "She couldn't pass up just a juicy offer. These cores are artifacts, and their personalities were ever so malleable."
 
         n "How could she waste such an enticing opportunity?"
         jump endofprologue
@@ -3283,15 +3370,13 @@ $ renpy.pause(1.5)
 
 centered "{size=+75}{cps=8}{color=000000} Narrative / Project Manager: \nBarry Weber{/cps}{/size}{p=5.0}{nw}"
 
-centered "{size=+75}{cps=8}{color=000000} Rachel 'Des' Marzzarella\nLake Watkins\nDeniz Balik"
-
 centered "{size=+75}{cps=8}{color=000000} Code/Script: \nRachel 'Des' Marzzarella\nLake Watkins\nDeniz Balik{/cps}{/size}{p=5.0}{nw}"
 
 $ renpy.pause(1.5)
 
 centered "{size=+40}{cps=8}{color=000000} Editing/Revisions/Special Thanks:\nLake Watkins\nJesse Bohnet\n'Scoot Gygax'\nMiriam Bates\nWill Watkins\nNicholas 'Evő Kolbász' Tolga Balik{/cps}{/size}{p=5.0}{nw}"
 
-centered "{size=+40}{cps=8}{color=000000} Deniz Balik\n Nick Vitale\nRachel 'Des' Marzzarella\nJude Bigboy\nJay Brinkman\nDoug 'Dr. Wasteland' Watkins\nSarah Caldwell {/cps}{/size}{p=5.0}{nw}"
+centered "{size=+40}{cps=8}{color=000000} Deniz Balik\n Nick Vitale\nRachel 'Des' Marzzarella\nJude Bigboy\nJennifer Svensson\nJay Brinkman\nDoug 'Dr. Wasteland' Watkins\nSarah Caldwell {/cps}{/size}{p=5.0}{nw}"
 
 $ renpy.pause(1.5)
 
@@ -3300,6 +3385,8 @@ centered "{size=+75}{cps=8}{color=000000} Art:\nRihards Kurts\nOndrej Svinčiak{
 $ renpy.pause(1.5)
 
 centered "{size=+40}{cps=8}{color=000000}  Music:\n'Wholesome', 'Darkest Child', 'Midnight Tale', 'Deep Haze', 'Floating Cities', 'Myst on the Floor', 'Impact Prelude', 'Casa Bossa Nova' by Kevin MacLeod (incompetech.com). \n\nLicensed under Creative Commons: By Attribution 4.0 License http://creativecommons.org/licenses/by/4.0/{/cps}{/size}{p=5.0}{nw}"
+
+centered "{size=+40}{cps=8}{color=000000} \n 'Inya's Theme (First Encounter) by Taylor Perfater"
 
 $ renpy.pause(1.5)
 

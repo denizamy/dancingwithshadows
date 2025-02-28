@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 1701: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "Break the mirror"
-                      ^
+File "game/script.rpy", line 1431: expected statement.
+    size (1240, 1754)
+                     ^
+
+File "game/script.rpy", line 1432: expected statement.
+    xalign 0.5 yalign 0.0
+            ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Mon Feb 24 00:03:04 2025
+Thu Feb 27 22:50:51 2025

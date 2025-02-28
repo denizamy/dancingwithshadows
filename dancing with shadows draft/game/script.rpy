@@ -675,7 +675,7 @@ label cutbolt:
         
 
         show goblin at deadcenter:
-            size (650,850)
+            size (550,800)
         with dissolve
 
         n "The lurking creature speaks, with a scratchy, but distinctly feminine voice."
@@ -1953,7 +1953,7 @@ label golemescape4:
         
 
     show goblin at deadcenter:
-        size (650,850)
+        size (550,800)
     with dissolve
         
   
@@ -3145,7 +3145,7 @@ with dissolve
         
 
 show goblin at deadcenter:
-    size (650,850)
+    size (550,800)
 with dissolve
 
 g "Wooooooow! You're a magician!"

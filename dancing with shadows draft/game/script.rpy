@@ -1481,6 +1481,8 @@ label demonessresolution1:
 
     uw "I'm going to set your leg. Bite down if you need to, or you're going to bite through your tongue and suffocate on your own blood."
 
+    n "Julian's eyes widen, settling on his broken leg - snapped like a twig by the demoness's dark magic. Profound, terrifying force!
+
     n "Bleary-eyed, Julian scans the room. There is no trace of the demon - save a suspicious, soft-looking stone where she fell."
 
     n "Likewise, the shadows have stopped moving of their own accord. He looks over to his savior."

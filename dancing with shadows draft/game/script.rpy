@@ -1754,7 +1754,7 @@ label golemstart:
 
             jump golempresson
 
-        "Leave":
+        "Leave Room":
 
             jump golempresson
 

@@ -38,7 +38,9 @@ image adesse_neutral = "adesse_neutral.png"
 image julian = "julian.png"
 image tess = "Tess.png"
 image contract = "contract.png"
-
+image druidhouse1 = im.Scale("druidhouseP1.png", 1920, 1080)
+image druidhouse2 = im.Scale("druidhouseP2.png", 1920, 1080)
+image druidhouse3 = im.Scale("druidhouseP3.png", 1920, 1080)
 
 
 transform deadcenter:
@@ -183,8 +185,9 @@ label start:
 
     j "I'm here. This is what I came here for. There's no sense in wasting any more time."
 
-    scene druidhut
+    scene druidhouse1 
     with pixellate
+
     show druid at deadcenter:
         size (550, 1100)
         xalign 0.5
@@ -232,6 +235,11 @@ label start:
         jump druidresolution
 
     label druidchoice2:
+        scene druidhouse3 with pixellate
+        show druid at deadcenter:
+            size (550, 1100)
+            xalign 0.8
+            yalign 0.5
 
         j "Your… "
         j "space is cozy."

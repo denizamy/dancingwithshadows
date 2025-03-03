@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 189: expected statement.
-    size(1500,1700)
-                   ^
+File "game/script.rpy", line 239: Line is indented, but the preceding scene statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    size (1240, 1754)
+    ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Mon Mar  3 14:36:16 2025
+Mon Mar  3 15:00:25 2025

@@ -24,7 +24,7 @@ image lit = "lit.webp"
 image dog = "dog.png"
 image ghost = "ghost.png"
 image goblin = "goblin.png"
-image druid = "druid.png"
+image druid = "archdruid.png"
 image blackscreen = "blackscreen.jpg"
 image coin = "thecoin.png"
 image golem = "golem.png"
@@ -186,7 +186,9 @@ label start:
     scene druidhut
     with pixellate
     show druid at deadcenter:
-        alpha .5
+        size (550, 1100)
+        xalign 0.5
+        yalign 0.5
 
     play sound "fireplace.mp3"
 

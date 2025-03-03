@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 1431: expected statement.
-    size (1240, 1754)
-                     ^
-
-File "game/script.rpy", line 1432: expected statement.
-    xalign 0.5 yalign 0.0
-            ^
+File "game/script.rpy", line 1484: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+        n "Julian's eyes widen, settling on his broken leg - snapped like a twig by the demoness's dark magic. Profound, terrifying force!
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Thu Feb 27 22:50:51 2025
+Mon Mar  3 14:04:30 2025

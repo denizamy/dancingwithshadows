@@ -190,7 +190,7 @@ label start:
 
     show druid at deadcenter:
         size (550, 1100)
-        xalign 0.5
+        xalign 0.4
         yalign 0.5
 
     play sound "fireplace.mp3"

@@ -80,13 +80,22 @@ transform offright:
 transform topright:
     xalign 1.0
     yalign 1.0
-transform rightofcentercup:
-    xalign 0.6
-    yalign 0.4
-transform leftofcentercup:
+transform cup1:
+    xalign 0.4
+    yalign 0.6
+transform cup2:
     xalign 0.35
-    yalign 0.4
-    
+    yalign 0.6
+transform wine:
+    xalign 0.60
+    yalign 0.40
+transform tablecup1:
+    xalign 0.52
+    yalign 0.56
+transform tablecup2:
+    xalign 0.60
+    yalign 0.64
+
 define longpixellate = Pixellate(5.0)
 
 screen inventory_display_toggle:
@@ -103,6 +112,7 @@ screen inventory_display_toggle:
 
 define longdissolve = Dissolve(3.0)
 define quickdissolve = Dissolve(0.3)
+define fastdissolve = Dissolve(0.8)
 define meddissolve = Dissolve (1.5)
 
 
@@ -300,9 +310,9 @@ label start:
 
     label acceptdruid:
 
-        show waldwine at rightofcenter
-        show emptycup at deadcenter
-        show emptycup2 at leftofcenter
+        show waldwine at wine
+        show emptycup at tablecup1
+        show emptycup2 at tablecup2
 
         j "I suppose… well, I don't see why not."
 
@@ -311,8 +321,8 @@ label start:
         hide emptycup
         hide emptycup2
 
-        show fullcup at deadcenter with quickdissolve
-        show fullcup2 at leftofcenter with quickdissolve
+        show fullcup at tablecup2 with fastdissolve
+        show fullcup2 at tablecup1 with fastdissolve
         
         n "The Archdruid rises from his seat and pours a dark orange liquid into two polished wooden cups. There's a bit of relief reflected in his dark eyes. He passes a cup to Julian, who hastily downs the contents."
 
@@ -320,13 +330,12 @@ label start:
         hide fullcup2
         hide waldwine
 
-        show emptycup at deadcenter with quickdissolve
+        show emptycup at tablecup1 
+        show emptycup2 at tablecup2 
 
         play sound "fireplace.mp3"
 
         j "It's warming. What is this?"
-
-        hide emptycup
 
         d "A bit of a house special. You'd call it Waldwine."
 

@@ -57,7 +57,7 @@ image druidentrance = im.Scale("druidentrance.png", 1920, 1080)
 image crypt = im.Scale("cryptday.png", 1920, 1080)
 image cryptnight = im.Scale("cryptnight.png", 1920, 1080)
 image newatrium = im.Scale("newatrium.png", 1920, 1080)
-
+image sewer = im.Scale("sewerpurple.png", 1920, 1080)
 
 
 
@@ -729,7 +729,7 @@ label cutbolt:
 
         n "There is a way out yet, even if it is a dismal path."
 
-        scene goblinroom
+        scene sewer
         with pixellate
 
         play music "Inya Theme (First Encounter).mp3"
@@ -1888,7 +1888,7 @@ label golemgoblin:
 label golemescape1:
 
     n "The footsteps continued in this direction. The Golem tirelessly pursues this interloper - and its objective, whenever it determines what its objective may be."
-    scene goblinroom
+    scene sewer
     with pixellate
 
     gl "The interloper joined another. This one's senses indicate one is male - human. The other is . . . an unknown female."
@@ -1937,7 +1937,7 @@ label golemescape1:
 label golemescape2:
 
     n "The footsteps continued in this direction. The Golem tirelessly pursues this interloper - and its objective, whenever it determines what its objective may be."
-    scene goblinroom
+    scene sewer
     with pixellate
 
     gl "The interloper joined another. This one's senses indicate one is male - human. His name is Julian Grymwald."
@@ -2009,7 +2009,7 @@ label golemescape4:
     n "Mere iron cannot stop the Golem. It snaps the bars like insignificant twigs."
     #bar breaking sfx
 
-    scene goblinroom
+    scene sewer
     with pixellate
 
     g "Whoa! Hey! Don't hurt me!"
@@ -3203,7 +3203,7 @@ n "The bars blocking the path to the service entrance turn red, then white, then
 
 n "As a bit of flair, Dahlia makes a show of exhaling in the direction of the molten metal, while concealing her gestures, freezing it."
 
-scene goblinroom
+scene sewer
 with pixellate
 
 play music "Inya Theme (First Encounter).mp3"

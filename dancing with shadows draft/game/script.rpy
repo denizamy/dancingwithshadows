@@ -32,7 +32,7 @@ image fullcup = "cup_wooden_full.png"
 image emptycup2 = "cup_wooden.png"
 image fullcup2 = "cup_wooden_full.png"
 image waldwine = im.Scale("waldwinelol.png", 160, 200)
-
+image newgate =im.Scale("newgate.png", 1920, 1080)
 
 
 
@@ -56,6 +56,10 @@ image druidhouse3 = im.Scale("druidhouseP3.png", 1920, 1080)
 image druidentrance = im.Scale("druidentrance.png", 1920, 1080)
 image crypt = im.Scale("cryptday.png", 1920, 1080)
 image cryptnight = im.Scale("cryptnight.png", 1920, 1080)
+image newatrium = im.Scale("newatrium.png", 1920, 1080)
+
+
+
 
 
 transform deadcenter:
@@ -318,16 +322,14 @@ label start:
 
         play sound "pouring.mp3"
         
-        hide emptycup
-        hide emptycup2
 
-        show fullcup at tablecup2 with fastdissolve
-        show fullcup2 at tablecup1 with fastdissolve
+        show fullcup at tablecup2 with dissolve
+        show fullcup2 at tablecup1 with dissolve
         
         n "The Archdruid rises from his seat and pours a dark orange liquid into two polished wooden cups. There's a bit of relief reflected in his dark eyes. He passes a cup to Julian, who hastily downs the contents."
 
-        hide fullcup
-        hide fullcup2
+        hide fullcup with dissolve
+        hide fullcup2 with dissolve
         hide waldwine
 
         show emptycup at tablecup1 
@@ -479,6 +481,7 @@ label start:
     with quickdissolve
 
     show sealedcontract at deadcenter
+    with quickdissolve
 
     j "Sealed with a wax stamp. Strange, it looks like the monastery sigil."
 
@@ -487,8 +490,8 @@ label start:
 
     j "I recall it reads: Slay and banish the presence, whatever it may be, from this formerly sanctified place of rest."
 
-    hide contract
-    with fastdissolve
+    hide contract 
+    with quickdissolve
 
     show sword at deadcenter
 
@@ -496,27 +499,26 @@ label start:
 
     j "I might stand a chance with this blade, if I’m lucky."
 
-    hide sword
-    with fastdissolve
+    hide sword with quickdissolve
 
     show shield at deadcenter
 
     j "The sheen on this steel heater is phenomenal, and as long as there is even a scant amount of light, the Archdruid reassured me none of the demon’s shadow magic can harm me."
 
-    hide shield
-    with fastdissolve
-
-    show canteen at deadcenter
-
-    j "I don't even want to think about hardtack if I can't soften it up first. It's about as hard and appetizing as a brick."
+    hide shield with quickdissolve
 
     show hardtack at deadcenter
+
+    j "I don't even want to think about hardtack if I can't soften it up first. It's about as hard and appetizing as a brick."
+  
+    hide hardtack with quickdissolve
+    show canteen at deadcenter
 
     j "And the waterskin..."
 
     j "It's filled with three-day old small beer. Smells sour. I probably shouldn't, unless I really need to."
 
-    #nasty lil bottle of beer image maybe?
+    hide canteen with quickdissolve
 
     hide backpack
     with dissolve
@@ -537,7 +539,7 @@ label start:
 
     label choice1_enter:
 
-    scene room1
+    scene newatrium
     with pixellate
     label atrium:
 
@@ -547,7 +549,7 @@ label start:
 
     play sound "gateclose.wav"
 
-    scene closinggate
+    scene newgate
 
 
     j "A security measure by the townsfolk, surely."
@@ -565,7 +567,7 @@ label start:
 
     n "On the periphery of your vision, you notice unusual fleeting shadows. The demon must not be far off, and it has nowhere to run. One of you must perish today."
 
-    scene room1
+    scene newatrium
     with pixellate
 
     n "A great stone arch allows passage further in this dark place."
@@ -665,7 +667,7 @@ label start:
             j "Like I said, it's somebody else's problem now."
             j "If they want me to take care of it, well, another hundred crowns would be nice."
             hide golem
-            scene room1
+            scene newatrium
             jump LookLeftLookRight
         elif boltcutters:
             scene warehouse
@@ -1013,7 +1015,7 @@ label nogoblin:
 
     n "You return back to atrium."
 
-    scene room1
+    scene newatrium
     with pixellate
 
     n "Where will you go?"
@@ -1067,7 +1069,7 @@ elif notorch:
 
         n "You go back the way you came."
 
-        scene room1
+        scene newatrium
         with pixellate
 
         n "Where will you go?"
@@ -1082,7 +1084,7 @@ label leavegolem:
 
         n "You go back the way you came."
 
-        scene room1
+        scene newatrium
         with pixellate
 
         n "Where will you go?"
@@ -1117,7 +1119,7 @@ menu:
 
             hide golem
 
-            scene room1
+            scene newatrium
             with pixellate
 
             n "Where will you go?"
@@ -1141,7 +1143,7 @@ menu:
             n "You go back the way you came."
             hide golem
 
-            scene room1
+            scene newatrium
             with pixellate
 
             n "Where will you go?"
@@ -1153,7 +1155,7 @@ menu:
 
             hide golem
 
-            scene room1
+            scene newatrium
             with pixellate
 
             n "Where will you go?"
@@ -1357,7 +1359,7 @@ menu:
             hide monument with dissolve
 
             j "I need to get my bearings. I'm not sure I'm ready for all this just yet. I need to be absolutely sure before I hunt down this creature."
-            scene room1 with pixellate
+            scene newatrium with pixellate
             jump LookLeftLookRight
             with dissolve
 
@@ -1383,7 +1385,7 @@ menu:
 
         "Return to the atrium":
             n "You return to the Atrium."
-            scene room1
+            scene newatrium
             n "Where will you go?"
             jump LookLeftLookRight
             with longdissolve
@@ -1858,7 +1860,7 @@ label golempresson:
 
 label golemproceed:
 
-    scene room1
+    scene newatrium
 
     n "The Golem retraces Julian's steps to the crypt's atrium. It studies its surroundings - a sealed door to its left, unfamiliar stonework leading to an access tunnel of some kind dead ahead, and a path deeper into the crypt to its right."
 
@@ -2198,7 +2200,7 @@ label golemadesse:
         with longdissolve
         scene blackscreen
         with longdissolve
-        scene room1
+        scene newatrium
         with longdissolve
         gl "… Empty. The interloper has eluded this one. Pursuit, thwarted."
         n "Indeed, it seems the hydraulic lock previously sealing Julian in the tomb reset behind him."
@@ -2768,7 +2770,7 @@ dh "One to be harvested, one to be bound. Good help is so very hard to find."
 
 n "Confidently, the witch struts into the crypt."
 
-scene room1
+scene newatrium
 with pixellate
 
 n "She follows the path in her divination - first, to the arcane anomaly."
@@ -2872,7 +2874,7 @@ n "Dahlia hastens to her task, returning to the Atrium."
 
 label backtoatrium:
 
-scene room1
+scene newatrium
 with pixellate
 
 if golemleftwithtess and leftwithgoblin:
@@ -3182,7 +3184,7 @@ label witchgoblin:
 scene blackscreen
 with longdissolve
 
-scene room1
+scene newatrium
 with longdissolve
 
 n "Dahlia's search of the crypt was futile. She walked back to the entrance, in defeat."
@@ -3320,7 +3322,7 @@ label witchsolo:
 scene blackscreen
 with longdissolve
 
-scene room1
+scene newatrium
 with longdissolve
 
 n "Dahlia's search of the crypt was futile. She walked back to the entrance, in defeat."

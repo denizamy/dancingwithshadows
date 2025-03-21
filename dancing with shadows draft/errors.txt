@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 298: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    size (500, 800)
-    ^
+File "game/script.rpy", line 538: end of line expected.
+    scene newatrium.png
+                   ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Fri Mar 21 17:30:57 2025
+Fri Mar 21 18:30:16 2025

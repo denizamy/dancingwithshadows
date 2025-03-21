@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 288: expected statement.
-    xalign 0.4 yalign 0.5
-            ^
-
-File "game/script.rpy", line 292: expected statement.
-    xalign 0.5 yalign 0.5
-            ^
+File "game/script.rpy", line 298: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    size (500, 800)
+    ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Fri Mar 21 17:18:29 2025
+Fri Mar 21 17:30:57 2025

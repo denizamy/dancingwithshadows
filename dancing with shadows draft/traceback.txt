@@ -1,24 +1,32 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 41, in script
-    image druidhouse1 = ("druidhouseP1.png", 1240, 1754)
-Exception: Not a displayable: ('druidhouseP1.png', 1240, 1754)
+  File "game/script.rpy", line 300, in script
+    show waldwine at righttofcenterish
+  File "game/script.rpy", line 300, in <module>
+    show waldwine at righttofcenterish
+NameError: name 'righttofcenterish' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 41, in script
-    image druidhouse1 = ("druidhouseP1.png", 1240, 1754)
-  File "D:\renpy-8.3.4-sdk\renpy\ast.py", line 930, in execute
-    renpy.exports.image(self.imgname, img)
-  File "D:\renpy-8.3.4-sdk\renpy\exports\displayexports.py", line 73, in image
-    d = renpy.easy.displayable(d)
-  File "D:\renpy-8.3.4-sdk\renpy\easy.py", line 145, in displayable
-    raise Exception("Not a displayable: %r" % (d,))
-Exception: Not a displayable: ('druidhouseP1.png', 1240, 1754)
+  File "game/script.rpy", line 300, in script
+    show waldwine at righttofcenterish
+  File "D:\renpy-8.3.4-sdk\renpy\ast.py", line 1117, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "D:\renpy-8.3.4-sdk\renpy\ast.py", line 1076, in show_imspec
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "D:\renpy-8.3.4-sdk\renpy\ast.py", line 1076, in <listcomp>
+    at_list = [ renpy.python.py_eval(i) for i in at_list ]
+  File "D:\renpy-8.3.4-sdk\renpy\python.py", line 1209, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "D:\renpy-8.3.4-sdk\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 300, in <module>
+    show waldwine at righttofcenterish
+NameError: name 'righttofcenterish' is not defined
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.3.4.24120703
 Dancing With Shadows Alpha 1.0
-Mon Mar  3 15:04:09 2025
+Fri Mar 21 17:36:09 2025

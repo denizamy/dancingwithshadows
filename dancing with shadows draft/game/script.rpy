@@ -29,8 +29,9 @@ image contract = "thecontract1.png"
 image sealedcontract = "sealedcontract.png"
 image emptycup = "cup_wooden.png"
 image fullcup = "cup_wooden_full.png"
-
-
+image emptycup2 = "cup_wooden.png"
+image fullcup2 = "cup_wooden_full.png"
+image waldwine = im.Scale("waldwinelol.png", 160, 200)
 
 
 
@@ -61,7 +62,10 @@ transform deadcenter:
     xalign 0.5
     yalign 0.5
 transform leftofcenter:
-    xalign 0.4
+    xalign 0.45
+    yalign 0.5
+transform leftofcenterish:
+    xalign 0.35
     yalign 0.5
 transform rightofcenter:
     xalign 0.6
@@ -76,7 +80,13 @@ transform offright:
 transform topright:
     xalign 1.0
     yalign 1.0
-
+transform rightofcentercup:
+    xalign 0.6
+    yalign 0.4
+transform leftofcentercup:
+    xalign 0.35
+    yalign 0.4
+    
 define longpixellate = Pixellate(5.0)
 
 screen inventory_display_toggle:
@@ -290,18 +300,26 @@ label start:
 
     label acceptdruid:
 
+        show waldwine at rightofcenter
         show emptycup at deadcenter
+        show emptycup2 at leftofcenter
 
         j "I suppose… well, I don't see why not."
 
         play sound "pouring.mp3"
         
         hide emptycup
+        hide emptycup2
+
         show fullcup at deadcenter with quickdissolve
+        show fullcup2 at leftofcenter with quickdissolve
         
         n "The Archdruid rises from his seat and pours a dark orange liquid into two polished wooden cups. There's a bit of relief reflected in his dark eyes. He passes a cup to Julian, who hastily downs the contents."
 
         hide fullcup
+        hide fullcup2
+        hide waldwine
+
         show emptycup at deadcenter with quickdissolve
 
         play sound "fireplace.mp3"

@@ -60,6 +60,12 @@ image cryptnight = im.Scale("cryptnight.png", 1920, 1080)
 transform deadcenter:
     xalign 0.5
     yalign 0.5
+transform leftofcenter:
+    xalign 0.4
+    yalign 0.5
+transform rightofcenter:
+    xalign 0.6
+    yalign 0.5
 define fastdissolve = Dissolve(.8)
 transform offleft:
     xalign 0.3
@@ -284,22 +290,25 @@ label start:
 
     label acceptdruid:
 
+        show emptycup at deadcenter
+
         j "I suppose… well, I don't see why not."
 
         play sound "pouring.mp3"
-
-        show emptycup at deadcenter
-        show emptycup at left
-
+        
+        hide emptycup
+        show fullcup at deadcenter with quickdissolve
+        
         n "The Archdruid rises from his seat and pours a dark orange liquid into two polished wooden cups. There's a bit of relief reflected in his dark eyes. He passes a cup to Julian, who hastily downs the contents."
 
-        hide emptycup
-        show fullcup at deadcenter
-        show fullcup at left
+        hide fullcup
+        show emptycup at deadcenter with quickdissolve
 
         play sound "fireplace.mp3"
 
         j "It's warming. What is this?"
+
+        hide emptycup
 
         d "A bit of a house special. You'd call it Waldwine."
 

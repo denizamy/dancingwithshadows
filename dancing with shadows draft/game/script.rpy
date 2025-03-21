@@ -41,6 +41,7 @@ image contract = "contract.png"
 image druidhouse1 = im.Scale("druidhouseP1.png", 1920, 1080)
 image druidhouse2 = im.Scale("druidhouseP2.png", 1920, 1080)
 image druidhouse3 = im.Scale("druidhouseP3.png", 1920, 1080)
+image druidentrance = im.Scale("druidentrance.png", 1920, 1080)
 
 
 transform deadcenter:
@@ -178,7 +179,7 @@ label start:
 
     j "Plus, I need the work. That was my last copper gone in the tavern. My equipment is in good shape, I'm healthy and have a full belly, for now at least. Okay, it's been at least twelve seconds."
 
-    scene druidgrove
+    scene druidentrance
     with pixellate
 
     j ".…I really just can't believe it. Do all druids work in such secrecy, or just \"Arch\" druids when they're looking for a sucker to do their dirty work?"
@@ -347,7 +348,7 @@ label start:
 
     hide druid
 
-    scene druidgrove
+    scene druidentrance
     with pixellate
 
     n "Julian departs the druid's hut, and finds himself roughly where he expected - the same place he began the strange ritual to find the magician's hideaway."

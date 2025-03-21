@@ -1,36 +1,37 @@
-2025-03-03 22:48:12 UTC
+2025-03-21 21:02:43 UTC
 Windows-10-10.0.19045
 Ren'Py 8.3.4.24120703
 
-Early init took 0.06s
-Loading error handling took 0.02s
-Loading script took 0.09s
-Loading save slot metadata took 0.03s
+Early init took 0.22s
+Loading error handling took 0.05s
+Loading script took 0.28s
+Loading save slot metadata took 0.25s
 Loading persistent took 0.00s
-Running init code took 0.03s
+Running init code took 0.07s
 Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
+Reloading save slot metadata took 0.13s
 Index archives took 0.00s
+Backing up script files to 'C:\\Users\\owner\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
 Dump and make backups took 0.03s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc took 0.02s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.14s
+nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
+Creating interface object took 0.15s
 Cleaning stores took 0.00s
 Init translation took 0.02s
 Build styles took 0.00s
 Load screen analysis took 0.01s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
 Prepare screens took 0.03s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
+Save bytecode. took 0.02s
 Running _start took 0.00s
-Interface start took 0.05s
+Interface start took 0.04s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 2560, 1440)
@@ -43,4 +44,12 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(2560, 1377) drawable=(2560, 1377)
 Maximum texture size: 4096x4096
 Screen sizes: virtual=(1920, 1080) physical=(2560, 1377) drawable=(2560, 1377)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(2560, 1377) drawable=(2560, 1377)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(2055, 1377) drawable=(2055, 1377)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(2055, 1067) drawable=(2055, 1067)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(1920, 1080) physical=(1502, 769) drawable=(1502, 769)
 Maximum texture size: 4096x4096

@@ -443,7 +443,7 @@ label start:
 
     j "Sealed with a wax stamp. Strange, it looks like the monastery sigil."
 
-    hide contract
+    hide sealedcontract
     show contract at deadcenter
 
     j "I recall it reads: Slay and banish the presence, whatever it may be, from this formerly sanctified place of rest."

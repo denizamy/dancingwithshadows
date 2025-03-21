@@ -42,7 +42,7 @@ image druidhouse1 = im.Scale("druidhouseP1.png", 1920, 1080)
 image druidhouse2 = im.Scale("druidhouseP2.png", 1920, 1080)
 image druidhouse3 = im.Scale("druidhouseP3.png", 1920, 1080)
 image druidentrance = im.Scale("druidentrance.png", 1920, 1080)
-image cryptday = im.Scale("cryptday.png", 1920, 1080)
+image crypt = im.Scale("cryptday.png", 1920, 1080)
 image cryptnight = im.Scale("cryptnight.png", 1920, 1080)
 
 

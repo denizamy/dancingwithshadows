@@ -49,7 +49,6 @@ image adesse_hurt = "adesse_hurt.png"
 image adesse_neutral = "adesse_neutral.png"
 image julian = "julian.png"
 image tess = "Tess.jpg"
-image contract = "contract.png"
 image druidhouse1 = im.Scale("druidhouseP1.png", 1920, 1080)
 image druidhouse2 = im.Scale("druidhouseP2.png", 1920, 1080)
 image druidhouse3 = im.Scale("druidhouseP3.png", 1920, 1080)

@@ -25,10 +25,10 @@ image dog = "dog.png"
 image ghost = "ghost.png"
 image hardtack = "ship_biscuit.png"
 image canteen = "canteen.png"
-image contract = "thecontract.png"
+image contract = "thecontract1.png"
 image sealedcontract = "sealedcontract.png"
-image emptycup = "cup_woooden.png"
-image fullcup = "cup_woooden_full.png"
+image emptycup = "cup_wooden.png"
+image fullcup = "cup_wooden_full.png"
 
 
 
@@ -288,11 +288,15 @@ label start:
 
         play sound "pouring.mp3"
 
-        #empty cup
+        show emptycup at deadcenter
+        show emptycup at left
 
         n "The Archdruid rises from his seat and pours a dark orange liquid into two polished wooden cups. There's a bit of relief reflected in his dark eyes. He passes a cup to Julian, who hastily downs the contents."
 
-        #full cup
+        hide emptycup
+        show fullcup at deadcenter
+        show fullcup at left
+
         play sound "fireplace.mp3"
 
         j "It's warming. What is this?"

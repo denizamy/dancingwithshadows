@@ -25,7 +25,13 @@ image dog = "dog.png"
 image ghost = "ghost.png"
 image hardtack = "shipbiscuit.png"
 image canteen = "canteen.png"
-image contract = "letter.png"
+image contract = "thecontract.png"
+image sealedcontract = "sealedcontract.png"
+image emptycup = "cup_woooden.png"
+image fullcup = "cup_woooden_full.png"
+
+
+
 
 
 
@@ -283,8 +289,11 @@ label start:
 
         play sound "pouring.mp3"
 
+        #empty cup
+
         n "The Archdruid rises from his seat and pours a dark orange liquid into two polished wooden cups. There's a bit of relief reflected in his dark eyes. He passes a cup to Julian, who hastily downs the contents."
 
+        #full cup
         play sound "fireplace.mp3"
 
         j "It's warming. What is this?"
@@ -430,9 +439,12 @@ label start:
     scene blackscreen
     with quickdissolve
 
-    show contract at deadcenter
+    show sealedcontract at deadcenter
 
     j "Sealed with a wax stamp. Strange, it looks like the monastery sigil."
+
+    hide contract
+    show contract at deadcenter
 
     j "I recall it reads: Slay and banish the presence, whatever it may be, from this formerly sanctified place of rest."
 

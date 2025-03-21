@@ -15,14 +15,20 @@ define dh = Character("Dahlia",color="2F6A33")
 define uw = Character("Unknown Warrior",color="9e0000")
 
 
-image sword = "sword.png"
+image sword = "longsword2.png"
 image shield = "Shield.webp"
 image backpack = "backpack.png"
-image unlit = "unlit.webp"
+image unlit = "unlittorch.png"
 image shadow = "shadow.png"
 image lit = "lit.webp"
 image dog = "dog.png"
 image ghost = "ghost.png"
+image hardtack = "shipbiscuit.png"
+image canteen = "canteen.png"
+image contract = "letter.png"
+
+
+
 image goblin = "goblin.png"
 image druid = "archdruid.png"
 image blackscreen = "blackscreen.jpg"
@@ -449,11 +455,11 @@ label start:
     hide shield
     with fastdissolve
 
-    show backpack at deadcenter
+    show canteen at deadcenter
 
     j "I don't even want to think about hardtack if I can't soften it up first. It's about as hard and appetizing as a brick."
 
-    #hardtack image maybe?
+    show hardtack at deadcenter
 
     j "And the waterskin..."
 

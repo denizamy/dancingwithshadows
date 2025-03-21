@@ -1,0 +1,31 @@
+Icons: Crafts Tools Foraging
+
+Richly detailed, hand-painted icons suitable for a strategy game, RPG, or boardgame-like experience. This is a rather varied set of crafting tools, crafted products, and natural products like herbs, berries, mushrooms, hides, feathers, furs, ashes, oil, and bones. Because hey, maybe you need a bunch of random stuff?
+
+- 118 icons (so far! more are added with updates)
+- all icons are 128x128 pixels
+- icons work on black, white, or transparent background
+- includes raw materials: animal, vegetable, mineral, and fungal
+- includes various hand-tools, intermediate crafting products, and some finished goods
+
+Icons are provided as individual transparent-background PNG files. 
+
+Feel free to email me and suggest more icons if you have any ideas.
+
+@dgbaumgart.bsky.social
+dgbaumgart@gmail.com
+dgbaumgart.com
+
+Changelog
+
+1.0.0 - 2018 08 06
+	- first release (62 icons)
+
+1.1.0 - 2021 04 14
+	- added 9 icons (71 total)
+
+1.2.0 - 2022
+	- added 26 icons (97 total)
+
+1.2.1 - 2024 04 April 28
+	- added 21 icons (118 total)

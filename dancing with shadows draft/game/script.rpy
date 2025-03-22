@@ -58,7 +58,7 @@ image crypt = im.Scale("cryptday.png", 1920, 1080)
 image cryptnight = im.Scale("cryptnight.png", 1920, 1080)
 image newatrium = im.Scale("newatrium.png", 1920, 1080)
 image sewer = im.Scale("sewerpurple.png", 1920, 1080)
-
+image cryptnightbody = im.Scale("cryptnightbody.png", 1920, 1080)
 
 
 
@@ -2751,7 +2751,7 @@ label golemescape7:
 
 label witchstart:
 
-scene darkcrypt
+scene cryptnightbody
 with longdissolve
 
 play music "Oppressive Gloom.mp3"

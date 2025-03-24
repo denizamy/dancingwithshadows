@@ -588,7 +588,7 @@ label start:
 
     label choice2_torch:
         $ havetorch = True
-      
+        $ notorch = False
 
         show unlit at deadcenter
         with dissolve
@@ -737,10 +737,10 @@ label cutbolt:
         j "What's that?"
 
         show goblin at deadcenter:
-            size (1500,1700)
-            xalign 0.5 yalign 1.0
-            linear 6.0 yalign 0.0
-        pause 6.5
+            size (1300,1700)
+            xalign 0.5 yalign -1.0
+            linear 3.0 yalign 0.0
+        pause 4.0
             
         hide goblin
         with dissolve
@@ -1411,7 +1411,7 @@ n "There - on the other side of the platform, the shadows take shape - the demon
 #show adesse with slide Down
 
 show adesse_neutral:
-    size (1240, 1754)
+    size (1240,1754)
     xalign 0.5 yalign 1.0
     linear 6.0 yalign 0.0
 
@@ -1528,13 +1528,11 @@ label demonessresolution1:
 
     n "The room fills with the smell of sweet sulfur, and Julian, losing consciousness, feels a slight stab of pain."
 
-    scene monument
-    with longdissolve
-
     n "His hero - this masked avenger, crouches down to check his vitals and speaks in a soft, deep female voice."
 
-    show tess
-
+    show tess at deadcenter:
+         size(940,1040)
+ 
     uw "You shouldn't be here. Did Nikolai put you up to this?"
 
     n "The warrior sighs, audibly unbuckling the clasp securing her pack, and withdraws salves, a splint kit, a needle, and thread."
@@ -1685,10 +1683,10 @@ label questiondemoness2:
 
     menu:
 
-        "{size=20}How unusual. You have satisfied my curiosity. I offer you this - I inform the Archdruid that the disturbance has been dealt with, and you say your last goodbyes to your… paramour.":
+        "{size=25}How unusual. You have satisfied my curiosity. I offer you this - I inform the Archdruid that the disturbance has been dealt with, and you say your last goodbyes to your… paramour.":
             jump demonessresolution3
 
-        "{size=20}This coin was hers, then? \n The druids tell many horrible tales of your kind - never have I heard of a demon grieving for a lost mortal.":
+        "{size=30}This coin was hers, then? The druids tell many horrible tales of your kind - never have I heard of a demon grieving for a lost mortal.":
 
             n "You continue on deliberately, despite your apprehension, ensuring to choose your words with great care. For the briefest moment, you consider if you were misled by the Archdruid. Ultimately, who could know?"
 
@@ -2534,7 +2532,7 @@ menu:
         n "Tenebrous shapes skirt the edge of the Golem's vision. From the opposing side of the pit - it manifests!"
 
         jump golemtess
-    "The creator these creatures may eludicate the fate of {i}my{/i} creator.":
+    "{size=33}The creator of these creatures may eludicate the fate of {i}my{/i} creator.":
         gl "This one's purpose remains unclear. The creator of these creatures may elucidate the fate of my creator."
         gl "This one lacks a purpose. A flame casts shadows, and this one shall seek truth within the flame."
 

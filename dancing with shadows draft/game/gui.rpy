@@ -66,13 +66,13 @@ define gui.name_text_font = "Charm.ttf"
 define gui.interface_text_font = "Bellefair-Regular.ttf"
 
 ## The size of normal dialogue text.
-define gui.text_size = 40
+define gui.text_size = 45
 
 ## The size of character names.
 define gui.name_text_size = 45
 
 ## The size of text in the game's user interface.
-define gui.interface_text_size = 33
+define gui.interface_text_size = 32
 
 ## The size of labels in the game's user interface.
 define gui.label_text_size = 36
@@ -206,12 +206,13 @@ define gui.quick_button_text_selected_color = gui.accent_color
 ## Choice buttons are used in the in-game menus.
 
 define gui.choice_button_width = 1100
-define gui.choice_button_height = 65
+define gui.choice_button_height = 100
 define gui.choice_button_tile = False
 define gui.choice_button_borders = Borders(45, 10, 45, 10)
 define gui.choice_button_text_font = gui.text_font
 define gui.choice_button_text_size = gui.text_size
 define gui.choice_button_text_xalign = 0.5
+define gui.choice_button_text_yalign = 0.5
 define gui.choice_button_text_idle_color = '#888888'
 define gui.choice_button_text_hover_color = "#ffffff"
 define gui.choice_button_text_insensitive_color = '#8888887f'

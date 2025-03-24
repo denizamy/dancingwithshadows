@@ -2,9 +2,17 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 3074: ATL statement contains two expressions in a row; is one of them a misspelled property? If not, separate them with pass.
-    at deadcenter
-                 ^
+File "game/script.rpy", line 1536: show statement expects a non-empty block.
+    show tess:
+              ^
+
+File "game/script.rpy", line 1537: expected statement.
+    size (1240,1740)
+                    ^
+
+File "game/script.rpy", line 1538: expected statement.
+    xalign 0.5 yalign 0.0
+            ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Sun Mar 23 21:07:20 2025
+Mon Mar 24 01:24:30 2025

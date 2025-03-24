@@ -1,28 +1,71 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 488, in script
-    hide contract with quickdisolve
-  File "game/script.rpy", line 488, in <module>
-    hide contract with quickdisolve
-NameError: name 'quickdisolve' is not defined
+  File "game/script.rpy", line 1686, in script
+    menu:
+error: Out of memory
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 488, in script
-    hide contract with quickdisolve
-  File "D:\renpy-8.3.4-sdk\renpy\ast.py", line 1360, in execute
-    trans = renpy.python.py_eval(self.expr)
-  File "D:\renpy-8.3.4-sdk\renpy\python.py", line 1209, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "D:\renpy-8.3.4-sdk\renpy\python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 488, in <module>
-    hide contract with quickdisolve
-NameError: name 'quickdisolve' is not defined
+  File "game/script.rpy", line 1686, in script
+    menu:
+  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\ast.py", line 1625, in execute
+    choice = renpy.exports.menu(choices, self.set, args, kwargs, item_arguments)
+  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\exports\menuexports.py", line 134, in menu
+    rv = renpy.store.menu(new_items)
+  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\exports\menuexports.py", line 424, in display_menu
+    rv = renpy.ui.interact(mouse='menu', type=type, roll_forward=roll_forward)
+  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\display\core.py", line 2215, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\display\core.py", line 2879, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\display\core.py", line 1381, in draw_screen
+    surftree = renpy.display.render.render_screen(
+  File "render.pyx", line 486, in renpy.display.render.render_screen
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\display\screen.py", line 752, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\display\layout.py", line 900, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\display\layout.py", line 1171, in render
+    surf = render(d, width - x, rh, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\display\behavior.py", line 976, in render
+    rv = super(Button, self).render(width, height, st, at)
+  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\display\layout.py", line 1457, in render
+    surf = render(child,
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 260, in renpy.display.render.render
+  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\text\text.py", line 2612, in render
+    layout = Layout(self, width, height, renders, splits_from=virtual_layout)
+  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\text\text.py", line 976, in __init__
+    surf = renpy.display.pgrender.surface((tw, th), True)
+  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\display\pgrender.py", line 116, in surface
+    surf = Surface((width + 4, height + 4), 0, sample) # type:ignore
+  File "src/pygame_sdl2/surface.pyx", line 164, in pygame_sdl2.surface.Surface.__init__
+error: Out of memory
 
-Windows-10-10.0.19045 AMD64
+Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.4.24120703
 Dancing With Shadows Alpha 1.0
-Fri Mar 21 18:24:55 2025
+Sun Mar 23 20:59:16 2025

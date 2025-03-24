@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 538: end of line expected.
-    scene newatrium.png
-                   ^
+File "game/script.rpy", line 3074: ATL statement contains two expressions in a row; is one of them a misspelled property? If not, separate them with pass.
+    at deadcenter
+                 ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Fri Mar 21 18:30:16 2025
+Sun Mar 23 21:07:20 2025

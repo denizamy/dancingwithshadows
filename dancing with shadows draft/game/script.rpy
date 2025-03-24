@@ -588,7 +588,7 @@ label start:
 
     label choice2_torch:
         $ havetorch = True
-        $ notorch = False
+      
 
         show unlit at deadcenter
         with dissolve
@@ -613,7 +613,7 @@ label start:
         jump choice2_done
 
     label choice2_nopick:
-
+        $ notorch = True
         hide unlit
 
         j "I'll be fine."
@@ -1254,8 +1254,8 @@ label choice1_done:
 
 
     label badend:
-    scene endingscreen
-    with pixellate
+    scene blackscreen
+    with longdissolve
 
     n "In the total darkness of the crypt, Julian is slain by the lurking spawn of the Demon of Shadow."
 
@@ -1680,15 +1680,15 @@ label questiondemoness2:
     u "There was another mortal, not unlike yourself. We shared a bond, of sorts."
 
     u "Like you, she lived a fickle and fleeting life, and was taken from me - like you, she hesitated, and like you, she showed me mercy. She rests here, in this muck of unfortunates."
-
+    
     $leftwithadesse = True
 
     menu:
 
-        "How unusual. You have satisfied my curiosity. I offer you this - I inform the Archdruid that the disturbance has been dealt with, and you say your last goodbyes to your… paramour.":
+        "{size=20}How unusual. You have satisfied my curiosity. I offer you this - I inform the Archdruid that the disturbance has been dealt with, and you say your last goodbyes to your… paramour.":
             jump demonessresolution3
 
-        "This coin was hers, then? The druids tell many horrible tales of your kind - never have I heard of a demon grieving for a lost mortal.":
+        "{size=20}This coin was hers, then? \n The druids tell many horrible tales of your kind - never have I heard of a demon grieving for a lost mortal.":
 
             n "You continue on deliberately, despite your apprehension, ensuring to choose your words with great care. For the briefest moment, you consider if you were misled by the Archdruid. Ultimately, who could know?"
 
@@ -3069,7 +3069,9 @@ n "Indeed, the absence of animate shadows indicates the witch's estimation is co
 
 n "A sturdy figure rappels down the ladder leading to the depths of the crypt."
 
-show tess
+scene blackscreen
+show tess at deadcenter:
+    size (800,1100)
 
 n "The warrior eschews armor for green and brown traveler's leathers, adorned with protective talismans."
 

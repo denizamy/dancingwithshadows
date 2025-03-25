@@ -1,5 +1,8 @@
 ## The script of the game goes in this file.
 
+init python:
+    renpy.music.register_channel("sound2", "sfx", loop=False, stop_on_mute=True)
+
 define n = Character("Narrator",color="808080")
 define d = Character("Archdruid",color="664D43")
 define j = Character("Julian",color="0032FF")
@@ -101,7 +104,7 @@ transform tablecup2:
     yalign 0.64
 
 define longpixellate = Pixellate(5.0)
-define meddissolve = Dissolve(1.8)
+define medlongissolve = Dissolve(2.0)
 
 screen inventory_display_toggle:
         zorder 92
@@ -119,7 +122,7 @@ define longdissolve = Dissolve(3.0)
 define quickdissolve = Dissolve(0.3)
 define fastdissolve = Dissolve(0.8)
 define meddissolve = Dissolve (1.5)
-
+define fadein = Fade(1.0)
 
 
 
@@ -236,21 +239,21 @@ label start:
 
     play sound "knock.mp3"
     scene blackscreen
-    with meddissolve
+    with medlongissolve
 
     play sound "opendoor.mp3"
 
     scene druidhouse1
-    with longdissolve
+    with meddissolve
 
-    show druid at deadcenter:
+    show druid at deadcenter with pixellate:
         size (550, 1100)
         xalign 0.4
         yalign 0.5
 
 
-    queue sound "fireplace.mp3"
-    with fade
+    $ renpy.music.play("fireplace.mp3", channel="sound2, fadein=1.5")
+    
 
     n "A small, sincere smile colors the Archdruid's features upon spotting Julian - wicked away in an instant as he studies the young mercenary."
 
@@ -335,6 +338,7 @@ label start:
 
         play sound "pouring.mp3"
         
+        # CHANGE THE WALDWINE TO THE BETTER WALDWINNNNNNNNEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
 
         show fullcup at tablecup2 with dissolve
         show fullcup2 at tablecup1 with dissolve
@@ -347,8 +351,6 @@ label start:
 
         show emptycup at tablecup1 
         show emptycup2 at tablecup2 
-
-        play sound "fireplace.mp3"
 
         j "It's warming. What is this?"
 
@@ -417,6 +419,7 @@ label start:
 
     d "Reflect on my words, young man. Be safe and swift."
 
+    $ renpy.music.stop(channel="sound2")
     hide druid
 
     scene druidentrance
@@ -435,6 +438,7 @@ label start:
     scene blackscreen
     with fade
     stop music fadeout 15.0
+    $ renpy.music.stop(channel="sound2, fadeout=2.0")
 
     if acceptdruid:
         j "That place was like a dream. I remember the important bits, for now, but I ought to write it down in case I forget."
@@ -749,6 +753,8 @@ label cutbolt:
 
         j "What's that?"
 
+        play sound "drawsword.mp3"
+
         show goblin at deadcenter:
             size (1300,1700)
             xalign 0.5 yalign -1.0
@@ -800,6 +806,8 @@ label cutbolt:
         label flirtygoblin:
 
         "I can't believe I'm doing this."
+
+        play sound "unsheath.mp3"
 
         n "Julian exhales an annoyed sigh and sheathes his blade."
 

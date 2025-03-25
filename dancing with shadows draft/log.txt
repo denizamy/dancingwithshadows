@@ -1,26 +1,26 @@
-2025-03-25 04:56:42 UTC
+2025-03-25 06:12:45 UTC
 Windows-10-10.0.19045
 Ren'Py 8.3.4.24120703
 
-Early init took 0.15s
-Loading error handling took 0.05s
-Loading script took 1.00s
-Loading save slot metadata took 0.07s
+Early init took 0.12s
+Loading error handling took 0.02s
+Loading script took 0.29s
+Loading save slot metadata took 0.03s
 Loading persistent took 0.00s
-Running init code took 0.16s
+Running init code took 0.04s
 Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.10s
+Reloading save slot metadata took 0.02s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\owner\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
-Dump and make backups took 0.04s
+Dump and make backups took 0.03s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc took 0.02s
 DPI scale factor: 1.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
-Creating interface object took 0.17s
+Creating interface object took 0.15s
 Cleaning stores took 0.00s
 Init translation took 0.02s
 Build styles took 0.00s
@@ -31,1195 +31,6 @@ Prepare screens took 0.03s
 Save pyanalysis. took 0.01s
 Save bytecode. took 0.02s
 Running _start took 0.00s
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 560.94'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1377) drawable=(2560, 1377)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1377) drawable=(2560, 1377)
-Maximum texture size: 4096x4096
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.01s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.01s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.01s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
-Resetting cache.
-Early init took 210.42s
-Loading error handling took 0.02s
-Loading script took 0.28s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\owner\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
-Dump and make backups took 0.03s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 560.94'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1377) drawable=(2560, 1377)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1377) drawable=(2560, 1377)
-Maximum texture size: 4096x4096
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
-Resetting cache.
-Early init took 233.46s
-Loading error handling took 0.02s
-Loading script took 0.30s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\owner\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
-Dump and make backups took 0.04s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 560.94'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1377) drawable=(2560, 1377)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1377) drawable=(2560, 1377)
-Maximum texture size: 4096x4096
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.02s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1377) drawable=(2560, 1377)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1377) drawable=(2560, 1377)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 309.93s
-Loading error handling took 0.02s
-Loading script took 0.22s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-
-File "game/script.rpy", line 252: end of line expected.
-    with fadein 1.0
-                ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
-Interface start took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 560.94'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1377) drawable=(2560, 1377)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1377) drawable=(2560, 1377)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 380.90s
-Loading error handling took 0.02s
-Loading script took 0.28s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.04s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\owner\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
-Dump and make backups took 0.04s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 560.94'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1377) drawable=(2560, 1377)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1377) drawable=(2560, 1377)
-Maximum texture size: 4096x4096
-
-Full traceback:
-  File "game/script.rpy", line 252, in script
-    with fadein
-  File "D:\renpy-8.3.4-sdk\renpy\ast.py", line 1367, in execute
-    renpy.exports.with_statement(trans, paired=paired)
-  File "D:\renpy-8.3.4-sdk\renpy\exports\statementexports.py", line 257, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "D:\renpy-8.3.4-sdk\renpy\display\core.py", line 1578, in do_with
-    return self.interact(trans_pause=True,
-  File "D:\renpy-8.3.4-sdk\renpy\display\core.py", line 2215, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "D:\renpy-8.3.4-sdk\renpy\display\core.py", line 2666, in interact_core
-    trans = instantiate_transition(None, old_root, layers_root)
-  File "D:\renpy-8.3.4-sdk\renpy\display\core.py", line 2575, in instantiate_transition
-    trans = self.ongoing_transition[layer](
-TypeError: Fade() missing 2 required positional arguments: 'hold_time' and 'in_time'
-
-While running game code:
-  File "game/script.rpy", line 252, in script
-    with fadein
-TypeError: Fade() missing 2 required positional arguments: 'hold_time' and 'in_time'
-Resetting cache.
-Early init took 406.99s
-Loading error handling took 0.02s
-Loading script took 0.20s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-
-File "game/script.rpy", line 252: expected statement.
-    fadein
-          ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 560.94'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1377) drawable=(2560, 1377)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1377) drawable=(2560, 1377)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 450.85s
-Loading error handling took 0.02s
-Loading script took 0.28s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\owner\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
-Dump and make backups took 0.04s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 560.94'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1377) drawable=(2560, 1377)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1377) drawable=(2560, 1377)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 521.07s
-Loading error handling took 0.02s
-Loading script took 0.28s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\owner\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
-Dump and make backups took 0.03s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 560.94'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1377) drawable=(2560, 1377)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1377) drawable=(2560, 1377)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 565.41s
-Loading error handling took 0.02s
-Loading script took 0.28s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\owner\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
-Dump and make backups took 0.04s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.04s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 560.94'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1377) drawable=(2560, 1377)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1377) drawable=(2560, 1377)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 612.80s
-Loading error handling took 0.01s
-Loading script took 0.27s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\owner\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
-Dump and make backups took 0.03s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 560.94'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1377) drawable=(2560, 1377)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1377) drawable=(2560, 1377)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 628.25s
-Loading error handling took 0.01s
-Loading script took 0.28s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\owner\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
-Dump and make backups took 0.03s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 560.94'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1377) drawable=(2560, 1377)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1377) drawable=(2560, 1377)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 666.51s
-Loading error handling took 0.01s
-Loading script took 0.31s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\owner\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
-Dump and make backups took 0.03s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 560.94'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1377) drawable=(2560, 1377)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1377) drawable=(2560, 1377)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 681.96s
-Loading error handling took 0.02s
-Loading script took 0.28s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\owner\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
-Dump and make backups took 0.04s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 560.94'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1377) drawable=(2560, 1377)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1377) drawable=(2560, 1377)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 723.24s
-Loading error handling took 0.01s
-Loading script took 0.27s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\owner\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
-Dump and make backups took 0.03s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 560.94'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1377) drawable=(2560, 1377)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1377) drawable=(2560, 1377)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 753.98s
-Loading error handling took 0.01s
-Loading script took 0.27s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\owner\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
-Dump and make backups took 0.03s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 560.94'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1377) drawable=(2560, 1377)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1377) drawable=(2560, 1377)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 862.20s
-Loading error handling took 0.01s
-Loading script took 0.27s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\owner\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
-Dump and make backups took 0.03s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 560.94'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1377) drawable=(2560, 1377)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1377) drawable=(2560, 1377)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 868.52s
-Loading error handling took 0.01s
-Loading script took 0.27s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\owner\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
-Dump and make backups took 0.03s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 560.94'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1377) drawable=(2560, 1377)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1377) drawable=(2560, 1377)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 908.29s
-Loading error handling took 0.01s
-Loading script took 0.31s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\owner\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
-Dump and make backups took 0.03s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 560.94'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1377) drawable=(2560, 1377)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1377) drawable=(2560, 1377)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 926.82s
-Loading error handling took 0.02s
-Loading script took 0.28s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\owner\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
-Dump and make backups took 0.04s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.04s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 560.94'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1377) drawable=(2560, 1377)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1377) drawable=(2560, 1377)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 974.30s
-Loading error handling took 0.01s
-Loading script took 0.28s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\owner\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
-Dump and make backups took 0.03s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 560.94'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1377) drawable=(2560, 1377)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1377) drawable=(2560, 1377)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1377) drawable=(2560, 1377)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 1003.42s
-Loading error handling took 0.01s
-Loading script took 0.22s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-
-File "game/script.rpy", line 252: play requires a channel
-    play "fireplace.mp3" fadein 1.5
-         ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
-Interface start took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 560.94'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2448, 1377) drawable=(2448, 1377)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 1009.64s
-Loading error handling took 0.02s
-Loading script took 0.33s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.04s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\owner\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
-Dump and make backups took 0.03s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 560.94'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2448, 1377) drawable=(2448, 1377)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 1057.04s
-Loading error handling took 0.02s
-Loading script took 0.28s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\owner\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
-Dump and make backups took 0.04s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 560.94'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2448, 1377) drawable=(2448, 1377)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 1112.02s
-Loading error handling took 0.01s
-Loading script took 0.22s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-
-File "game/script.rpy", line 252: expected end of line
-    queue music "fireplace.mp3" fadein 1.5 fadeout 1.5
-                                           ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 560.94'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2448, 1377) drawable=(2448, 1377)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 1118.28s
-Loading error handling took 0.01s
-Loading script took 0.30s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.04s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\owner\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
-Dump and make backups took 0.03s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 560.94'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2448, 1377) drawable=(2448, 1377)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 1164.41s
-Loading error handling took 0.02s
-Loading script took 0.28s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\owner\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
-Dump and make backups took 0.04s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.04s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 560.94'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2448, 1377) drawable=(2448, 1377)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 1506.79s
-Loading error handling took 0.02s
-Loading script took 0.21s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-
-File "game/script.rpy", line 3: expected statement.
-    renpy.music.register_channel(song2, song2, loop=None, stop_on_mute=True, tight=False, file_prefix='', file_suffix='', buffer_queue=True, movie=False, framedrop=True)
-                                                                                                                                                                         ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
-Interface start took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 560.94'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2448, 1377) drawable=(2448, 1377)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(2448, 1368) drawable=(2448, 1368)
-Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(2448, 1377) drawable=(2448, 1377)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 1573.27s
-Loading error handling took 0.01s
-Loading script took 0.24s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-
-File "game/script.rpy", line 3: expected statement.
-    renpy.music.register_channel(song2, song2, loop=None, stop_on_mute=True, tight=False, file_prefix=", file_suffix=", buffer_queue=True, movie=False, framedrop=True)
-                                                                                                                                                                       ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 560.94'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2448, 1377) drawable=(2448, 1377)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 1578.04s
-Loading error handling took 0.01s
-Loading script took 0.21s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-
-File "game/script.rpy", line 3: expected statement.
-    renpy.music.register_channel(song2, song2, loop=None, stop_on_mute=True, tight=False, file_prefix=", file_suffix=", buffer_queue=True, movie=False, framedrop=True)
-                                                                                                                                                                       ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 560.94'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2448, 1377) drawable=(2448, 1377)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 1615.88s
-Loading error handling took 0.01s
-Loading script took 0.23s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-
-File "game/script.rpy", line 3: expected statement.
-    renpy.music.register_channel(song2, song2, loop=None, stop_on_mute=True, tight=False, buffer_queue=True, movie=False, framedrop=True)
-                                                                                                                                         ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
 Interface start took 0.04s
 
 Initializing gl2 renderer:
@@ -1233,477 +44,9 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(2448, 1377) drawable=(2448, 1377)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 1622.25s
-Loading error handling took 0.01s
-Loading script took 0.20s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-
-File "game/script.rpy", line 3: expected statement.
-    renpy.music.register_channel(song2, song2, loop=None, stop_on_mute=True, tight=False, buffer_queue=True, movie=False, framedrop=True)
-                                                                                                                                         ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
-Interface start took 0.09s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 560.94'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2448, 1377) drawable=(2448, 1377)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 1720.40s
-Loading error handling took 0.01s
-Loading script took 0.23s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-
-File "game/script.rpy", line 3: expected statement.
-    renpy.music.register_channel(audiochannel2, sound2, loop=None, stop_on_mute=True, tight=False, file_prefix='s', file_suffix='s', buffer_queue=True, movie=False, framedrop=True)
-                                                                                                                                                                                    ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 560.94'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2448, 1377) drawable=(2448, 1377)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 1776.32s
-Loading error handling took 0.01s
-Loading script took 0.22s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-
-File "game/script.rpy", line 3: expected statement.
-    renpy.music.register_channel(audiochannel2, sound2, loop=None, stop_on_mute=True, tight=False, file_prefix='s', file_suffix='s', buffer_queue=True, movie=False, framedrop=True)
-                                                                                                                                                                                    ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 560.94'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2448, 1377) drawable=(2448, 1377)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 1948.24s
-Loading error handling took 0.01s
-Loading script took 0.22s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-
-File "game/script.rpy", line 3: expected statement.
-    renpy.music.register_channel("sound2", "sfx", loop=False, stop_on_mute=True)
-                                                                                ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 560.94'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2448, 1377) drawable=(2448, 1377)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 1974.36s
-Loading error handling took 0.01s
-Loading script took 0.20s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-
-File "game/script.rpy", line 3: expected statement.
-    renpy.music.register_channel("sound2", "sfx", loop=False, stop_on_mute=True)
-                                                                                ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 560.94'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2448, 1377) drawable=(2448, 1377)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 2025.68s
-Loading error handling took 0.01s
-Loading script took 0.20s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-
-File "game/script.rpy", line 3: expected statement.
-    renpy.music.register_channel("sound2", "sfx", loop=False, stop_on_mute=True)
-                                                                                ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 560.94'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2448, 1377) drawable=(2448, 1377)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 2069.54s
-Loading error handling took 0.01s
-Loading script took 0.21s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-
-File "game/script.rpy", line 3: expected statement.
-    renpy.music.register_channel("sound2", "sfx", loop=False, stop_on_mute=True)
-                                                                                ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 560.94'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2448, 1377) drawable=(2448, 1377)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 2146.59s
-Loading error handling took 0.01s
-Loading script took 0.29s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\owner\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
-Dump and make backups took 0.03s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 560.94'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2448, 1377) drawable=(2448, 1377)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 2215.40s
+Early init took 258.21s
 Loading error handling took 0.02s
-Loading script took 0.21s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-
-File "game/script.rpy", line 258: Line is indented, but the preceding one-line python statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    n "A small, sincere smile colors the Archdruid's features upon spotting Julian - wicked away in an instant as he studies the young mercenary."
-    ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
-Interface start took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 560.94'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2448, 1377) drawable=(2448, 1377)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 2229.16s
-Loading error handling took 0.02s
-Loading script took 0.30s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-
-File "game/script.rpy", line 255: invalid syntax
-    renpy.music.play("fireplace.mp3", channel="sound2") fadein 1.5
-                                                         ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 560.94'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2448, 1377) drawable=(2448, 1377)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 2233.43s
-Loading error handling took 0.02s
-Loading script took 0.11s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-
-File "game/script.rpy", line 255: invalid syntax
-    renpy.music.play("fireplace.mp3", channel="sound2") fadein 1.5
-                                                         ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 560.94'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2448, 1377) drawable=(2448, 1377)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 2253.23s
-Loading error handling took 0.02s
-Loading script took 0.21s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-
-File "game/script.rpy", line 256: expected statement.
-    fadein 1.5
-            ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
-Interface start took 0.05s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 560.94'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2448, 1377) drawable=(2448, 1377)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 2259.46s
-Loading error handling took 0.02s
-Loading script took 0.28s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\owner\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
-Dump and make backups took 0.04s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 560.94'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2448, 1377) drawable=(2448, 1377)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 2300.75s
-Loading error handling took 0.02s
-Loading script took 0.29s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Running init code took 0.03s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\owner\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
-Dump and make backups took 0.03s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.03s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.02s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.03s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.03s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 560.94'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2448, 1377) drawable=(2448, 1377)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 2319.22s
-Loading error handling took 0.02s
-Loading script took 0.30s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-
-File "game/script.rpy", line 441: invalid syntax
-    renpy.music.stop(channel="sound2") fadeout 15.0
-                                        ^
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
-Interface start took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 560.94'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2448, 1377) drawable=(2448, 1377)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 2323.93s
-Loading error handling took 0.02s
-Loading script took 0.29s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.04s
-Loading analysis data took 0.01s
-Analyze and compile ATL took 0.01s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\owner\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
-Dump and make backups took 0.04s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.05s
-DPI scale factor: 1.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.03s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.01s
-Save bytecode. took 0.01s
-Running _start took 0.00s
-Interface start took 0.04s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2560, 1440)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 560.94'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2448, 1377) drawable=(2448, 1377)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 2380.38s
-Loading error handling took 0.01s
-Loading script took 0.29s
+Loading script took 0.27s
 Loading save slot metadata took 0.02s
 Loading persistent took 0.00s
 Running init code took 0.03s
@@ -1743,7 +86,7 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(2448, 1377) drawable=(2448, 1377)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 2404.94s
+Early init took 298.34s
 Loading error handling took 0.01s
 Loading script took 0.27s
 Loading save slot metadata took 0.02s
@@ -1755,6 +98,132 @@ Reloading save slot metadata took 0.02s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\owner\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
 Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2448, 1377) drawable=(2448, 1377)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 484.84s
+Loading error handling took 0.01s
+Loading script took 0.27s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\owner\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2448, 1377) drawable=(2448, 1377)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 551.97s
+Loading error handling took 0.02s
+Loading script took 0.29s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\owner\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2448, 1377) drawable=(2448, 1377)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 625.37s
+Loading error handling took 0.02s
+Loading script took 0.29s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\owner\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.04s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc took 0.04s
@@ -1769,6 +238,48 @@ Load screen analysis took 0.00s
 Analyze screens took 0.01s
 Save screen analysis took 0.01s
 Prepare screens took 0.03s
+Save pyanalysis. took 0.01s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2448, 1377) drawable=(2448, 1377)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 704.74s
+Loading error handling took 0.02s
+Loading script took 0.27s
+Loading save slot metadata took 0.02s
+Loading persistent took 0.00s
+Running init code took 0.03s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\owner\\AppData\\Roaming/RenPy/backups\\dancing with shadows draft':
+Dump and make backups took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.03s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.01s
+Prepare screens took 0.04s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.01s
 Running _start took 0.00s
@@ -1784,5 +295,44 @@ Version: b'4.6.0 NVIDIA 560.94'
 Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(2448, 1377) drawable=(2448, 1377)
 Maximum texture size: 4096x4096
-Screen sizes: virtual=(1920, 1080) physical=(2560, 1377) drawable=(2560, 1377)
+Resetting cache.
+Early init took 843.76s
+Loading error handling took 0.01s
+Loading script took 0.14s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.04s
+Loading analysis data took 0.01s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
+Index archives took 0.00s
+Dump and make backups took 0.04s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 1.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b'DRS_SaveSettings() = -1.' (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.03s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Interface start took 0.03s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2560, 1440)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 2060/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 560.94'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2448, 1377) drawable=(2448, 1377)
 Maximum texture size: 4096x4096

@@ -233,26 +233,25 @@ label start:
 
     j "I'm here. This is what I came here for. There's no sense in wasting any more time."
 
-   
     scene blackscreen
     with dissolve
 
     play sound "knock.mp3"
+
     scene blackscreen
     with medlongissolve
 
     play sound "opendoor.mp3"
 
-    scene druidhouse1
+    show druidhouse1
     with meddissolve
 
-    show druid at deadcenter with pixellate:
+    show druid at deadcenter with meddissolve:
         size (550, 1100)
         xalign 0.4
         yalign 0.5
 
-
-    $ renpy.music.play("fireplace.mp3", channel="sound2, fadein=1.5")
+    $ renpy.music.play("fireplace.mp3", channel="sound2", fadein=2.0)
     
 
     n "A small, sincere smile colors the Archdruid's features upon spotting Julian - wicked away in an instant as he studies the young mercenary."
@@ -438,7 +437,7 @@ label start:
     scene blackscreen
     with fade
     stop music fadeout 15.0
-    $ renpy.music.stop(channel="sound2, fadeout=2.0")
+    $ renpy.music.stop(channel="sound2, fadeout=6.0")
 
     if acceptdruid:
         j "That place was like a dream. I remember the important bits, for now, but I ought to write it down in case I forget."
@@ -750,10 +749,11 @@ label cutbolt:
         with pixellate
 
         play music "Inya Theme (First Encounter).mp3"
+        play sound "drawsword.mp3"
 
         j "What's that?"
 
-        play sound "drawsword.mp3"
+        window hide
 
         show goblin at deadcenter:
             size (1300,1700)
@@ -769,6 +769,7 @@ label cutbolt:
             size (550,800)
         with dissolve
 
+        window show
         n "The lurking creature speaks, with a scratchy, but distinctly feminine voice."
 
         g "Heya. I've been watching you."
@@ -807,7 +808,7 @@ label cutbolt:
 
         "I can't believe I'm doing this."
 
-        play sound "unsheath.mp3"
+        play sound "sheath.mp3"
 
         n "Julian exhales an annoyed sigh and sheathes his blade."
 

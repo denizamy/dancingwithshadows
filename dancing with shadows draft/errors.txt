@@ -2,17 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 1536: show statement expects a non-empty block.
-    show tess:
+File "game/script.rpy", line 253: end of line expected.
+    with fade 1.0
               ^
 
-File "game/script.rpy", line 1537: expected statement.
-    size (1240,1740)
-                    ^
-
-File "game/script.rpy", line 1538: expected statement.
-    xalign 0.5 yalign 0.0
-            ^
-
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Mon Mar 24 01:24:30 2025
+Mon Mar 24 23:28:14 2025

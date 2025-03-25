@@ -101,6 +101,7 @@ transform tablecup2:
     yalign 0.64
 
 define longpixellate = Pixellate(5.0)
+define meddissolve = Dissolve(1.8)
 
 screen inventory_display_toggle:
         zorder 92
@@ -229,15 +230,27 @@ label start:
 
     j "I'm here. This is what I came here for. There's no sense in wasting any more time."
 
-    scene druidhouse1 
-    with pixellate
+   
+    scene blackscreen
+    with dissolve
+
+    play sound "knock.mp3"
+    scene blackscreen
+    with meddissolve
+
+    play sound "opendoor.mp3"
+
+    scene druidhouse1
+    with longdissolve
 
     show druid at deadcenter:
         size (550, 1100)
         xalign 0.4
         yalign 0.5
 
-    play sound "fireplace.mp3"
+
+    queue sound "fireplace.mp3"
+    with fade
 
     n "A small, sincere smile colors the Archdruid's features upon spotting Julian - wicked away in an instant as he studies the young mercenary."
 

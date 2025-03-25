@@ -795,7 +795,7 @@ label cutbolt:
         g "I thought you'd be more exciting. Are you really that afraid of me?"
 
         label talktogoblin:
-
+        window hide
         menu:
 
             "Parley with the creature":
@@ -993,10 +993,10 @@ label cutbolt:
     j "I'm actually a landed noble - the baron."
 
     j "I'm here on a mission to investigate rumors of goblins personally, to give the effort a hands-on approach."
-
+    #sfx sword unsheathing
     g "I don't know what that is or parti- grk…"
-
-    hide goblin
+    #sfx inya DYING AND BEING DEAD
+    hide goblin with dissolve
 
     n "Approaching slowly during the conversation, Julian strikes down the goblin with his blade before she can react."
 
@@ -1808,8 +1808,11 @@ label golemstart:
     menu:
         "Pull yourself together":
 
+
             gl "Sundered, but not destroyed, I remain - and will persist, until this one's destruction."
 
+            play sound "gyst.mp3"
+            queue sound "flashwoosh.mp3"
             n "The Golem wills its body into its proper configuration. The clamor of objects flying through the room lit by a bright blue flash as its stone body reassembles is unnoticed - or perhaps is just unremarkable to the Golem."
 
             show golem:
@@ -1836,8 +1839,8 @@ label golemstart:
     menu:
         "Break the Mirror":
 
-            #TODO: Add sfx of glass breaking, image of broken mirror, etc.
-
+            #TODO: image of broken mirror,
+            play sound "glassbreak.mp3"
             gl "Memories of fury - of violence. I wish not to reflect. I wish not to suffer. I must not yearn."
 
             gl "… I press on."
@@ -1859,7 +1862,7 @@ label golempresson:
     n "The path is dark and cramped. A recent trail is seen in the dust."
 
     gl "Footsteps in the dust. A human passed through here - not my creator . . . An interloper."
-
+    window hide
     menu:
 
         "Express Rage":
@@ -1880,7 +1883,7 @@ label golempresson:
 
 label golemproceed:
 
-    scene newatrium
+    scene newatrium with pixellate
 
     n "The Golem retraces Julian's steps to the crypt's atrium. It studies its surroundings - a sealed door to its left, unfamiliar stonework leading to an access tunnel of some kind dead ahead, and a path deeper into the crypt to its right."
 

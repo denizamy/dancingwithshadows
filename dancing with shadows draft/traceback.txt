@@ -1,26 +1,24 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 256, in script
-    $ renpy.music.play("fireplace.mp3", channel="sound2", fadein=2.0, volume=0.7)
-  File "game/script.rpy", line 256, in <module>
-    $ renpy.music.play("fireplace.mp3", channel="sound2", fadein=2.0, volume=0.7)
-TypeError: play() got an unexpected keyword argument 'volume'
+  File "game/script.rpy", line 1814, in script
+    sound "gyst.mp3"
+Exception: Sayer 'sound' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 256, in script
-    $ renpy.music.play("fireplace.mp3", channel="sound2", fadein=2.0, volume=0.7)
-  File "D:\renpy-8.3.4-sdk\renpy\ast.py", line 827, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "D:\renpy-8.3.4-sdk\renpy\python.py", line 1178, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/script.rpy", line 256, in <module>
-    $ renpy.music.play("fireplace.mp3", channel="sound2", fadein=2.0, volume=0.7)
-TypeError: play() got an unexpected keyword argument 'volume'
+  File "game/script.rpy", line 1814, in script
+    sound "gyst.mp3"
+  File "D:\renpy-8.3.4-sdk\renpy\ast.py", line 2579, in execute
+    Say.execute(self)
+  File "D:\renpy-8.3.4-sdk\renpy\ast.py", line 581, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "D:\renpy-8.3.4-sdk\renpy\ast.py", line 470, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'sound' is not defined.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.3.4.24120703
 Dancing With Shadows Alpha 1.0
-Tue Mar 25 01:09:22 2025
+Tue Mar 25 01:30:46 2025

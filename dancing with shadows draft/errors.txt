@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 520: end of line expected.
-    hide sword with quickdissolve:
-                                 ^
+File "game/script.rpy", line 514: show statement expects a non-empty block.
+    show sword at deadcenter:
+                             ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Wed Mar 26 00:35:30 2025
+Wed Mar 26 18:48:57 2025

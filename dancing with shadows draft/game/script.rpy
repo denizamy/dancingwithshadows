@@ -512,7 +512,8 @@ label start:
     with quickdissolve
 
     show sword at deadcenter:
-        size (100,400)
+        size (400,500)
+    
 
     n "A steel arming sword plated with silver along the edge."
 
@@ -521,7 +522,8 @@ label start:
     hide sword with quickdissolve
         
 
-    show shield at deadcenter
+    show shield at deadcenter:
+         size (400,500)
 
     j "The sheen on this steel heater is phenomenal, and as long as there is even a scant amount of light, the Archdruid reassured me none of the demon’s shadow magic can harm me."
 
@@ -534,7 +536,7 @@ label start:
   
     hide hardtack with quickdissolve
     show canteen at deadcenter:
-        size (250,250)R
+        size (250,250)
 
     j "And the waterskin..."
 

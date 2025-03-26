@@ -2,7 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 1812: Indentation mismatch.
+File "game/script.rpy", line 520: end of line expected.
+    hide sword with quickdissolve:
+                                 ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Tue Mar 25 01:30:21 2025
+Wed Mar 26 00:35:30 2025

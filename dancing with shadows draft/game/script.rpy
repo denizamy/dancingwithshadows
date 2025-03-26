@@ -18,8 +18,8 @@ define dh = Character("Dahlia",color="2F6A33")
 define uw = Character("Unknown Warrior",color="9e0000")
 
 
-image sword = "longsword2.png"
-image shield = "Shield.webp"
+image sword = "sword.png"
+image shield = "Shield.png"
 image backpack = "backpack.png"
 image unlit = "unlittorch.png"
 image shadow = "shadow.png"
@@ -496,26 +496,30 @@ label start:
     scene blackscreen
     with quickdissolve
 
-    show sealedcontract at deadcenter
+    show sealedcontract at deadcenter:
+        size (250,250)
     with quickdissolve
 
     j "Sealed with a wax stamp. Strange, it looks like the monastery sigil."
 
     hide sealedcontract
-    show contract at deadcenter
+    show contract at deadcenter:
+        size (250,250)
 
     j "I recall it reads: Slay and banish the presence, whatever it may be, from this formerly sanctified place of rest."
 
     hide contract 
     with quickdissolve
 
-    show sword at deadcenter
+    show sword at deadcenter:
+        size (100,400)
 
     n "A steel arming sword plated with silver along the edge."
 
     j "I might stand a chance with this blade, if I’m lucky."
 
     hide sword with quickdissolve
+        
 
     show shield at deadcenter
 
@@ -523,18 +527,21 @@ label start:
 
     hide shield with quickdissolve
 
-    show hardtack at deadcenter
+    show hardtack at deadcenter:
+        size (250,250)
 
     j "I don't even want to think about hardtack if I can't soften it up first. It's about as hard and appetizing as a brick."
   
     hide hardtack with quickdissolve
-    show canteen at deadcenter
+    show canteen at deadcenter:
+        size (250,250)R
 
     j "And the waterskin..."
 
     j "It's filled with three-day old small beer. Smells sour. I probably shouldn't, unless I really need to."
 
     hide canteen with quickdissolve
+        
 
     hide backpack
     with dissolve
@@ -997,6 +1004,7 @@ label cutbolt:
     g "I don't know what that is or parti- grk…"
     #sfx inya DYING AND BEING DEAD
     hide goblin with dissolve
+    scene blackscreen with longdissolve
 
     n "Approaching slowly during the conversation, Julian strikes down the goblin with his blade before she can react."
 

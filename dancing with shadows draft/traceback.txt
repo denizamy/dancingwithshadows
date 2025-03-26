@@ -1,24 +1,38 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/script.rpy", line 1814, in script
-    sound "gyst.mp3"
-Exception: Sayer 'sound' is not defined.
+Compiling ATL code at game/script.rpy:537
+  File "game/script.rpy", line 536, in script
+    show canteen at deadcenter:
+Exception: Could not evaluate expression 'R' when compiling ATL.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 1814, in script
-    sound "gyst.mp3"
-  File "D:\renpy-8.3.4-sdk\renpy\ast.py", line 2579, in execute
-    Say.execute(self)
-  File "D:\renpy-8.3.4-sdk\renpy\ast.py", line 581, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "D:\renpy-8.3.4-sdk\renpy\ast.py", line 470, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'sound' is not defined.
+  File "game/script.rpy", line 536, in script
+    show canteen at deadcenter:
+  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\ast.py", line 1117, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\ast.py", line 1080, in show_imspec
+    renpy.config.show(name,
+  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\exports\displayexports.py", line 503, in show
+    sls.add(layer, img, key, zorder, behind, at_list=at_list, name=name, atl=atl, default_transform=default_transform, transient=transient)
+  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\display\scenelists.py", line 477, in add
+    thing.visit_all(lambda d : None)
+  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\display\displayable.py", line 424, in visit_all
+    for d in self.visit():
+  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\atl.py", line 816, in visit
+    block = self.compile()
+  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\atl.py", line 723, in compile
+    block = self.atl.compile(self.context)
+  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\atl.py", line 925, in compile
+    statements = [ i.compile(ctx) for i in self.statements ]
+  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\atl.py", line 925, in <listcomp>
+    statements = [ i.compile(ctx) for i in self.statements ]
+  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\atl.py", line 1290, in compile
+    raise Exception("Could not evaluate expression %r when compiling ATL." % expr)
+Exception: Could not evaluate expression 'R' when compiling ATL.
 
-Windows-10-10.0.19045 AMD64
+Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.4.24120703
 Dancing With Shadows Alpha 1.0
-Tue Mar 25 01:30:46 2025
+Wed Mar 26 00:36:41 2025

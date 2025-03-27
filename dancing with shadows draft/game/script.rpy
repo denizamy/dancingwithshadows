@@ -62,7 +62,9 @@ image cryptnight = im.Scale("cryptnight.png", 1920, 1080)
 image newatrium = im.Scale("newatrium.png", 1920, 1080)
 image sewer = im.Scale("sewerpurple.png", 1920, 1080)
 image cryptnightbody = im.Scale("cryptnightbody.png", 1920, 1080)
-
+image inya_angry = im.Scale("inya_angry.png",550, 800)
+image inya_blush = im.Scale("inya_blush.png",550, 800)
+image inya_smile = im.Scale("inya_smile.png",550,800)
 
 
 transform deadcenter:
@@ -258,9 +260,9 @@ label start:
 
     n "Deep creases of worry fill the void in the elderly man's expression as he strains his eyes in the firelight, as if beholding something only seen by him."
 
-    n "He gestures at the open seat next to the fire and speaks with a soft woody baritone - akin to the rumble of straining mine supports deep in the earth."
-
     "Magicians of any kind make me nervous. He seems friendly enough, but I shouldn't let my guard down."
+
+    n "He gestures at the open seat next to the fire and speaks with a soft woody baritone - akin to the rumble of straining mine supports deep in the earth."
 
     d "A friend told me you would come. Thank you for your interest in this assignment, young fellow. Take a seat and relax - this is a truly safe place. This world could use a few more of those."
 
@@ -340,6 +342,7 @@ label start:
         # CHANGE THE WALDWINE TO THE BETTER WALDWINNNNNNNNEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
 
         show fullcup at tablecup2 with dissolve
+        pause 3.0
         show fullcup2 at tablecup1 with dissolve
         
         n "The Archdruid rises from his seat and pours a dark orange liquid into two polished wooden cups. There's a bit of relief reflected in his dark eyes. He passes a cup to Julian, who hastily downs the contents."
@@ -367,9 +370,19 @@ label start:
 
         d "Time is secondary to our great mission. I have faith you will understand, one day, young man."
 
+        scene blackscreen  
+        with longdissolve
+
         n "Julian and the Archdruid spend a great amount of time talking. The night itself is like a dim, bleary haze. "
 
         n "At the end of it all, Julian cannot clearly remember what was discussed - only the anxiety he felt about this job and this unfamiliar place and person is gone, and he and this stranger will part as friends."
+
+        scene druidhouse3
+        with longdissolve
+        show druid at deadcenter:
+            size (550, 1100)
+            xalign 0.8
+            yalign 0.5
 
         d "I believe we lost track of time, Julian. You came here for a reason…"
         jump druidresolution
@@ -382,7 +395,7 @@ label start:
 
     j "A demon?"
 
-    d "A demon of shadow - neither a trivial, nor major example of its kind. It shan't be a trifle"
+    d "A demon of shadow - neither a trivial, nor major example of its kind. It shan't be a trifle."
 
     d "Should you accept this trial, you will be adequately equipped and compensated."
 
@@ -392,7 +405,7 @@ label start:
 
     n "Julian whistles slowly."
 
-    j "No argruments here."
+    j "No arguments here."
 
     d "To do battle with this fiend, you will need a silvered blade, crafted to scourge their impure flesh."
 
@@ -436,7 +449,7 @@ label start:
 
     scene blackscreen
     with fade
-    stop music fadeout 15.0
+    stop music fadeout 25.0
     $ renpy.music.stop(channel="sound2, fadeout=6.0")
 
     if acceptdruid:
@@ -506,7 +519,7 @@ label start:
     show contract at deadcenter:
         size (250,250)
 
-    j "I recall it reads: Slay and banish the presence, whatever it may be, from this formerly sanctified place of rest."
+    j " It reads: Slay and banish the presence, whatever it may be, from this formerly sanctified place of rest."
 
     hide contract 
     with quickdissolve
@@ -515,7 +528,7 @@ label start:
         size (400,500)
     
 
-    n "A steel arming sword plated with silver along the edge."
+    n "A steel bastard sword plated with silver along the edge."
 
     j "I might stand a chance with this blade, if I’m lucky."
 
@@ -523,9 +536,9 @@ label start:
         
 
     show shield at deadcenter:
-         size (400,500)
+         size (350,500)
 
-    j "The sheen on this steel heater is phenomenal, and as long as there is even a scant amount of light, the Archdruid reassured me none of the demon’s shadow magic can harm me."
+    j "The sheen on this steel shield is phenomenal, and as long as there is even a scant amount of light, the Archdruid reassured me none of the demon’s shadow magic can harm me."
 
     hide shield with quickdissolve
 
@@ -553,7 +566,7 @@ label start:
     show black with dissolve
 
     show crypt at deadcenter
-
+    with dissolve
 
     j "Okay, enough stalling... let's do this."
 
@@ -570,12 +583,11 @@ label start:
 
     n "A large stone room, far underground."
 
-    n "As you enter, you hear hydraulic mechanisms automatically shut the large steel gate behind you."
+    scene newgate
 
     play sound "gateclose.wav"
 
-    scene newgate
-
+    n "As you enter, you hear hydraulic mechanisms automatically shut the large steel gate behind you."
 
     j "A security measure by the townsfolk, surely."
 
@@ -615,8 +627,8 @@ label start:
         $ havetorch = True
         $ notorch = False
 
-        show unlit at deadcenter
-        with dissolve
+        show unlit at deadcenter:
+             size (200,200)
 
         j "I should take it. A light source would be useful in this dark place… especially with a demon of shadow lurking nearby."
         $ inventory_items.append("Torch")
@@ -628,12 +640,6 @@ label start:
         play sound "torchlighting.mp3"
 
         n "You strike the torch along the stone walls."
-
-
-        show lit at deadcenter
-        with dissolve
-        hide lit
-        with dissolve
 
         jump choice2_done
 
@@ -785,11 +791,18 @@ label cutbolt:
 
         j "You what? I… What the hell are you?"
 
+        hide goblin
+        show inya_smile at deadcenter
+
         g "Haha. I'm a goblin."
 
         g "You've heard of goblins, right?"
 
         g "We're scary sewer dwelling bogeymen who steal babies, or something."
+
+        hide inya_smile
+        show goblin at deadcenter:
+            size (550,800)
 
         g "Who are you?"
 
@@ -798,7 +811,7 @@ label cutbolt:
         j "That really isn't important, and it certainly isn't your business."
 
         j "Who said you are the one asking questions?"
-
+        
         g "Why not? You're really defensive, aren't you?"
 
         g "I thought you'd be more exciting. Are you really that afraid of me?"
@@ -827,7 +840,15 @@ label cutbolt:
 
         j "Yeah, I guess a lot has…"
 
+        hide goblin
+        show inya_smile at deadcenter:
+            size (550,800)
+
         g "That's what I thought!"
+
+        hide inya_smile
+        show goblin at deadcenter:
+            size (550,800)
 
         g "Something happened to you to make you like this."
 
@@ -835,11 +856,26 @@ label cutbolt:
 
         g "The farmers talk about it and seem really afraid. I don't know what it is, reeeeaaallllyyy… and the farmers are afraid of a lot of things."
 
+        hide goblin
+        show inya_smile at deadcenter:
+            size (550,800)
+
         n "The goblin shrugs her shoulders and smiles. She seems friendly, and not at all worldly - or at least not educated."
+        hide inya_smile
+        show goblin at deadcenter:
+            size (550,800)
 
         j "You should be afraid of it, demons are dangerous."
+        
+        hide goblin
+        show inya_smile at deadcenter:
+            size (550,800)
 
         g "Another one? Did a demon steal your baby or something?"
+
+        hide inya_smile
+        show goblin at deadcenter:
+            size (550,800)
 
         j "Don't joke about that. You'd be surprised…"
 
@@ -865,6 +901,10 @@ label cutbolt:
 
         j "Why are you so interested in humans? How did you even learn our language?"
 
+        hide goblin
+        show inya_blush at deadcenter:
+            size (550,800)
+
         g "Weeeeellllll…"
 
         n "The goblin frowns for the first time."
@@ -877,17 +917,30 @@ label cutbolt:
 
         n "Julian sighs and looks over his shoulder."
 
+        hide inya_blush
+        show goblin at deadcenter:
+            size (550,800)
+
         g "I'll spot anything coming, just like I spotted you. We goblins can see in the dark."
 
         j "Uh… I see. And yes, I really want to know."
+
+        hide goblin
+        show inya_blush at deadcenter:
+            size (550,800)
 
         n "She continues on, frowning and obviously just a bit uncomfortable. At the same time, she seems desperate for social contact, and most likely doesn't have much experience socializing."
 
         g "When I was young, a bit too young, I was exiled from my tribe on account of my 'difference.'"
 
+
         n "The goblin gestures at herself, presumably indicating the ivory color of her skin, her pink eyes, and white hair."
 
         g "It's isolating, living alone, but I've got really good at it. My blowgun makes hunting easy. Just aim and… shoot."
+
+        hide inya_blush
+        show goblin at deadcenter:
+            size (550,800)
 
         n "The goblin demonstrates, pointing the barrel of the blowgun at Julian. She takes a quiet, deep inhale, and mimes the action, exhaling through her nose."
 
@@ -901,20 +954,37 @@ label cutbolt:
 
         g "I pretty much never get lost. As for my tribe…You don't need to worry about them. They live much farther down."
 
+        hide goblin
+        show inya_blush at deadcenter:
+            size (550,800)
+    
         n "The silence seems to eat at her, irrespective of the fact that was quite a bit of information for Julian to process. She gives him a plaintive expression - almost comically."
 
         j "Whoa, it's okay. It sounds like you've done well, considering your situation."
 
         j "You're alive, right? And you taught yourself how to speak our language."
 
+        hide inya_blush
+        show inya_angry at deadcenter:
+            size (550,800)
+
         g "For all the good that does me!"
 
         g "And trust me, I've tried to have a conversation or two with humans like you, and it never goes well. Until now, at least."
+
+        hide inya_angry
+        show goblin at deadcenter:
+            size (550,800)
+
 
         g "You wouldn't believe how little humans look down. They always go running when I try to get their attention."
 
         j "It's like you said, something happened to me. I must not be of my right mind."
 
+        hide goblin
+        show inya_smile at deadcenter:
+            size (550,800)
+       
         n "Julian cracks a small smile, letting the goblin in on the joke. She returns the smile, a bit more slowly."
 
         j "It sounds lonely, living all by yourself in the sewers. What is your name, anyway?"
@@ -925,6 +995,10 @@ label cutbolt:
 
         j "Okay, in-ya what?"
 
+        hide inya_smile
+        show inya_angry at deadcenter:
+            size (550,800)
+
         i "I… never thought of it like that. Hey…"
 
         n "The goblin seems genuinely perplexed by the realization her name can be made into a joke."
@@ -932,6 +1006,10 @@ label cutbolt:
         i "I like 'Inya'. It sounds so much nicer and more refined than my goblin name."
 
         i "And don't even ask, I'm not telling you."
+
+        hide inya_angry
+        show goblin at deadcenter:
+            size (550,800)
 
         j "Okay, Inya it is."
 
@@ -945,13 +1023,17 @@ label cutbolt:
 
         j "I'm starting to feel that way, I confess… Can you lead me there, to the streets?"
 
+        hide goblin
+        show inya_smile at deadcenter:
+            size (550,800)
+
         i "Oh! Sure! We can go together."
 
         j "Thank you."
 
         scene endingscreen
         with pixellate
-
+        
         n "Julian, led by Inya, made their way to the streets."
 
         n "Silently indicating the direction of a culvert, Inya hurriedly catches up to Julian, and tugs on his arm to get his attention. She looks oddly emotional and introspective."
@@ -2022,7 +2104,7 @@ label golemescape3:
 
     menu:
 
-        "Reconsider your pursuit, and investigate the access tunnel":
+        "{size=38}Reconsider your pursuit, and investigate the access tunnel":
             gl "This merits a closer investigation. The interloper cannot elude this one forever."
             gl "This one does not sleep. This one does not eat. This one shall pursue this one's quarry tirelessly."
 
@@ -2050,10 +2132,11 @@ label golemescape4:
     play music "Inya Theme (First Encounter).mp3"
     
     show goblin at deadcenter:
-        size (1500,1700)
-        xalign 0.5 yalign 1.0
-        linear 6.0 yalign 0.0
-    pause 6.5
+        size (1300,1700)
+        xalign 0.5 yalign -1.0
+        linear 3.0 yalign 0.0
+    
+    pause 4.0
             
     hide goblin
     with dissolve
@@ -2062,6 +2145,7 @@ label golemescape4:
     show goblin at deadcenter:
         size (550,800)
     with dissolve
+
         
   
     n "A tiny form, compared to the Golem, stirs in the darkness. A moment of eye shine in the scant light betrays her position to the Golem."
@@ -2077,6 +2161,9 @@ label golemescape4:
     g "Huh? Why do you talk like that? Who is that one?"
 
     gl "I am this one."
+
+    hide goblin
+    show inya_smile at deadcenter
 
     g "Nobody talks like that. But um… You're really strong, that's so cool! What's your name?"
 
@@ -2094,6 +2181,11 @@ label golemescape4:
 
     g "Okay, [x]. What are you? I've never seen anything like you, you're so cool."
 
+    hide inya_smile
+    show goblin at deadcenter:
+        size (550,800)
+
+
     gl "I do not experience temperature as an organic creature - such as yourself does."
 
     gl "If I am too hot, I melt. If I am too cold, I can no longer move. There is no discomfort."
@@ -2102,9 +2194,16 @@ label golemescape4:
 
     gl "Understood, Inya. Do you know the fate of my creator, or the interloper?"
 
+    hide goblin
+    show inya_smile at deadcenter
+
     n "Inya laughs, caught off guard. She seems to find delight in verbally prodding this anomaly."
 
     i "I don't know what any of that means."
+
+    hide inya_smile
+    show goblin at deadcenter:
+        size (550,800)
 
     i "Are you a boy or a girl, [x]?"
     "What am I? What I was once is of little consequence - memories are no more."
@@ -2130,9 +2229,17 @@ label golemescape4:
 
     n "Inya glances at [x] quizzically in its moment of introspection."
 
+    hide goblin
+    show inya_blush at deadcenter:
+        size (550,800)
+
     i "I'm sorry… I guess you probably don't work like us?"
 
     gl "I have concluded I am [selection]."
+
+    hide inya_blush
+    show goblin at deadcenter:
+        size (550,800)
 
     i "You take a while to think. Sometimes I do that too. What are you doing down here anyway? Where did you come from?"
 
@@ -2146,14 +2253,24 @@ label golemescape4:
 
     n "She nods along, appearing perplexed for just a moment."
 
+    hide goblin
+    show inya_blush at deadcenter:
+        size (550,800)
+
+
     i "We're both uh… fre- outcasts, right? Maybe we can be friends?"
 
+   
     n "[x] takes a long time to consider this possibility. It knew what friendship is, in abstract, but never considered the possibility it could have a friend."
 
     menu:
 
         "Accept":
             gl " I find these terms acceptable."
+            
+            hide inya_blush
+            show inya_smile at deadcenter:
+                size (550,800)
 
             n "Inya appears positively delighted to have a new giant, powerful sidekick."
 
@@ -2170,6 +2287,11 @@ label golemescape4:
             i "No more rocks, no more bows pointed at me… It could work!"
 
             gl "Your plan is ill conceived, creature of flesh. However, as your… friend… I shall humor it."
+
+            hide inya_smile
+            show goblin at deadcenter:
+                size (550,800)
+
 
             i "Um… okay. Thanks I guess. Do you have a better idea?"
 
@@ -2195,6 +2317,11 @@ label golemescape4:
         "Refuse":
             gl "There is no purpose in affecting 'friendship'. I am stone, and you are flesh."
 
+            hide inya_blush
+            show inya_angry at deadcenter:
+                size (550,800)
+
+
             n "Inya looks genuinely hurt, and gravely disappointed. Her optimism was dashed away in an instant."
 
             i "I guess you've made up your mind then."
@@ -2204,6 +2331,9 @@ label golemescape4:
             n "Tears well up in the goblin's tiny pink eyes."
 
             i "Okay… I'm leaving then. I don't care what you do."
+
+            hide inya_angry
+            with dissolve
 
             n "Inya walks off into the sewers she made her home, almost managing to sound sincere."
             n "Her quiet sobbing betrays her true emotions, however."
@@ -3244,16 +3374,17 @@ with pixellate
 play music "Inya Theme (First Encounter).mp3"
 
 show goblin at deadcenter:
-    size (1500,1700)
-    xalign 0.5 yalign 1.0
-    linear 6.0 yalign 0.0
-pause 6.5
+    size (1300,1700)
+    xalign 0.5 yalign -1.0
+    linear 3.0 yalign 0.0
+    
+pause 4.0
             
 hide goblin
 with dissolve
         
 
-show goblin at deadcenter:
+show inya_smile at deadcenter:
     size (550,800)
 with dissolve
 
@@ -3262,6 +3393,8 @@ g "Wooooooow! You're a magician!"
 dh "A goblin so close to the surface? Bless your heart, you're deformed… but alive."
 
 n "Dahlia appears genuinely impressed, realizing the implications of the goblin's predicament quickly."
+hide inya_smile
+show inya_angry at deadcenter
 
 g "Are all magicians so rude? You're tall like a man and really creepy."
 
@@ -3272,6 +3405,9 @@ dh "My dear, pardon my disrespect. You have done well for yourself."
 dh "You're a survivor, and you've taught yourself our language."
 
 dh "You've triumphed over your impediments, and for that, you have my ardent admiration."
+
+hide inya_angry
+show inya_blush at deadcenter
 
 g "I…"
 
@@ -3288,6 +3424,8 @@ dh "…but it may be as you wish."
 dh "I am Dahlia. It is a pleasure to meet you."
 
 n "Inya blinks, processing the fact Dahlia somehow knew her birth name. The realization hits her."
+hide inya_blush
+show inya_angry at deadcenter
 
 i "Oh… you figured out my goblin name with your magic."
 
@@ -3298,6 +3436,9 @@ n "Inya pouts, to Dahlia's muted amusement."
 dh "It shan't happen again, my little morsel."
 
 dh "I have divined all I need to know about you, and I find you starkly unique, and simply fascinating."
+
+hide inya_angry
+show inya_blush at deadcenter
 
 i "Y-you do?"
 
@@ -3311,6 +3452,10 @@ dh "You would begrudge an artful turn of phrase? Very well, my Inya."
 
 dh "It seems my quarry in this dreadful hole has eluded me. I must retire to my lair. Perhaps you would accompany me?"
 
+hide inya_blush
+show goblin at deadcenter:
+     size (550,800)
+
 i "Um, things are moving a little fast, don't you think? We only just met."
 
 dh "You're lonely. You've been seeking a human friend for fourteen years since your cruel abandonment by your tribe."
@@ -3320,6 +3465,9 @@ dh "I'm offering you a home, and a human companion."
 dh "I am the answer to your deepest desires."
 
 dh "I know everything about you, my Inya, and I find you worthy and fascinating."
+
+hide goblin
+show inya_blush at deadcenter
 
 n "Inya blushes a deep red and nearly faints. Meekly, she replies."
 

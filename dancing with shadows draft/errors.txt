@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 357: end of line expected.
-    hide waldwinepouring:
-                        ^
+File "game/script.rpy", line 223: expected statement.
+    fadeout 3.0
+             ^
+
+File "game/script.rpy", line 228: expected statement.
+    fadeout 45.0
+              ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Thu Mar 27 19:08:43 2025
+Thu Mar 27 21:29:14 2025

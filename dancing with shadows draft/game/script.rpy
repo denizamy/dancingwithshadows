@@ -219,8 +219,11 @@ label start:
     "Thank you for playing."
 
     play music "Deep Haze.mp3"
+    play sound townamb.mp3
 
     j "Follow a hidden path down the alleys. Three lefts and a right, then close your eyes for twelve seconds."
+
+    play sound heartbeatbreath.mp3
 
     j "Remain calm and still, breathing shallowly, and keep your hands at your side..."
 

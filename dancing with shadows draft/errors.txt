@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 3376: Line is indented, but the preceding play music statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    show goblin at deadcenter:
-    ^
+File "game/script.rpy", line 357: end of line expected.
+    hide waldwinepouring:
+                        ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Wed Mar 26 23:07:57 2025
+Thu Mar 27 19:08:43 2025

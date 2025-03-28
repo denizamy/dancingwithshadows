@@ -34,7 +34,13 @@ image emptycup = "cup_wooden.png"
 image fullcup = "cup_wooden_full.png"
 image emptycup2 = "cup_wooden.png"
 image fullcup2 = "cup_wooden_full.png"
-image waldwine = im.Scale("waldwinelol.png", 160, 200)
+
+
+image waldwinelol = im.Scale("waldwinelol.png", 160, 200)
+image waldwinelaying = im.Scale("waldwinelaying.png", 160, 200)
+image waldwinepouring = im.Scale("waldwinetilt.png", 160, 200)
+image waldwine = im.Scale("waldwineup.png", 160, 200)
+image waldwineup = im.Scale("waldwineup.png", 160, 200)
 image newgate =im.Scale("newgate.png", 1920, 1080)
 
 
@@ -331,7 +337,11 @@ label start:
 
     label acceptdruid:
 
-        show waldwine at wine
+        show waldwinelol:
+            xalign 0.45
+            yalign 0.45
+
+
         show emptycup at tablecup1
         show emptycup2 at tablecup2
 
@@ -339,17 +349,30 @@ label start:
 
         play sound "pouring.mp3"
         
-        # CHANGE THE WALDWINE TO THE BETTER WALDWINNNNNNNNEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+        window hide
+        hide waldwinelol
+        show waldwinepouring:
+            xalign 0.545
+            yalign 0.59
+        pause 1.5
+        hide waldwinepouring with quickdissolve
 
+        show waldwinepouring:
+            xalign 0.48
+            yalign 0.48
         show fullcup at tablecup2 with dissolve
-        pause 3.0
+        pause 1.6
         show fullcup2 at tablecup1 with dissolve
-        
+        hide waldwinepouring
+        show waldwineup with quickdissolve:
+            xalign 0.48
+            yalign 0.8  
+
         n "The Archdruid rises from his seat and pours a dark orange liquid into two polished wooden cups. There's a bit of relief reflected in his dark eyes. He passes a cup to Julian, who hastily downs the contents."
 
         hide fullcup with dissolve
         hide fullcup2 with dissolve
-        hide waldwine
+
 
         show emptycup at tablecup1 
         show emptycup2 at tablecup2 
@@ -383,6 +406,7 @@ label start:
             size (550, 1100)
             xalign 0.8
             yalign 0.5
+
 
         d "I believe we lost track of time, Julian. You came here for a reason…"
         jump druidresolution
@@ -430,6 +454,8 @@ label start:
     n "The Archdruid grunts. It's not abundantly clear if he found some humor in Julian's statement, or if he's annoyed."
 
     d "Reflect on my words, young man. Be safe and swift."
+
+    hide waldwinelaying
 
     $ renpy.music.stop(channel="sound2")
     hide druid
@@ -593,19 +619,20 @@ label start:
 
     n "You are trapped down here with the demon, and it with you, until one of you perishes."
 
+    scene newatrium
+    with pixellate
+
     n "Torchlight glints off of brass embellishments on the sarcophagi populating this moderately impressive tomb."
 
-
-    show shadow at deadcenter
+    show shadow:
+        xalign 0.6
+        yalign 0.4
     hide shadow with quickdissolve
 
     show shadow at topright
     hide shadow with quickdissolve
 
     n "On the periphery of your vision, you notice unusual fleeting shadows. The demon must not be far off, and it has nowhere to run. One of you must perish today."
-
-    scene newatrium
-    with pixellate
 
     n "A great stone arch allows passage further in this dark place."
 

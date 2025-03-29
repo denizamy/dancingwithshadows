@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 223: expected statement.
-    fadeout 3.0
-             ^
-
-File "game/script.rpy", line 228: expected statement.
-    fadeout 45.0
-              ^
+File "game/script.rpy", line 1618: Line is indented, but the preceding play music statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    hide adesse_neutral
+    ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Thu Mar 27 21:29:14 2025
+Sat Mar 29 02:23:45 2025

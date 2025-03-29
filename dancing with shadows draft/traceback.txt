@@ -1,40 +1,24 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 222, in script
-    play music townamb.mp3 fadeout 2.0
-  File "renpy/common/000statements.rpy", line 124, in execute_play_music
-    renpy.music.play(_audio_eval(p["file"]),
-  File "renpy/common/000statements.rpy", line 33, in _audio_eval
-    return eval(expr, locals=store.audio.__dict__)
-  File "game/script.rpy", line 222, in <module>
-    play music townamb.mp3 fadeout 2.0
-AttributeError: 'str' object has no attribute 'mp3'
+  File "game/script.rpy", line 1554, in script
+    Play sound "040436_climbing-a-ladder-79239.wav"
+TypeError: __init__() missing 1 required positional argument: 'file'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 222, in script
-    play music townamb.mp3 fadeout 2.0
-  File "D:\renpy-8.3.4-sdk\renpy\ast.py", line 1980, in execute
-    self.call("execute")
-  File "D:\renpy-8.3.4-sdk\renpy\ast.py", line 1959, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "D:\renpy-8.3.4-sdk\renpy\statements.py", line 374, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000statements.rpy", line 124, in execute_play_music
-    renpy.music.play(_audio_eval(p["file"]),
-  File "renpy/common/000statements.rpy", line 33, in _audio_eval
-    return eval(expr, locals=store.audio.__dict__)
-  File "D:\renpy-8.3.4-sdk\renpy\python.py", line 1209, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "D:\renpy-8.3.4-sdk\renpy\python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 222, in <module>
-    play music townamb.mp3 fadeout 2.0
-AttributeError: 'str' object has no attribute 'mp3'
+  File "game/script.rpy", line 1554, in script
+    Play sound "040436_climbing-a-ladder-79239.wav"
+  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\ast.py", line 2579, in execute
+    Say.execute(self)
+  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\ast.py", line 621, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\exports\sayexports.py", line 132, in say
+    who(what, *args, **kwargs)
+TypeError: __init__() missing 1 required positional argument: 'file'
 
-Windows-10-10.0.19045 AMD64
+Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.4.24120703
 Dancing With Shadows Alpha 1.0
-Thu Mar 27 21:20:00 2025
+Sat Mar 29 01:33:17 2025

@@ -2,7 +2,7 @@
 
 init python:
     renpy.music.register_channel("sound2", "sfx", loop=False, stop_on_mute=True)
-
+   
 define n = Character("Narrator",color="808080")
 define d = Character("Archdruid",color="664D43")
 define j = Character("Julian",color="0032FF")
@@ -207,7 +207,7 @@ define adessedead = False
 
 
 
-# The game starts here ######################################################################
+# The game starts here ######################################################################S
 
 label start:
 
@@ -217,15 +217,16 @@ label start:
     "Many art assets, soundtracks, vfx, and sfx are works in progress."
 
     "Thank you for playing."
-
     play music "Deep Haze.mp3"
-    play sound townamb.mp3
 
+
+    $ renpy.music.play("townamb.wav", channel="sound2")
+   
     j "Follow a hidden path down the alleys. Three lefts and a right, then close your eyes for twelve seconds."
 
-    play sound heartbeatbreath.mp3
-
     j "Remain calm and still, breathing shallowly, and keep your hands at your side..."
+
+    $ renpy.music.play("heartbeatbreath.mp3", channel="sound2",)
 
     j "It sounded like nonsense, but nonsense was my only lead."
 
@@ -236,6 +237,8 @@ label start:
     j "He didn't want anything from me. I've never had a good grasp on balancing naïvety and cynicism..."
 
     j "Plus, I need the work. That was my last copper gone in the tavern. My equipment is in good shape, I'm healthy and have a full belly, for now at least. Okay, it's been at least twelve seconds."
+
+    $ renpy.music.play("townamb.wav", channel="sound2")
 
     scene druidentrance
     with pixellate
@@ -478,7 +481,7 @@ label start:
 
     scene blackscreen
     with fade
-    stop music fadeout 25.0
+    stop music fadeout 35.0
     $ renpy.music.stop(channel="sound2, fadeout=6.0")
 
     if acceptdruid:
@@ -602,9 +605,12 @@ label start:
     menu:
 
         "Enter Crypt":
+            play sound "footsteps-on-sidewalk-84642.mp3"
+            pause 2.0
             jump choice1_enter
 
     label choice1_enter:
+    
 
     scene newatrium
     with pixellate
@@ -625,7 +631,7 @@ label start:
     scene newatrium
     with pixellate
 
-    n "Torchlight glints off of brass embellishments on the sarcophagi populating this moderately impressive tomb."
+    n "Torchlight glints off of metallic embellishments on the sarcophagi populating this moderately impressive tomb."
 
     show shadow:
         xalign 0.6
@@ -972,7 +978,9 @@ label cutbolt:
         show goblin at deadcenter:
             size (550,800)
 
-        n "The goblin demonstrates, pointing the barrel of the blowgun at Julian. She takes a quiet, deep inhale, and mimes the action, exhaling through her nose."
+        play sound "open-tube-102325.mp3"
+
+        n "The goblin demonstrates, pointing the barrel of the blowgun at Julian. She takes a quiet, deep inhale, and mimes the action, exhaling through the tube."
 
         "I'm starting to reconsider this course of action… She seems friendly enough at least, if a bit unhinged."
 
@@ -1109,6 +1117,8 @@ label cutbolt:
 
     label attackgoblin:
 
+    play music "Floating Cities.mp3"
+
     "I don't really know what I'm looking at, but I don't like it. It's time to get out of here - no witnesses."
 
     j "I'm actually a landed noble - the baron."
@@ -1118,7 +1128,13 @@ label cutbolt:
     g "I don't know what that is or parti- grk…"
     #sfx inya DYING AND BEING DEAD
     hide goblin with dissolve
-    scene blackscreen with longdissolve
+    scene blackscreen with quickdissolve
+    play sound "woman-scream-136558.mp3"
+    pause 1.0
+    play sound "hit-swing-sword-small-2-95566.mp3"
+    pause 1.0
+    play sound "thump-1-79982.mp3"
+    
 
     n "Approaching slowly during the conversation, Julian strikes down the goblin with his blade before she can react."
 
@@ -1246,6 +1262,8 @@ label warehouse:
 menu:
         "Search rubble":
             j "I might as well try to find something useful while I'm here."
+
+            play sound "rummage.mp3"
 
             n "You sort through the rubble and find a set of bolt cutters."
             $ boltcutters = True
@@ -1385,6 +1403,13 @@ label choice1_done:
 
     j "Why was this innocent creature cursed to wander like this?"
 
+    n "Julian descends a flight of stairs deeper into the crypt."
+
+    play sound "footsteps-on-sidewalk-84642.mp3"
+
+    pause 1.5
+
+
 
     hide dog
     hide ghost
@@ -1413,6 +1438,7 @@ label choice1_done:
     label monumentchamber:
 
     scene monument
+    with pixellate
     # Room 3 - Monument Chamber
 
     n "One thing is certain, this place has been vandalized."
@@ -1483,8 +1509,10 @@ label choice1_done:
     n "Despite the flickering flame of the torch, the shadows stir - and speak!"
 
     # sound
+    play sound "drawsword.mp3"
 
     n "Haphazardly drawing his blade, Julian stumbles backwards, caught off guard."
+
 
     x "Mortal, the light you bring to my domain is most unwelcome. Leave this place, or meet your end."
 
@@ -1523,6 +1551,8 @@ label memorials:
 
 menu:
         "Go down the ladder":
+            play sound "040436_climbing-a-ladder-79239.wav"
+            pause 2.0
             $goblindead = False
             $leftwithgoblin = False
             jump ladderdown
@@ -1553,6 +1583,7 @@ n "There - on the other side of the platform, the shadows take shape - the demon
 "What in the world?"
 
 #show adesse with slide Down
+play music "Agnus Dei X.mp3"
 
 show adesse_neutral:
     size (1240,1754)
@@ -1568,8 +1599,9 @@ label fightorquestiondemoness1:
 
     menu:
             "Fight the demoness":
-
+                play music "Hitman.mp3"
                 j "You will haunt this place no longer, foul demon! Face me!"
+                
 
                 jump fightdemoness1
 
@@ -1584,16 +1616,17 @@ label fightorquestiondemoness1:
                 jump questiondemoness1
 
 label fightdemoness1:
+    
+   
     hide adesse_neutral
 
     show adesse_angry at deadcenter:
         size (1240, 1754)
         xalign 0.5 yalign 0.0
         
-
-
+    play sound "protego-105518.mp3"
     n "The demoness fires a barrage of needle-like spines of solid shadow."
-
+    
     menu:
         "Block":
             jump blockdemoness1
@@ -1603,13 +1636,14 @@ label fightdemoness1:
 
 label blockdemoness1:
 
-    j "I can block them with my shield!"
+    play sound "Shield-guard-6963.mp3"
     n "The dark magic spines melt like snow against Julian's blessed shield."
     n "The demoness gathers energy for her next spell, giving Julian an opportunity to strike."
     jump fightdemoness2
 
 label attackdemoness1:
     j "I can strike her now!"
+    play sound "protego-105518.mp3"
     n "Julian's opportunity to strike is lost as the demoness fires another barrage of needle-like spines of solid shadow."
     jump fightdemoness2
 
@@ -1644,14 +1678,26 @@ label attackdemoness2:
     show adesse_hurt:
         size (1240, 1754)
         xalign 0.5 yalign 0.0
-
+    
+    play sound "hit-swing-sword-small-2-95566.mp3"
 
     n "The demoness's self-satisfied expression fades as the blade slices through her cranium."
+
+    play sound "scream-90747.mp3"
+
 
     hide adesse_hurt
     with dissolve
 
+    pause 3.0
+
+    play sound "stone-dropping-6843.mp3"
+
+    play music "Agnus Dei X.mp3"
+
+
     j "There's… no blood. But it's gone. I can feel its absence."
+    
 
     jump demonessresolution2
 
@@ -1780,6 +1826,7 @@ label questiondemoness1:
     if havecoin:
         menu:
             "Fight the demoness":
+                play music "Hitman.mp3"
 
                 n "Drawing your blade, you steel yourself for battle."
 
@@ -1798,6 +1845,7 @@ label questiondemoness1:
                 jump questiondemoness2
     menu:
         "Fight the demoness":
+            play music "Hitman.mp3"
 
             n "Drawing your blade, you steel yourself for battle."
 

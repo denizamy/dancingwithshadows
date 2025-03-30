@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 2989: expected end of line
-    play sound "thump.mp3", volume=2.0
-                          ^
+File "game/script.rpy", line 2140: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    alpha 0.8
+    ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Sun Mar 30 12:51:23 2025
+Sun Mar 30 17:10:47 2025

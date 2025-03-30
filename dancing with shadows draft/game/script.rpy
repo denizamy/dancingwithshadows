@@ -2095,6 +2095,8 @@ label golemescape1:
 
     n "[pronoun] concentrates, divining information about 'the interloper' and his acquaintance using [pronouns] recalled latent magical ability to do so."
 
+    
+
     "Skill recalled: Divination"
 
     gl ". . . The interloper is a human male named Julian. He is deeply conflicted. His life is unpredictable and dreary."
@@ -2173,7 +2175,7 @@ label golemescape3:
 
     menu:
 
-        "{size=38}Reconsider your pursuit, and investigate the access tunnel":
+        "{size=38}Reconsider your pursuit and investigate the access tunnel":
             gl "This merits a closer investigation. The interloper cannot elude this one forever."
             gl "This one does not sleep. This one does not eat. This one shall pursue this one's quarry tirelessly."
 
@@ -3006,7 +3008,7 @@ with pixellate
 
 n "She follows the path in her divination - first, to the arcane anomaly."
 
-if not barricade:
+if barricade:
     n "Ancient, crumbling boards practically hang from the nails they were fixed to many decades ago."
 
     n "Even so, they do the trick. The way is blocked."

@@ -1,24 +1,40 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 1554, in script
-    Play sound "040436_climbing-a-ladder-79239.wav"
-TypeError: __init__() missing 1 required positional argument: 'file'
+  File "game/script.rpy", line 2989, in script
+    play sound ("thump.mp3", volume=2.0)
+  File "renpy/common/000statements.rpy", line 301, in execute_play_sound
+    renpy.sound.play(_audio_eval(p["file"]),
+  File "renpy/common/000statements.rpy", line 33, in _audio_eval
+    return eval(expr, locals=store.audio.__dict__)
+SyntaxError: invalid syntax (game/script.rpy, line 2989)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 1554, in script
-    Play sound "040436_climbing-a-ladder-79239.wav"
-  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\ast.py", line 2579, in execute
-    Say.execute(self)
-  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\ast.py", line 621, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\exports\sayexports.py", line 132, in say
-    who(what, *args, **kwargs)
-TypeError: __init__() missing 1 required positional argument: 'file'
+  File "game/script.rpy", line 2989, in script
+    play sound ("thump.mp3", volume=2.0)
+  File "D:\renpy-8.3.4-sdk\renpy\ast.py", line 1980, in execute
+    self.call("execute")
+  File "D:\renpy-8.3.4-sdk\renpy\ast.py", line 1959, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "D:\renpy-8.3.4-sdk\renpy\statements.py", line 374, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 301, in execute_play_sound
+    renpy.sound.play(_audio_eval(p["file"]),
+  File "renpy/common/000statements.rpy", line 33, in _audio_eval
+    return eval(expr, locals=store.audio.__dict__)
+  File "D:\renpy-8.3.4-sdk\renpy\python.py", line 1207, in py_eval
+    code = py_compile(code, 'eval')
+  File "D:\renpy-8.3.4-sdk\renpy\python.py", line 1144, in py_compile
+    raise e
+  File "D:\renpy-8.3.4-sdk\renpy\python.py", line 1081, in py_compile
+    raise orig_e
+  File "D:\renpy-8.3.4-sdk\renpy\python.py", line 1073, in py_compile
+    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
+SyntaxError: invalid syntax (game/script.rpy, line 2989)
 
-Windows-10-10.0.26100 AMD64
+Windows-10-10.0.19045 AMD64
 Ren'Py 8.3.4.24120703
 Dancing With Shadows Alpha 1.0
-Sat Mar 29 01:33:17 2025
+Sun Mar 30 12:51:36 2025

@@ -58,7 +58,7 @@ image adesse_flirty_melancholic = "adesse_flirty_melancholic.png"
 image adesse_hurt = "adesse_hurt.png"
 image adesse_neutral = "adesse_neutral.png"
 image julian = "julian.png"
-image tess = "Tess.jpg"
+image tess = im.Scale("tessanrae.png", 715, 1040)
 image druidhouse1 = im.Scale("druidhouseP1.png", 1920, 1080)
 image druidhouse2 = im.Scale("druidhouseP2.png", 1920, 1080)
 image druidhouse3 = im.Scale("druidhouseP3.png", 1920, 1080)
@@ -542,14 +542,14 @@ label start:
     with quickdissolve
 
     show sealedcontract at deadcenter:
-        size (250,250)
+        size (220,220)
     with quickdissolve
 
     j "Sealed with a wax stamp. Strange, it looks like the monastery sigil."
 
     hide sealedcontract
     show contract at deadcenter:
-        size (250,250)
+        size (240,240)
 
     j " It reads: Slay and banish the presence, whatever it may be, from this formerly sanctified place of rest."
 
@@ -575,7 +575,7 @@ label start:
     hide shield with quickdissolve
 
     show hardtack at deadcenter:
-        size (250,250)
+        size (220,220)
 
     j "I don't even want to think about hardtack if I can't soften it up first. It's about as hard and appetizing as a brick."
   
@@ -1298,6 +1298,7 @@ menu:
         "Touch symbol":
             $ golemactive = True
             play sound "rocks.mp3"
+            queue sound "flashwoosh.mp3"
             n "The pile of rubble begins to shake, and the runes in the rubble pile begin to glow with a dim blue light."
 
             j "I'm not getting paid enough for this. This isn't a demon, it's somebody else's problem. I'm getting out of here."
@@ -1340,14 +1341,8 @@ label choice1_done:
 
     play sound "torchlighting.mp3"
 
-    show lit at deadcenter
-    with dissolve
-
     scene lithall
     with pixellate
-
-    hide lit
-    with dissolve
 
     j "I should be well prepared for the push ahead. If I squint, I can see solid silhouettes deeper in this place."
 
@@ -1365,14 +1360,7 @@ label choice1_done:
     if notorch:
         jump killbywraith
 
-    show lit at deadcenter
-    with dissolve
-
     play sound "torchlighting.mp3"
-
-    hide lit
-    with dissolve
-
 
     show ghost at offright:
         alpha .3
@@ -1682,9 +1670,8 @@ label attackdemoness2:
     play sound "hit-swing-sword-small-2-95566.mp3"
 
     n "The demoness's self-satisfied expression fades as the blade slices through her cranium."
-
+    window hide
     play sound "scream-90747.mp3"
-
 
     hide adesse_hurt
     with dissolve
@@ -1793,7 +1780,9 @@ label demonessresolution2:
     $ adessedead = True
 
 
-    j "The deed is done. The demon is vanquished. Strange, it seems the foul harpy left a trinket among her remains. A soft, sulfurous stone - proof of my victory. It’s a shame to fell such a striking beauty. It invaded my mind… and seemed to know me."
+    j "The deed is done. The demon is vanquished. Strange, it seems the foul harpy left a trinket among her remains. A soft, sulfurous stone - proof of my victory."
+    
+    j "It’s a shame to fell such a striking beauty. It invaded my mind… and seemed to know me."
 
     j "Perplexing, and dangerous. Why do I feel a sense of loss? An emptiness, left in the wake of my fallen foe? I had best put aside these thoughts. I should return promptly to the Archdruid, for he will want word of my success."
 
@@ -1880,7 +1869,9 @@ label questiondemoness2:
 
         "{size=30}This coin was hers, then? The druids tell many horrible tales of your kind - never have I heard of a demon grieving for a lost mortal.":
 
-            n "You continue on deliberately, despite your apprehension, ensuring to choose your words with great care. For the briefest moment, you consider if you were misled by the Archdruid. Ultimately, who could know?"
+            n "You continue on deliberately, despite your apprehension, ensuring to choose your words with great care."
+            
+            n "For the briefest moment, you consider if you were misled by the Archdruid. Ultimately, who could know?"
 
             j "May she rest in peace. Your fallen paramour must have been truly special."
 
@@ -2907,7 +2898,7 @@ label golemescape7:
 
     n "A burly form lumbers into the crypt - just as the Golem foresaw."
 
-    show tess
+    show tess at deadcenter
 
     n "The warrior eschews armor for green and brown traveler's leathers, adorned with protective talismans. Their longboots are characteristic of the locality."
 
@@ -2996,12 +2987,11 @@ scene cryptnightbody
 with longdissolve
 
 play music "Oppressive Gloom.mp3"
+play sound "thump-1-79982.mp3"
 
 n "The night watchman's body drops with a thunk presaging Dahlia's arrival."
-
+play sound "air-release-47977.mp3"
 n "The pressure on the hydraulics of the crypt's door is released with a gesture and a tug of the witch's hand - a subtle thaumaturgical manipulation."
-
-# add sound effect
 
 dh "It will do."
 
@@ -3443,6 +3433,9 @@ dh "What do we have here? Oh, how I love surprise visitors."
 n "A flick of the wrist, a draw on the latent thaumaturgical current."
 
 n "The bars blocking the path to the service entrance turn red, then white, then pool as a liquid on the ground."
+
+play sound "magic-244951.mp3"
+queue sound "ice-cracking-field-recording-06-139709.mp3"
 
 n "As a bit of flair, Dahlia makes a show of exhaling in the direction of the molten metal, while concealing her gestures, freezing it."
 

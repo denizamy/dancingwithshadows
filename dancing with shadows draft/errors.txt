@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 1618: Line is indented, but the preceding play music statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    hide adesse_neutral
-    ^
+File "game/script.rpy", line 2989: expected end of line
+    play sound "thump.mp3", volume=2.0
+                          ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Sat Mar 29 02:23:45 2025
+Sun Mar 30 12:51:23 2025

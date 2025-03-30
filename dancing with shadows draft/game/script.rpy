@@ -71,6 +71,12 @@ image cryptnightbody = im.Scale("cryptnightbody.png", 1920, 1080)
 image inya_angry = im.Scale("inya_angry.png",550, 800)
 image inya_blush = im.Scale("inya_blush.png",550, 800)
 image inya_smile = im.Scale("inya_smile.png",550,800)
+image core = "core.png"
+image divination = "Divination.png"
+image prescience = "prescience.png"
+image strength = "Surgeofstrength.png"
+image blind = "blind.png"
+image blinding = im.Scale("blinding.png", 1920, 1080)
 
 
 transform deadcenter:
@@ -2095,9 +2101,14 @@ label golemescape1:
 
     n "[pronoun] concentrates, divining information about 'the interloper' and his acquaintance using [pronouns] recalled latent magical ability to do so."
 
-    
+    show divination at deadcenter:
+        alpha 0.8
+
+    play sound "mystical-chime-196405 (1).mp3"
 
     "Skill recalled: Divination"
+
+    hide divination
 
     gl ". . . The interloper is a human male named Julian. He is deeply conflicted. His life is unpredictable and dreary."
 
@@ -2135,7 +2146,14 @@ label golemescape2:
 
     n "The Golem concentrates, divining information about 'the interloper' and his acquaintance using their recalled latent magical ability to do so."
 
+    show divination at deadcenter:
+        alpha 0.8
+
+    play sound "mystical-chime-196405 (1).mp3"
+
     "Skill recalled: Divination"
+
+    hide divination
     #different text color maybe?
     gl "Fear was the last emotion she felt. A sting of betrayal - fading optimism and curiosity."
 
@@ -2189,8 +2207,15 @@ label golemescape4:
 
     n "The way is blocked by iron bars. The Golem pauses, reflecting on the obstacle."
 
+    show strength at deadcenter:
+        alpha 0.8
+
+    play sound "acid_spell_cast_charge_splash_impact_04-286776 (1).mp3"
+
     "Skill recalled: Surge of Strength"
-    #different text color maybe?
+
+    hide strength
+    
 
     n "Mere iron cannot stop the Golem. It snaps the bars like insignificant twigs."
     #bar breaking sfx
@@ -2459,12 +2484,21 @@ label golemescape5:
 
     "I must neutralize these threats."
 
+    show blind at deadcenter:
+        alpha 1.5
+
     "Skill recalled: Blinding Flash"
-    #different text color maybe?
+    play sound "hifreq-light-woosh-6828.mp3"
+
+    scene blinding
+
+    scene wrathhall with longdissolve
+  
     n "The Golem emits a blinding pulse of radiance. The wraithspawn dissipate."
 
     hide ghost
     hide dog
+    scene wrathhall
 
     "The interloper is vanquished, and I have no answers. No purpose."
     n "The Golem, with a shred of hesitation, as if accepting the reality that this 'interloper' truly doesn't have any answers, tenderly flips over Julian's lifeless corpse."
@@ -2742,11 +2776,21 @@ show ghost at offright:
 show dog at offleft:
     alpha .3
 
-"The Golem emits a blinding pulse of radiance. The wraithspawn dissipate."
+"I must neutralize these threats."
+
+show blind at deadcenter:
+    alpha 0.8
 
 "Skill recalled Blinding Flash"
+play sound "hifreq-light-woosh-6828.mp3"
+
+scene blinding
+
+scene wrathhall with longdissolve
 
 n "The Golem emits a blinding pulse of radiance. The wraithspawn dissipate."
+
+
 
 ". . . ."
 
@@ -2889,10 +2933,18 @@ label golemescape7:
 
     if leftwithadesse:
         n "Waning daylight intrudes upon this place of rest. The Golem contemplates the sequence of events, and is hit with a sudden realization - the interloper has fled with an accomplice."
+    
+    if adessedead:
+        n "Waning daylight intrudes upon this place of rest. The Golem contemplates the sequence of events, and is hit with a sudden realization - the interloper has fled."
+    
+    show prescience at deadcenter:
+        alpha 0.8
 
-    n "Waning daylight intrudes upon this place of rest. The Golem contemplates the sequence of events, and is hit with a sudden realization - the interloper has fled."
+    play sound "whoosh-dark-45461.mp3"
 
     "Skill Recalled: Moment of Prescience"
+
+    hide prescience
 
     n "A mental flash - the spark of prescience. The Golem realized it would be soon met by another - a friend, perhaps."
 
@@ -3014,7 +3066,8 @@ if barricade:
     n "Even so, they do the trick. The way is blocked."
 
     dh "A trifle."
-    #add spelleffect
+    
+    play sound "magic-smite-6012.mp3"
 
     n "A deadly gesture - moderate necromancy."
 
@@ -3058,13 +3111,18 @@ n "Mustering her magical might, the room glows alight with a fel crimson bloom."
 
 hide golem
 
+play sound "acid_spell_cast_squish_ball_01-286760.mp3"
+
 n "The dismembered torso of the Golem rises in rhythm with the malevolent pulse."
+
+show core at deadcenter:
+    alpha 0.8
 
 n "Dahlia gestures sharply, and the Golem's stone torso is violently torn asunder - revealing a pristine core, alight with a blue glow."
 
-# add core item
-
 n "The neutral blue of its light is drowned in Dahlia's sea of crimson."
+
+hide core with dissolve
 
 dh "Marvelous! And now for my sweet…"
 

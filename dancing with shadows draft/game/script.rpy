@@ -2173,7 +2173,7 @@ label golemescape3:
 
     menu:
 
-        "{size=38}Reconsider your pursuit, and investigate the access tunnel":
+        "{size=38}Reconsider your pursuit and investigate the access tunnel":
             gl "This merits a closer investigation. The interloper cannot elude this one forever."
             gl "This one does not sleep. This one does not eat. This one shall pursue this one's quarry tirelessly."
 

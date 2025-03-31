@@ -51,6 +51,16 @@ image druid = "archdruid.png"
 image blackscreen = "blackscreen.jpg"
 image coin = "thecoin.png"
 image golem = "golem.png"
+
+image druidhouse1 = im.Scale("druidhouseP1.png", 1920, 1080)
+image druidhouse2 = im.Scale("druidhouseP2.png", 1920, 1080)
+image druidhouse3 = im.Scale("druidhouseP3.png", 1920, 1080)
+image druidentrance = im.Scale("druidentrance.png", 1920, 1080)
+
+image inya_angry = im.Scale("inya_angry.png",550, 800)
+image inya_blush = im.Scale("inya_blush.png",550, 800)
+image inya_smile = im.Scale("inya_smile.png",550,800)
+
 image adesse = "adessefull.png"
 image adesse_angry = "adesse_angry.png"
 image adesse_distant = "adesse_distant.png"
@@ -58,20 +68,17 @@ image adesse_flirty = "adesse_flirty.png"
 image adesse_flirty_melancholic = "adesse_flirty_melancholic.png"
 image adesse_hurt = "adesse_hurt.png"
 image adesse_neutral = "adesse_neutral.png"
+
 image julian = "julian.png"
 image tess = im.Scale("tessanrae.png", 715, 1040)
-image druidhouse1 = im.Scale("druidhouseP1.png", 1920, 1080)
-image druidhouse2 = im.Scale("druidhouseP2.png", 1920, 1080)
-image druidhouse3 = im.Scale("druidhouseP3.png", 1920, 1080)
-image druidentrance = im.Scale("druidentrance.png", 1920, 1080)
+image tess rappel = im.Scale("tess_rappel.jpg", 1920, 1080)
+
 image crypt = im.Scale("cryptday.png", 1920, 1080)
 image cryptnight = im.Scale("cryptnight.png", 1920, 1080)
 image newatrium = im.Scale("newatrium.png", 1920, 1080)
 image sewer = im.Scale("sewerpurple.png", 1920, 1080)
 image cryptnightbody = im.Scale("cryptnightbody.png", 1920, 1080)
-image inya_angry = im.Scale("inya_angry.png",550, 800)
-image inya_blush = im.Scale("inya_blush.png",550, 800)
-image inya_smile = im.Scale("inya_smile.png",550,800)
+
 image core = "core.png"
 image divination = "Divination.png"
 image prescience = "prescience.png"
@@ -1677,9 +1684,6 @@ label attackdemoness2:
 
     n "In a confluence of circumstance and power, desperation and need, he executes an overhead swing with his Demonslaying Blade."
  
-
-    #nasty cranium slicing sound
-
     hide adesse_angry
     with dissolve
 
@@ -2671,14 +2675,13 @@ label golemescape5:
 
     u "You're mine for as long as I like. A plaything, should I choose. It's unavoidable."
 
-    scene tess_rappel
+    scene tess rappel
 
     n "The demoness's monologue is cut short by a sturdy figure rappelling down the ladder leading to the depths of the crypt."
-    # need tess image
+
     hide adesse_distant
     show tess:
         xalign 0.0 yalign 0.0
-
 
     n "The warrior eschews armor for green and brown traveler's leathers, adorned with protective talismans."
 
@@ -2687,7 +2690,6 @@ label golemescape5:
     n "The saw-toothed metal staff wielded by the warrior and the iron mask strike the Golem as distinct, but mysterious in origin. Whomever this is, they strike an imposing form in the gray-hued darkness of the crypt."
 
     n "Without uttering a word, the warrior's talismans emit a bright glow, and they bound forth through the chamber, acrobatically and powerfully vaulting from the lip of the precipice transecting the room."
-    #show talisman? with bright light?
 
     n "The demoness's eyes widen in shock when presented with this threat. She launches sorcerous bolts of solid darkness towards the charging warrior - to utterly no effect."
 
@@ -3400,11 +3402,14 @@ n "Indeed, the absence of animate shadows indicates the witch's estimation is co
 
 n "A sturdy figure rappels down the ladder leading to the depths of the crypt."
 
+hide monumnet
+scene tess rappel
+
+n "The warrior eschews armor for green and brown traveler's leathers, adorned with protective talismans."
+
 scene blackscreen
 show tess at deadcenter:
     size (800,1100)
-
-n "The warrior eschews armor for green and brown traveler's leathers, adorned with protective talismans."
 
 n "Their longboots are characteristic of the locality."
 

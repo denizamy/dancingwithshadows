@@ -34,7 +34,7 @@ image emptycup = "cup_wooden.png"
 image fullcup = "cup_wooden_full.png"
 image emptycup2 = "cup_wooden.png"
 image fullcup2 = "cup_wooden_full.png"
-image vamp = "vampjulian.png"
+image sulfurstone = "sulfurstone.png"
 
 
 image waldwinelol = im.Scale("waldwinelol.png", 160, 200)
@@ -70,6 +70,7 @@ image adesse_hurt = "adesse_hurt.png"
 image adesse_neutral = "adesse_neutral.png"
 
 image julian = "julian.png"
+image vamp = "vampjulian.png"
 image tess = im.Scale("tessanrae.png", 715, 1040)
 image tess rappel = im.Scale("tess_rappel.jpg", 1920, 1080)
 
@@ -1706,6 +1707,8 @@ label attackdemoness2:
 
     play music "Agnus Dei X.mp3"
 
+    show sulfurstone at deadcenter:
+        size (450, 250)
 
     j "There's… no blood. But it's gone. I can feel its absence."
     
@@ -1723,7 +1726,13 @@ label demonessresolution1:
     scene blackscreen
     with longdissolve
 
+
     n "Revealed in blood-blurred snapshots as he blinks, unbelievably, he sees a warrior doing battle with the Demon of Shadow."
+    window hide
+    
+    $ renpy.music.play("scream-90747.mp3", channel="sound2")
+    pause 0.5
+    play sound "axe-hit-flesh-02-266299.mp3"
 
     n "A few moments of combat pass, and then silence."
 
@@ -1731,6 +1740,8 @@ label demonessresolution1:
 
     scene tess_stnading_720 with longdissolve:
         size (1920,1080)
+
+    play sound "heartbeatbreath.mp3"
     n "His hero - this masked avenger, crouches down to check his vitals and speaks in a soft, deep female voice."
 
     uw "You shouldn't be here. Did Nikolai put you up to this?"
@@ -1776,6 +1787,8 @@ label demonessresolution1:
     uw "1..."
 
     play sound "bone-break-sound-ver-2-269660.mp3"
+    pause 0.2
+    $ renpy.music.play("man-screaming-6958.mp3", channel="sound2")
 
     n "An audible crunch disturbs the silence of the chamber as she sets the bone."
 
@@ -1804,7 +1817,8 @@ label demonessresolution1:
 label demonessresolution2:
     $ adessedead = True
 
-
+    show sulfurstone at deadcenter:
+        size (450, 250)
     j "The deed is done. The demon is vanquished. Strange, it seems the foul harpy left a trinket among her remains. A soft, sulfurous stone - proof of my victory."
     
     j "It’s a shame to fell such a striking beauty. It invaded my mind… and seemed to know me."
@@ -2704,18 +2718,24 @@ label golemescape5:
 
     n "The warrior's protective talisman trembles and sunders, snapping in twain, joining the human swamp below."
     
-    play sound "scream-90747.mp3"
-
+    $ renpy.music.play("scream-90747.mp3", channel="sound2")
+    pause 0.5
+    play sound "axe-hit-flesh-02-266299.mp3"
+  
     n "Yet, the demoness's efforts are for naught. The warrior's barbed staff cleanly pierces the demoness through the eye with a sickening squelch at the end of her charge."
-    #sickening squelch sfx
-    hide adesse_neutral
 
     n "The demoness discorporates, the look of revulsion and shock remaining the last features adorning her perfect face."
 
+    hide tess with quickdissolve
     play sound "stone-dropping-6843.mp3"
+    show sulfurstone at deadcenter with quickdissolve:
+        size (450, 250)
 
     n  "A smooth, sulfurous stone is all that remains of the pristine villainess."
-    # picture of stone?
+
+    hide sulfurstone with quickdissolve
+    show tess at deadcenter with dissolve:
+        size (800, 1100)
 
     n "The warrior heaves a deep breath, quickly recovering after clutching their chest in pain."
 
@@ -3151,26 +3171,23 @@ n "Mustering her magical might, the room glows alight with a fel crimson bloom."
 
 hide golem
 
-play sound "acid_spell_cast_squish_ball_01-286760.mp3"
-
 n "The dismembered torso of the Golem rises in rhythm with the malevolent pulse."
 
 show core at deadcenter:
     alpha 0.8
+play sound "acid_spell_cast_squish_ball_01-286760.mp3"
 
 n "Dahlia gestures sharply, and the Golem's stone torso is violently torn asunder - revealing a pristine core, alight with a blue glow."
 
 n "The neutral blue of its light is drowned in Dahlia's sea of crimson."
 
-hide core with dissolve
-
 dh "Marvelous! And now for my sweet…"
 
 n "Dahlia unclasps her pack, retrieving a silvered bird cage like receptacle for the Golem's heart."
 
-n "Using minor telekinesis, she hefts the Golem's heart - ablaze with raw magic as it is, into the receptacle, and shuts it."
+hide core with dissolve
 
-#mooooorreee spell effects
+n "Using minor telekinesis, she hefts the Golem's heart - ablaze with raw magic as it is, into the receptacle, and shuts it."
 
 n "The witch breathes a self-satisfied sigh of contentment and beams."
 
@@ -3417,11 +3434,16 @@ n "A sturdy figure rappels down the ladder leading to the depths of the crypt."
 
 hide monumnet
 scene tess rappel
-
 n "The warrior eschews a complete set of armor for the barest essentials accompanied by green and brown traveler's leathers."
-    
+
 scene blackscreen
 show tess at deadcenter:
+    size (1240, 1754)
+    xalign 0.5 yalign -1.0
+    linear 3.0 yalign 0.0
+pause 4.0
+
+show tess at deadcenter with dissolve:
     size (800,1100)
 
 n "Their longboots are characteristic of the locality."

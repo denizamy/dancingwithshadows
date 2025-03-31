@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 3071: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    play sound "audio\deathmagic-94937.mp3"
-    ^
+File "game/script.rpy", line 1716: show statement expects a non-empty block.
+    show tess at deadcenter:
+                            ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Sun Mar 30 19:27:54 2025
+Sun Mar 30 19:57:30 2025

@@ -1711,11 +1711,10 @@ label demonessresolution1:
 
     n "The room fills with the smell of sweet sulfur, and Julian, losing consciousness, feels a slight stab of pain."
 
+    scene tess_stnading_720 with longdissolve:
+        size (1920,1080)
     n "His hero - this masked avenger, crouches down to check his vitals and speaks in a soft, deep female voice."
 
-    show tess at deadcenter:
-         size(940,1040)
- 
     uw "You shouldn't be here. Did Nikolai put you up to this?"
 
     n "The warrior sighs, audibly unbuckling the clasp securing her pack, and withdraws salves, a splint kit, a needle, and thread."
@@ -1757,6 +1756,8 @@ label demonessresolution1:
     uw "2..."
 
     uw "1..."
+
+    play sound "bone-break-sound-ver-2-269660.mp3"
 
     n "An audible crunch disturbs the silence of the chamber as she sets the bone."
 
@@ -2656,11 +2657,12 @@ label golemescape5:
 
     u "You're mine for as long as I like. A plaything, should I choose. It's unavoidable."
 
+    scene tess_rappel
+
     n "The demoness's monologue is cut short by a sturdy figure rappelling down the ladder leading to the depths of the crypt."
     # need tess image
     hide adesse_distant
     show tess:
-        size (780, 1080)
         xalign 0.0 yalign 0.0
 
 
@@ -3104,6 +3106,11 @@ show golem:
     alpha .3
 
 dh "My dear, sweet thing. I've traveled leagues for you."
+
+scene sea of crimson:
+    size (1920, 1080)
+pause 0.25
+scene warehouse with longdissolve
 
 n "Mustering her magical might, the room glows alight with a fel crimson bloom."
 

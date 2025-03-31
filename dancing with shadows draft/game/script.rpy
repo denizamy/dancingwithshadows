@@ -1759,9 +1759,9 @@ label demonessresolution1:
 
     n "Until she spoke, he had no indication this powerful warrior was a woman."
 
-    n "She eschews armor for green and brown traveler's leathers, adorned with protective talismans. Her longboots are characteristic of the locality."
+    n "She eschews a complete set of armor for the barest essentials accompanied by green and brown traveler's leathers. Her longboots are characteristic of the locality."
 
-    n "Her saw-toothed metal staff and iron mask strike Julian as distinct, but wracking his brain, he comes up with nothing for their origin."
+    n "Her barbed metal staff and iron mask strike Julian as distinct, but wracking his brain, he comes up with nothing for their origin."
 
     n "Whomever she is, she is a skilled warrior and healer."
 
@@ -2675,31 +2675,44 @@ label golemescape5:
 
     u "You're mine for as long as I like. A plaything, should I choose. It's unavoidable."
 
-    scene tess rappel
+    scene blackscreen
+    scene tess rappel with dissolve
 
     n "The demoness's monologue is cut short by a sturdy figure rappelling down the ladder leading to the depths of the crypt."
 
     hide adesse_distant
-    show tess:
-        xalign 0.0 yalign 0.0
 
-    n "The warrior eschews armor for green and brown traveler's leathers, adorned with protective talismans."
+    scene blackscreen
+    show tess at deadcenter:
+        size (1240, 1754)
+        xalign 0.5 yalign -1.0
+        linear 3.0 yalign 0.0
+
+    pause 4.0
+    show tess at deadcenter with dissolve:
+        size (800, 1100)
+
+    n "The warrior eschews a complete set of armor for the barest essentials accompanied by green and brown traveler's leathers."
 
     n "Their longboots are characteristic of the locality."
 
-    n "The saw-toothed metal staff wielded by the warrior and the iron mask strike the Golem as distinct, but mysterious in origin. Whomever this is, they strike an imposing form in the gray-hued darkness of the crypt."
+    n "The barbed metal staff wielded by the warrior and the iron mask strike the Golem as distinct, but mysterious in origin. Whomever this is, they strike an imposing form in the gray-hued darkness of the crypt."
 
-    n "Without uttering a word, the warrior's talismans emit a bright glow, and they bound forth through the chamber, acrobatically and powerfully vaulting from the lip of the precipice transecting the room."
+    n "Without uttering a word, a talisman around the warrior's neck emits a bright glow and they bound forth through the chamber, acrobatically and powerfully vaulting from the lip of the precipice transecting the room."
 
     n "The demoness's eyes widen in shock when presented with this threat. She launches sorcerous bolts of solid darkness towards the charging warrior - to utterly no effect."
 
-    n "Several of the countless protective talismans warding the warrior tremble and sunder, joining the human swamp below."
+    n "The warrior's protective talisman trembles and sunders, snapping in twain, joining the human swamp below."
+    
+    play sound "scream-90747.mp3"
 
-    n "Yet, the demoness's efforts are for naught. The warrior's weighted sawtoothed staff hurtles down at the end of the charge, pulping the demoness's skull with a sickening crunch."
-
+    n "Yet, the demoness's efforts are for naught. The warrior's barbed staff cleanly pierces the demoness through the eye with a sickening squelch at the end of her charge."
+    #sickening squelch sfx
     hide adesse_neutral
 
     n "The demoness discorporates, the look of revulsion and shock remaining the last features adorning her perfect face."
+
+    play sound "stone-dropping-6843.mp3"
 
     n  "A smooth, sulfurous stone is all that remains of the pristine villainess."
     # picture of stone?
@@ -2768,7 +2781,7 @@ label golemescape5:
 
     t "... Let's be off then. Up the way we came."
 
-    hide tess
+    hide tess with dissolve
     scene endingscreen
     with longdissolve
 
@@ -2972,9 +2985,9 @@ label golemescape7:
 
     show tess at deadcenter
 
-    n "The warrior eschews armor for green and brown traveler's leathers, adorned with protective talismans. Their longboots are characteristic of the locality."
+    n "The warrior eschews a complete set of armor for the barest essentials accompanied by green and brown traveler's leathers. Their longboots are characteristic of the locality."
 
-    n "The saw-toothed metal staff wielded by the warrior and the iron mask strike the Golem as distinct, but mysterious in origin."
+    n "The barbed metal staff wielded by the warrior and the iron mask strike the Golem as distinct, but mysterious in origin."
 
     n "Whomever this is, they strike an imposing form in the twilit hues of the crypt entrance."
 
@@ -3405,15 +3418,15 @@ n "A sturdy figure rappels down the ladder leading to the depths of the crypt."
 hide monumnet
 scene tess rappel
 
-n "The warrior eschews armor for green and brown traveler's leathers, adorned with protective talismans."
-
+n "The warrior eschews a complete set of armor for the barest essentials accompanied by green and brown traveler's leathers."
+    
 scene blackscreen
 show tess at deadcenter:
     size (800,1100)
 
 n "Their longboots are characteristic of the locality."
 
-n "The saw-toothed metal staff wielded by the warrior and the iron mask strike Dahlia as distinct, but mysterious in origin."
+n "The barbed metal staff wielded by the warrior and the iron mask strike Dahlia as distinct, but mysterious in origin."
 
 n "Whomever this is, they strike an imposing form in the gray-hued darkness of the crypt."
 
@@ -3813,7 +3826,7 @@ centered "{size=+40}{cps=8}{color=000000} Deniz Balik\n Nick Vitale\nRachel 'Des
 
 $ renpy.pause(1.5)
 
-centered "{size=+75}{cps=8}{color=000000} Art:\nRihards Kurts\nOndrej Svinčiak{/cps}{/size}{p=5.0}{nw}"
+centered "{size=+75}{cps=8}{color=000000} Art:\nRihards Kurts\nOndrej Svinčiak\nRachel 'Des' Marzzarella{/cps}{/size}{p=5.0}{nw}"
 
 $ renpy.pause(1.5)
 

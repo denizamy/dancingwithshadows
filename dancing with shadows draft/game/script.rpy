@@ -34,6 +34,7 @@ image emptycup = "cup_wooden.png"
 image fullcup = "cup_wooden_full.png"
 image emptycup2 = "cup_wooden.png"
 image fullcup2 = "cup_wooden_full.png"
+image vamp = "vampjulian.png"
 
 
 image waldwinelol = im.Scale("waldwinelol.png", 160, 200)
@@ -77,6 +78,7 @@ image prescience = "prescience.png"
 image strength = "Surgeofstrength.png"
 image blind = "blind.png"
 image blinding = im.Scale("blinding.png", 1920, 1080)
+image crimson = "sea of crimson.png"
 
 
 transform deadcenter:
@@ -1417,8 +1419,20 @@ label choice1_done:
 
 
     label badend:
-    scene blackscreen
-    with longdissolve
+
+    scene blackscreen with dissolve
+
+    play sound "monster-bite-44538.mp3"
+
+    
+    $ renpy.music.play("pathetic-screaming-sound-effect-312867.mp3", channel="sound2")
+
+    pause 4.0
+
+   
+    scene juliansplat with longdissolve:
+        size (1940 , 1080)
+
 
     n "In the total darkness of the crypt, Julian is slain by the lurking spawn of the Demon of Shadow."
 
@@ -3112,6 +3126,10 @@ scene sea of crimson:
 pause 0.25
 scene warehouse with longdissolve
 
+show crimson at deadcenter with quickdissolve:
+    size (1920,1080)
+    alpha 0.7
+
 n "Mustering her magical might, the room glows alight with a fel crimson bloom."
 
 #more spell effects
@@ -3202,32 +3220,45 @@ n "Her enhanced senses give her warning - wraithspawn ahead, and a fresh body."
 
 n "She casts a spell, concealing her presence completely from the mindless undead creatures roaming the crypt."
 
-scene wrathhall
-with quickdissolve
+scene juliansplat with dissolve:
+    size (1940,1080)
 
 n "Entering the room, she examines the corpse with a malevolent smirk."
-
-#insert image of julian
-
-show julian
 
 dh "Delightfully fresh… and bearing the stench of transgression."
 
 n "The witch inhales deeply, stifling a chortle."
 
+scene wrathhall with longdissolve
+
 dh "Awash with blood heavy with guilt. It isn't often I can reanimate a vampire."
 
 n "Dahlia takes a moment to clear her head and muster her might."
 
+play sound "epic-swoosh-boom-1-183996.mp3"
+
 n "She casts a powerful hex, utilizing the latent remnants of guilt Julian's soul possessed."
 
 n "Binding the weight of his guilt to the blood remaining in his body, her spell concludes."
+
 
 n "A stirring digit."
 
 n "A trembling limb."
 
 n "Julian's eyes go wide."
+
+window hide
+
+show vamp at deadcenter:
+    size (1300,1700)
+    xalign 0.5 yalign -1.0
+    linear 3.0 yalign 0.0
+
+pause 4.0
+
+show vamp at deadcenter:
+    size (800, 1040)
 
 dh "You may move when I permit."
 
@@ -3310,7 +3341,9 @@ a "You… seem to know what you're doing. A woman with experience."
 hide adesse_hurt
 with fastdissolve
 
-show adesse_flirty
+show adesse_flirty:
+    xalign 0.5 yalign 0.0
+    size (1240, 1754)
 with fastdissolve
 
 a "How endearing."

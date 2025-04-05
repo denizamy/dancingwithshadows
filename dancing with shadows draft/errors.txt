@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 3432: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    show tess at deadcenter:
+File "game/script.rpy", line 3628: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    size (550,800)
     ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Mon Mar 31 00:37:47 2025
+Sat Apr  5 01:35:38 2025

@@ -56,10 +56,13 @@ image druidhouse1 = im.Scale("druidhouseP1.png", 1920, 1080)
 image druidhouse2 = im.Scale("druidhouseP2.png", 1920, 1080)
 image druidhouse3 = im.Scale("druidhouseP3.png", 1920, 1080)
 image druidentrance = im.Scale("druidentrance.png", 1920, 1080)
+image tunnel = im.Scale("tunnel.png", 1920, 1080)
+image warehouse = im.Scale("warehouse.png", 1940, 1080)
+image emptywarehouse = im.Scale("emptywarehouse.png", 1920, 1080)
+image lithall = im.Scale("lithall.png", 1920, 1080)
+image darkhall1 = im.Scale("darkhall1.png", 1920, 1080)
+image wrathhall = im.Scale("wrathhall.png", 1920, 1080)
 
-image inya_angry = im.Scale("inya_angry.png",550, 800)
-image inya_blush = im.Scale("inya_blush.png",550, 800)
-image inya_smile = im.Scale("inya_smile.png",550,800)
 
 image adesse = "adessefull.png"
 image adesse_angry = "adesse_angry.png"
@@ -228,17 +231,26 @@ define adessedead = False
 label start:
 
     scene blackscreen
+
+    
     "Disclaimer: This is a very early release of this prologue. There will be bugs. You may direct bug reports and feedback to slack."
 
     "Many art assets, soundtracks, vfx, and sfx are works in progress."
 
     "Thank you for playing."
+
+    scene citystreet:
+        size (1940,1080)
+    with longdissolve
+    
     play music "Deep Haze.mp3"
 
 
     $ renpy.music.play("townamb.wav", channel="sound2")
    
     j "Follow a hidden path down the alleys. Three lefts and a right, then close your eyes for twelve seconds."
+
+    scene blackscreen with longdissolve
 
     j "Remain calm and still, breathing shallowly, and keep your hands at your side..."
 
@@ -265,6 +277,7 @@ label start:
 
     scene blackscreen
     with dissolve
+    pause 2.0
 
     play sound "knock.mp3"
 
@@ -650,11 +663,17 @@ label start:
     n "Torchlight glints off of metallic embellishments on the sarcophagi populating this moderately impressive tomb."
 
     show shadow:
-        xalign 0.6
-        yalign 0.4
+        xalign 0.9
+        yalign 0.5
+        alpha 0.6
+        size (900,2000)
     hide shadow with quickdissolve
 
-    show shadow at topright
+    show shadow:
+        xalign 0.1
+        yalign 0.2
+        size (900,2000)
+        alpha 0.6
     hide shadow with quickdissolve
 
     n "On the periphery of your vision, you notice unusual fleeting shadows. The demon must not be far off, and it has nowhere to run. One of you must perish today."
@@ -844,7 +863,8 @@ label cutbolt:
         j "You what? I… What the hell are you?"
 
         hide goblin
-        show inya_smile at deadcenter
+        show inya_smile at deadcenter:
+            size (550,800)
 
         g "Haha. I'm a goblin."
 
@@ -1225,8 +1245,9 @@ label golemchoice:
 
 label tunnel:
 
-    scene tunnel
-    with pixellate
+    scene tunnel with pixellate:
+        size (1940,1080)
+    
 
 if havetorch:
         j "I should be on guard. It's unusually stuffy in this tunnel, and black as pitch."
@@ -1271,8 +1292,7 @@ label warehouse:
         scene warehouse
         with pixellate
 
-        show golem:
-            alpha .3
+        
         j "Whatever this was, it's a trash heap now."
 
 menu:
@@ -1379,7 +1399,8 @@ label choice1_done:
     play sound "torchlighting.mp3"
 
     show ghost at offright:
-        alpha .3
+        size (500,500)
+        alpha .5
 
     j "I vaguely remember texts from the monastery describing the spawn of demons of shadow… it's been a while, but I think they're called Wraithspawn."
 
@@ -1399,6 +1420,7 @@ label choice1_done:
 
 
     show dog at offleft:
+        size (300,300)
         alpha .3
 
     n "A beloved family pet, perhaps?"
@@ -1476,7 +1498,8 @@ label choice1_done:
         "Look around":
             n "You look around and see an antique silver coin."
 
-    show coin at deadcenter
+    show coin at deadcenter:
+        size (125,125)
     #find a less stupid coin image with a transparent background
 
     j "The old farts at the monastery and maybe some of the druids remember when these were minted."
@@ -1985,7 +2008,7 @@ label golemstart:
 
     play music "Myst on the Moor.mp3"
 
-    scene warehouse
+    scene blackscreen
     with pixellate
 
     gl "Sensation… A touch…"
@@ -2013,8 +2036,11 @@ label golemstart:
 
             play sound "gyst.mp3"
             queue sound "flashwoosh.mp3"
+            show blinding1 with quickdissolve:
+                alpha 0.5
+            scene emptywarehouse with longdissolve
             n "The Golem wills its body into its proper configuration. The clamor of objects flying through the room lit by a bright blue flash as its stone body reassembles is unnoticed - or perhaps is just unremarkable to the Golem."
-
+            
             show golem:
                 alpha .3
                 alpha .5
@@ -2809,6 +2835,8 @@ label golemescape5:
 
     n "Their futures are murky, but for now, they have the dubious company of one another."
 
+    $golemactive = True
+
     $golemleftwithtess = True
 
     jump witchstart
@@ -3111,7 +3139,7 @@ with pixellate
 
 n "She follows the path in her divination - first, to the arcane anomaly."
 
-if barricade:
+if not barricade:
     n "Ancient, crumbling boards practically hang from the nails they were fixed to many decades ago."
 
     n "Even so, they do the trick. The way is blocked."
@@ -3197,7 +3225,7 @@ jump backtoatrium
 
 label golemactived:
 
-scene warehouse
+scene emptywarehouse
 with fade
 
 n "A room full of detritus. A disused artificer's lab, surely, by Dahlia's estimation."
@@ -3605,7 +3633,8 @@ dh "A goblin so close to the surface? Bless your heart, you're deformed… but a
 
 n "Dahlia appears genuinely impressed, realizing the implications of the goblin's predicament quickly."
 hide inya_smile
-show inya_angry at deadcenter
+show inya_angry at deadcenter:
+    size (550,800)
 
 g "Are all magicians so rude? You're tall like a man and really creepy."
 
@@ -3618,7 +3647,8 @@ dh "You're a survivor, and you've taught yourself our language."
 dh "You've triumphed over your impediments, and for that, you have my ardent admiration."
 
 hide inya_angry
-show inya_blush at deadcenter
+show inya_blush at deadcenter:
+    size (550,800)
 
 g "I…"
 
@@ -3636,7 +3666,8 @@ dh "I am Dahlia. It is a pleasure to meet you."
 
 n "Inya blinks, processing the fact Dahlia somehow knew her birth name. The realization hits her."
 hide inya_blush
-show inya_angry at deadcenter
+show inya_angry at deadcenter:
+    size (550,800)
 
 i "Oh… you figured out my goblin name with your magic."
 
@@ -3649,7 +3680,8 @@ dh "It shan't happen again, my little morsel."
 dh "I have divined all I need to know about you, and I find you starkly unique, and simply fascinating."
 
 hide inya_angry
-show inya_blush at deadcenter
+show inya_blush at deadcenter:
+    size (550,800)
 
 i "Y-you do?"
 
@@ -3678,7 +3710,8 @@ dh "I am the answer to your deepest desires."
 dh "I know everything about you, my Inya, and I find you worthy and fascinating."
 
 hide goblin
-show inya_blush at deadcenter
+show inya_blush at deadcenter:
+    size (550,800)
 
 n "Inya blushes a deep red and nearly faints. Meekly, she replies."
 

@@ -3904,7 +3904,7 @@ centered "{size=+40}{cps=8}{color=000000} Deniz Balik\n Nick Vitale\nRachel 'Des
 
 $ renpy.pause(1.5)
 
-centered "{size=+75}{cps=8}{color=000000} Art:\nRihards Kurts\nOndrej Svinčiak\nRachel 'Des' Marzzarella{/cps}{/size}{p=5.0}{nw}"
+centered "{size=+75}{cps=8}{color=000000} Art:\nRihards Kurts\nOndrej Svinčiak\nRachel 'Des' Marzzarella\nWill Watkins{/cps}{/size}{p=5.0}{nw}"
 
 $ renpy.pause(1.5)
 

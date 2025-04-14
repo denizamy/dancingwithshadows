@@ -56,12 +56,18 @@ image druidhouse1 = im.Scale("druidhouseP1.png", 1920, 1080)
 image druidhouse2 = im.Scale("druidhouseP2.png", 1920, 1080)
 image druidhouse3 = im.Scale("druidhouseP3.png", 1920, 1080)
 image druidentrance = im.Scale("druidentrance.png", 1920, 1080)
-image tunnel = im.Scale("tunnel.png", 1920, 1080)
-image warehouse = im.Scale("warehouse.png", 1940, 1080)
-image emptywarehouse = im.Scale("emptywarehouse.png", 1920, 1080)
+
 image lithall = im.Scale("lithall.png", 1920, 1080)
 image darkhall1 = im.Scale("darkhall1.png", 1920, 1080)
 image wrathhall = im.Scale("wrathhall.png", 1920, 1080)
+image monumentchamber = im.Scale("monumentchamber.png", 1920, 1080)
+
+image tunnel = im.Scale("tunnel.png", 1920, 1080)
+image warehouse = im.Scale("labhand.png", 1940, 1080)
+image emptywarehouse = im.Scale("labempty.png", 1920, 1080)
+image labbrokenglass = im.Scale("labbrokenglass.png", 1920, 1080)
+image brokenmirror = im.Scale("brokenmirror.png", 1920, 1080)
+image golemreflection = im.Scale("golemreflection.png", 1920, 1080)
 
 
 image adesse = "adessefull.png"

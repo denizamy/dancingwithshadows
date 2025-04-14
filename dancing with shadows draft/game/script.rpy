@@ -1062,6 +1062,11 @@ label cutbolt:
         n "Julian cracks a small smile, letting the goblin in on the joke. She returns the smile, a bit more slowly."
 
         j "It sounds lonely, living all by yourself in the sewers. What is your name, anyway?"
+        
+        hide inya_smile
+        show goblin at deadcenter:
+            size (550,800)
+
 
         g "It's not 'anyway', it's Inya."
 
@@ -1069,7 +1074,7 @@ label cutbolt:
 
         j "Okay, in-ya what?"
 
-        hide inya_smile
+        hide goblin
         show inya_angry at deadcenter:
             size (550,800)
 
@@ -2040,13 +2045,6 @@ label golemstart:
                 alpha 0.5
             scene emptywarehouse with longdissolve
             n "The Golem wills its body into its proper configuration. The clamor of objects flying through the room lit by a bright blue flash as its stone body reassembles is unnoticed - or perhaps is just unremarkable to the Golem."
-            
-            show golem:
-                alpha .3
-                alpha .5
-                alpha .7
-                alpha .9
-                alpha 1.0
 
     n "A dirty mirror, covered in years of dust and grime. The Golem wipes away the thick coating of dust."
 
@@ -2318,7 +2316,8 @@ label golemescape4:
     gl "I am this one."
 
     hide goblin
-    show inya_smile at deadcenter
+    show inya_smile at deadcenter:
+        size (550,800)
 
     g "Nobody talks like that. But um… You're really strong, that's so cool! What's your name?"
 
@@ -2538,7 +2537,9 @@ label golemescape5:
     show ghost at offright:
         alpha .3
     show dog at offleft:
+        size (300,300)
         alpha .3
+
     n "Faint, indistinct, macabre wraithspawn lurk in the corners of this place. In the center of the room lies the face-down corpse of the Golem's foe - this interloper oozing blood from its many wounds."
 
     "I must neutralize these threats."
@@ -2694,9 +2695,15 @@ label golemescape5:
         linear 6.0 yalign 0.0
 
     gl "It is unavoidable. We must do battle."
+     
+    hide adesse_neutral
+    with quickdissolve
+    show adesse_flirty:
+        size (1240, 1754)
+        xalign 0.5 yalign 0.0
 
     n "The demoness hesitates for but a moment, puzzled by the anomalous creature intruding into her domain. She grins an unnaturally wide grin."
-    hide adesse_neutral
+    hide adesse_flirty
     with quickdissolve
 
     show adesse_distant:
@@ -2722,13 +2729,14 @@ label golemescape5:
 
     hide adesse_distant
 
-    scene blackscreen
+    scene monument
     show tess at deadcenter:
         size (1240, 1754)
         xalign 0.5 yalign -1.0
         linear 3.0 yalign 0.0
 
     pause 4.0
+    scene monument
     show tess at deadcenter with dissolve:
         size (800, 1100)
 
@@ -2853,6 +2861,7 @@ n "A massive subterranean corridor. Sarcophagi line each side of this room."
 show ghost at offright:
     alpha .3
 show dog at offleft:
+    size (300,300)
     alpha .3
 
 "I must neutralize these threats."
@@ -3139,7 +3148,7 @@ with pixellate
 
 n "She follows the path in her divination - first, to the arcane anomaly."
 
-if not barricade:
+if barricade:
     n "Ancient, crumbling boards practically hang from the nails they were fixed to many decades ago."
 
     n "Even so, they do the trick. The way is blocked."
@@ -3178,9 +3187,6 @@ with fade
 n "A room full of detritus. A disused artificer's lab, surely, by Dahlia's estimation."
 
 n "Her eyes settle on her prize."
-
-show golem:
-    alpha .3
 
 dh "My dear, sweet thing. I've traveled leagues for you."
 
@@ -3530,7 +3536,7 @@ dh "What business do you have in an old dusty tomb, my Tessie?"
 
 t "I really don't like being called Tessie. But… I'll forgive you."
 
-t "This time."
+t ".....This time."
 
 t "I learned Nikolai is sending mercenaries to handle stray demons. That old fool has really lost the plot."
 

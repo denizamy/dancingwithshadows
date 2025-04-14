@@ -2055,6 +2055,7 @@ label golemstart:
             scene emptywarehouse with longdissolve
             n "The Golem wills its body into its proper configuration. The clamor of objects flying through the room lit by a bright blue flash as its stone body reassembles is unnoticed - or perhaps is just unremarkable to the Golem."
 
+    scene golemreflection
     n "A dirty mirror, covered in years of dust and grime. The Golem wipes away the thick coating of dust."
 
     gl "This one's appearance is clarified - but this one's objective is unclear. Identity is lost - purpose, undetermined."
@@ -2072,7 +2073,7 @@ label golemstart:
     menu:
         "Break the Mirror":
 
-            #TODO: image of broken mirror,
+            scene brokenmirror
             play sound "glassbreak.mp3"
             gl "Memories of fury - of violence. I wish not to reflect. I wish not to suffer. I must not yearn."
 
@@ -3249,6 +3250,7 @@ n "She peers carefully through the mess, coming up empty."
 
 if golembreakmirror:
 
+scene labbrokenglass
     n "Broken shards of glass litter the floor."
 
     n "Dahlia spots the source - a broken mirror from across the room. Whatever impacted the mirror struck it hard."

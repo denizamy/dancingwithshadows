@@ -1244,7 +1244,7 @@ label golemchoice:
     menu:
 
         "Dismantle Barricade":
-            $barricade = False
+            define barricade = False
             jump gogolem
 
         "Turn Back":
@@ -1621,6 +1621,7 @@ menu:
 
 label ladderdown:
 
+scene monument with pixellate
 "The shadows dance here, I must be close. There is a narrow walkway encircling an open pit, where the less fortunate are tossed to rot."
 
 "At least these are embalmed - a small courtesy for the poor."
@@ -2359,7 +2360,8 @@ label golemescape4:
     gl "Understood, Inya. Do you know the fate of my creator, or the interloper?"
 
     hide goblin
-    show inya_smile at deadcenter
+    show inya_smile at deadcenter:
+        size (550,800)
 
     n "Inya laughs, caught off guard. She seems to find delight in verbally prodding this anomaly."
 
@@ -3050,7 +3052,11 @@ label golemescape7:
 
     n "A burly form lumbers into the crypt - just as the Golem foresaw."
 
-    show tess at deadcenter
+    show tess at deadcenter:
+        size (1240, 1754)
+        xalign 0.5 yalign -1.0
+        linear 3.0 yalign 0.0
+    pause 4.0
 
     n "The warrior eschews a complete set of armor for the barest essentials accompanied by green and brown traveler's leathers. Their longboots are characteristic of the locality."
 
@@ -3191,7 +3197,7 @@ if golemactive:
 
 label golemnotactived:
 
-scene warehouse
+scene labbrokenglass
 with fade
 
 n "A room full of detritus. A disused artificer's lab, surely, by Dahlia's estimation."
@@ -3241,7 +3247,7 @@ jump backtoatrium
 
 label golemactived:
 
-scene emptywarehouse
+scene labbrokenglass
 with fade
 
 n "A room full of detritus. A disused artificer's lab, surely, by Dahlia's estimation."
@@ -3383,7 +3389,7 @@ n "Julian's limbs carried him to the entrance of the crypt, bidden by Dahlia's c
 
 label witchadesse:
 
-n "Dahlia hastens to the depths of the crypt with supernatural speed."
+n "Dahlia delves to the depths of the crypt with supernatural speed."
 
 scene monument
 with fastdissolve
@@ -3462,7 +3468,7 @@ label witchtess:
 if golemleftwithtess:
     jump witchgoblin
 
-n "Dahlia hastens to the depths of the crypt with supernatural speed."
+n "Dahlia delves into the depths of the crypt with supernatural speed."
 
 scene monument
 with fastdissolve

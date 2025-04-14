@@ -1446,6 +1446,8 @@ label choice1_done:
 
     n "Julian descends a flight of stairs deeper into the crypt."
 
+    window hide
+
     play sound "footsteps-on-sidewalk-84642.mp3"
 
     pause 1.5
@@ -1490,7 +1492,7 @@ label choice1_done:
 
     label monumentchamber:
 
-    scene monument
+    scene monumentchamber
     with pixellate
     # Room 3 - Monument Chamber
 
@@ -1562,7 +1564,6 @@ label choice1_done:
     label aftercoin:
     n "Despite the flickering flame of the torch, the shadows stir - and speak!"
 
-    # sound
     play sound "drawsword.mp3"
 
     n "Haphazardly drawing his blade, Julian stumbles backwards, caught off guard."
@@ -1636,14 +1637,12 @@ n "There - on the other side of the platform, the shadows take shape - the demon
 
 "What in the world?"
 
-#show adesse with slide Down
 play music "Agnus Dei X.mp3"
 
 show adesse_neutral:
     size (1240,1754)
     xalign 0.5 yalign 1.0
     linear 6.0 yalign 0.0
-
 
 u "Many other mortals have fled, yet here you are…"
 

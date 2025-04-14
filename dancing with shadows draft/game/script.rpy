@@ -3487,7 +3487,7 @@ hide monumnet
 scene tess rappel
 n "The warrior eschews a complete set of armor for the barest essentials accompanied by green and brown traveler's leathers."
 
-scene blackscreen
+scene monument
 show tess at deadcenter:
     size (1240, 1754)
     xalign 0.5 yalign -1.0

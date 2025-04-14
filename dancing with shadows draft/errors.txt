@@ -2,13 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 2699: show statement expects a non-empty block.
-    show adesse_flirty:
-                       ^
+File "game/script.rpy", line 3251: if statement expects a non-empty block.
+    if golembreakmirror:
+                        ^
 
-File "game/script.rpy", line 2700: expected statement.
-    size (1240, 1754)
-                     ^
+File "game/script.rpy", line 3254: Line is indented, but the preceding scene statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    n "Broken shards of glass litter the floor."
+    ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Sun Apr 13 21:00:38 2025
+Sun Apr 13 22:17:20 2025

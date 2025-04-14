@@ -3250,7 +3250,7 @@ n "She peers carefully through the mess, coming up empty."
 
 if golembreakmirror:
 
-scene labbrokenglass
+    scene labbrokenglass
     n "Broken shards of glass litter the floor."
 
     n "Dahlia spots the source - a broken mirror from across the room. Whatever impacted the mirror struck it hard."

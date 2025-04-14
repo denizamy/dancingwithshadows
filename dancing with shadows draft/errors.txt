@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 1246: choice menuitem expects a non-empty block.
-    "Dismantle Barricade":
-                          ^
+File "game/script.rpy", line 450: show statement expects a non-empty block.
+    show superdickmann at deadcenter:
+                                     ^
+
+File "game/script.rpy", line 451: expected statement.
+    size (2000, 2000)
+                     ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Sun Apr 13 22:56:48 2025
+Mon Apr 14 01:28:07 2025

@@ -41,11 +41,11 @@ image fullcup2 = "cup_wooden_full.png"
 image sulfurstone = "sulfurstone.png"
 
 
-image waldwinelol = im.Scale("waldwinelol.png", 160, 200)
-image waldwinelaying = im.Scale("waldwinelaying.png", 160, 200)
-image waldwinepouring = im.Scale("waldwinetilt.png", 160, 200)
-image waldwine = im.Scale("waldwineup.png", 160, 200)
-image waldwineup = im.Scale("waldwineup.png", 160, 200)
+image waldwinelol = im.Scale("waldwinelol.png", 150, 200)
+image waldwinelaying = im.Scale("waldwinelaying.png", 150, 200)
+image waldwinepouring = im.Scale("waldwinetilt.png", 150, 200)
+image waldwine = im.Scale("waldwineup.png", 150, 200)
+image waldwineup = im.Scale("waldwineup.png", 150, 200)
 image newgate =im.Scale("newgate.png", 1920, 1080)
 
 
@@ -433,6 +433,12 @@ label start:
         d "Spoken like a man of your trade - but save the violence for another time. I am glad it is to your liking, young man."
 
         j "There's something familiar about your face. Are you that fellow in the monastery murals? If that's you… what is it like being so old for such a long time?"
+
+
+        show superdickmann at deadcenter with quickdissolve:
+            size (160, 160)
+            xalign 0.675
+            yalign 0.235
 
         n "The Archdruid serenely gazes into the fire. From seemingly nowhere, a squirrel perched itself on his shoulder. It mimics his calm yet distant expression and gaze."
 

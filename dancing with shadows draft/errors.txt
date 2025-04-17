@@ -2,13 +2,17 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 450: show statement expects a non-empty block.
-    show superdickmann at deadcenter:
-                                     ^
+File "game/script.rpy", line 1574: show statement expects a non-empty block.
+    show shadowadesse at deadcenter:
+                                    ^
 
-File "game/script.rpy", line 451: expected statement.
-    size (2000, 2000)
-                     ^
+File "game/script.rpy", line 1575: expected statement.
+    size (800,800)
+                  ^
+
+File "game/script.rpy", line 1576: expected statement.
+    alpha 0.5
+           ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Mon Apr 14 01:28:07 2025
+Wed Apr 16 02:08:09 2025

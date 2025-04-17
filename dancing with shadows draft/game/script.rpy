@@ -39,6 +39,7 @@ image fullcup = "cup_wooden_full.png"
 image emptycup2 = "cup_wooden.png"
 image fullcup2 = "cup_wooden_full.png"
 image sulfurstone = "sulfurstone.png"
+image shadowadesse = "shadowadesse.png"
 
 
 image waldwinelol = im.Scale("waldwinelol.png", 150, 200)
@@ -1569,6 +1570,12 @@ label choice1_done:
 
     label aftercoin:
     n "Despite the flickering flame of the torch, the shadows stir - and speak!"
+
+    show shadowadesse at deadcenter:
+        size (1300,700)
+        alpha 0.6
+        yalign 0.3
+
 
     play sound "drawsword.mp3"
 

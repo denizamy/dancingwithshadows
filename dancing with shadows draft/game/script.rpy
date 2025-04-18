@@ -258,32 +258,32 @@ label start:
 
     $ renpy.music.play("townamb.wav", channel="sound2")
    
-    j "Follow a hidden path down the alleys. Three lefts and a right, then close your eyes for twelve seconds."
+    j "{i}Follow a hidden path down the alleys. Three lefts and a right, then close your eyes for twelve seconds.{/i}"
 
     scene blackscreen with longdissolve
 
-    j "Remain calm and still, breathing shallowly, and keep your hands at your side..."
+    j "{i}Remain calm and still, breathing shallowly, and keep your hands at your side...{/i}"
 
     $ renpy.music.play("heartbeatbreath.mp3", channel="sound2",)
 
-    j "It sounded like nonsense, but nonsense was my only lead."
+    j "{i}It sounded like nonsense, but nonsense was my only lead.{/i}"
 
-    j "I pitied that beggar, and that's really why I'm here, I guess. Meager times create many beggars, with evil begetting evil and all that… "
+    j "{i}I pitied that beggar, and that's really why I'm here, I guess. Meager times create many beggars, with evil begetting evil and all that…{/i}"
 
-    j "I guess this isn't a great evil if I'm just wasting my time here, in the grand scheme of things."
+    j "{i}I guess this isn't a great evil if I'm just wasting my time here, in the grand scheme of things.{/i}"
 
-    j "He didn't want anything from me. I've never had a good grasp on balancing naïvety and cynicism..."
+    j "{i}That beggar didn't want anything from me. I've never had a good grasp on balancing naïvety and cynicism...{/i}"
 
-    j "Plus, I need the work. That was my last copper gone in the tavern. My equipment is in good shape, I'm healthy and have a full belly, for now at least. Okay, it's been at least twelve seconds."
+    j "{i}I should stop second guessing myself. I need the work. That was my last copper gone in the tavern. My equipment is in good shape, I'm healthy and have a full belly, for now at least. Okay, it's been at least twelve seconds.{/i}"
 
     $ renpy.music.play("townamb.wav", channel="sound2")
 
     scene druidentrance
     with pixellate
 
-    j ".…I really just can't believe it. Do all druids work in such secrecy, or just \"Arch\" druids when they're looking for a sucker to do their dirty work?"
+    j "{i}.…I really just can't believe it. Do all druids work in such secrecy, or just \"Arch\" druids when they're looking for a sucker to do their dirty work?{/i}"
 
-    j "I'm here. This is what I came here for. There's no sense in wasting any more time."
+    j "{i}I'm here. This is what I came here for. There's no sense in wasting any more time.{/i}"
 
     scene blackscreen
     with dissolve
@@ -311,7 +311,7 @@ label start:
 
     n "Deep creases of worry fill the void in the elderly man's expression as he strains his eyes in the firelight, as if beholding something only seen by him."
 
-    "{i}Magicians of any kind make me nervous. He seems friendly enough, but I shouldn't let my guard down.{/i}"
+    j "{i}Magicians of any kind make me nervous. He seems friendly enough, but I shouldn't let my guard down.{/i}"
 
     n "He gestures at the open seat next to the fire and speaks with a soft woody baritone - akin to the rumble of straining mine supports deep in the earth."
 
@@ -516,13 +516,13 @@ label start:
 
     n "Julian departs the druid's hut, and finds himself roughly where he expected - the same place he began the strange ritual to find the magician's hideaway."
 
-    j "I'm not in any position to complain. One hundred crowns is more than I've seen in the last four jobs… "
+    j "{i}I'm not in any position to complain. One hundred crowns is more than I've seen in the last four jobs… {/i}"
 
-    j "What could that oldtimer have meant by a demon's 'wiles'?"
+    j "{i}What could that oldtimer have meant by a demon's 'wiles'?{/i}"
 
-    j "Maybe it's just an old way of speaking."
+    j "{i}Maybe it's just an old way of speaking.{/i}"
 
-    j "I'd best not tarry."
+    j "{i}I'd best not tarry.{/i}"
 
     scene blackscreen
     with fade
@@ -530,27 +530,27 @@ label start:
     $ renpy.music.stop(channel="sound2, fadeout=6.0")
 
     if acceptdruid:
-        j "That place was like a dream. I remember the important bits, for now, but I ought to write it down in case I forget."
+        j "{i}That place was like a dream. I remember the important bits, for now, but I ought to write it down in case I forget.{/i}"
 
-        j "He said his name is 'Kolya', I think… I've never met someone with such a strange name."
+        j "{i}He said his name is 'Kolya', I think… I've never met someone with such a strange name.{/i}"
 
-        j "I haven't been so at ease and relaxed as long as I can remember. It must have been that 'Waldwine' he had me drink… "
+        j "{i}I haven't been so at ease and relaxed as long as I can remember. It must have been that 'Waldwine' he had me drink… {/i}"
 
-        j "Come to think of it, he must have been jesting about the murals. Some of them are at least one hundred years old. "
+        j "{i}Come to think of it, he must have been jesting about the murals. Some of them are at least one hundred years old.{/i}"
 
-        j "I suppose when you're as old as he is, everyone starts to look a bit alike. Maybe he just has one of those familiar faces."
+        j "{i}I suppose when you're as old as he is, everyone starts to look a bit alike. Maybe he just has one of those familiar faces.{/i}"
 
-        j "Maybe. I'll have time to think about this more later. For now, the job."
+        j "{i}Maybe. I'll have time to think about this more later. For now, the job.{/i}"
 
         jump crypttime
     elif noacceptdruid:
-        j "I'll be six feet in the dirt if I ever deal with another magician after this job. If there is a next job."
+        j "{i}I'll be six feet in the dirt if I ever deal with another magician after this job. If there is a next job.{/i}"
 
-        j "One hundred is about what I'd need to bother with another of these tricksters, and I have a nasty feeling it isn't the last of them on this journey."
+        j "{i}One hundred is about what I'd need to bother with another of these tricksters, and I have a nasty feeling it isn't the last of them on this journey.{/i}"
 
-        j "It's a pity he didn't give me an advance - I could pawn off this blade and shield and be two weeks distant from that creep."
+        j "{i}It's a pity he didn't give me an advance - I could pawn off this blade and shield and be two weeks distant from that creep.{/i}"
 
-        j "One hundred crowns is worth the effort, if it doesn't kill me."
+        j "{i}One hundred crowns is worth the effort, if it doesn't kill me.{/i}"
 
 
     ########################################
@@ -576,9 +576,9 @@ label start:
 
     n "Along the way, he heard rumors of locals being harassed when mourning their dead, statues and monuments within the crypt being toppled, and unsettling shadows darting around the crypt, irrespective of the lack of wind and torch."
 
-    "The Archdruid told me my quarry is a Demon of Shadow - not a trivial, nor a major demon. I should be on my guard."
+    j "{i}The Archdruid told me my quarry is a Demon of Shadow - not a trivial, nor a major demon. I should be on my guard.{/i}"
 
-    "The blasted thing must be inside. I should keep stock of my belongings before I head in."
+    j "{i}The blasted thing must be inside. I should keep stock of my belongings before I head in.{/i}"
 
     # i can't get this shit to transition smoothly without the fucking transparent checkerboard bullshit
 
@@ -590,13 +590,13 @@ label start:
         size (220,220)
     with quickdissolve
 
-    j "Sealed with a wax stamp. Strange, it looks like the monastery sigil."
+    j "{i}Sealed with a wax stamp. Strange, it looks like the monastery sigil.{/i}"
 
     hide sealedcontract
     show contract at deadcenter:
         size (240,240)
 
-    j " It reads: Slay and banish the presence, whatever it may be, from this formerly sanctified place of rest."
+    j "{i}It reads: Slay and banish the presence, whatever it may be, from this formerly sanctified place of rest.{/i}"
 
     hide contract 
     with quickdissolve
@@ -607,7 +607,7 @@ label start:
 
     n "A steel bastard sword plated with silver along the edge."
 
-    j "I might stand a chance with this blade, if I’m lucky."
+    j "{i}I might stand a chance with this blade, if I’m lucky.{/i}"
 
     hide sword with quickdissolve
         
@@ -615,22 +615,22 @@ label start:
     show shield at deadcenter:
          size (350,500)
 
-    j "The sheen on this steel shield is phenomenal, and as long as there is even a scant amount of light, the Archdruid reassured me none of the demon’s shadow magic can harm me."
+    j "{i}The sheen on this steel shield is phenomenal, and as long as there is even a scant amount of light, the Archdruid reassured me none of the demon’s shadow magic can harm me.{/i}"
 
     hide shield with quickdissolve
 
     show hardtack at deadcenter:
         size (220,220)
 
-    j "I don't even want to think about hardtack if I can't soften it up first. It's about as hard and appetizing as a brick."
+    j "{i}I don't even want to think about hardtack if I can't soften it up first. It's about as hard and appetizing as a brick.{/i}"
   
     hide hardtack with quickdissolve
     show canteen at deadcenter:
         size (250,250)
 
-    j "And the waterskin..."
+    j "{i}And the waterskin...{/i}"
 
-    j "It's filled with three-day old small beer. Smells sour. I probably shouldn't, unless I really need to."
+    j "{i}It's filled with three-day old small beer. Smells sour. I probably shouldn't, unless I really need to.{/i}"
 
     hide canteen with quickdissolve
         
@@ -638,14 +638,14 @@ label start:
     hide backpack
     with dissolve
 
-    j "That's it."
+    j "{i}That's it.{/i}"
 
     show black with dissolve
 
     show crypt at deadcenter
     with dissolve
 
-    j "Okay, enough stalling... let's do this."
+    j "{i}Okay, enough stalling... let's do this.{/i}"
 
     menu:
 
@@ -669,7 +669,7 @@ label start:
 
     n "As you enter, you hear hydraulic mechanisms automatically shut the large steel gate behind you."
 
-    j "A security measure by the townsfolk, surely."
+    j "{i}A security measure by the townsfolk, surely.{/i}"
 
     n "You are trapped down here with the demon, and it with you, until one of you perishes."
 
@@ -698,7 +698,7 @@ label start:
 
     n "It seems the townsfolk or druids left a torch here for your use."
 
-    j 'Oh, a torch.'
+    j '{i}Oh, a torch.{/i}'
 
     label picktorch:
 
@@ -717,10 +717,10 @@ label start:
         show unlit at deadcenter:
              size (200,200)
 
-        j "I should take it. A light source would be useful in this dark place… especially with a demon of shadow lurking nearby."
+        j "{i}I should take it. A light source would be useful in this dark place… especially with a demon of shadow lurking nearby.{/i}"
         $ inventory_items.append("Torch")
 
-        j "A sturdy branch topped with dry cloth soaked in pitch and an alchemical mixture. I can ignite it by striking it against the wall. These don’t last forever…"
+        j "{i}A sturdy branch topped with dry cloth soaked in pitch and an alchemical mixture. I can ignite it by striking it against the wall. These don’t last forever…{/i}"
 
         hide unlit
 
@@ -734,7 +734,7 @@ label start:
         $ notorch = True
         hide unlit
 
-        j "I'll be fine."
+        j "{i}I'll be fine.{/i}"
 
         n "You leave the torch behind."
 
@@ -769,21 +769,21 @@ label start:
 
         $ darkness += 1
 
-        j "… Huh. "
+        j "{i}… Huh.{/i}"
 
-        j "This looks a lot like an access tunnel to the city's sewers. It would make sense for something like this to be here in the outskirts, I suppose."
+        j "{i}This looks a lot like an access tunnel to the city's sewers. It would make sense for something like this to be here in the outskirts, I suppose.{/i}"
 
-        j "It seems a bit insensitive to connect the sewers to a crypt, but I'm not the city planner."
+        j "{i}It seems a bit insensitive to connect the sewers to a crypt, but I'm not the city planner.{/i}"
 
-        j "They're working with what space they have, I guess."
+        j "{i}They're working with what space they have, I guess.{/i}"
         jump goblinchoice
 
     label choice1_right:
 
         if golemactive:
-            j "I'd rather not mingle any more with sorcerous experiments left in storage for a hundred years."
-            j "Like I said, it's somebody else's problem now."
-            j "If they want me to take care of it, well, another hundred crowns would be nice."
+            j "{i}I'd rather not mingle any more with sorcerous experiments left in storage for a hundred years.{/i}"
+            j "{i}Like I said, it's somebody else's problem now.{/i}"
+            j "{i}If they want me to take care of it, well, another hundred crowns would be nice.{/i}"
             hide golem
             scene newatrium
             jump LookLeftLookRight
@@ -803,15 +803,15 @@ label start:
 
     label goblinchoice:
 
-    j "The entrance is blocked by an iron grate. The bars are serviceably thick, but they're made of low grade iron with a lot of corrosion."
+    j "{i}The entrance is blocked by an iron grate. The bars are serviceably thick, but they're made of low grade iron with a lot of corrosion.{/i}"
 
-    j "If I found something to bend or break these, maybe I could exit to the city."
+    j "{i}If I found something to bend or break these, maybe I could exit to the city.{/i}"
 
-    j "Do I want to do that? I'd be abandoning my contract."
+    j "{i}Do I want to do that? I'd be abandoning my contract.{/i}"
 
-    j "Maybe I'm not cut out for this business involving magicians and demons."
+    j "{i}Maybe I'm not cut out for this business involving magicians and demons.{/i}"
 
-    j "I'll have to give it a think."
+    j "{i}I'll have to give it some thought.{/i}"
 
     if boltcutters:
         jump cutbolt
@@ -832,13 +832,13 @@ label cutbolt:
 
     label meetgoblin:
 
-        j "I've had enough of this nonsense. I'm not about to die in a haunted crypt."
+        j "{i}I've had enough of this nonsense. I'm not about to die in a haunted crypt.{/i}"
 
-        j "This situation might be funny under other circumstances… circumstances I'm not in… "
+        j "{i}This situation might be funny under other circumstances… circumstances I'm not in…{/i}"
 
-        j "It's time to get the hell out of here, and quick."
+        j "{i}It's time to get the hell out of here, and quick.{/i}"
 
-        j "I'll be damned twice if I end up dead doing the bidding of an out of touch old fart."
+        j "{i}I'll be damned twice if I end up dead doing the bidding of an out of touch old fart.{/i}"
 
         queue sound "cutbolt.mp3"
         queue sound "boltfloor.mp3"
@@ -853,7 +853,7 @@ label cutbolt:
         play music "Inya Theme (First Encounter).mp3"
         play sound "drawsword.mp3"
 
-        j "What's that?"
+        j "{i}What's that?{/i}"
 
         window hide
 
@@ -916,7 +916,7 @@ label cutbolt:
 
         label flirtygoblin:
 
-        "I can't believe I'm doing this."
+        j "{i}I can't believe I'm doing this.{/i}"
 
         play sound "sheath.mp3"
 
@@ -977,7 +977,7 @@ label cutbolt:
 
         j "Julian. Julian Grymwald."
 
-        "I really need to stop being so impulsive."
+        j "{i}I really need to stop being so impulsive.{/i}"
 
         j "You're not a magician, or a magician's familiar… right?"
 
@@ -1034,7 +1034,7 @@ label cutbolt:
 
         n "The goblin demonstrates, pointing the barrel of the blowgun at Julian. She takes a quiet, deep inhale, and mimes the action, exhaling through the tube."
 
-        "I'm starting to reconsider this course of action… She seems friendly enough at least, if a bit unhinged."
+        j "{i}I'm starting to reconsider this course of action… She seems friendly enough at least, if a bit unhinged.{/i}"
 
         g "You'd find what I eat gross, but it's not gross for goblins. Well…"
 
@@ -1176,7 +1176,7 @@ label cutbolt:
 
     play music "Floating Cities.mp3"
 
-    "I don't really know what I'm looking at, but I don't like it. It's time to get out of here - no witnesses."
+    j "{i}I don't really know what I'm looking at, but I don't like it. It's time to get out of here - no witnesses.{/i}"
 
     j "I'm actually a landed noble - the baron."
 
@@ -1195,7 +1195,7 @@ label cutbolt:
 
     n "Approaching slowly during the conversation, Julian strikes down the goblin with his blade before she can react."
 
-    "Well, that was easy. I feel guilty, but a bit less guilty this go around. I'd best keep moving and not think about it too hard."
+    j "{i}Well, that was easy. I feel guilty, but a bit less guilty this go around. I'd best keep moving and not think about it too hard.{/i}"
 
     n "Julian, indeed, made his way through the sewers, into the city."
 
@@ -1207,11 +1207,11 @@ label cutbolt:
     scene endingscreen
     with pixellate
 
-    j "I had best lay low for a while. That magician will inevitably send cronies after me if he really did have one hundred crowns to just throw around."
+    j "{i}I had best lay low for a while. That magician will inevitably send cronies after me if he really did have one hundred crowns to just throw around.{/i}"
 
-    j "What did he call these things - a silvered blade and a shield capable of deflecting dark magic?"
+    j "{i}What did he call these things - a silvered blade and a shield capable of deflecting dark magic?{/i}"
 
-    j "I'll have to keep an ear to the ground for the right buyers."
+    j "{i}I'll have to keep an ear to the ground for the right buyers.{/i}"
 
     define goblindead = True
     $ leftwithgoblin = False
@@ -1224,11 +1224,11 @@ label cutbolt:
 
 label nogoblin:
 
-    j "Lucky me, I have just the right tool for the job - but I can't be serious with this. I've come all this way for nothing?"
+    j "{i}Lucky me, I have just the right tool for the job - but I can't be serious with this. I've come all this way for nothing?{/i}"
 
-    j "One hundred crowns could keep me fed for months, and I could buy some new equipment, not even considering the connections the Archdruid might have for me."
+    j "{i}One hundred crowns could keep me fed for months, and I could buy some new equipment, not even considering the connections the Archdruid might have for me.{/i}"
 
-    j "I'm better than this. Let's be thorough."
+    j "{i}I'm better than this. Let's be thorough.{/i}"
 
     n "You return back to atrium."
 
@@ -1243,9 +1243,9 @@ label golemchoice:
 
     n "Before you is tunnel that is barricaded by a few simple boards."
 
-    j "Ugh, do I really want to be doing this?"
+    j "{i}Ugh, do I really want to be doing this?{/i}"
 
-    j "There's a quarter inch of dust covering literally everything. If I found this demon in such a cramped space, I don't think I'd even be able to swing my sword…."
+    j "{i}There's a quarter inch of dust covering literally everything. If I found this demon in such a cramped space, I don't think I'd even be able to swing my sword….{/i}"
 
     menu:
 
@@ -1258,9 +1258,9 @@ label golemchoice:
 
     label gogolem:
 
-        j "Here goes nothing. These boards look simple enough to remove by hand. Dry rot and the ravages of time have reduced them practically to splinters."
+        j "{i}Here goes nothing. These boards look simple enough to remove by hand. Dry rot and the ravages of time have reduced them practically to splinters.{/i}"
 
-        j "It's going to be a tight fit. I can't even stand up straight in this cramped tunnel."
+        j "{i}It's going to be a tight fit. I can't even stand up straight in this cramped tunnel.{/i}"
 
         jump tunnel
 
@@ -1271,19 +1271,19 @@ label tunnel:
     
 
 if havetorch:
-        j "I should be on guard. It's unusually stuffy in this tunnel, and black as pitch."
+        j "{i}I should be on guard. It's unusually stuffy in this tunnel, and black as pitch.{/i}"
 
-        j "It reminds me of an abandoned factory, or that mage's study years past…"
+        j "{i}It reminds me of an abandoned factory, or that mage's study years past…{/i}"
 
-        j "Well, here goes nothing."
+        j "{i}Well, here goes nothing.{/i}"
 
         jump warehouse
 
 elif notorch:
 
-        j "I should come back with a light source."
+        j "{i}I should come back with a light source.{/i}"
 
-        j "This place stinks of a trap. It would be foolish to fumble around in the dark and step on a nail, or worse."
+        j "{i}This place stinks of a trap. It would be foolish to fumble around in the dark and step on a nail, or worse.{/i}"
 
         n "You go back the way you came."
 
@@ -1296,9 +1296,9 @@ elif notorch:
 
 label leavegolem:
 
-        j "No, something is wrong about this place. It's like it has been pulled from a different place and time."
+        j "{i}No, something is wrong about this place. It's like it has been pulled from a different place and time.{/i}"
 
-        j "I might come back to it, if this creature isn't anywhere else in this crypt, provided I can think of a plan…"
+        j "{i}I might come back to it, if this creature isn't anywhere else in this crypt, provided I can think of a plan…{/i}"
 
         n "You go back the way you came."
 
@@ -1314,25 +1314,25 @@ label warehouse:
         with pixellate
 
         
-        j "Whatever this was, it's a trash heap now."
+        j "{i}Whatever this was, it's a trash heap now.{/i}"
 
 menu:
         "Search rubble":
-            j "I might as well try to find something useful while I'm here."
+            j "{i}I might as well try to find something useful while I'm here.{/i}"
 
             play sound "rummage.mp3"
 
             n "You sort through the rubble and find a set of bolt cutters."
             $ boltcutters = True
 
-            j "Huh. These might come in handy, I guess. Nobody else is using them, I might as well bring them along."
+            j "{i}Huh. These might come in handy, I guess. Nobody else is using them, I might as well bring them along.{/i}"
 
             jump golemtouch
 
         "Turn back":
-            j "Well, this is a dead end."
+            j "{i}Well, this is a dead end.{/i}"
 
-            j "There's plenty of this crypt left to explore. The demon is here somewhere."
+            j "{i}There's plenty of this crypt left to explore. The demon is here somewhere.{/i}"
 
             n "You go back the way you came."
 
@@ -1347,9 +1347,9 @@ menu:
 
 label golemtouch:
 
-        j "There is some strange text on these stones. Strange, it almost looks like an arm…"
+        j "{i}There is some strange text on these stones. It looks like the arm of a sculpture…{/i}"
 
-        j "Maybe this was a sculptor's studio? That doesn't seem quite right."
+        j "{i}Maybe this was a sculptor's studio? That doesn't seem quite right.{/i}"
 
 menu:
         "Touch symbol":
@@ -1358,7 +1358,8 @@ menu:
             queue sound "flashwoosh.mp3"
             n "The pile of rubble begins to shake, and the runes in the rubble pile begin to glow with a dim blue light."
 
-            j "I'm not getting paid enough for this. This isn't a demon, it's somebody else's problem. I'm getting out of here."
+
+            j "{i}I'm not getting paid enough for this. This isn't a demon, it's somebody else's problem. I'm getting out of here.{/i}"
 
             n "You go back the way you came."
             hide golem
@@ -1371,7 +1372,7 @@ menu:
             jump LookLeftLookRight
 
         "Turn back":
-            j "I'd better not. There's plenty left to do here. I'll think about it."
+            j "{i}I'd better not. There's plenty left to do here. I'll think about it.{/i}"
 
             hide golem
 
@@ -1387,7 +1388,7 @@ label choice1_done:
     scene darkhall1
     with pixellate
 
-    "The rooms ahead are shrouded in oppressive darkness - likely the work of this demon."
+    j "{i}The rooms ahead are shrouded in oppressive darkness - likely the work of this demon.{/i}"
 
     if havetorch:
         jump choice3_torch
@@ -1401,13 +1402,13 @@ label choice1_done:
     scene lithall
     with pixellate
 
-    j "I should be well prepared for the push ahead. If I squint, I can see solid silhouettes deeper in this place."
+    j "{i}I should be well prepared for the push ahead. If I squint, I can see solid silhouettes deeper in this place.{/i}"
 
     jump choice3_done
 
     label choice3_done:
 
-    j "Let's keep moving."
+    j "{i}Let's keep moving.{/i}"
 
     scene wrathhall
     with pixellate
@@ -1423,21 +1424,21 @@ label choice1_done:
         size (500,500)
         alpha .5
 
-    j "I vaguely remember texts from the monastery describing the spawn of demons of shadow… it's been a while, but I think they're called Wraithspawn."
+    j "{i}I vaguely remember texts from the monastery describing the spawn of demons of shadow… it's been a while, but I think they're called Wraithspawn.{/i}"
 
-    j "They are the creations of my quarry, if I'm right.. As unsettling as they are, they don’t present a threat unless I provoke them - so long as my torch lasts."
+    j "{i}They are the creations of my quarry, if I'm right.. As unsettling as they are, they don’t present a threat unless I provoke them - so long as my torch lasts.{/i}"
 
-    j "They appear as they did at death - the old, the infirm, the maimed, and the beloved pets of the townsfolk as well."
+    j "{i}They appear as they did at death - the old, the infirm, the maimed, and the beloved pets of the townsfolk.{/i}"
 
-    j "They didn’t embellish their tales. This is grim indeed."
+    j "{i}This is grim.{/i}"
 
-    n "A dark silhouette like a blot in space."
+    n "The figures are dark silhouettes like a blot in space."
 
-    n "This one suffered a major injury in life."
+    n "One suffered a major injury in life."
 
     n "Its spine folds like an accordion, and its arm drags limply at its side."
 
-    j "It doesn't seem to be in pain, at least. I wonder if it knows where it is?"
+    j "{i}It doesn't seem to be in pain, at least. I wonder if it knows where it is?{/i}"
 
 
     show dog at offleft:
@@ -1446,9 +1447,9 @@ label choice1_done:
 
     n "A beloved family pet, perhaps?"
 
-    j "It paces throughout the chamber as if seeking out its master."
+    j "{i}It paces throughout the chamber as if seeking out its master.{/i}"
 
-    j "Why was this innocent creature cursed to wander like this?"
+    j "{i}Why was this innocent creature cursed to wander like this?{/i}"
 
     n "Julian descends a flight of stairs deeper into the crypt."
 
@@ -1469,7 +1470,7 @@ label choice1_done:
         $deadjulian = True
         $barricade = True
 
-    j "It's so dark. Something here is wrong… It's too dark."
+    j "{i}It's so dark. Something here is wrong… It's too dark.{/i}"
 
 
     label badend:
@@ -1511,9 +1512,9 @@ label choice1_done:
 
     n "Aside from the ladder down and the way you entered, it appears all of the connecting chambers are blocked by collapsed rubble."
 
-    j "The locals surely wouldn't do this."
+    j "{i}The locals surely wouldn't do this.{/i}"
 
-    j "I should be on guard and gather my bearings before pushing ahead."
+    j "{i}I should be on guard and gather my bearings before pushing ahead.{/i}"
 
     if nocoin or havecoin:
         jump aftercoinchoice
@@ -1526,15 +1527,15 @@ label choice1_done:
         size (125,125)
     #find a less stupid coin image with a transparent background
 
-    j "The old farts at the monastery and maybe some of the druids remember when these were minted."
+    j "{i}The old farts at the monastery and maybe some of the druids remember when these were minted.{/i}"
 
-    j "They're at least half zinc, more than a quarter copper, but there's a bit of silver in there... I guess that's why they're called 'silver coins.'"
+    j "{i}They're at least half zinc, more than a quarter copper, but there's a bit of silver in there... I guess that's why they're 'silver coins'.{/i}"
 
-    j "It's strange to find something like this here."
+    j "{i}It's strange to find something like this here.{/i}"
 
-    j "There is a puncture near the edge of the coin, as if it were attached as a necklace."
+    j "{i}There is a puncture near the edge of the coin, as if it were attached as a necklace.{/i}"
 
-    j "How odd. Maybe one of the townies dropped it while fleeing...."
+    j "{i}How odd. Maybe one of the townsfolk dropped it while fleeing....{/i}"
 
     menu:
 
@@ -1547,7 +1548,7 @@ label choice1_done:
     label choice2_ignore:
         $nocoin = True
 
-        j "Something is off about this. I should trust my gut. Much is amiss in this tomb, and I had best not tempt the spirits. One monster is enough…"
+        j "{i}Something is off about this. I should trust my gut. Much is amiss in this tomb, and I had best not tempt the spirits. One monster is enough…{/i}"
 
         n "You leave the coin and move on."
 
@@ -1560,7 +1561,7 @@ label choice1_done:
         show coin at deadcenter
         with dissolve
 
-        j "Whatever, it's mine now. Whoever lost it is long dead. In their place, I wouldn't begrudge me."
+        j "{i}Whatever, it's mine now. Whoever lost it is long dead. In their place, I wouldn't begrudge me.{/i}"
 
         $ inventory_items.append("coin")
 
@@ -1590,7 +1591,7 @@ label choice1_done:
 
     hide shadowadesse with longdissolve
 
-    j "Unsettling. The torch has sent the fiend fleeing - I had best pursue it..."
+    j "{i}Unsettling. The torch has sent the fiend fleeing - I had best pursue it...{/i}"
 
 label aftercoinchoice:
 
@@ -1600,7 +1601,7 @@ menu:
             hide monumentchamber with dissolve
             hide monument with dissolve
 
-            j "I need to get my bearings. I'm not sure I'm ready for all this just yet. I need to be absolutely sure before I hunt down this creature."
+            j "{i}I need to get my bearings. I'm not sure I'm ready for all this just yet. I need to be absolutely sure before I hunt down this creature.{/i}"
             scene newatrium with pixellate
             jump LookLeftLookRight
             with dissolve
@@ -1610,13 +1611,13 @@ menu:
             jump memorials
 
 label memorials:
-            n "Dedicated to heroes who were stalwart defenders of the people - soldiers and sellswords alike. Many of them fell to demons."
+            n "These memorials were dedicated to heroes who were stalwart defenders of the people - soldiers and sellswords alike. Many of them fell to demons."
 
-            j "It seems like a bit of a petulant tantrum, doesn't it? Perhaps my expectations of these creatures were too lofty."
+            j "{i}It seems like a bit of a petulant tantrum, doesn't it? Perhaps my expectations of these creatures were too lofty.{/i}"
 
             n "A ladder in the center of the room, leading down to the peasant's graves. It looks freshly disturbed."
 
-            j "What purpose could this demon have disturbing the remains of the destitute?"
+            j "{i}What purpose could this demon have disturbing the remains of the destitute?{/i}"
 
 
 menu:
@@ -1637,21 +1638,21 @@ menu:
 label ladderdown:
 
 scene monument with pixellate
-"The shadows dance here, I must be close. There is a narrow walkway encircling an open pit, where the less fortunate are tossed to rot."
+j "{i}The shadows dance here, I must be close. There is a narrow walkway encircling an open pit, where the less fortunate are tossed to rot.{/i}"
 
-"At least these are embalmed - a small courtesy for the poor."
+j "{i}At least these are embalmed - a small courtesy for the poor.{/i}"
 
-"It's a dead end. The demon is surely here. But where?"
+j "{i}It's a dead end. The demon is surely here. But where?{/i}"
 
-"Ugh, I don't think I can bear this stench for much longer…"
+j "{i}Ugh, I don't think I can bear this stench for much longer…{/i}"
 
 
 n "There - on the other side of the platform, the shadows take shape - the demon manifests."
 # sound
 
-"… … …"
+j "{i}… … …{/i}"
 
-"What in the world?"
+j "What in the world?"
 
 play music "Agnus Dei X.mp3"
 
@@ -1746,7 +1747,7 @@ label attackdemoness2:
     
     play sound "hit-swing-sword-small-2-95566.mp3"
 
-    n "The demoness's self-satisfied expression fades as the blade slices through her cranium."
+    n "The demoness's self-satisfied expression fades as the blade slices through her skull."
     window hide
     play sound "scream-90747.mp3"
 
@@ -1762,7 +1763,7 @@ label attackdemoness2:
     show sulfurstone at deadcenter:
         size (450, 250)
 
-    j "There's… no blood. But it's gone. I can feel its absence."
+    j "{i}There's… no blood. But it's gone. I can feel its absence.{/i}"
     
 
     jump demonessresolution2
@@ -1871,13 +1872,13 @@ label demonessresolution2:
 
     show sulfurstone at deadcenter:
         size (450, 250)
-    j "The deed is done. The demon is vanquished. Strange, it seems the foul harpy left a trinket among her remains. A soft, sulfurous stone - proof of my victory."
+    j "{i}The deed is done. The demon is vanquished. Strange, it seems the foul harpy left a trinket among her remains. A soft, sulfurous stone - proof of my victory.{/i}"
 
     scene endingscreen with longdissolve
     
-    j "It’s a shame to fell such a striking beauty. It invaded my mind… and seemed to know me."
+    j "{i}It’s a shame to fell such a striking beauty. It invaded my mind… and seemed to know me.{/i}"
 
-    j "Perplexing, and dangerous. Why do I feel a sense of loss? An emptiness, left in the wake of my fallen foe? I had best put aside these thoughts. I should return promptly to the Archdruid, for he will want word of my success."
+    j "{i}Perplexing and dangerous. Why do I feel a sense of loss? An emptiness, left in the wake of my fallen foe? I had best put aside these thoughts. I should return promptly to the Archdruid, for he will want word of my success.{/i}"
 
     scene blackscreen
     with longdissolve
@@ -1919,7 +1920,7 @@ label questiondemoness1:
 
                 jump fightdemoness1
 
-            "Inquire about the coin":
+            "Inquire further":
 
                 n "Contemplating the small atrocities this fiend has personally wrought in this tomb, you withdraw the antique coin you collected on the upper levels."
 
@@ -1958,12 +1959,14 @@ label questiondemoness2:
 
     menu:
 
-        "{size=25}How unusual. You have satisfied my curiosity. I offer you this - I inform the Archdruid that the disturbance has been dealt with, and you say your last goodbyes to your… paramour.":
+        "Offer a deal":
             jump demonessresolution3
 
-        "{size=30}This coin was hers, then? The druids tell many horrible tales of your kind - never have I heard of a demon grieving for a lost mortal.":
+        "Sympathize":
 
             n "You continue on deliberately, despite your apprehension, ensuring to choose your words with great care."
+
+            j "This coin was hers, then? The druids tell many horrible tales of your kind - never have I heard of a demon grieving for a lost mortal."
             
             n "For the briefest moment, you consider if you were misled by the Archdruid. Ultimately, who could know?"
 
@@ -1978,6 +1981,8 @@ label demonessresolution3:
         size (1240, 1754)
         xalign 0.5 yalign 0.0
 
+    j "You have satisfied my curiosity. I offer you this - I inform the Archdruid that the disturbance has been dealt with, and you say your last goodbyes to your… paramour."
+
     u "You are most unusual and merciful for one who has lived such a dastardly life, Julian. Only an orphan such as yourself could truly understand that sting of loss…"
 
     u "The druids caution many against the worst atrocities of my kind, and they speak true…  We part, monster and murderer. We shall meet again."
@@ -1986,13 +1991,13 @@ label demonessresolution3:
 
     scene endingscreen with longdissolve
 
-    j "What an ordeal… Demons are both very like and very unlike how Archdruid described them. I couldn’t have possibly prepared for this."
+    j "{i}What an ordeal… Demons are both very like and very unlike how Archdruid described them. I couldn’t have possibly prepared for this.{/i}"
 
-    j "Even so… I can’t help but have my thoughts wander to that beshadowed beauty. It’s a pity I never learned her name - although I shudder at the thought of meeting again."
+    j "{i}Even so… I can’t help but have my thoughts wander to that beshadowed beauty. It’s a pity I never learned her name - although I shudder at the thought of meeting again.{/i}"
 
-    j "She seemed quite confident we would… but if she knows the worst of my crimes, how could she see anything good in me?"
+    j "{i}She seemed quite confident we would… but if she knows the worst of my crimes, how could she see anything good in me?{/i}"
 
-    j "Perhaps… I can only be my truest, deepest self with a demon. Nay, I should banish the thought."
+    j "{i}Perhaps I can only be my truest, deepest self with a demon… Nay, I should banish the thought.{/i}"
 
     jump neutralend
 
@@ -2017,11 +2022,11 @@ label demonessresolution4:
 
     scene endingscreen with longdissolve
 
-    j "She just vanished. Well, that's great. Am I cursed now, haunted? I should be more worried about that, probably… but even though it has been but a moment, I can’t keep my thoughts off of her."
+    j "{i}She just vanished. Well, that's great. Am I cursed now, haunted? I should be more worried about that, probably… but even though it has been but a moment, I can’t keep my thoughts off of her.{/i}"
 
-    j "I want to see her again. Adesse… such a peculiar name. I wonder if it was given to her."
+    j "{i}I want to see her again. Adesse… such a peculiar name. I wonder if it was given to her by her departed paramour.{/i}"
 
-    j "If I have been deceived, surely I will find the truth of things - for now, I shall report my success to the Archdruid."
+    j "{i}If I have been deceived, surely I will find the truth of things - for now, I shall report my success to the Archdruid.{/i}"
 
     jump goodend
 
@@ -2048,17 +2053,17 @@ label golemstart:
     scene blackscreen
     with pixellate
 
-    gl "Sensation… A touch…"
+    gl "{i}Sensation… A touch…{/i}"
 
-    gl "The touch is familiar, but so distant…"
+    gl "{i}The touch is familiar, but so distant…{/i}"
 
-    gl "Distant like another life."
+    gl "{i}Distant like another life.{/i}"
 
-    gl "Sculpted from stone, was I. Once inert, once lifeless, but given life by my creator. Where is my creator? Who am I?"
+    gl "{i}Sculpted from stone, was I. Once inert, once lifeless, but given life by my creator. Where is my creator? Who am I?{/i}"
 
-    gl "The memories are dark, with spots of color - feelings, and meaning almost indecipherable in the static."
+    gl "{i}The memories are dark, with spots of color - feelings, and meaning almost indecipherable in the static.{/i}"
 
-    gl "The music is gone. This one's creator is missing. There is nothing left. I must press on."
+    gl "{i}The music is gone. This one's creator is missing. There is nothing left. I must press on.{/i}"
 
     label golemmirror:
 
@@ -2069,7 +2074,7 @@ label golemstart:
         "Pull yourself together":
 
 
-            gl "Sundered, but not destroyed, I remain - and will persist, until this one's destruction."
+            gl "{i}Sundered, but not destroyed, I remain - and will persist, until this one's destruction.{/i}"
 
             play sound "gyst.mp3"
             queue sound "flashwoosh.mp3"
@@ -2081,14 +2086,14 @@ label golemstart:
     scene golemreflection
     n "A dirty mirror, covered in years of dust and grime. The Golem wipes away the thick coating of dust."
 
-    gl "This one's appearance is clarified - but this one's objective is unclear. Identity is lost - purpose, undetermined."
-    gl "These mirrors are created by covering a glass pane with a tin-quicksilver amalgam, then heating the pane to evaporate the quicksilver."
+    gl "{i}This one's appearance is clarified - but this one's objective is unclear. Identity is lost - purpose, undetermined.{/i}"
+    gl "{i}These mirrors are created by covering a glass pane with a tin-quicksilver amalgam, then heating the pane to evaporate the quicksilver.{/i}"
 
-    gl "A protective covering of copper may be added to reduce corrosion. This one suspects this mirror has been treated with such a coating."
+    gl "{i}A protective covering of copper may be added to reduce corrosion. This one suspects this mirror has been treated with such a coating.{/i}"
 
-    gl "Much like this one, it has endured the ravages of time. Like this one, it presses on without its creator - without purpose. How long has it been?"
+    gl "{i}Much like this one, it has endured the ravages of time. Like this one, it presses on without its creator - without purpose. How long has it been?{/i}"
 
-    gl "The memory is indistinct, but tangible - out of reach. I must press on."
+    gl "{i}The memory is indistinct, but tangible - out of reach. I must press on.{/i}"
 
     $ golempulltogether = True
 
@@ -2098,9 +2103,9 @@ label golemstart:
 
             scene brokenmirror
             play sound "glassbreak.mp3"
-            gl "Memories of fury - of violence. I wish not to reflect. I wish not to suffer. I must not yearn."
+            gl "{i}Memories of fury - of violence. I wish not to reflect. I wish not to suffer. I must not yearn.{/i}"
 
-            gl "… I press on."
+            gl "{i}… I press on.{/i}"
 
             $ golembreakmirror = True
 
@@ -2118,19 +2123,19 @@ label golempresson:
 
     n "The path is dark and cramped. A recent trail is seen in the dust."
 
-    gl "Footsteps in the dust. A human passed through here - not my creator . . . An interloper."
+    gl "{i}Footsteps in the dust. A human passed through here - not my creator . . . An interloper.{/i}"
     window hide
     menu:
 
         "Express Rage":
 
-            gl "None may tread into my creator's sanctum. This interloper will be located, and exterminated."
+            gl "{i}None may tread into my creator's sanctum. This interloper will be located, and exterminated.{/i}"
 
             jump golemproceed
 
         "Express Gratitude":
 
-            gl "This interloper stirred this one from an eternal reverie. This one is grateful. This one may seek its objective . . . once an objective is determined."
+            gl "{i}This interloper stirred this one from an eternal reverie. This one is grateful. This one may seek its objective . . . once an objective is determined.{/i}"
 
             jump golemproceed
 
@@ -2144,7 +2149,7 @@ label golemproceed:
 
     n "The Golem retraces Julian's steps to the crypt's atrium. It studies its surroundings - a sealed door to its left, unfamiliar stonework leading to an access tunnel of some kind dead ahead, and a path deeper into the crypt to its right."
 
-    gl "It is now clear to this one a considerable amount of time has passed in this one's reverie. I must press on."
+    gl "{i}It is now clear to this one a considerable amount of time has passed in this one's reverie. I must press on.{/i}"
 
     menu:
 
@@ -2171,21 +2176,21 @@ label golemescape1:
     scene sewer
     with pixellate
 
-    gl "The interloper joined another. This one's senses indicate one is male - human. The other is . . . an unknown female."
+    gl "{i}The interloper joined another. This one's senses indicate one is male - human. The other is . . . an unknown female.{/i}"
 
-    gl "What am I? What I was once is of little consequence - memories are no more."
+    gl "{i}What am I? What I was once is of little consequence - memories are no more.{/i}"
 
     menu:
         "I am male.":
-            gl "This one's creator sculpted this one in his perfect image. Like my creator, I am male."
+            gl "{i}This one's creator sculpted this one in his perfect image. Like my creator, I am male.{/i}"
             $pronoun = "He"
             $pronouns = "his"
         "I am female.":
-            gl "This one's creator sculpted this one to serve as his counterpart and compliment. I am female."
+            gl "{i}This one's creator sculpted this one to serve as his counterpart and compliment. I am female.{/i}"
             $pronoun = "She"
             $pronouns = "her"
         "I am something else.":
-            gl "This one is… this one. I am neither male nor female. This one's identity is this one's. Flesh, I am not. Mortal, I am not. I have been created for a purpose. This purpose is undefined. This purpose must be defined."
+            gl "{i}This one is… this one. I am neither male nor female. This one's identity is this one's. Flesh, I am not. Mortal, I am not. I have been created for a purpose. This purpose is undefined. This purpose must be defined.{/i}"
             $pronoun = "It"
             $pronouns = "its"
 
@@ -2200,15 +2205,15 @@ label golemescape1:
 
     hide divination
 
-    gl ". . . The interloper is a human male named Julian. He is deeply conflicted. His life is unpredictable and dreary."
+    gl "{i}. . . The interloper is a human male named Julian. He is deeply conflicted. His life is unpredictable and dreary.{/i}"
 
-    gl "He has little trust. He was curious, cautiously hopeful and bemused."
+    gl "{i}He has little trust. He was curious, cautiously hopeful and bemused.{/i}"
 
-    gl "His acquaintance is named Zanya, although she has assumed the alias 'Inya.' Undocumented species. Humanoid. Assessing . . ."
+    gl "{i}His acquaintance is named Zanya, although she has assumed the alias 'Inya.' Undocumented species. Humanoid. Assessing . . .{/i}"
 
-    gl "Likely an offshoot of humans engineered by sorcery to survive in inhospitable conditions. Slightly extended lifespan and hardiness."
+    gl "{i}Likely an offshoot of humans engineered by sorcery to survive in inhospitable conditions. Slightly extended lifespan and hardiness.{/i}"
 
-    gl "Reduced temperament and intellect. She was excited, insecure, and infatuated. Strong counterpoint to general emotional state."
+    gl "{i}Reduced temperament and intellect. She was excited, insecure, and infatuated. Strong counterpoint to general emotional state.{/i}"
 
     scene blackscreen
     with longdissolve
@@ -2216,7 +2221,7 @@ label golemescape1:
     scene endingscreen
     with longdissolve
 
-    gl "I have many questions. Perhaps this interloper will elucidate my purpose."
+    gl "{i}I have many questions. Perhaps this interloper will elucidate my purpose.{/i}"
 
     n "[x] pursues Julian and Inya through the sewers, tirelessly. [pronoun] takes stock of Inya's deviation from Julian's path, but resolves to pursue Julian in the hopes of finding answers - and a purpose."
     jump witchstart
@@ -2227,14 +2232,14 @@ label golemescape2:
     scene sewer
     with pixellate
 
-    gl "The interloper joined another. This one's senses indicate one is male - human. His name is Julian Grymwald."
-    gl "The other is . . . an unknown female. Deceased. The female was named Zanya, although she assumed the alias 'Inya.'"
+    gl "{i}The interloper joined another. This one's senses indicate one is male - human. His name is Julian Grymwald.{/i}"
+    gl "{i}The other is . . . an unknown female. Deceased. The female was named Zanya, although she assumed the alias 'Inya.'{/i}"
 
     n "The Golem gingerly picks up the goblin's corpse, handling it with care. It inspects the wounds, then carefully deposits the goblin where it previously lied."
 
     n "Tenderly, the Golem closes the goblin's eyelids."
 
-    n "The Golem concentrates, divining information about 'the interloper' and his acquaintance using their recalled latent magical ability to do so."
+    n "The Golem concentrates, divining even more information about 'the interloper' and his acquaintance using their recalled latent magical ability to do so."
 
     show divination at deadcenter:
         alpha 0.8
@@ -2245,25 +2250,25 @@ label golemescape2:
 
     hide divination
     #different text color maybe?
-    gl "Fear was the last emotion she felt. A sting of betrayal - fading optimism and curiosity."
+    gl "{i}Fear was the last emotion she felt. A sting of betrayal - fading optimism and curiosity.{/i}"
 
-    gl "The interloper - the intruder in this one's master's domain fled. Senseless cowardice. Shame and guilt. The interloper has much to answer for. This is not the first murder he committed. He shall answer for his crimes."
+    gl "{i}The interloper - the intruder in this one's master's domain fled. Senseless cowardice. Shame and guilt. The interloper has much to answer for. This is not the first murder he committed. He shall answer for his crimes.{/i}"
 
-    n "Using its recalled skill, the Golem pondered on what this information meant, and how it relates to it."
+    n "Using its recalled skill, the Golem pondered on what this information meant, and how it relates to itself."
 
-    gl "What am I? What I was once is of little consequence - memories are no more."
+    gl "{i}What am I? What I was once is of little consequence - memories are no more.{/i}"
 
     menu:
         "I am male.":
-            gl "This one's creator sculpted this one in his perfect image. Like my creator, I am male."
+            gl "{i}This one's creator sculpted this one in his perfect image. Like my creator, I am male.{/i}"
             $pronoun = "He"
             $pronouns = "his"
         "I am female.":
-            gl "This one's creator sculpted this one to serve as his counterpart and compliment. I am female."
+            gl "{i}This one's creator sculpted this one to serve as his counterpart and compliment. I am female.{/i}"
             $pronoun = "She"
             $pronouns = "her"
         "I am something else.":
-            gl "This one is… this one. I am neither male nor female. This one's identity is this one's. Flesh, I am not. Mortal, I am not. I have been created for a purpose. This purpose is undefined. This purpose must be defined."
+            gl "{i}This one is… this one. I am neither male nor female. This one's identity is this one's. Flesh, I am not. Mortal, I am not. I have been created for a purpose. This purpose is undefined. This purpose must be defined.{/i}"
             $pronoun = "It"
             $pronouns = "its"
 
@@ -2284,8 +2289,8 @@ label golemescape3:
     menu:
 
         "{size=38}Reconsider your pursuit and investigate the access tunnel":
-            gl "This merits a closer investigation. The interloper cannot elude this one forever."
-            gl "This one does not sleep. This one does not eat. This one shall pursue this one's quarry tirelessly."
+            gl "{i}This merits a closer investigation. The interloper cannot elude this one forever.{/i}"
+            gl "{i}This one does not sleep. This one does not eat. This one shall pursue this one's quarry tirelessly.{/i}"
 
             jump golemescape4
 
@@ -2338,9 +2343,9 @@ label golemescape4:
 
     n "This development gives the Golem pause, who reflects on this development."
 
-    "This creature presents me no threat. It appears to carry a blowgun, which fires darts traditionally bearing poisons harmful to organic creatures."
+    gl "{i}This creature presents me no threat. It appears to carry a blowgun, which fires darts traditionally bearing poisons harmful to organic creatures.{/i}"
 
-    "Flesh, I am not. Threatened, I am not. This unknown creature poses no threat to this one."
+    gl "{i}Flesh, I am not. Threatened, I am not. This unknown creature poses no threat to this one.{/i}"
 
     gl "You pose no threat to this one. You shall not be harmed, if you remain pacified."
 
@@ -2354,7 +2359,7 @@ label golemescape4:
 
     g "Nobody talks like that. But um… You're really strong, that's so cool! What's your name?"
 
-    $x = renpy.input("What is . . . my name?")
+    $x = renpy.input("{i}What is . . . my name?{/i}")
     $x = x.strip()
 
     if x == "":
@@ -2362,9 +2367,9 @@ label golemescape4:
 
     $gl = Character(x,color="0BC4ED")
 
-    "I shall be [x]."
+    gl "{i}I shall be [x].{/i}"
 
-    "I am [x]."
+    gl "{i}I am [x].{/i}"
 
     g "Okay, [x]. What are you? I've never seen anything like you, you're so cool."
 
@@ -2394,26 +2399,26 @@ label golemescape4:
         size (550,800)
 
     i "Are you a boy or a girl, [x]?"
-    "What am I? What I was once is of little consequence - memories are no more."
+    "{i}What am I? What I was once is of little consequence - memories are no more.{/i}"
 
     menu:
         "I am male.":
-            "This one's creator sculpted this one in his perfect image. Like my creator, I am male."
+            gl "{i}This one's creator sculpted this one in his perfect image. Like my creator, I am male.{/i}"
             $pronoun = "He"
             $pronouns = "his"
             $selection = "male"
         "I am female.":
-            "This one's creator sculpted this one to serve as his counterpart and compliment. I am female."
+            gl "{i}This one's creator sculpted this one to serve as his counterpart and compliment. I am female.{/i}"
             $pronoun = "She"
             $pronouns = "her"
             $selection = "female"
         "I am something else.":
-            "This one is… this one. I am neither male nor female. This one's identity is this one's. Flesh, I am not. Mortal, I am not. I have been created for a purpose. This purpose is undefined. This purpose must be defined."
+            gl "{i}This one is… this one. I am neither male nor female. This one's identity is this one's. Flesh, I am not. Mortal, I am not. I have been created for a purpose. This purpose is undefined. This purpose must be defined.{/i}"
             $pronoun = "It"
             $pronouns = "its"
             $selection = "something else"
 
-    "I am as I choose."
+    gl "{i}I am as I choose.{/i}"
 
     n "Inya glances at [x] quizzically in its moment of introspection."
 
@@ -2526,7 +2531,7 @@ label golemescape4:
             n "Inya walks off into the sewers she made her home, almost managing to sound sincere."
             n "Her quiet sobbing betrays her true emotions, however."
 
-            "My purpose is undefined. I must not linger."
+            gl "{i}My purpose is undefined. I must not linger.{/i}"
 
             scene endingscreen
             with longdissolve
@@ -2553,7 +2558,7 @@ label golemadesse:
         with longdissolve
         scene newatrium
         with longdissolve
-        gl "… Empty. The interloper has eluded this one. Pursuit, thwarted."
+        gl "{i}… Empty. The interloper has eluded this one. Pursuit, thwarted.{/i}"
         n "Indeed, it seems the hydraulic lock previously sealing Julian in the tomb reset behind him."
         n "The Golem found itself ensnared in a trap, with only one way forward - the service entrance."
         jump golemescape4
@@ -2561,7 +2566,7 @@ label golemadesse:
     jump golemescape7
 
 label golemescape5:
-    "The interloper's footsteps are fresh. I proceed."
+    gl "The interloper's footsteps are fresh. I proceed."
 
     n "The Golem follows Julian's tracks into the main vestibule."
 
@@ -2576,7 +2581,7 @@ label golemescape5:
 
     n "Faint, indistinct, macabre wraithspawn lurk in the corners of this place. In the center of the room lies the face-down corpse of the Golem's foe - this interloper oozing blood from its many wounds."
 
-    "I must neutralize these threats."
+    gl "{i}I must neutralize these threats.{/i}"
 
     show blind at deadcenter:
         alpha 1.5
@@ -2594,13 +2599,13 @@ label golemescape5:
     hide dog
     scene wrathhall
 
-    "The interloper is vanquished, and I have no answers. No purpose."
+    gl "{i}The interloper is vanquished, and I have no answers. No purpose.{/i}"
     n "The Golem, with a shred of hesitation, as if accepting the reality that this 'interloper' truly doesn't have any answers, tenderly flips over Julian's lifeless corpse."
 
     menu:
         "Express pity over the interloper's demise.":
-            gl "A life taken prematurely. A senseless tragedy. The one responsible is nearby, and must pay."
-            gl "Wraiths are never directionless. A flame casts a shadow. I must extinguish this flame. This one's purpose is clear."
+            gl "{i}A life taken prematurely. A senseless tragedy. The one responsible is nearby, and must pay.{/i}"
+            gl "{i}Wraiths are never directionless. A flame casts a shadow. I must extinguish this flame. This one's purpose is clear.{/i}"
 
             n "Purpose elucidated, the Golem proceeds through the crypt and glides down the vertical shaft into the Peasant's Graves."
 
@@ -2611,8 +2616,8 @@ label golemescape5:
 
             jump golemtess
         "Express triumphant exultation over the interloper's demise.":
-            gl "The interloper has been neutralized. Objective complete. The location of this one's creator remains unknown."
-            gl "Perhaps the interloper's slayer shall know the location of this one's creator. I press on."
+            gl "{i}The interloper has been neutralized. Objective complete. The location of this one's creator remains unknown.{/i}"
+            gl "{i}Perhaps the interloper's slayer shall know the location of this one's creator. I press on.{/i}"
 
             n "Purpose elucidated, the Golem proceeds through the crypt and glides down the vertical shaft into the Peasant's Graves."
 
@@ -2635,7 +2640,7 @@ label golemescape5:
 
             u "Oh, yes, yes, very good. And what are you? Who intrudes into my lair?"
 
-            $x = renpy.input("What is . . . my name?")
+            $x = renpy.input("{i}What is . . . my name?{/i}")
             $x = x.strip()
 
             if x == "":
@@ -2643,7 +2648,7 @@ label golemescape5:
 
             $gl = Character(x,color="0BC4ED")
 
-            "I shall be [x]."
+            gl "{i}I shall be [x].{/i}"
 
             gl "I am [x]."
 
@@ -2663,27 +2668,27 @@ label golemescape5:
 
             n "[x] contemplates her inquiry."
 
-            "What am I? What I was once is of little consequence - memories are no more."
+            gl "{i}What am I? What I was once is of little consequence - memories are no more.{/i}"
 
     menu:
         "I am male.":
-                "This one's creator sculpted this one in his perfect image. Like my creator, I am male."
+                gl "{i}This one's creator sculpted this one in his perfect image. Like my creator, I am male.{/i}"
                 $pronoun = "He"
                 $pronouns = "his"
                 $selection = "male"
         "I am female.":
-                "This one's creator sculpted this one to serve as his counterpart and compliment. I am female."
+                gl "{i}This one's creator sculpted this one to serve as his counterpart and compliment. I am female.{/i}"
                 $pronoun = "She"
                 $pronouns = "her"
                 $selection = "female"
         "I am something else.":
-                "This one is… this one. I am neither male nor female. This one's identity is this one's. Flesh, I am not. Mortal, I am not."
-                "I have been created for a purpose. This purpose is undefined. This purpose must be defined."
+                gl "{i}This one is… this one. I am neither male nor female. This one's identity is this one's. Flesh, I am not. Mortal, I am not.{/i}"
+                gl "{i}I have been created for a purpose. This purpose is undefined. This purpose must be defined.{/i}"
                 $pronoun = "It"
                 $pronouns = "its"
                 $selection = "something else"
 
-    "I am as I choose."
+    gl "{i}I am as I choose.{/i}"
 
     gl "I have determined I am [selection]."
 
@@ -2817,9 +2822,9 @@ label golemescape5:
 
     uw "What in the world…? Who are you? What are you? Can you understand me?"
 
-    ". . . "
+    gl ". . . "
 
-    $x = renpy.input("What is . . . my name?")
+    $x = renpy.input("{i}What is . . . my name?{/i}")
     $x = x.strip()
 
     if x == "":
@@ -2827,31 +2832,29 @@ label golemescape5:
 
     $gl = Character(x,color="0BC4ED")
 
-    "I shall be [x]."
+    gl "{i}I shall be [x].{/i}"
 
-    gl "I am [x]."
-
-    "What am I? What I was once is of little consequence - memories are no more."
+    gl "{i}What am I? What I was once is of little consequence - memories are no more.{/i}"
 
     menu:
         "I am male.":
-            "This one's creator sculpted this one in his perfect image. Like my creator, I am male."
+            gl "{i}This one's creator sculpted this one in his perfect image. Like my creator, I am male.{/i}"
             $pronoun = "He"
             $pronouns = "his"
             $selection = "male"
         "I am female.":
-            "This one's creator sculpted this one to serve as his counterpart and compliment. I am female."
+            gl "{i}This one's creator sculpted this one to serve as his counterpart and compliment. I am female.{/i}"
             $pronoun = "She"
             $pronouns = "her"
             $selection = "female"
         "I am something else.":
-            "This one is… this one. I am neither male nor female. This one's identity is this one's. Flesh, I am not. Mortal, I am not."
-            "I have been created for a purpose. This purpose is undefined. This purpose must be defined."
+            gl "{i}This one is… this one. I am neither male nor female. This one's identity is this one's. Flesh, I am not. Mortal, I am not.{/i}"
+            gl "{i}I have been created for a purpose. This purpose is undefined. This purpose must be defined.{/i}"
             $pronoun = "It"
             $pronouns = "Its"
             $selection = "something else"
 
-    "I am as I choose."
+    gl "{i}I am as I choose.{/i}"
 
     gl "I understand you. I am [x]. I am [selection]."
 
@@ -2885,7 +2888,7 @@ label golemescape5:
 
 label golemescape6:
 
-gl "I must be thorough. The crypt must be searched for evidence of this one's creator's whereabouts."
+gl "{i}I must be thorough. The crypt must be searched for evidence of this one's creator's whereabouts.{/i}"
 
 n "The Golem proceeds into the main vestibule."
 
@@ -2898,7 +2901,7 @@ show dog at offleft:
     size (300,300)
     alpha .3
 
-"I must neutralize these threats."
+gl "{i}I must neutralize these threats.{/i}"
 
 show blind at deadcenter:
     alpha 0.8
@@ -2914,16 +2917,16 @@ n "The Golem emits a blinding pulse of radiance. The wraithspawn dissipate."
 
 
 
-". . . ."
+gl "{i}. . . .{/i}"
 
-"The threats are neutralized. I proceed."
+gl "{i}The threats are neutralized. I proceed.{/i}"
 
-". . . ."
+gl "{i}. . . .{/i}"
 
 menu:
     "These living shadows are aberrations.":
-        gl "… And their creator is a monster. Intuitively, I know this to be a demon."
-        gl "This one's creator opposed demons. This demon must be destroyed. This one's purpose is clear."
+        gl "{i}… And their creator is a monster. Intuitively, I know this to be a demon.{/i}"
+        gl "{i}This one's creator opposed demons. This demon must be destroyed. This one's purpose is clear.{/i}"
 
         n "Purpose elucidated, the Golem proceeds through the crypt and glides down the vertical shaft into the Peasant's Graves."
 
@@ -2935,8 +2938,8 @@ menu:
 
         jump golemtess
     "{size=33}The creator of these creatures may eludicate the fate of {i}my{/i} creator.":
-        gl "This one's purpose remains unclear. The creator of these creatures may elucidate the fate of my creator."
-        gl "This one lacks a purpose. A flame casts shadows, and this one shall seek truth within the flame."
+        gl "{i}This one's purpose remains unclear. The creator of these creatures may elucidate the fate of my creator.{/i}"
+        gl "{i}This one lacks a purpose. A flame casts shadows, and this one shall seek truth within the flame.{/i}"
 
         n "Purpose elucidated, the Golem proceeds through the crypt and glides down the vertical shaft into the Peasant's Graves."
 
@@ -2970,7 +2973,7 @@ menu:
 
         $gl = Character(x,color="0BC4ED")
 
-        "I shall be [x]."
+        gl "{i}I shall be [x].{/i}"
 
         gl "I am [x]."
 
@@ -2990,27 +2993,27 @@ menu:
 
         n "[x] contemplates her inquiry."
 
-        "What am I? What I was once is of little consequence - memories are no more."
+        gl "{i}What am I? What I was once is of little consequence - memories are no more.{/i}"
 
         menu:
             "I am male.":
-                "This one's creator sculpted this one in his perfect image. Like my creator, I am male."
+                gl "{i}This one's creator sculpted this one in his perfect image. Like my creator, I am male.{/i}"
                 $pronoun = "He"
                 $pronouns = "his"
                 $selection = "male"
             "I am female.":
-                "This one's creator sculpted this one to serve as his counterpart and compliment. I am female."
+                gl "{i}This one's creator sculpted this one to serve as his counterpart and compliment. I am female.{/i}"
                 $pronoun = "She"
                 $pronouns = "her"
                 $selection = "female"
             "I am something else.":
-                "This one is… this one. I am neither male nor female. This one's identity is this one's. Flesh, I am not. Mortal, I am not."
-                "I have been created for a purpose. This purpose is undefined. This purpose must be defined."
+                gl "{i}This one is… this one. I am neither male nor female. This one's identity is this one's. Flesh, I am not. Mortal, I am not.{/i}"
+                gl "{i}I have been created for a purpose. This purpose is undefined. This purpose must be defined.{/i}"
                 $pronoun = "It"
                 $pronouns = "its"
                 $selection = "something else"
 
-        "I am as I choose."
+        gl "{i}I am as I choose.{/i}"
 
         gl "I have determined I am [selection]."
 
@@ -3049,7 +3052,7 @@ label golemescape7:
     scene wrathhall
     with pixellate
 
-    "The interloper's footsteps are fresh. I proceed."
+    gl "{i}The interloper's footsteps are fresh. I proceed.{/i}"
 
     n "The Golem pauses, closely examining the single set of footprints entering and leaving the crypt."
 
@@ -3098,7 +3101,7 @@ label golemescape7:
 
     uw "Who are you? What are you? Can you understand me?"
 
-    $x = renpy.input("What is . . . my name?")
+    $x = renpy.input("{i}What is . . . my name?{/i}")
     $x = x.strip()
 
     if x == "":
@@ -3106,33 +3109,33 @@ label golemescape7:
 
     $gl = Character(x,color="0BC4ED")
 
-    "I shall be [x]."
+    "{i}I shall be [x].{/i}"
 
     gl "I am [x]."
 
-    ". . . ."
+    gl "{i}. . . .{/i}"
 
-    "What am I? What I was once is of little consequence - memories are no more."
+    gl "{i}What am I? What I was once is of little consequence - memories are no more.{/i}"
 
     menu:
         "I am male.":
-            "This one's creator sculpted this one in his perfect image. Like my creator, I am male."
+            gl "{i}This one's creator sculpted this one in his perfect image. Like my creator, I am male.{/i}"
             $pronoun = "He"
             $pronouns = "his"
             $selection = "male"
         "I am female.":
-            "This one's creator sculpted this one to serve as his counterpart and compliment. I am female."
+            gl "{i}This one's creator sculpted this one to serve as his counterpart and compliment. I am female.{/i}"
             $pronoun = "She"
             $pronouns = "her"
             $selection = "female"
         "I am something else.":
-            "This one is… this one. I am neither male nor female. This one's identity is this one's. Flesh, I am not. Mortal, I am not."
-            "I have been created for a purpose. This purpose is undefined. This purpose must be defined."
+            gl "{i}This one is… this one. I am neither male nor female. This one's identity is this one's. Flesh, I am not. Mortal, I am not.{/i}"
+            gl "{i}I have been created for a purpose. This purpose is undefined. This purpose must be defined.{/i}"
             $pronoun = "It"
             $pronouns = "its"
             $selection = "something else"
 
-    "I am as I choose."
+    gl "{i}I am as I choose.{/i}"
 
     gl "I understand you. I am [x]. I am [selection]."
 
@@ -3173,11 +3176,11 @@ n "The night watchman's body drops with a thunk presaging Dahlia's arrival."
 play sound "air-release-47977.mp3"
 n "The pressure on the hydraulics of the crypt's door is released with a gesture and a tug of the witch's hand - a subtle thaumaturgical manipulation."
 
-dh "It will do."
+dh "{i}It will do.{/i}"
 
-dh  "The anomaly, and the demon."
+dh  "{i}The anomaly, and the demon.{/i}"
 
-dh "One to be harvested, one to be bound. Good help is so very hard to find."
+dh "{i}One to be harvested, one to be bound. Good help is so very hard to find.{/i}"
 
 n "Confidently, the witch struts into the crypt."
 
@@ -3191,7 +3194,7 @@ if barricade == True:
 
     n "Even so, they do the trick. The way is blocked."
 
-    dh "A trifle."
+    dh "{i}A trifle.{/i}"
     
     play sound "magic-smite-6012.mp3"
 
@@ -3205,9 +3208,9 @@ if barricade == True:
 
 n "Boards, once comprising a barricade, lie in a disassembled heap at Dahlia's feet."
 
-dh "My, my. Unsavory complications."
+dh "{i}My, my. Unsavory complications.{/i}"
 
-dh "They will be managed."
+dh "{i}They will be managed.{/i}"
 
 n "Despite her confidence, Dahlia scowls."
 
@@ -3227,7 +3230,7 @@ n "A room full of detritus. A disused artificer's lab, surely, by Dahlia's estim
 
 n "Her eyes settle on her prize."
 
-dh "My dear, sweet thing. I've traveled leagues for you."
+dh "{i}My dear, sweet thing. I've traveled leagues for you.{/i}"
 
 scene sea of crimson:
     size (1920, 1080)
@@ -3255,7 +3258,7 @@ n "Dahlia gestures sharply, and the Golem's stone torso is violently torn asunde
 
 n "The neutral blue of its light is drowned in Dahlia's sea of crimson."
 
-dh "Marvelous! And now for my sweet…"
+dh "{i}Marvelous! And now for my sweet…{/i}"
 
 n "Dahlia unclasps her pack, retrieving a silvered bird cage like receptacle for the Golem's heart."
 
@@ -3285,13 +3288,13 @@ if golembreakmirror:
 
     n "Dahlia spots the source - a broken mirror from across the room. Whatever impacted the mirror struck it hard."
 
-    dh "A temper tantrum… not entirely unexpected."
+    dh "{i}A temper tantrum… not entirely unexpected.{/i}"
 
-dh "Disappointing, but not the end of the road."
+dh "{i}Disappointing, but not the end of the road.{/i}"
 
-dh "It seems another has hastened to the prize."
+dh "{i}It seems another has hastened to the prize.{/i}"
 
-dh "I have a competitor. No sense in wasting precious time."
+dh "{i}I have a competitor. No sense in wasting precious time.{/i}"
 
 n "Dahlia hastens to her task, returning to the Atrium."
 
@@ -3332,13 +3335,13 @@ scene juliansplat with dissolve:
 
 n "Entering the room, she examines the corpse with a malevolent smirk."
 
-dh "Delightfully fresh… and bearing the stench of transgression."
+dh "{i}Delightfully fresh… and bearing the stench of transgression.{/i}"
 
 n "The witch inhales deeply, stifling a chortle."
 
 scene wrathhall with longdissolve
 
-dh "Awash with blood heavy with guilt. It isn't often I can reanimate a vampire."
+dh "{i}Awash with blood heavy with guilt. It isn't often I can reanimate a vampire.{/i}"
 
 n "Dahlia takes a moment to clear her head and muster her might."
 
@@ -3501,7 +3504,7 @@ n "Silently, she lands in the depths of the place overlooking a bit transecting 
 
 n "The pit is filled with the decaying remains of the less fortunate - a particularly putrid soup, of sorts."
 
-dh "… I'm too late."
+dh "{i}… I'm too late.{/i}"
 
 n "Indeed, the absence of animate shadows indicates the witch's estimation is correct. Dahlia is disappointed, but just for mere moments."
 
@@ -3637,13 +3640,13 @@ with longdissolve
 
 n "Dahlia's search of the crypt was futile. She walked back to the entrance, in defeat."
 
-dh "What a waste of time. Dreadful."
+dh "{i}What a waste of time. Dreadful.{/i}"
 
 n "Utilizing her keen senses, Dahlia spots the glimmer of eye shine from the corner of her eye."
 
 n "A scheming, curious smile creeps across her black lips."
 
-dh "What do we have here? Oh, how I love surprise visitors."
+dh "{i}What do we have here? Oh, how I love surprise visitors.{/i}"
 
 n "A flick of the wrist, a draw on the latent thaumaturgical current."
 
@@ -3801,18 +3804,18 @@ with longdissolve
 
 n "Dahlia's search of the crypt was futile. She walked back to the entrance, in defeat."
 
-dh "What a waste of time. Dreadful."
+dh "{i}What a waste of time. Dreadful.{/i}"
 
 n "Dahlia sighs deeply and focuses her mind. Her magical senses probe her surroundings and detect the presence of recent creatures."
 
-dh "… But the trails are fresh. I cannot possibly pursue them all."
+dh "{i}… But the trails are fresh. I cannot possibly pursue them all.{/i}"
 
-dh "Who shall it be, hm? It would be a pity for my time to be wasted."
+dh "{i}Who shall it be, hm? It would be a pity for my time to be wasted.{/i}"
 
 menu:
     "The Mercenary":
-        dh "Nikolai's lapdog."
-        dh "It would be suitable to wrap him around my finger, whether he is willing or not, and use this… distasteful attempt to thwart me against that pest."
+        dh "{i}Nikolai's lapdog.{/i}"
+        dh "{i}It would be suitable to wrap him around my finger, whether he is willing or not, and use this… distasteful attempt to thwart me against that pest.{/i}"
 
         scene endingscreen
         with longdissolve
@@ -3826,9 +3829,9 @@ menu:
         n "If he proved unyielding, well, Dahlia always had her way."
         jump endofprologue
     "The Arcane Anomaly":
-        dh "My goal has not changed, despite this… unprecedented setback."
+        dh "{i}My goal has not changed, despite this… unprecedented setback.{/i}"
 
-        dh "Foremost, the arcane core is my quarry. I shan't tarry."
+        dh "{i}Foremost, the arcane core is my quarry. I shan't tarry.{/i}"
 
         scene endingscreen
         with longdissolve
@@ -3842,11 +3845,11 @@ menu:
         n "How could she waste such an enticing opportunity?"
         jump endofprologue
     "The Unusual Goblin":
-        dh "An albino. An outcast."
+        dh "{i}An albino. An outcast.{/i}"
 
-        dh "She hasn't perished, despite her deformity."
+        dh "{i}She hasn't perished, despite her deformity.{/i}"
 
-        dh "Marvelous - it speaks to her ingenuity. I can use that."
+        dh "{i}Marvelous - it speaks to her ingenuity. I can use that.{/i}"
 
         scene endingscreen
         with longdissolve
@@ -3858,11 +3861,11 @@ menu:
         n "Dahlia departed to her lair to plan the pursuit and her strategy."
         jump endofprologue
     "The Warden":
-        dh "A warden… and a traitor to her kind. How unique."
-        dh "The roots of this conspiracy go deep."
-        dh "Perhaps if she were under my thumb I could root out the core of this wart, and collect a novel plaything."
-        dh "'Tessanrae'... Few of her kind survive."
-        dh "She shall be the crowning jewel of my collection."
+        dh "{i}A warden… and a traitor to her kind. How unique.{/i}"
+        dh "{i}The roots of this conspiracy go deep.{/i}"
+        dh "{i}Perhaps if she were under my thumb I could root out the core of this wart, and collect a novel plaything.{/i}"
+        dh "{i}'Tessanrae'... Few of her kind survive.{/i}"
+        dh "{i}She shall be the crowning jewel of my collection.{/i}"
 
         scene endingscreen
         with longdissolve
@@ -3875,9 +3878,9 @@ menu:
         jump endofprologue
     "It is time to confront Nikolai once and for all.":
         n "Dahlia takes a deep breath, and lets out a long, irritated sigh."
-        dh "Nikolai has thwarted me at every turn."
-        dh "His lairs are hidden, but not inaccessible…"
-        dh "It is long overdue to pay him a friendly visit."
+        dh "{i}Nikolai has thwarted me at every turn.{/i}"
+        dh "{i}His lairs are hidden, but not inaccessible…{/i}"
+        dh "{i}It is long overdue to pay him a friendly visit.{/i}"
 
         scene endingscreen
         with longdissolve
@@ -3891,10 +3894,10 @@ menu:
         n "She would have the last word… as always."
         jump endofprologue
     "My efforts are best actualized elsewhere…":
-        n "This is a waste of time."
-        dh "These fools are beneath me."
-        dh "I shall return to my lair."
-        dh "The fruits of my labor shall be actualized… elsewhere."
+        dh "{i}This is a waste of time.{/i}"
+        dh "{i}These fools are beneath me.{/i}"
+        dh "{i}I shall return to my lair.{/i}"
+        dh "{i}The fruits of my labor shall be actualized… elsewhere.{/i}"
 
         scene endingscreen
         with longdissolve

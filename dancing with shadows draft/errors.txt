@@ -2,9 +2,7 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 314: end of line expected.
-    {i}"Magicians of any kind make me nervous. He seems friendly enough, but I shouldn't let my guard down."{/i}
-                                                                                                            ^
+File "game/script.rpy", line 1364: Indentation mismatch.
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Fri Apr 18 03:51:31 2025
+Fri Apr 18 05:51:04 2025

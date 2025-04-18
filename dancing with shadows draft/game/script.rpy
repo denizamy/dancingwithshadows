@@ -40,6 +40,7 @@ image emptycup2 = "cup_wooden.png"
 image fullcup2 = "cup_wooden_full.png"
 image sulfurstone = "sulfurstone.png"
 image shadowadesse = "shadowadesse.png"
+image QR = "glassumbrella.io_qr_code_transparent.png"
 
 
 image waldwinelol = im.Scale("waldwinelol.png", 150, 200)
@@ -244,9 +245,7 @@ label start:
     scene blackscreen
 
     
-    "Disclaimer: This is a very early release of this prologue. There will be bugs. You may direct bug reports and feedback to slack."
-
-    "Many art assets, soundtracks, vfx, and sfx are works in progress."
+    "Disclaimer: This is an early public release to gauge interest in our project. Please direct feedback and bug reports to the {a=https://discord.com/invite/UrqRRcfp99}Dancing with Shadows Offical Discord{/a}."
 
     "Thank you for playing."
 
@@ -1468,6 +1467,7 @@ label choice1_done:
 
     label killbywraith:
         $deadjulian = True
+        $barricade = True
 
     j "It's so dark. Something here is wrong… It's too dark."
 
@@ -1571,7 +1571,7 @@ label choice1_done:
     label aftercoin:
     n "Despite the flickering flame of the torch, the shadows stir - and speak!"
 
-    show shadowadesse at deadcenter:
+    show shadowadesse at deadcenter with quickdissolve:
         size (1300,700)
         alpha 0.6
         yalign 0.3
@@ -1587,6 +1587,8 @@ label choice1_done:
     # sound
 
     x "Return your filchings to their proper place, and forget all you have seen here."
+
+    hide shadowadesse with longdissolve
 
     j "Unsettling. The torch has sent the fiend fleeing - I had best pursue it..."
 
@@ -1709,7 +1711,6 @@ label blockdemoness1:
     jump fightdemoness2
 
 label attackdemoness1:
-    j "I can strike her now!"
     play sound "protego-105518.mp3"
     n "Julian's opportunity to strike is lost as the demoness fires another barrage of needle-like spines of solid shadow."
     jump fightdemoness2
@@ -1734,7 +1735,7 @@ label blockdemoness2:
 label attackdemoness2:
     n "A desperate, vicious strike. A fateful strike. Abandoning caution, Julian hurtles towards his foe."
 
-    n "In a confluence of circumstance and power, desperation and need, he executes an overhead swing with his Demonslaying Blade."
+    n "In a confluence of circumstance and power, desperation and need, he executes an overhead swing with his demonslaying blade."
  
     hide adesse_angry
     with dissolve
@@ -1789,7 +1790,7 @@ label demonessresolution1:
 
     n "The room fills with the smell of sweet sulfur, and Julian, losing consciousness, feels a slight stab of pain."
 
-    scene tess_stnading_720 with longdissolve:
+    scene tess standing with longdissolve:
         size (1920,1080)
 
     play sound "heartbeatbreath.mp3"
@@ -1818,8 +1819,6 @@ label demonessresolution1:
     n "Bleary-eyed, Julian scans the room. There is no trace of the demon - save a suspicious, soft-looking stone where she fell."
 
     n "Likewise, the shadows have stopped moving of their own accord. He looks over to his savior."
-
-    n "Until she spoke, he had no indication this powerful warrior was a woman."
 
     n "She eschews a complete set of armor for the barest essentials accompanied by green and brown traveler's leathers. Her longboots are characteristic of the locality."
 
@@ -1861,6 +1860,8 @@ label demonessresolution1:
     scene blackscreen
     with longdissolve
 
+    pause 2.0
+
     stop music fadeout 15.0
 
     jump neutralend
@@ -1871,6 +1872,8 @@ label demonessresolution2:
     show sulfurstone at deadcenter:
         size (450, 250)
     j "The deed is done. The demon is vanquished. Strange, it seems the foul harpy left a trinket among her remains. A soft, sulfurous stone - proof of my victory."
+
+    scene endingscreen with longdissolve
     
     j "It’s a shame to fell such a striking beauty. It invaded my mind… and seemed to know me."
 
@@ -1903,6 +1906,7 @@ label questiondemoness1:
     label fightorquestiondemoness2:
 
     if havecoin:
+        n "The demoness's gaze subtly drifts to the coin you retrived previously within the crypt."
         menu:
             "Fight the demoness":
                 play music "Hitman.mp3"
@@ -1915,7 +1919,7 @@ label questiondemoness1:
 
                 jump fightdemoness1
 
-            "Question the demoness":
+            "Inquire about the coin":
 
                 n "Contemplating the small atrocities this fiend has personally wrought in this tomb, you withdraw the antique coin you collected on the upper levels."
 
@@ -1980,6 +1984,8 @@ label demonessresolution3:
     hide adesse_neutral with meddissolve
     n "The demoness vanishes, and the dancing shadows in the room stall to a halt."
 
+    scene endingscreen with longdissolve
+
     j "What an ordeal… Demons are both very like and very unlike how Archdruid described them. I couldn’t have possibly prepared for this."
 
     j "Even so… I can’t help but have my thoughts wander to that beshadowed beauty. It’s a pity I never learned her name - although I shudder at the thought of meeting again."
@@ -2008,6 +2014,9 @@ label demonessresolution4:
     n "A bittersweet smile colors Adesse's ethereal features moments before she vanishes, and the dancing shadows in the room stall to a halt."
 
     hide adesse_flirty with meddissolve
+
+    scene endingscreen with longdissolve
+
     j "She just vanished. Well, that's great. Am I cursed now, haunted? I should be more worried about that, probably… but even though it has been but a moment, I can’t keep my thoughts off of her."
 
     j "I want to see her again. Adesse… such a peculiar name. I wonder if it was given to her."
@@ -3177,7 +3186,7 @@ with pixellate
 
 n "She follows the path in her divination - first, to the arcane anomaly."
 
-if barricade:
+if barricade == True:
     n "Ancient, crumbling boards practically hang from the nails they were fixed to many decades ago."
 
     n "Even so, they do the trick. The way is blocked."
@@ -3210,7 +3219,8 @@ if golemactive:
 
 label golemnotactived:
 
-scene labbrokenglass
+scene labhand:
+    size (1940,1080)
 with fade
 
 n "A room full of detritus. A disused artificer's lab, surely, by Dahlia's estimation."
@@ -3222,7 +3232,8 @@ dh "My dear, sweet thing. I've traveled leagues for you."
 scene sea of crimson:
     size (1920, 1080)
 pause 0.25
-scene warehouse with longdissolve
+scene labempty with longdissolve:
+        size (1940,1080)
 
 show crimson at deadcenter with quickdissolve:
     size (1920,1080)
@@ -3911,9 +3922,9 @@ centered "{size=+75}{cps=8}{color=000000} Code/Script: \nRachel 'Des' Marzzarell
 
 $ renpy.pause(1.5)
 
-centered "{size=+40}{cps=8}{color=000000} Editing/Revisions/Special Thanks:\nLake Watkins\nJesse Bohnet\n'Scoot Gygax'\nMiriam Bates\nWill Watkins\nNicholas 'Evő Kolbász' Tolga Balik{/cps}{/size}{p=5.0}{nw}"
+centered "{size=+40}{cps=8}{color=000000} Editing/Revisions/Special Thanks:\nLake Watkins\nWill Watkins\nDoug 'Dr. Wasteland' Watkins\nLynsie Steele\nJesse Bohnet\n'Scoot Gygax'\nMiriam Bates{/cps}{/size}{p=5.0}{nw}"
 
-centered "{size=+40}{cps=8}{color=000000} Deniz Balik\n Nick Vitale\nRachel 'Des' Marzzarella\nJude Bigboy\nJennifer Svensson\nJay Brinkman\nDoug 'Dr. Wasteland' Watkins\nSarah Caldwell {/cps}{/size}{p=5.0}{nw}"
+centered "{size=+40}{cps=8}{color=000000} Deniz Balik\n Nick Vitale\nRachel 'Des' Marzzarella\nJude Bigboy\nNicholas 'Evő Kolbász' Tolga Balik\nJennifer Svensson\nJay Brinkman\nSarah Caldwell {/cps}{/size}{p=5.0}{nw}"
 
 $ renpy.pause(1.5)
 
@@ -3921,9 +3932,9 @@ centered "{size=+75}{cps=8}{color=000000} Art:\nRihards Kurts\nOndrej Svinčiak\
 
 $ renpy.pause(1.5)
 
-centered "{size=+40}{cps=8}{color=000000}  Music:\n'Wholesome', 'Darkest Child', 'Midnight Tale', 'Deep Haze', 'Floating Cities', 'Myst on the Floor', 'Impact Prelude', 'Casa Bossa Nova' by Kevin MacLeod (incompetech.com). \n\nLicensed under Creative Commons: By Attribution 4.0 License http://creativecommons.org/licenses/by/4.0/{/cps}{/size}{p=5.0}{nw}"
+centered "{size=+40}{cps=8}{color=000000}  Music:\n'Agnus Dei X', 'Midnight Tale', 'Deep Haze', 'Floating Cities', 'Myst on the Moor', 'Oppressive Gloom', 'Hitman', 'Impact Prelude', 'Casa Bossa Nova' by Kevin MacLeod (incompetech.com). \n\nLicensed under Creative Commons: By Attribution 4.0 License http://creativecommons.org/licenses/by/4.0/{/cps}{/size}{p=5.0}{nw}"
 
-centered "{size=+40}{cps=8}{color=000000} \n 'Inya's Theme (First Encounter) by Taylor Perfater"
+centered "{size=+40}{cps=8}{color=000000} \n Inya's Theme (First Encounter) by Taylor Perfater"
 
 $ renpy.pause(1.5)
 
@@ -3931,8 +3942,12 @@ centered "{size=+75}{cps=8}{color=000000}  Sound effects provided by https://pix
 
 $ renpy.pause(1.5)
 
-centered "{size=+75}{cps=8}{color=000000} Thanks for playing! We hope to see you in chapter 1!{/cps}{/size}{p=5.0}{nw}"
+scene blackscreen with dissolve
 
-$ renpy.pause(1.5)
+centered "{size=+35}{cps=8}{color=#FAF9F6} Thank you for playing! If you liked our game, stay tuned for chapter 1 and leave a review. If you would like to collaborate with us on future projects, including a continuation of this visual novel, scan the QR code and feel free to join our community at {a=https://www.glassumbrella.io/}glassumbrella.io.{/cps}{/size}{p=20.0}{nw}"
+
+show QR at deadcenter
+
+$ renpy.pause(20.0)
 
 return

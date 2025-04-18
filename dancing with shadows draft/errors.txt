@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 3947: end of line expected.
-    centered "{size=+35}{cps=8}{color=#FAF9F6} Thanks for playing! If you liked our game, stay tuned for chapter 1 and leave a review. If you would like to collaborate with us on future projects, including a continuation of this visual novel, feel free to join our community at {a=https://www.glassumbrella.io/}glassumbrella.io" "or scan the QR code!{/cps}{/size}{p=20.0}{nw}"
-                                                                                                                                                                                                                                                                                                                                         ^
+File "game/script.rpy", line 314: end of line expected.
+    {i}"Magicians of any kind make me nervous. He seems friendly enough, but I shouldn't let my guard down."{/i}
+                                                                                                            ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Fri Apr 18 03:33:07 2025
+Fri Apr 18 03:51:31 2025

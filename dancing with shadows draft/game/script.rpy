@@ -2,7 +2,7 @@
 
 
 init:
-    define config.developer = False
+    define config.developer = True
 
 init python:
     renpy.music.register_channel("sound2", "sfx", loop=False, stop_on_mute=True)
@@ -311,7 +311,7 @@ label start:
 
     n "Deep creases of worry fill the void in the elderly man's expression as he strains his eyes in the firelight, as if beholding something only seen by him."
 
-    "Magicians of any kind make me nervous. He seems friendly enough, but I shouldn't let my guard down."
+    "{i}Magicians of any kind make me nervous. He seems friendly enough, but I shouldn't let my guard down.{/i}"
 
     n "He gestures at the open seat next to the fire and speaks with a soft woody baritone - akin to the rumble of straining mine supports deep in the earth."
 

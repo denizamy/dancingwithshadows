@@ -1,28 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 3188, in script
-    if barricade{True}:
-SyntaxError: invalid syntax (game/script.rpy, line 3188)
+  File "game/script.rpy", line 314, in script
+    {i}"Magicians of any kind make me nervous. He seems friendly enough, but I shouldn't let my guard down."
+Exception: Sayer b'{i}' is not a function or string.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 3188, in script
-    if barricade{True}:
-  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\ast.py", line 1849, in execute
-    if renpy.python.py_eval(condition):
-  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\python.py", line 1207, in py_eval
-    code = py_compile(code, 'eval')
-  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\python.py", line 1144, in py_compile
-    raise e
-  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\python.py", line 1081, in py_compile
-    raise orig_e
-  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\python.py", line 1073, in py_compile
-    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
-SyntaxError: invalid syntax (game/script.rpy, line 3188)
+  File "game/script.rpy", line 314, in script
+    {i}"Magicians of any kind make me nervous. He seems friendly enough, but I shouldn't let my guard down."
+  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\ast.py", line 2579, in execute
+    Say.execute(self)
+  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\ast.py", line 598, in execute
+    raise Exception("Sayer %s is not a function or string." % self.who.encode("utf-8"))
+Exception: Sayer b'{i}' is not a function or string.
 
 Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.4.24120703
-Dancing With Shadows Alpha 1.0
-Fri Apr 18 01:19:32 2025
+Dancing With Shadows Prologue 1.0
+Fri Apr 18 03:52:14 2025

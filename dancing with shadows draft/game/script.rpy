@@ -3449,12 +3449,10 @@ a "As you wish."
 a "You… seem to know what you're doing. A woman with experience."
 
 hide adesse_hurt
-with fastdissolve
 
 show adesse_flirty:
     xalign 0.5 yalign 0.0
     size (1240, 1754)
-with fastdissolve
 
 a "How endearing."
 

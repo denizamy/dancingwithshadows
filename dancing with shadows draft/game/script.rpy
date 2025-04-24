@@ -2,7 +2,7 @@
 
 
 init:
-    define config.developer = True
+    define config.developer = False
 
 init python:
     renpy.music.register_channel("sound2", "sfx", loop=False, stop_on_mute=True)

@@ -1714,7 +1714,7 @@ label blockdemoness1:
 label attackdemoness1:
     play sound "protego-105518.mp3"
     n "Julian's opportunity to strike is lost as the demoness fires another barrage of needle-like spines of solid shadow."
-    jump fightdemoness2
+    jump demonessresolution1
 
 label fightdemoness2:
 
@@ -3940,6 +3940,7 @@ centered "{size=+40}{cps=8}{color=000000} \n Inya's Theme (First Encounter) by T
 $ renpy.pause(1.5)
 
 centered "{size=+75}{cps=8}{color=000000}  Sound effects provided by https://pixabay.com/sound-effects/ {/cps}{/size}{p=5.0}{nw}"
+centered "{size=+75}{cps=8}{color=000000}  'Click' sound effect provided by Erick Alcántara {/cps}{/size}{p=5.0}{nw}"
 
 $ renpy.pause(1.5)
 

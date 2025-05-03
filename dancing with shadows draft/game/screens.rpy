@@ -225,6 +225,8 @@ style choice_vbox:
 
 style choice_button is default:
     properties gui.button_properties("choice_button")
+    activate_sound "Click.mp3"
+    
 
 style choice_button_text is default:
     properties gui.text_properties("choice_button")
@@ -270,6 +272,8 @@ style quick_button_text is button_text
 
 style quick_button:
     properties gui.button_properties("quick_button")
+    activate_sound "A_sfx_mural_interact.wav" 
+
 
 style quick_button_text:
     properties gui.text_properties("quick_button")

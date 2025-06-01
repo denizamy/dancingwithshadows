@@ -230,6 +230,7 @@ define leftwithadesse = False
 define leftwithtess = False
 define golemleftwithtess = False
 define golemleftwithgoblin = False
+define golemleftwithadesse = False
 define adessedead = False
 
 
@@ -2943,8 +2944,10 @@ menu:
 
         n "Purpose elucidated, the Golem proceeds through the crypt and glides down the vertical shaft into the Peasant's Graves."
 
+
         scene monument
         with fade
+        $golemleftwithadesse = True
 
         n "A narrow walkway encircles an open pit full of decomposing bodies of the less fortunate."
 
@@ -3316,6 +3319,12 @@ elif deadjulian:
         jump raisejulian
 
 elif leftwithadesse or adessedead:
+        jump witchtess
+
+elif golemleftwithadesse and leftwithgoblin:
+        jump witchtess
+        
+elif golemleftwithadesse and goblindead:
         jump witchtess
 
 elif leftwithtess or golemleftwithtess:

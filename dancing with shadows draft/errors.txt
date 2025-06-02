@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 1712: end of line expected.
-    jump fightdemoness2:
-                       ^
+File "game/script.rpy", line 260: Line is indented, but the preceding with statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    play music "Deep Haze.mp3" fadein 2.0
+    ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Fri May  2 23:48:06 2025
+Sun Jun  1 23:20:54 2025

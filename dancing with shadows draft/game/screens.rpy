@@ -225,7 +225,7 @@ style choice_vbox:
 
 style choice_button is default:
     properties gui.button_properties("choice_button")
-    activate_sound "Click.mp3"
+    activate_sound "A_sfx_new_click_ui.mp3"
     
 
 style choice_button_text is default:

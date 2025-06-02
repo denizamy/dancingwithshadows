@@ -2,7 +2,7 @@
 
 
 init:
-    define config.developer = False
+    define config.developer = True
 
 init python:
     renpy.music.register_channel("sound2", "sfx", loop=False, stop_on_mute=True)
@@ -86,7 +86,7 @@ image adesse_neutral = "adesse_neutral.png"
 
 image julian = "julian.png"
 image vamp = "vampjulian.png"
-image tess = im.Scale("tessanrae.png", 715, 1040)
+image tess = ("tessanrae.png")
 image tess rappel = im.Scale("tess_rappel.jpg", 1920, 1080)
 
 image crypt = im.Scale("cryptday.png", 1920, 1080)
@@ -243,29 +243,39 @@ define adessedead = False
 
 label start:
 
-    scene blackscreen
+    scene logo:
+        size (1940,1080)
+    with quickdissolve
 
     
     "Disclaimer: This is an early public release to gauge interest in our project. Please direct feedback and bug reports to the {a=https://discord.com/invite/UrqRRcfp99}Dancing with Shadows Offical Discord{/a}."
+    
 
     "Thank you for playing."
-
+    stop music fadeout 5.0
+    
+  
+    scene blackscreen
+    with pixellate
+    pause 1.0
+    play music "Deep Haze.mp3" fadein 2.0
     scene citystreet:
         size (1940,1080)
     with longdissolve
-    
-    play music "Deep Haze.mp3"
 
+    $ renpy.music.play ("A_sfx_city_amb_loop_2.mp3", channel="sound2")
 
-    $ renpy.music.play("townamb.wav", channel="sound2")
    
+
     j "{i}Follow a hidden path down the alleys. Three lefts and a right, then close your eyes for twelve seconds.{/i}"
 
     scene blackscreen with longdissolve
 
+    stop sound2 fadeout 4.0
+
     j "{i}Remain calm and still, breathing shallowly, and keep your hands at your side...{/i}"
 
-    $ renpy.music.play("heartbeatbreath.mp3", channel="sound2",)
+    $ renpy.music.play("heartbeatbreath.mp3", channel="sound2")
 
     j "{i}It sounded like nonsense, but nonsense was my only lead.{/i}"
 
@@ -275,9 +285,12 @@ label start:
 
     j "{i}That beggar didn't want anything from me. I've never had a good grasp on balancing naïvety and cynicism...{/i}"
 
-    j "{i}I should stop second guessing myself. I need the work. That was my last copper gone in the tavern. My equipment is in good shape, I'm healthy and have a full belly, for now at least. Okay, it's been at least twelve seconds.{/i}"
+    stop sound2 fadeout 2.0
 
-    $ renpy.music.play("townamb.wav", channel="sound2")
+    j "{i}I should stop second guessing myself. I need the work. That was my last copper gone in the tavern. My equipment is in good shape, I'm healthy and have a full belly, for now at least. Okay, it's been at least twelve seconds.{/i}"
+    
+
+    $ renpy.music.play ("A_sfx_city_amb_loop_2.mp3", channel="sound2", fadeout=6.0)
 
     scene druidentrance
     with pixellate
@@ -285,6 +298,8 @@ label start:
     j "{i}.…I really just can't believe it. Do all druids work in such secrecy, or just \"Arch\" druids when they're looking for a sucker to do their dirty work?{/i}"
 
     j "{i}I'm here. This is what I came here for. There's no sense in wasting any more time.{/i}"
+
+    stop sound2 fadeout 2.0
 
     scene blackscreen
     with dissolve
@@ -305,7 +320,7 @@ label start:
         xalign 0.4
         yalign 0.5
 
-    $ renpy.music.play("fireplace.mp3", channel="sound2", fadein=2.0)
+    $ renpy.music.play("fireplace.mp3", channel="sound2", fadein=2.0, loop=True)
     
 
     n "A small, sincere smile colors the Archdruid's features upon spotting Julian - wicked away in an instant as he studies the young mercenary."
@@ -444,6 +459,8 @@ label start:
         n "The Archdruid serenely gazes into the fire. From seemingly nowhere, a squirrel perched itself on his shoulder. It mimics his calm yet distant expression and gaze."
 
         d "Time is secondary to our great mission. I have faith you will understand, one day, young man."
+        
+        stop sound2 fadeout 3.0
 
         scene blackscreen  
         with longdissolve
@@ -459,6 +476,7 @@ label start:
             xalign 0.8
             yalign 0.5
 
+        $ renpy.music.play("fireplace.mp3", channel="sound2", fadein=2.0, loop=True)
 
         d "I believe we lost track of time, Julian. You came here for a reason…"
         jump druidresolution
@@ -509,7 +527,8 @@ label start:
 
     hide waldwinelaying
 
-    $ renpy.music.stop(channel="sound2")
+    stop sound2 fadeout 2.0
+    
     hide druid
 
     scene druidentrance
@@ -528,7 +547,6 @@ label start:
     scene blackscreen
     with fade
     stop music fadeout 35.0
-    $ renpy.music.stop(channel="sound2, fadeout=6.0")
 
     if acceptdruid:
         j "{i}That place was like a dream. I remember the important bits, for now, but I ought to write it down in case I forget.{/i}"
@@ -558,8 +576,7 @@ label start:
 
     label crypttime:
 
-
-    play music "Floating Cities.mp3"
+    $ renpy.music.play("A_sfx_wagon_loop_1.mp3", channel="sound2", fadein=4.0, loop=True)
 
     n "Julian undergoes a daylong travel through the city, to the outskirts. "
 
@@ -567,7 +584,11 @@ label start:
 
     n "These days, he didn't get much comfort in anything, and this journey was no exception. "
 
+    stop sound2 fadeout 5.0
+
     n "He wasted no time attending to the dubious duty he took as his yoke, all in the promise of gold."
+
+    play music "Floating Cities.mp3" fadein 1.0
 
     scene crypt with fade
 
@@ -577,11 +598,11 @@ label start:
 
     n "Along the way, he heard rumors of locals being harassed when mourning their dead, statues and monuments within the crypt being toppled, and unsettling shadows darting around the crypt, irrespective of the lack of wind and torch."
 
+    j  "{i}It's still too early for the night watchmen to patrol. Good - that means fewer questions and palms to grease.{/i}"
+
     j "{i}The Archdruid told me my quarry is a Demon of Shadow - not a trivial, nor a major demon. I should be on my guard.{/i}"
 
     j "{i}The blasted thing must be inside. I should keep stock of my belongings before I head in.{/i}"
-
-    # i can't get this shit to transition smoothly without the fucking transparent checkerboard bullshit
 
 
     scene blackscreen
@@ -590,6 +611,8 @@ label start:
     show sealedcontract at deadcenter:
         size (220,220)
     with quickdissolve
+
+    play sound "A_sfx_envelope_inv.mp3"
 
     j "{i}Sealed with a wax stamp. Strange, it looks like the monastery sigil.{/i}"
 
@@ -601,6 +624,8 @@ label start:
 
     hide contract 
     with quickdissolve
+
+    play sound "drawsword.mp3"
 
     show sword at deadcenter:
         size (400,500)
@@ -616,6 +641,7 @@ label start:
     show shield at deadcenter:
          size (350,500)
 
+    play sound "A_sfx_shield_inv_3.mp3"
     j "{i}The sheen on this steel shield is phenomenal, and as long as there is even a scant amount of light, the Archdruid reassured me none of the demon’s shadow magic can harm me.{/i}"
 
     hide shield with quickdissolve
@@ -623,11 +649,15 @@ label start:
     show hardtack at deadcenter:
         size (220,220)
 
+    play sound "A_sfx_hardtack_inv.mp3"
+
     j "{i}I don't even want to think about hardtack if I can't soften it up first. It's about as hard and appetizing as a brick.{/i}"
   
     hide hardtack with quickdissolve
     show canteen at deadcenter:
         size (250,250)
+
+    play sound "A_sfx_skinwater_inv.mp3"
 
     j "{i}And the waterskin...{/i}"
 
@@ -662,17 +692,25 @@ label start:
     with pixellate
     label atrium:
 
+    
+
     n "A large stone room, far underground."
 
     scene newgate
 
     play sound "gateclose.wav"
 
+    stop music fadeout 3.0
+
+    $ renpy.music.play("A_sfx_crypt_loop_1.mp3", channel="sound2", fadein=1.0, loop=True)
+
     n "As you enter, you hear hydraulic mechanisms automatically shut the large steel gate behind you."
 
     j "{i}A security measure by the townsfolk, surely.{/i}"
 
     n "You are trapped down here with the demon, and it with you, until one of you perishes."
+
+   
 
     scene newatrium
     with pixellate
@@ -850,6 +888,8 @@ label cutbolt:
 
         scene sewer
         with pixellate
+        
+        stop sound2 fadeout 1.0
 
         play music "Inya Theme (First Encounter).mp3"
         play sound "drawsword.mp3"
@@ -1258,8 +1298,12 @@ label golemchoice:
             jump leavegolem
 
     label gogolem:
-
-        j "{i}Here goes nothing. These boards look simple enough to remove by hand. Dry rot and the ravages of time have reduced them practically to splinters.{/i}"
+ 
+        j "{i}Here goes nothing. These boards look simple enough to remove by hand.{/i}"
+        
+        play sound "crate-break-1-93926.mp3"
+        
+        n "Dry rot and the ravages of time have reduced the boards practically to splinters. In the end, they form a union with the ambient dust of the crypt."
 
         j "{i}It's going to be a tight fit. I can't even stand up straight in this cramped tunnel.{/i}"
 
@@ -1271,29 +1315,15 @@ label tunnel:
         size (1940,1080)
     
 
-if havetorch:
-        j "{i}I should be on guard. It's unusually stuffy in this tunnel, and black as pitch.{/i}"
 
-        j "{i}It reminds me of an abandoned factory, or that mage's study years past…{/i}"
+    j "{i}I should be on guard. It's unusually stuffy in this tunnel, and black as pitch.{/i}"
 
-        j "{i}Well, here goes nothing.{/i}"
+    j "{i}It reminds me of an abandoned factory, or that mage's study years past…{/i}"
 
-        jump warehouse
+    j "{i}Well, here goes nothing.{/i}"
 
-elif notorch:
+    jump warehouse
 
-        j "{i}I should come back with a light source.{/i}"
-
-        j "{i}This place stinks of a trap. It would be foolish to fumble around in the dark and step on a nail, or worse.{/i}"
-
-        n "You go back the way you came."
-
-        scene newatrium
-        with pixellate
-
-        n "Where will you go?"
-
-        jump LookLeftLookRight
 
 label leavegolem:
 
@@ -1446,9 +1476,9 @@ label choice1_done:
         size (300,300)
         alpha .3
 
-    n "A beloved family pet, perhaps?"
+    j "{i}A beloved family pet, perhaps?{/i}"
 
-    j "{i}It paces throughout the chamber as if seeking out its master.{/i}"
+    n "It paces throughout the chamber as if seeking out its master."
 
     j "{i}Why was this innocent creature cursed to wander like this?{/i}"
 
@@ -1469,7 +1499,7 @@ label choice1_done:
 
     label killbywraith:
         $deadjulian = True
-        $barricade = True
+        
 
     j "{i}It's so dark. Something here is wrong… It's too dark.{/i}"
 
@@ -1481,7 +1511,7 @@ label choice1_done:
     play sound "monster-bite-44538.mp3"
 
     
-    $ renpy.music.play("pathetic-screaming-sound-effect-312867.mp3", channel="sound2")
+    $ renpy.music.play("A_sfx_Julian_dies_2.mp3", channel="sound2")
 
     pause 4.0
 
@@ -1500,10 +1530,12 @@ label choice1_done:
 
 
     label monumentchamber:
-
+    stop sound2 fadeout 5.0
     scene monumentchamber
     with pixellate
     # Room 3 - Monument Chamber
+    
+    play music "Floating Cities.mp3" fadein 1.0
 
     n "One thing is certain, this place has been vandalized."
 
@@ -1565,6 +1597,8 @@ label choice1_done:
         j "{i}Whatever, it's mine now. Whoever lost it is long dead. In their place, I wouldn't begrudge me.{/i}"
 
         $ inventory_items.append("coin")
+
+        play sound "A_sfx_coin_pick_2.mp3"
 
         hide coin
         with dissolve
@@ -1788,13 +1822,17 @@ label demonessresolution1:
     pause 0.5
     play sound "axe-hit-flesh-02-266299.mp3"
 
+    stop music fadeout 3.0
+
     n "A few moments of combat pass, and then silence."
 
     n "The room fills with the smell of sweet sulfur, and Julian, losing consciousness, feels a slight stab of pain."
 
+    play music "Tess_Theme.mp3" fadein 2.0
+
     scene tess standing with longdissolve:
         size (1920,1080)
-
+    
     play sound "heartbeatbreath.mp3"
     n "His hero - this masked avenger, crouches down to check his vitals and speaks in a soft, deep female voice."
 
@@ -1840,7 +1878,7 @@ label demonessresolution1:
 
     play sound "bone-break-sound-ver-2-269660.mp3"
     pause 0.2
-    $ renpy.music.play("man-screaming-6958.mp3", channel="sound2")
+    $ renpy.music.play("A_sfx_Julian_leg.mp3", channel="sound2")
 
     n "An audible crunch disturbs the silence of the chamber as she sets the bone."
 
@@ -2616,60 +2654,70 @@ label golemescape5:
             n "A narrow walkway encircles an open pit full of decomposing bodies of the less fortunate. Tenebrous shapes skirt the edge of the Golem's vision. From the opposing side of the pit - it manifests!"
 
             jump golemtess
-        "Express triumphant exultation over the interloper's demise.":
+        "{size=40}Express triumphant exultation over the interloper's demise.":
             gl "{i}The interloper has been neutralized. Objective complete. The location of this one's creator remains unknown.{/i}"
             gl "{i}Perhaps the interloper's slayer shall know the location of this one's creator. I press on.{/i}"
 
             n "Purpose elucidated, the Golem proceeds through the crypt and glides down the vertical shaft into the Peasant's Graves."
 
-            scene monument
-            with fade
+    scene monument
+    with fade
+    
+    
 
-            n "A narrow walkway encircles an open pit full of decomposing bodies of the less fortunate. Tenebrous shapes skirt the edge of the Golem's vision. From the opposing side of the pit - it manifests!"
-            show adesse_neutral:
+    n "A narrow walkway encircles an open pit full of decomposing bodies of the less fortunate. Tenebrous shapes skirt the edge of the Golem's vision. From the opposing side of the pit - it manifests!"
+    play music "Agnus Dei X.mp3"
+      
+    show adesse_neutral:
                 size (1240, 1754)
                 xalign 0.5 yalign 1.0
                 linear 6.0 yalign 0.0
 
-            u "Fascinating. An arcane anomaly."
+    u "Fascinating. An arcane anomaly."
+    n "This gives the Golem pause. It resolves to show the enemy of its enemy respect."
 
-            n "This gives the Golem pause. It resolves to show the enemy of its enemy respect."
+    gl "The interloper perished to your spawn. You have this one's gratitude and admiration. I seek my creator."
 
-            gl "The interloper perished to your spawn. You have this one's gratitude and admiration. I seek my creator."
+    hide adesse_neutral
+    show adesse_flirty:
+                size (1240, 1754)
+                xalign 0.5 yalign 0.0
+               
+    n "The demoness wickedly quirks an eyebrow - her lips curl into a mischievous smile."
+    
+               
 
-            n "The demoness wickedly quirks an eyebrow - her lips curl into a mischievous smile."
+    u "Oh, yes, yes, very good. And what are you? Who intrudes into my lair?"
 
-            u "Oh, yes, yes, very good. And what are you? Who intrudes into my lair?"
+    $x = renpy.input("{i}What is . . . my name?{/i}")
+    $x = x.strip()
 
-            $x = renpy.input("{i}What is . . . my name?{/i}")
-            $x = x.strip()
+    if x == "":
+        $x = "Golem"
 
-            if x == "":
-                $x = "Golem"
+    $gl = Character(x,color="0BC4ED")
 
-            $gl = Character(x,color="0BC4ED")
+    gl "{i}I shall be [x].{/i}"
 
-            gl "{i}I shall be [x].{/i}"
+    gl "I am [x]."
 
-            gl "I am [x]."
+    u "I see. And what are you, [x]?"
 
-            u "I see. And what are you, [x]?"
+    u "You look lost."
 
-            u "You look lost."
+    u "Like a fly wandering into a web... but you are most certainly not harmless like a fly."
 
-            u "Like a fly wandering into a web... but you are most certainly not harmless like a fly."
+    u "You destroyed my spawn trivially, and I shant begrudge such an indulgence."
 
-            u "You destroyed my spawn trivially, and I shant begrudge such an indulgence."
+    u "Most certainly not when opportunity presents itself so… earnestly."
 
-            u "Most certainly not when opportunity presents itself so… earnestly."
+    u "You may know me as Adesse."
 
-            u "You may know me as Adesse."
+    n "Adesse floats down to where [x] stands, and grazes its unfeeling stone jaw with her bladed, beshadowed fingernail."
 
-            n "Adesse floats down to where [x] stands, and grazes its unfeeling stone jaw with her bladed, beshadowed fingernail."
+    n "[x] contemplates her inquiry."
 
-            n "[x] contemplates her inquiry."
-
-            gl "{i}What am I? What I was once is of little consequence - memories are no more.{/i}"
+    gl "{i}What am I? What I was once is of little consequence - memories are no more.{/i}"
 
     menu:
         "I am male.":
@@ -2707,12 +2755,12 @@ label golemescape5:
 
     n "Was Adesse altogether candid? Or did she take note of [x]'s latent yearning? "
 
-    n "he creator's absence was felt deeply. Could she fill that void? Did she intend to help [x] find [pronouns] creator earnestly?"
+    n "The creator's absence was felt deeply. Could she fill that void? Did she intend to help [x] find [pronouns] creator earnestly?"
 
     gl "I… accept your accord. We shall assist one another."
 
     a "Marvelous. Firstly, let us escape this domain of death. Accompany me."
-    $golemleftwithtess = True
+    $golemleftwithadesse = True
 
     hide adesse_neutral
     scene endingscreen
@@ -2729,6 +2777,7 @@ label golemescape5:
     jump witchstart
 
     label golemtess:
+    play music "Agnus Dei X.mp3"
     show adesse_neutral:
         size (1240, 1754)
         xalign 0.5 yalign 1.0
@@ -2737,16 +2786,15 @@ label golemescape5:
     gl "It is unavoidable. We must do battle."
      
     hide adesse_neutral
-    with quickdissolve
     show adesse_flirty:
         size (1240, 1754)
         xalign 0.5 yalign 0.0
 
     n "The demoness hesitates for but a moment, puzzled by the anomalous creature intruding into her domain. She grins an unnaturally wide grin."
     hide adesse_flirty
-    with quickdissolve
+    
 
-    show adesse_distant:
+    show adesse_neutral:
         size (1240, 1754)
         xalign 0.5 yalign 0.0
     
@@ -2754,21 +2802,31 @@ label golemescape5:
 
     n "Seizing initiative, the Golem dashes forward, casting the chamber with a blue glow."
 
+    show blinding1 with quickdissolve:
+                alpha 0.4
+                size (1950, 1100)
+    hide blinding1 with quickdissolve
+
     n "The demoness, however, is prepared for this advance. A beshadowed hemisphere created by the demoness's sorcery separates her from the Golem - and swiftly envelops the Golem, halting its advance."
+
+    hide adesse_neutral
+    show adesse_flirty:
+        size (1240, 1754)
+        xalign 0.5 yalign 0.0
 
     n "The Golem remains held fast by the demoness's sorcery. She grins broadly in triumph."
 
     u "You thought it simple to vanquish me? You're trapped."
-
+    stop music fadeout 10.0
     u "You're mine for as long as I like. A plaything, should I choose. It's unavoidable."
-
+    
     scene blackscreen
     scene tess rappel with dissolve
+    play music "Tess_Theme.mp3" fadein 1.0
 
     n "The demoness's monologue is cut short by a sturdy figure rappelling down the ladder leading to the depths of the crypt."
 
     hide adesse_distant
-
     scene monument
     show tess at deadcenter:
         size (1240, 1754)
@@ -2952,6 +3010,8 @@ menu:
         n "A narrow walkway encircles an open pit full of decomposing bodies of the less fortunate."
 
         n "Tenebrous shapes skirt the edge of the Golem's vision. From the opposing side of the pit - it manifests!"
+
+        play music "Agnus Dei X.mp3"
 
         show adesse_neutral:
             size (1240, 1754)
@@ -3172,7 +3232,7 @@ label witchstart:
 scene cryptnightbody
 with longdissolve
 
-play music "Oppressive Gloom.mp3"
+play music "A_mx_Dhalia_Theme_loop.mp3"
 play sound "thump-1-79982.mp3"
 
 n "The night watchman's body drops with a thunk presaging Dahlia's arrival."
@@ -3306,6 +3366,9 @@ label backtoatrium:
 scene newatrium
 with pixellate
 
+if deadjulian:
+        jump raisejulian
+
 if golemleftwithtess and leftwithgoblin:
     jump witchsolo
 
@@ -3314,9 +3377,6 @@ if golemleftwithtess and goblindead:
 
 elif golemleftwithgoblin and leftwithtess:
     jump witchsolo
-
-elif deadjulian:
-        jump raisejulian
 
 elif leftwithadesse or adessedead:
         jump witchtess
@@ -3423,6 +3483,13 @@ hide julian
 
 n "Julian's limbs carried him to the entrance of the crypt, bidden by Dahlia's command."
 
+if golemleftwithtess:
+    
+    jump witchgoblin
+elif golemleftwithadesse:
+    
+    jump witchtess
+
 label witchadesse:
 
 n "Dahlia delves to the depths of the crypt with supernatural speed."
@@ -3517,10 +3584,13 @@ n "Indeed, the absence of animate shadows indicates the witch's estimation is co
 
 n "A sturdy figure rappels down the ladder leading to the depths of the crypt."
 
+stop music fadeout 4.0
+
 hide monumnet
 scene tess rappel
-n "The warrior eschews a complete set of armor for the barest essentials accompanied by green and brown traveler's leathers."
 
+n "The warrior eschews a complete set of armor for the barest essentials accompanied by green and brown traveler's leathers."
+play music "Tess_Theme.mp3" fadein 2.0
 scene monument
 show tess at deadcenter:
     size (1240, 1754)
@@ -3563,7 +3633,7 @@ dh "Druidic wards may protect against demonic magic, but not all of mine."
 
 dh "Demonology… necromancy… thaumaturgy… conjuration… enchantment… I have so many to choose from."
 
-n "Tess catches her breath, managing not to vomit in her helmet."
+n "Tess catches her breath, managing not to vomit in her mask."
 
 n "She places a hand on her knee and forces herself to rise, reaching for her weapon."
 
@@ -3629,6 +3699,13 @@ hide tess
 scene endingscreen
 with longdissolve
 
+if deadjulian:
+    n "An unexpected turn of events always delighted Dahlia - even if it meant the fruits of her labor went unclaimed directly."
+    n "A new servant, and a new toy. She was pleased with herself beyond the point of smugness."
+    n "Firstly, she had to teach this 'Julian' to feed himself and not get himself killed with his newfound weaknesses, and then her tango with the warden could proceed." 
+    n "It's a thing of beauty when a plan falls into place unexpectedly."
+    jump endofprologue
+
 n "Frustrated at the fruits of her labor going unrealized, but tantalized by the mirth tormenting a warden will bring, Dahlia departs."
 
 n "Tess obediently waits five minutes, precisely as directed."
@@ -3659,7 +3736,7 @@ n "A flick of the wrist, a draw on the latent thaumaturgical current."
 
 n "The bars blocking the path to the service entrance turn red, then white, then pool as a liquid on the ground."
 
-play sound "magic-244951.mp3"
+play sound "A_sfx_melting_bars.mp3"
 queue sound "ice-cracking-field-recording-06-139709.mp3"
 
 n "As a bit of flair, Dahlia makes a show of exhaling in the direction of the molten metal, while concealing her gestures, freezing it."
@@ -3791,7 +3868,15 @@ hide goblin
 scene endingscreen
 with longdissolve
 
-n "Guiding her by her hand, Dahlia leads Inya out of the crypt."
+n "Guiding her by the hand, Dahlia leads Inya out of the crypt."
+
+if deadjulian:
+
+    n "An unexpected turn of events always delighted Dahlia - even if it meant the fruits of her labor went unclaimed directly. A new servant, and a new apprentice." 
+    n "Useful tools, without a doubt, but the pang of failure was not absent. The lack of the thrill of conquest was distantly felt by the witch."
+    n "Regardless, she did not leave empty handed - far from it. The trio departed to Dahlia's lair, their future unknown even to Dahlia. "
+    jump endofprologue
+    
 
 n "En route to Dahlia's lair, Inya incessantly prattled on about each and every thing that whizzed through her mind, and Dahlia patiently obliged her."
 
@@ -3926,7 +4011,7 @@ centered "{size=+75}{cps=8}{color=000000} Credits {/cps}{/size}{p=5.0}{nw}"
 
 $ renpy.pause(1.5)
 
-centered "{size=+75}{cps=8}{color=000000} Narrative / Project Manager: \nBarry Weber{/cps}{/size}{p=5.0}{nw}"
+centered "{size=+75}{cps=8}{color=000000}  Author / Project Manager: \nBarry Weber{/cps}{/size}{p=5.0}{nw}"
 
 centered "{size=+75}{cps=8}{color=000000} Code/Script: \nRachel 'Des' Marzzarella\nLake Watkins\nDeniz Balik{/cps}{/size}{p=5.0}{nw}"
 
@@ -3942,23 +4027,29 @@ centered "{size=+75}{cps=8}{color=000000} Art:\nRihards Kurts\nOndrej Svinčiak\
 
 $ renpy.pause(1.5)
 
-centered "{size=+40}{cps=8}{color=000000}  Music:\n'Agnus Dei X', 'Midnight Tale', 'Deep Haze', 'Floating Cities', 'Myst on the Moor', 'Oppressive Gloom', 'Hitman', 'Impact Prelude', 'Casa Bossa Nova' by Kevin MacLeod (incompetech.com). \n\nLicensed under Creative Commons: By Attribution 4.0 License http://creativecommons.org/licenses/by/4.0/{/cps}{/size}{p=5.0}{nw}"
+centered "{size=+40}{cps=8}{color=000000}  Music:\n'Agnus Dei X', 'Deep Haze', 'Floating Cities', 'Myst on the Moor', 'Hitman', 'Casa Bossa Nova' by Kevin MacLeod (incompetech.com). \n\nLicensed under Creative Commons: By Attribution 4.0 License http://creativecommons.org/licenses/by/4.0/{/cps}{/size}{p=5.0}{nw}"
 
 centered "{size=+40}{cps=8}{color=000000} \n Inya's Theme (First Encounter) by Taylor Perfater"
 
-$ renpy.pause(1.5)
-
-centered "{size=+75}{cps=8}{color=000000}  Sound effects provided by https://pixabay.com/sound-effects/ {/cps}{/size}{p=5.0}{nw}"
-centered "{size=+75}{cps=8}{color=000000}  'Click' sound effect provided by Erick Alcántara {/cps}{/size}{p=5.0}{nw}"
+centered "{size=+40}{cps=8}{color=000000} \n 'Tess's theme', 'Dahlia's theme', 'Trailer title theme', 'city ambient loop 2', 'crypt loop 1' by Erick Alcántara"
 
 $ renpy.pause(1.5)
 
-scene blackscreen with dissolve
+centered "{size=+40}{cps=8}{color=000000}  'new click', shield sfx, hardtack sfx, canteen sfx, melting bars sfx, wagon loop sfx, julian leg, julian dies 2, coin sfx, envelope inv sfx, sound effect provided by Erick Alcántara {/cps}{/size}{p=5.0}{nw}"
+centered "{size=+40}{cps=8}{color=000000}  All additional sound effects provided by https://pixabay.com/sound-effects/ {/cps}{/size}{p=5.0}{nw}"
 
+
+$ renpy.pause(1.5)
+
+scene blackscreen
+show logo eye:
+    size (300,300)
+    yalign 1.0
+    xalign 1.0
 centered "{size=+35}{cps=8}{color=#FAF9F6} Thank you for playing! If you liked our game, stay tuned for chapter 1 and leave a review. If you would like to collaborate with us on future projects, including a continuation of this visual novel, scan the QR code and feel free to join our community at {a=https://www.glassumbrella.io/}glassumbrella.io.{/cps}{/size}{p=20.0}{nw}"
 
 show QR at deadcenter
 
-$ renpy.pause(20.0)
+$ renpy.pause(35.0)
 
 return

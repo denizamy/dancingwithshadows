@@ -1,22 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 314, in script
-    {i}"Magicians of any kind make me nervous. He seems friendly enough, but I shouldn't let my guard down."
-Exception: Sayer b'{i}' is not a function or string.
+  File "game/script.rpy", line 89, in script
+    image tess = im.Scale("tessanrae.png")
+  File "game/script.rpy", line 89, in <module>
+    image tess = im.Scale("tessanrae.png")
+TypeError: __init__() missing 2 required positional arguments: 'width' and 'height'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 314, in script
-    {i}"Magicians of any kind make me nervous. He seems friendly enough, but I shouldn't let my guard down."
-  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\ast.py", line 2579, in execute
-    Say.execute(self)
-  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\ast.py", line 598, in execute
-    raise Exception("Sayer %s is not a function or string." % self.who.encode("utf-8"))
-Exception: Sayer b'{i}' is not a function or string.
+  File "game/script.rpy", line 89, in script
+    image tess = im.Scale("tessanrae.png")
+  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\ast.py", line 926, in execute
+    img = renpy.python.py_eval_bytecode(self.code.bytecode)
+  File "C:\Users\Rachel\Desktop\dances\dancingwithshadows\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 89, in <module>
+    image tess = im.Scale("tessanrae.png")
+TypeError: __init__() missing 2 required positional arguments: 'width' and 'height'
 
 Windows-10-10.0.26100 AMD64
 Ren'Py 8.3.4.24120703
 Dancing With Shadows Prologue 1.0
-Fri Apr 18 03:52:14 2025
+Sun Jun  1 20:49:50 2025

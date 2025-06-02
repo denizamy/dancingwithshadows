@@ -54,7 +54,7 @@ define config.has_voice = True
 ## To allow the user to play a test sound on the sound or voice channel,
 ## uncomment a line below and use it to set a sample sound to play.
 
-# define config.sample_sound = "sample-sound.ogg"
+define config.sample_sound = "A_sfx_shield_inv_3.mp3"
 # define config.sample_voice = "sample-voice.ogg"
 
 
@@ -64,7 +64,7 @@ define config.has_voice = True
 
 # define config.main_menu_music = "main-menu-theme.ogg"
 
-define config.main_menu_music = "Impact Prelude.mp3"
+define config.main_menu_music = "A_DwS_Mx_Trailer_Title_Theme.mp3"
 
 ## Transitions #################################################################
 ##
